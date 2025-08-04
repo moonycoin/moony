@@ -1,0 +1,72 @@
+/* ================
+   GLOBAL JUSTIFICATION
+   ================ */
+.vp-doc p,
+.vp-doc li,
+.vp-doc td,
+.vp-doc th,
+.vp-doc blockquote {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ================
+   TIP BOX STYLING
+   ================ */
+.vp-doc .custom-block.tip {
+  background-color: #1e1e4b;
+  color: #cbd5ff;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 720px;
+  box-shadow: 0 0 0 1px #2e2e70 inset;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.vp-doc .custom-block.tip > .custom-block-title {
+  display: none;
+}
+
+.vp-doc .custom-block.tip a {
+  color: #a5b4fc;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.vp-doc .custom-block.tip a:hover {
+  color: #d1d5ff;
+}
+
+/* =====================
+   MOBILE RESPONSIVENESS (TIGHTER)
+   ===================== */
+@media (max-width: 640px) {
+  .vp-doc {
+    font-size: 0.75rem;     /* smaller than before */
+    line-height: 1.45;
+  }
+
+  .vp-doc .custom-block.tip {
+    font-size: 0.72rem;     /* tighter tip box */
+    padding: 0.75rem 0.9rem;
+    line-height: 1.45;
+  }
+
+  .vp-doc p,
+  .vp-doc li {
+    line-height: 1.4;
+    margin-bottom: 0.8rem;  /* reduce vertical spacing */
+  }
+
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}

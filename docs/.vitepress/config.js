@@ -1,7 +1,8 @@
 export default {
+  base: '/moony/', //
   themeConfig: {
     sidebar: [
-      { text: 'Getting Started', link: '/' }, // standalone, not collapsible
+      { text: 'Getting Started', link: '/' },
       {
         text: 'Tokenomics',
         items: [
