@@ -20,7 +20,6 @@ layout:
 
 Traditional financial systems make small transactions impractical due to high fees, delayed settlement, and dependency on centralized platforms. Moony’s low-cost, onchain settlement and divisibility unlock new opportunities for creators, developers, and global users to exchange value in tiny increments that were previously uneconomical. Micropayments represent the foundation for new economic models that can thrive in a permissionless, decentralized ecosystem.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 ## Why It Matters
 
@@ -42,8 +41,6 @@ Moony’s architecture is intentionally designed to support high‑volume, low�
 
 Moony can be divided into extremely small units, enabling transactions measured in fractions of a cent. This level of divisibility is essential for use cases like tipping, pay‑per‑use services, or micro‑rewards where the economic value of each transfer might otherwise be rounded to zero in traditional finance.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
-
 Equally important is trust‑minimized settlement. Every Moony transaction finalizes directly on the Solana blockchain, with clear and predictable rules:
 
 * There is no dependency on a bank, card processor, or escrow service to approve or batch transactions.
@@ -52,11 +49,9 @@ Equally important is trust‑minimized settlement. Every Moony transaction final
 
 This combination of fine‑grained divisibility and self‑executing settlement makes Moony practically useful for everyday micro‑transactions that legacy infrastructure would either reject or heavily penalize.
 
-#### Scalable Blockchain Infrastructure&#x20;
+#### Scalable Blockchain Infrastructure
 
-For micropayments to be viable, transaction costs must approach zero relative to the payment value.&#x20;
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+For micropayments to be viable, transaction costs must approach zero relative to the payment value.
 
 Moony achieves this through Solana’s high‑throughput, low‑fee architecture:
 
@@ -68,9 +63,7 @@ Low fees are not just a technical detail, they are the economic enabler that mak
 
 #### Instant Global Access
 
-Micropayments are only as valuable as they are immediate and universally accessible.&#x20;
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+Micropayments are only as valuable as they are immediate and universally accessible.
 
 Moony transactions settle within seconds and are not constrained by national banking hours, clearinghouses, or remittance corridors.
 

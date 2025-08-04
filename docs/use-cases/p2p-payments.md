@@ -20,8 +20,6 @@ layout:
 
 Peer-to-peer (P2P) payments are the most direct expression of Moony’s purpose: value moving between people without intermediaries. By combining a credibly constrained supply with trust-minimized, onchain settlement, Moony enables anyone to send and receive digital cash globally with finality, transparency, and extremely low fees.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
-
 ## Why It Matters
 
 Traditional payment systems route through layered intermediaries: banks, processors, networks, and compliance vendors, each adding cost, latency, and points of failure or control. Those layers can decline transactions, reverse them days later, or exclude entire regions and communities.
@@ -38,8 +36,6 @@ The result is a payment primitive that feels like handing someone cash, only it 
 ***
 
 ## Global Scalability&#x20;
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 For P2P to work at human scale, costs and throughput must be practical. Moony launches on the Solana blockchain to achieve that:
 
@@ -67,8 +63,6 @@ Finality and auditability together create predictable payments that reduce dispu
 
 Billions of people live with limited or unreliable access to modern payment infrastructure. Even where banking exists, cross‑border remittances are costly and slow, and small transactions are often uneconomical.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
-
 Moony’s P2P model helps address these barriers:
 
 * **Open access:** Anyone with a smartphone and internet connection can receive Moony within minutes, without opening a bank account or passing gatekeepers that may be unavailable in their region.
@@ -95,9 +89,7 @@ Because Moony is permissionless and composable by design, its peer‑to‑peer u
 
 ## Flipcash Launch Integation
 
-At launch, Flipcash will provide the first independent public interface for Moony, allowing users to experience it as true digital cash.&#x20;
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+At launch, Flipcash will provide the first independent public interface for Moony, allowing users to experience it as true digital cash.
 
 Through its intuitive mobile interface, users can seamlessly mint and redeem Moony directly from the reserve contract and begin transacting within seconds, without relying on banks, card networks, or any centralized intermediary. This immediate usability allows Moony to function like cash for the digital era: fast, final, and user‑controlled.
 
@@ -107,10 +99,8 @@ Flipcash makes the on‑chain experience accessible through familiar payment pat
 * **Payment links** – Generate a link to share over chat, email, or social media, allowing recipients to claim Moony instantly and securely.
 * **Instant balance and settlement** – Users can see their Moony balance update immediately, pay friends and settle transactions without waiting days for bank processing.
 
-By abstracting complex onchain mechanics into actions users already understand, Flipcash delivers a mainstream‑ready P2P experience.&#x20;
+By abstracting complex onchain mechanics into actions users already understand, Flipcash delivers a mainstream‑ready P2P experience.
 
-{% hint style="info" %}
 While Flipcash is the first independent interface to access the Moony reserve contract, the token remains fully permissionless and interoperable as an SPL asset. Any compatible Solana wallet can store, send, or receive Moony, and future apps can integrate it seamlessly without requiring approval.
-{% endhint %}
 
 ***

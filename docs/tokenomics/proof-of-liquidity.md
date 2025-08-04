@@ -20,15 +20,13 @@ layout:
 
 Moony utilizes a distribution model called **Proof of Liquidity (PoL)**, implemented entirely through the Moony Reserve smart contract. In this model, tokens are issued only in exchange for real, onchain capital.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 The PoL model ensures that all circulating supply originates from public market activity, not from premines, insider allocations, or venture capital funding. Every token in circulation is backed by deposited USDC, and every issuance or redemption event is governed by immutable logic within the Reserve Contract.
 
 ***
 
-## Dollar Denominated Access&#x20;
+## Dollar Denominated Access
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 Moony is paired with USDC, a widely adopted dollar backed stablecoin issued by Circle. This pairing enables dollar based valuation, removes volatility from the base currency, and makes participation more accessible to new users. USDC’s transparency and regulatory alignment also reinforce the credibility of Moony’s backing mechanism.
 
@@ -36,11 +34,10 @@ At genesis, the Reserve Contract holds the entire fixed supply of 21 million MOO
 
 ***
 
-## Capital-Based Mining&#x20;
+## Capital-Based Mining
 
 Moony’s Proof of Liquidity (PoL) represents a modern, capital‑based alternative to Proof of Work (PoW) mining. Instead of competing with specialized hardware and expending massive amounts of electricity to secure new supply, users mint Moony by depositing USDC into the on‑chain Reserve Contract.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 This transforms the process of “mining” into a constructive economic activity rather than an extractive one. Each deposit not only mints new Moony, but also adds lasting value to the network in the form of redeemable on‑chain liquidity. Where traditional mining externalizes costs to the environment, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
 
@@ -90,9 +87,8 @@ In short, every token minted through PoL strengthens the network. Capital is ret
 
 ***
 
-## Two-Way Liquidity&#x20;
+## Two-Way Liquidity
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 The Reserve Contract is bidirectional. Users can:
 
@@ -107,7 +103,7 @@ Click here to learn more about the Bonding Curve.
 
 ***
 
-## Fee Model&#x20;
+## Fee Model
 
 Purchasing MOONY from the Reserve Contract incurs **no fee**, making it cost effective to enter the ecosystem.
 
@@ -117,7 +113,3 @@ Selling MOONY back to the Reserve Contract incurs a **1% fee**, which serves two
 * **Revenue**: The fee is paid to Flipcash Inc., the architect of the smart contract design. Although Moony was launched independently, it uses open infrastructure developed by Flipcash.
 
 The sell fee applies only when redeeming directly through the Reserve Contract. Transactions on exchanges or peer-to-peer platforms are unaffected.
-
-{% hint style="info" %}
-Click here to learn more about how Moony uses Flipcash
-{% endhint %}

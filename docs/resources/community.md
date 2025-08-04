@@ -20,8 +20,6 @@ layout:
 
 Moony is more than a token, it’s an open, decentralized movement powered by its community.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
-
 There is no company, central team, or official roadmap. Instead, Moony grows through the initiative of independent contributors: developers, creators, product builders, educators, and everyday users who see value in a monetary system that belongs to no one and works for everyone.
 
 ## Network of Stakeholders

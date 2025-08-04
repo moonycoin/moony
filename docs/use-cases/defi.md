@@ -18,9 +18,7 @@ layout:
 
 # DeFi&#x20;
 
-Decentralized Finance (DeFi) represents the foundation of internet capital markets, a global financial system built on open, programmable infrastructure. In this environment, lending, borrowing, trading, and yield generation occur directly through smart contracts without the need for banks or traditional intermediaries.&#x20;
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+Decentralized Finance (DeFi) represents the foundation of internet capital markets, a global financial system built on open, programmable infrastructure. In this environment, lending, borrowing, trading, and yield generation occur directly through smart contracts without the need for banks or traditional intermediaries.
 
 Rather than trusting institutions, participants rely on transparent, verifiable code. Value moves globally, at all hours, without gatekeepers. This shift is not just technological. Internet capital markets mark a cultural transformation, offering an open alternative to legacy finance, driven by code, capital, and community.
 
@@ -56,9 +54,7 @@ Together, these properties make Moony a credible building block for DeFi, ready 
 
 ## Potential Use Cases
 
-Moony’s utility in DeFi will expand organically as adoption grows and protocols integrate the asset.&#x20;
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+Moony’s utility in DeFi will expand organically as adoption grows and protocols integrate the asset.
 
 \
 Potential use cases include:

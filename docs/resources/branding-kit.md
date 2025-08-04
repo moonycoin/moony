@@ -20,15 +20,12 @@ layout:
 
 Moony’s visual identity is designed to be simple, expressive, and open. This page outlines the name, symbol, and usage conventions that define how Moony appears across applications and interfaces. Every element is crafted to reinforce Moony’s mission as a decentralized, accessible public asset.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 The name “Moony” blends two ideas: Moon and Money. It evokes the playful energy of internet culture, where assets are said to “go to the moon,” while also signaling Moony’s role as a new kind of digital money. The name carries memetic cultural resonance, reflecting the emergent and often symbolic nature of cryptocurrency itself. It is accessible and shareable, but grounded in a principled commitment to open monetary infrastructure.
 
 ***
 
 ## Icon Design
-
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 Moony’s symbol is simple yet multilayered in meaning. At a glance, it appears as a crescent moon over a horizon. But it encodes deeper symbolism:
 
@@ -42,7 +39,6 @@ These overlapping symbols converge in a minimal form that is both distinctive an
 
 ## Usage Guidelines
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 Moony can be represented using the ⍜ symbol (Unicode: U+235C “APL Functional Symbol Circle Star”) to indicate quantities of the token, similar to how the $ symbol denotes U.S. dollars.
 

@@ -18,9 +18,8 @@ layout:
 
 # Bonding Curve
 
-The price of MOONY is governed by a **bonding curve**, a deterministic mathematical function implemented within the Moony Reserve smart contract. This curve sets the token price based on the percentage of total supply currently in circulation.&#x20;
+The price of MOONY is governed by a **bonding curve**, a deterministic mathematical function implemented within the Moony Reserve smart contract. This curve sets the token price based on the percentage of total supply currently in circulation.
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 The bonding curve is the mechanism through which MOONY is priced during both minting and redemption directly through the Reserve contract. As more tokens are minted or fewer remain unissued, the price increases non-linearly, creating a transparent, incentive-aligned pricing structure.
 
@@ -37,7 +36,6 @@ The bonding curve is the mechanism through which MOONY is priced during both min
 
 ## Key Parameters
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 * The price of the **first MOONY** token is **$0.01 USDC**
 * The price of the **final MOONY** token is **$1,000,000 USDC**
@@ -49,7 +47,6 @@ This exponential pricing model promotes gradual growth and long-term alignment. 
 
 ## Mathematic Model
 
-<figure><img src="../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
 
 The bonding curve is a non-linear exponential function expressed as:
 
