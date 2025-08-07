@@ -1,6 +1,14 @@
 export default {
-  base: '/moony/', //
+  title: 'Moony Documentation',
+  description: 'Documentation for Moony - A decentralized digital asset on Solana',
+  base: '/',
   themeConfig: {
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Tokenomics', link: '/tokenomics/reserve-contract' },
+      { text: 'Use Cases', link: '/use-cases/ecosystem' },
+      { text: 'Resources', link: '/resources/community' }
+    ],
     sidebar: [
       { text: 'Getting Started', link: '/' },
       {
@@ -27,6 +35,9 @@ export default {
           { text: 'Branding Kit', link: '/resources/branding-kit' }
         ]
       }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/moonycoin/moony' }
     ]
   }
 }

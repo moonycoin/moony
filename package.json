@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "deploy": "rm -rf docs/.vitepress/dist/.git && vitepress build docs && cd docs/.vitepress/dist && git init && git add . && git commit -m 'deploy' && git branch -M gh-pages && git remote add origin https://github.com/moonycoin/moony.git && git push -f origin gh-pages"
+    "preview": "vitepress preview docs"
   },
   "dependencies": {},
   "devDependencies": {
