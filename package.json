@@ -1,0 +1,13 @@
+{
+  "name": "moony",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
