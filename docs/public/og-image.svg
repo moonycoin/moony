@@ -1,0 +1,113 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.98" />
+      <stop offset="30%" style="stop-color:#fafafc;stop-opacity:0.99" />
+      <stop offset="70%" style="stop-color:#f8f8fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text Gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d1d1f" />
+      <stop offset="100%" style="stop-color:#515154" />
+    </linearGradient>
+    
+    <!-- Pink Gradient for Accent -->
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF69B4" />
+      <stop offset="50%" style="stop-color:#FF1493" />
+      <stop offset="100%" style="stop-color:#DC143C" />
+    </linearGradient>
+    
+    <!-- Subtle Pink Glow -->
+    <radialGradient id="pinkGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:0.03" />
+      <stop offset="100%" style="stop-color:#FF69B4;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Icon Shadow Filter -->
+    <filter id="iconShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="#FF69B4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Pink Glow Overlay -->
+  <rect width="1200" height="630" fill="url(#pinkGlow)"/>
+  
+  <!-- Main Container Grid Layout -->
+  <g transform="translate(80, 0)">
+    
+    <!-- Left Side - Text Content -->
+    <g transform="translate(0, 150)">
+      <!-- Main Title -->
+      <text x="0" y="80" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" 
+            font-size="72" font-weight="800" fill="url(#textGradient)" letter-spacing="-2">
+        <tspan x="0" dy="0">Decentralized</tspan>
+        <tspan x="0" dy="85">Digital Value</tspan>
+      </text>
+      
+      <!-- Tagline -->
+      <text x="0" y="280" font-family="SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif" 
+            font-size="24" font-weight="400" fill="#515154" opacity="0.9">
+        Permissionless transactions with Proof of Liquidity
+      </text>
+      
+      <!-- Accent Line -->
+      <rect x="0" y="320" width="120" height="4" fill="url(#pinkGradient)" rx="2"/>
+      
+      <!-- Small Brand Text -->
+      <text x="0" y="370" font-family="SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif" 
+            font-size="18" font-weight="600" fill="url(#pinkGradient)">
+        MOONY DOCUMENTS
+      </text>
+    </g>
+    
+    <!-- Right Side - Icon -->
+    <g transform="translate(780, 180)">
+      <!-- Icon Container with Glow -->
+      <circle cx="135" cy="135" r="150" fill="rgba(255, 105, 180, 0.05)" opacity="0.6"/>
+      <circle cx="135" cy="135" r="120" fill="rgba(255, 105, 180, 0.08)" opacity="0.4"/>
+      
+      <!-- Simplified Moon Icon -->
+      <g transform="translate(60, 60)" filter="url(#iconShadow)">
+        <!-- Main Circle -->
+        <circle cx="75" cy="75" r="65" fill="url(#textGradient)"/>
+        
+        <!-- Crescent Shadow -->
+        <circle cx="85" cy="65" r="55" fill="#ffffff" opacity="0.15"/>
+        
+        <!-- Surface Details -->
+        <circle cx="60" cy="55" r="8" fill="#ffffff" opacity="0.1"/>
+        <circle cx="95" cy="80" r="5" fill="#ffffff" opacity="0.08"/>
+        <circle cx="70" cy="95" r="6" fill="#ffffff" opacity="0.12"/>
+        <circle cx="90" cy="50" r="3" fill="#ffffff" opacity="0.1"/>
+        
+        <!-- Highlight -->
+        <ellipse cx="55" cy="45" rx="15" ry="8" fill="#ffffff" opacity="0.2"/>
+      </g>
+    </g>
+    
+    <!-- Decorative Elements -->
+    <!-- Top accent dots -->
+    <g opacity="0.3">
+      <circle cx="200" cy="50" r="3" fill="url(#pinkGradient)"/>
+      <circle cx="240" cy="35" r="2" fill="url(#pinkGradient)"/>
+      <circle cx="280" cy="45" r="2.5" fill="url(#pinkGradient)"/>
+    </g>
+    
+    <!-- Bottom accent -->
+    <g transform="translate(0, 520)" opacity="0.2">
+      <rect x="0" y="0" width="400" height="2" fill="url(#pinkGradient)" rx="1"/>
+    </g>
+    
+  </g>
+  
+  <!-- Subtle border -->
+  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="rgba(255, 105, 180, 0.1)" stroke-width="2" rx="12"/>
+  
+</svg>

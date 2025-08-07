@@ -3,14 +3,20 @@ export default {
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/moony/',
   appearance: 'dark',
-  head: [
-    ['meta', { name: 'theme-color', content: '#FF69B4' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:locale', content: 'en' }],
-            ['meta', { property: 'og:title', content: 'Moony Documents' }],
-        ['meta', { property: 'og:site_name', content: 'Moony Documents' }],
-    ['meta', { property: 'og:url', content: 'https://moonycoin.github.io/moony/' }]
-  ],
+      head: [
+      ['meta', { name: 'theme-color', content: '#FF69B4' }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:locale', content: 'en' }],
+      ['meta', { property: 'og:title', content: 'Moony Documents' }],
+      ['meta', { property: 'og:site_name', content: 'Moony Documents' }],
+      ['meta', { property: 'og:url', content: 'https://moonycoin.github.io/moony/' }],
+      ['meta', { property: 'og:image', content: 'https://moonycoin.github.io/moony/og-image.svg' }],
+      ['meta', { property: 'og:image:width', content: '1200' }],
+      ['meta', { property: 'og:image:height', content: '630' }],
+      ['meta', { property: 'og:image:type', content: 'image/svg+xml' }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:image', content: 'https://moonycoin.github.io/moony/og-image.svg' }]
+    ],
   themeConfig: {
     logo: {
       light: '/logo-light.svg',
