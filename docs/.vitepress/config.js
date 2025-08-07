@@ -1,14 +1,14 @@
 export default {
-  title: 'Moony Documentation',
-  description: 'Documentation for Moony - A decentralized digital asset on Solana',
+  title: 'Moony Documents',
+  description: 'Permissionless transactions with Proof of Liquidity',
   base: '/moony/',
   appearance: 'dark',
   head: [
     ['meta', { name: 'theme-color', content: '#FF69B4' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
-    ['meta', { property: 'og:title', content: 'Moony Documentation' }],
-    ['meta', { property: 'og:site_name', content: 'Moony Documentation' }],
+            ['meta', { property: 'og:title', content: 'Moony Documents' }],
+        ['meta', { property: 'og:site_name', content: 'Moony Documents' }],
     ['meta', { property: 'og:url', content: 'https://moonycoin.github.io/moony/' }]
   ],
   themeConfig: {
