@@ -483,7 +483,7 @@ body {
 }
 
 /* ================
-   DYNAMIC SIDEBAR THAT EXTENDS TO FOOTER
+   MINIMAL SIDEBAR WITH CONSISTENT BORDERS
    ================ */
 .VPSidebar,
 .VPSidebar[class*="VPSidebar"],
@@ -492,15 +492,6 @@ body {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
-  
-  /* Full normal sidebar - let it extend naturally to content end */
-  position: relative !important;
-  height: auto !important;
-  min-height: calc(100vh - var(--vp-nav-height, 60px) - 60px) !important;
-  overflow-y: visible !important;
-  top: auto !important;
-  bottom: auto !important;
-  max-height: none !important;
 }
 
 .dark .VPSidebar,
