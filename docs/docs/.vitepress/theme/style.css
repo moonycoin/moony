@@ -457,6 +457,19 @@ html, body, #app, .Layout, .VPContent {
   background: rgba(255, 105, 180, 0.15) !important;
 }
 
+/* Eliminate any pager/footer background or shadow artifacts */
+.VPDocFooter, .VPDocFooter *, .pager, .pager * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  filter: none !important;
+}
+
+/* Ensure the main doc content never produces a horizontal scrollbar */
+.VPDoc, .vp-doc {
+  overflow-x: hidden !important;
+}
+
 /* ================
    PREMIUM RESPONSIVE DESIGN
    ================ */
