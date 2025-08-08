@@ -20,7 +20,11 @@ export default {
           if (!ticking) {
             requestAnimationFrame(() => {
               const footer = document.querySelector('.VPFooter')
-              if (!footer) return
+              const layout = document.querySelector('.Layout')
+              if (!footer || !layout) return
+              
+              // Only apply footer reveal on pages with sidebars
+              if (!layout.classList.contains('has-sidebar')) return
               
               const scrollHeight = document.documentElement.scrollHeight
               const scrollTop = window.scrollY
@@ -29,7 +33,7 @@ export default {
               // Calculate if we're near the bottom
               const scrollPercentage = (scrollTop + clientHeight) / scrollHeight
               
-              if (scrollPercentage > 0.85) {
+              if (scrollPercentage > 0.9) {
                 // Reveal footer fully when near bottom
                 footer.style.transform = 'translateY(0)'
               } else {

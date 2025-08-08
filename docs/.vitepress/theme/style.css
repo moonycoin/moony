@@ -485,10 +485,9 @@ body {
 /* ================
    SIDEBAR CONNECTED TO FOOTER
    ================ */
-.VPSidebar,
-.VPSidebar[class*="VPSidebar"],
-.Layout .VPSidebar,
-.Layout.has-sidebar .VPSidebar {
+/* Sidebar only fixed and connected to footer on pages with sidebars */
+.Layout.has-sidebar .VPSidebar,
+.Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
@@ -501,6 +500,17 @@ body {
   width: var(--vp-sidebar-width, 272px) !important;
   overflow-y: auto !important;
   z-index: 1 !important;
+}
+
+.dark .Layout.has-sidebar .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-right-color: #424245 !important;
+}
+
+/* Add space for footer on sidebar pages */
+.Layout.has-sidebar .VPContent {
+  margin-bottom: 120px !important;
 }
 
 .dark .VPSidebar,
@@ -1217,7 +1227,21 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
    FOOTER FIXED AT BOTTOM - CONNECTED TO SIDEBAR
    ================ */
 
-.VPFooter {
+/* Footer appears normally on home page */
+.Layout.is-home .VPFooter {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  z-index: auto !important;
+  margin-top: 60px !important;
+}
+
+/* Footer fixed and connected to sidebar on other pages */
+.Layout.has-sidebar .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
@@ -1235,7 +1259,20 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   transition: transform 0.3s ease !important;
 }
 
+/* Default footer styling for fallback */
+.VPFooter {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
+  padding: 60px 40px 40px !important;
+}
+
 .dark .VPFooter {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-top-color: rgba(255, 105, 180, 0.2) !important;
+}
+
+.dark .Layout.has-sidebar .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
   border-top-color: rgba(255, 105, 180, 0.2) !important;
 }
