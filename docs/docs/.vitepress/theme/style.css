@@ -418,6 +418,11 @@ html, body, #app {
   overflow-x: clip !important;
 }
 
+/* Prevent horizontal scrollbar overlays on all root containers */
+html, body, #app, .Layout, .VPContent {
+  overflow-x: hidden !important;
+}
+
 .dark .VPDocAside,
 .dark .VPDocAside *,
 .dark .VPDocAside *::before,
