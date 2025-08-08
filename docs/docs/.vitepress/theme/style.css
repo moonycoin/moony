@@ -197,7 +197,7 @@ body {
    ================ */
 .vp-doc {
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   border-radius: var(--border-radius-xl);
   padding: var(--space-xl);
   margin: var(--space-lg) auto;
@@ -221,6 +221,7 @@ body {
   margin: var(--space-lg) 0;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .vp-doc .custom-block.tip::before {
@@ -262,7 +263,7 @@ body {
    ================ */
 .VPNav {
   background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-sm);
 }
@@ -293,7 +294,7 @@ body {
    ================ */
 .VPSidebar {
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-md);
 }
@@ -363,7 +364,7 @@ body {
    ================ */
 .VPDocAside {
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-md);
   border-radius: var(--border-radius-lg);
