@@ -360,89 +360,55 @@ body {
 }
 
 /* ================
-   PREMIUM RIGHT SIDEBAR (ON THIS PAGE)
+   PREMIUM RIGHT SIDEBAR (ON THIS PAGE) - COMPLETELY TRANSPARENT
    ================ */
 .VPDocAside {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: var(--shadow-md);
-  border-radius: var(--border-radius-lg);
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
   margin: var(--space-md);
   padding: var(--space-md);
 }
 
 .dark .VPDocAside {
-  background: rgba(24, 24, 27, 0.6);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent !important;
+  border-left: none !important;
 }
 
-.VPDocAside .content {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.VPDocAside .content-container {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.VPDocAside .content-container .content {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.VPDocAside .content-container .content .content-panel {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.VPDocAside .content-container .content .content-panel .content {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.VPDocAside .content-container .content .content-panel .content .outline-marker {
-  background: var(--moony-accent);
-  border-radius: 2px;
-}
-
-.VPDocAside .content-container .content .content-panel .content .outline-link {
-  color: var(--moony-secondary);
-  font-weight: var(--font-weight-medium);
-  transition: all 0.2s ease;
-  border-radius: var(--border-radius-sm);
-  padding: 0.25rem 0.5rem;
-  margin: 0.125rem 0;
-}
-
-.VPDocAside .content-container .content .content-panel .content .outline-link:hover {
-  color: var(--moony-accent);
-  background: rgba(255, 105, 180, 0.1);
-  transform: translateX(2px);
-}
-
-.VPDocAside .content-container .content .content-panel .content .outline-link.active {
-  color: var(--moony-accent);
-  background: rgba(255, 105, 180, 0.15);
-  font-weight: var(--font-weight-semibold);
-}
-
-/* Remove any default VitePress styling that might cause the light box effect */
+/* Make all children transparent */
 .VPDocAside * {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+  backdrop-filter: none !important;
 }
 
-.VPDocAside .content,
-.VPDocAside .content-container,
-.VPDocAside .content-panel {
+/* Style the outline links to be subtle but visible */
+.VPDocAside .outline-link {
+  color: var(--vp-c-text-2) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 4px 8px !important;
+  border-radius: var(--border-radius-sm) !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPDocAside .outline-link:hover {
+  color: var(--vp-c-text-1) !important;
+  background: rgba(255, 105, 180, 0.1) !important;
+}
+
+.VPDocAside .outline-link.active {
+  color: var(--vp-c-brand-1) !important;
+  background: rgba(255, 105, 180, 0.15) !important;
+}
+
+/* Remove any default VitePress styling */
+.VPDocAside .outline-title,
+.VPDocAside .outline-marker {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
