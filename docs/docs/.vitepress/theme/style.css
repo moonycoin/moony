@@ -397,8 +397,25 @@ body {
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
-  margin: var(--space-md);
-  padding: var(--space-md);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Right sidebar spacing removal to avoid box/gradient and overflow */
+.VPDocAside {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Contain any child spacing */
+.VPDocAside > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Prevent horizontal overflow on the whole app */
+html, body, #app {
+  overflow-x: clip !important;
 }
 
 .dark .VPDocAside,
