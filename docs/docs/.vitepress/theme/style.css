@@ -362,30 +362,58 @@ body {
 /* ================
    PREMIUM RIGHT SIDEBAR (ON THIS PAGE) - COMPLETELY TRANSPARENT
    ================ */
+.VPDocAside,
+.VPDocAside *,
+.VPDocAside *::before,
+.VPDocAside *::after,
+.VPDocAside .content,
+.VPDocAside .content-container,
+.VPDocAside .content-panel,
+.VPDocAside .outline,
+.VPDocAside .outline-title,
+.VPDocAside .outline-marker,
+.VPDocAside .outline-link,
+.VPDocAside .outline-item,
+.VPDocAside .outline-item * {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Force transparency on all possible VitePress sidebar elements */
 .VPDocAside {
   background: transparent !important;
   backdrop-filter: none !important;
-  border-left: none !important;
+  border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   margin: var(--space-md);
   padding: var(--space-md);
 }
 
-.dark .VPDocAside {
+.dark .VPDocAside,
+.dark .VPDocAside *,
+.dark .VPDocAside *::before,
+.dark .VPDocAside *::after {
   background: transparent !important;
-  border-left: none !important;
-}
-
-/* Make all children transparent */
-.VPDocAside * {
-  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   border: none !important;
   box-shadow: none !important;
-  backdrop-filter: none !important;
 }
 
-/* Style the outline links to be subtle but visible */
+/* Style only the text links to be visible */
 .VPDocAside .outline-link {
   color: var(--vp-c-text-2) !important;
   background: transparent !important;
@@ -394,6 +422,7 @@ body {
   padding: 4px 8px !important;
   border-radius: var(--border-radius-sm) !important;
   transition: all 0.2s ease !important;
+  margin: 2px 0 !important;
 }
 
 .VPDocAside .outline-link:hover {
@@ -404,14 +433,6 @@ body {
 .VPDocAside .outline-link.active {
   color: var(--vp-c-brand-1) !important;
   background: rgba(255, 105, 180, 0.15) !important;
-}
-
-/* Remove any default VitePress styling */
-.VPDocAside .outline-title,
-.VPDocAside .outline-marker {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
 }
 
 /* ================
