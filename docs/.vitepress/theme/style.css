@@ -1223,34 +1223,19 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
    SIDEBAR THAT ENDS BEFORE FOOTER
    ================ */
 
-/* Sidebar container that prevents footer overlay */
-.Layout.has-sidebar {
-  display: flex !important;
-  flex-direction: row !important;
-  min-height: 100vh !important;
-}
-
+/* Simple approach: sidebar sticks but has max height to avoid footer */
 .Layout.has-sidebar .VPSidebar,
 .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
   
-  /* Sidebar takes natural height, no sticky positioning */
-  position: relative !important;
-  top: auto !important;
-  height: auto !important;
-  min-height: calc(100vh - var(--vp-nav-height, 60px)) !important;
-  overflow-y: visible !important;
+  /* Sidebar sticks but stops before footer */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
   z-index: 1 !important;
-  flex-shrink: 0 !important;
-  width: var(--vp-sidebar-width, 272px) !important;
-}
-
-/* Content area takes remaining space */
-.Layout.has-sidebar .VPContent {
-  flex: 1 !important;
-  min-width: 0 !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
