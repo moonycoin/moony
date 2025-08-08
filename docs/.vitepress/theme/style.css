@@ -485,24 +485,20 @@ body {
 /* ================
    SIDEBAR CONNECTED TO FOOTER
    ================ */
-/* Sidebar only fixed and connected to footer on pages with sidebars */
+/* Sidebar ends naturally when footer appears */
 .Layout.has-sidebar .VPSidebar,
 .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
   
-  /* Sidebar fills viewport and connects to footer */
-  position: fixed !important;
+  /* Sidebar sticks to top but ends when footer comes into view */
+  position: sticky !important;
   top: var(--vp-nav-height, 60px) !important;
-  bottom: 400px !important;
-  left: 0 !important;
-  width: var(--vp-sidebar-width, 272px) !important;
+  height: calc(100vh - var(--vp-nav-height, 60px) - 60px) !important;
   overflow-y: auto !important;
   z-index: 1 !important;
-  
-  /* Smooth transition for sidebar height changes */
-  transition: bottom 0.1s ease-out !important;
+  align-self: flex-start !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
@@ -511,11 +507,7 @@ body {
   border-right-color: #424245 !important;
 }
 
-/* Add space for footer on sidebar pages */
-.Layout.has-sidebar .VPContent {
-  margin-bottom: 120px !important;
-  padding-bottom: 80px !important;
-}
+/* Content flows normally, no special spacing needed */
 
 .dark .VPSidebar,
 .dark .VPSidebar[class*="VPSidebar"],
@@ -1244,23 +1236,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   margin-top: 60px !important;
 }
 
-/* Footer fixed and connected to sidebar on other pages */
+/* Footer appears normally at bottom on sidebar pages */
 .Layout.has-sidebar .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
   padding: 60px 40px 40px !important;
   
-  /* Footer fixed at bottom, connected to sidebar */
-  position: fixed !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  width: 100vw !important;
-  height: 400px !important;
-  z-index: 2 !important;
-  transform: translateY(300px) !important;
-  transition: transform 0.1s ease-out !important;
+  /* Normal footer at bottom of content */
+  position: relative !important;
+  width: 100% !important;
+  margin-top: 60px !important;
 }
 
 /* Default footer styling for fallback */
