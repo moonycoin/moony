@@ -493,11 +493,13 @@ body {
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
   
-  /* Limit sidebar height to stop before footer */
-  max-height: calc(100vh - 400px) !important;
+  /* Sidebar extends down to meet footer boundary */
+  max-height: calc(100vh - var(--vp-nav-height, 60px) - var(--footer-height, 400px)) !important;
+  min-height: 200px !important;
   overflow-y: auto !important;
   position: fixed !important;
-  top: var(--vp-nav-height) !important;
+  top: var(--vp-nav-height, 60px) !important;
+  bottom: var(--footer-height, 400px) !important;
 }
 
 .dark .VPSidebar,
@@ -1218,13 +1220,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
-  margin-top: 120px !important;
+  margin-top: 40px !important;
   padding: 60px 40px 40px !important;
   
   /* Full width footer - sidebar ends above this */
   width: 100% !important;
   position: relative !important;
   clear: both !important;
+  z-index: 5 !important;
+  
+  /* Footer height definition for sidebar calculation */
+  --footer-height: 400px;
 }
 
 .dark .VPFooter {
@@ -1370,8 +1376,10 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .Layout .VPSidebar,
   .Layout.has-sidebar .VPSidebar {
     max-height: none !important;
+    min-height: auto !important;
     position: relative !important;
     top: auto !important;
+    bottom: auto !important;
   }
   
   .footer-bottom {
