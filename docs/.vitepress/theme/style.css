@@ -500,6 +500,9 @@ body {
   width: var(--vp-sidebar-width, 272px) !important;
   overflow-y: auto !important;
   z-index: 1 !important;
+  
+  /* Smooth transition for sidebar height changes */
+  transition: bottom 0.1s ease-out !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
@@ -511,6 +514,7 @@ body {
 /* Add space for footer on sidebar pages */
 .Layout.has-sidebar .VPContent {
   margin-bottom: 120px !important;
+  padding-bottom: 80px !important;
 }
 
 .dark .VPSidebar,
@@ -1256,7 +1260,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   height: 400px !important;
   z-index: 2 !important;
   transform: translateY(300px) !important;
-  transition: transform 0.3s ease !important;
+  transition: transform 0.1s ease-out !important;
 }
 
 /* Default footer styling for fallback */
