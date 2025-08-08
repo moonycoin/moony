@@ -483,7 +483,7 @@ body {
 }
 
 /* ================
-   MINIMAL SIDEBAR WITH CONSISTENT BORDERS
+   MINIMAL SIDEBAR WITH CONSISTENT BORDERS AND FOOTER CUTOFF
    ================ */
 .VPSidebar,
 .VPSidebar[class*="VPSidebar"],
@@ -492,6 +492,12 @@ body {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
+  
+  /* Limit sidebar height to stop before footer */
+  max-height: calc(100vh - 400px) !important;
+  overflow-y: auto !important;
+  position: fixed !important;
+  top: var(--vp-nav-height) !important;
 }
 
 .dark .VPSidebar,
@@ -1205,23 +1211,20 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 }
 
 /* ================
-   FOOTER STYLING - FULL WIDTH APPROACH
+   FOOTER STYLING - CLEAN FULL WIDTH
    ================ */
 
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
-  margin-top: 80px !important;
-  padding: 60px 0 40px !important;
+  margin-top: 120px !important;
+  padding: 60px 40px 40px !important;
   
-  /* Full width footer technique */
-  width: 100vw !important;
+  /* Full width footer - sidebar ends above this */
+  width: 100% !important;
   position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
+  clear: both !important;
 }
 
 .dark .VPFooter {
@@ -1236,7 +1239,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 60px;
   margin-bottom: 40px;
-  padding: 0 40px;
 }
 
 .footer-section h4 {
@@ -1322,9 +1324,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 105, 180, 0.1);
-  padding: 32px 40px 0;
-  margin: 0 auto;
-  max-width: 1200px;
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1353,7 +1353,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   color: var(--moony-accent);
 }
 
-/* Responsive footer */
+/* Responsive footer and sidebar */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -1362,13 +1362,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPFooter {
     padding: 40px 20px 30px !important;
-    margin-left: 0 !important;
-    width: 100% !important;
   }
   
-  .Layout.has-sidebar .VPFooter {
-    margin-left: 0 !important;
-    width: 100% !important;
+  /* Reset sidebar on mobile */
+  .VPSidebar,
+  .VPSidebar[class*="VPSidebar"],
+  .Layout .VPSidebar,
+  .Layout.has-sidebar .VPSidebar {
+    max-height: none !important;
+    position: relative !important;
+    top: auto !important;
   }
   
   .footer-bottom {
