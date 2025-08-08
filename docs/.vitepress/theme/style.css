@@ -1214,6 +1214,27 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
   margin-top: 80px !important;
   padding: 60px 40px 40px !important;
+  width: 100% !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+/* Footer positioning fix for sidebar pages */
+.Layout.has-sidebar .VPFooter {
+  position: relative !important;
+  left: calc(-1 * (var(--vp-sidebar-width, 272px) + 40px)) !important;
+  width: calc(100vw - 20px) !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Ensure footer doesn't break on desktop with sidebar */
+@media (min-width: 768px) {
+  .Layout.has-sidebar .VPFooter {
+    left: calc(-1 * var(--vp-sidebar-width, 272px)) !important;
+    width: 100vw !important;
+  }
 }
 
 .dark .VPFooter {
@@ -1351,6 +1372,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPFooter {
     padding: 40px 20px 30px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .Layout.has-sidebar .VPFooter {
+    margin-left: 0 !important;
+    width: 100% !important;
   }
   
   .footer-bottom {
