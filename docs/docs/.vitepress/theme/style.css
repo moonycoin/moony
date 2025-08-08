@@ -97,8 +97,8 @@ body {
     rgba(9, 9, 11, 1) 100%) !important;
 }
 
-/* Enhanced pink glow overlay */
-.Layout::before,
+/* Enhanced pink glow overlay - REMOVED to fix bottom right corner gradient issue */
+/* .Layout::before,
 .VPApp::before {
   content: '';
   position: fixed;
@@ -107,11 +107,11 @@ body {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center, 
-    rgba(255, 105, 180, 0.03) 0%, 
-    transparent 70%);
+    rgba(255, 105, 180, 0.01) 0%, 
+    transparent 40%);
   pointer-events: none;
   z-index: 0;
-}
+} */
 
 /* Ensure content is above the overlay */
 .VPNav,
