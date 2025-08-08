@@ -1261,18 +1261,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   margin-top: 60px !important;
 }
 
-/* Footer appears normally at bottom on sidebar pages */
-.Layout.has-sidebar .VPFooter {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
-  padding: 60px 40px 40px !important;
-  
-  /* Normal footer at bottom of content */
-  position: relative !important;
-  width: 100% !important;
-  margin-top: 60px !important;
-}
+/* Footer only appears on home page now */
 
 /* Default footer styling for fallback */
 .VPFooter {
@@ -1287,10 +1276,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   border-top-color: rgba(255, 105, 180, 0.2) !important;
 }
 
-.dark .Layout.has-sidebar .VPFooter {
-  background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(255, 105, 180, 0.2) !important;
-}
+
 
 .footer-container {
   max-width: 1200px;

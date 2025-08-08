@@ -7,7 +7,17 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(Footer)
+      'layout-bottom': () => {
+        // Only show footer on home page
+        if (typeof window !== 'undefined') {
+          const currentPath = window.location.pathname
+          const basePath = '/moony/'
+          if (currentPath === basePath || currentPath === basePath + 'index.html' || currentPath === '/') {
+            return h(Footer)
+          }
+        }
+        return null
+      }
     })
   },
   enhanceApp({ app, router, siteData }) {
