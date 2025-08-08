@@ -493,10 +493,12 @@ body {
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
   
-  /* Sidebar stops when footer comes into view */
+  /* Sidebar sticks and extends naturally until footer boundary */
   position: sticky !important;
   top: var(--vp-nav-height, 60px) !important;
-  max-height: calc(100vh - var(--vp-nav-height, 60px) - 100px) !important;
+  height: fit-content !important;
+  min-height: calc(100vh - var(--vp-nav-height, 60px) - 120px) !important;
+  max-height: calc(100vh - var(--vp-nav-height, 60px)) !important;
   overflow-y: auto !important;
   align-self: flex-start !important;
 }
@@ -1212,20 +1214,21 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 }
 
 /* ================
-   FOOTER STYLING - CLEAN FULL WIDTH
+   FOOTER STYLING - PUSHES SIDEBAR TO BOUNDARY
    ================ */
 
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
-  margin-top: 0px !important;
+  margin-top: 60px !important;
   padding: 60px 40px 40px !important;
   
-  /* Full width footer - natural flow after content */
+  /* Full width footer - appears when sidebar reaches boundary */
   width: 100% !important;
   position: relative !important;
   clear: both !important;
+  z-index: 10 !important;
 }
 
 .dark .VPFooter {
