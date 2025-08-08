@@ -483,7 +483,7 @@ body {
 }
 
 /* ================
-   MINIMAL SIDEBAR WITH CONSISTENT BORDERS
+   SIDEBAR WITH FOOTER BOUNDARY
    ================ */
 .VPSidebar,
 .VPSidebar[class*="VPSidebar"],
@@ -492,6 +492,13 @@ body {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
+  
+  /* Sidebar stops when footer comes into view */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  max-height: calc(100vh - var(--vp-nav-height, 60px) - 100px) !important;
+  overflow-y: auto !important;
+  align-self: flex-start !important;
 }
 
 .dark .VPSidebar,
@@ -1358,7 +1365,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     padding: 40px 20px 30px !important;
   }
   
-  /* Sidebar already responsive - no changes needed */
+  /* Reset sidebar sticky behavior on mobile */
+  .VPSidebar,
+  .VPSidebar[class*="VPSidebar"],
+  .Layout .VPSidebar,
+  .Layout.has-sidebar .VPSidebar {
+    position: relative !important;
+    top: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    align-self: auto !important;
+  }
   
   .footer-bottom {
     flex-direction: column;
