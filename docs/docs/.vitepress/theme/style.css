@@ -628,3 +628,33 @@ html, body, #app, .Layout, .VPContent {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--vp-c-brand-2);
 }
+
+/* Make soft background variable transparent globally */
+:root { --vp-c-bg-soft: transparent !important; }
+.dark { --vp-c-bg-soft: transparent !important; }
+
+/* Kill all styling for the local nav outline dropdown (mobile/compact TOC) */
+.VPLocalNavOutlineDropdown,
+.VPLocalNavOutlineDropdown *,
+.VPLocalNavOutlineDropdown *::before,
+.VPLocalNavOutlineDropdown *::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+.VPLocalNavOutlineDropdown .outline { background: transparent !important; }
+
+/* Remove outlines, borders, and overflow from the aside outline */
+.VPDocAsideOutline,
+.VPDocAsideOutline *,
+.VPDocAsideOutline *::before,
+.VPDocAsideOutline *::after { 
+  background: transparent !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+}
+.VPDocAsideOutline .content { border-left: none !important; overflow: visible !important; }
+.VPDocAsideOutline .outline-marker { display: none !important; }
+.VPDocAsideOutline .outline-title { background: transparent !important; }
