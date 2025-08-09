@@ -8,7 +8,7 @@
           <img src="/logo-dark.svg" alt="Moony" class="footer-logo-dark" />
         </div>
         <p class="footer-description">
-          A decentralized digital asset with permissionless transactions and Proof of Liquidity.
+          Permissionless transactions with Proof of Liquidity
         </p>
         <div class="footer-social">
           <a href="https://github.com/moonycoin/moony" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
