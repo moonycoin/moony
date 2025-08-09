@@ -1354,24 +1354,43 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   gap: 16px;
 }
 
+/* Footer logo swap (global safety) */
+.footer-logo-light { display: block; }
+.footer-logo-dark { display: none; }
+.dark .footer-logo-light { display: none; }
+.dark .footer-logo-dark { display: block; }
+
+/* Footer social icon – remove glow, ensure perfect centering */
 .footer-social a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(255, 105, 180, 0.1);
-  border-radius: 8px;
+  line-height: 0; /* remove inline icon baseline offset */
+  border-radius: 10px;
+  background: transparent; /* no fill to avoid glow look */
+  border: 1px solid rgba(255, 105, 180, 0.28);
   color: var(--moony-accent);
-  transition: all 0.3s ease;
-  border-bottom: none !important;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+  box-shadow: none; /* remove glow */
+}
+
+.footer-social a svg { display: block; width: 20px; height: 20px; }
+
+.dark .footer-social a {
+  border-color: rgba(255, 255, 255, 0.14);
+  color: var(--moony-accent);
+  background: transparent;
+  box-shadow: none;
 }
 
 .footer-social a:hover {
   background: var(--moony-accent);
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+  transform: translateY(-1px);
+  box-shadow: none; /* keep clean */
+  border-color: transparent;
 }
 
 .footer-bottom {
