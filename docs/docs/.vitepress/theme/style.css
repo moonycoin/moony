@@ -704,3 +704,30 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
   background-image: none !important;
   box-shadow: none !important;
 }
+
+/* Nuclear fix: completely neutralize the right-aside gradient overlay */
+.VPDoc .aside-curtain,
+.VPDoc .aside-curtain::before,
+.VPDoc .aside-curtain::after {
+  all: unset !important;
+  display: none !important;
+}
+
+/* Ensure no pseudo-element overlays on aside container in any mode */
+.VPDoc .aside-container::before,
+.VPDoc .aside-container::after,
+.dark .VPDoc .aside-container::before,
+.dark .VPDoc .aside-container::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* Safety: move any surviving curtain behind and make it invisible */
+.VPDoc .aside-curtain { 
+  opacity: 0 !important; 
+  z-index: -1 !important; 
+}
