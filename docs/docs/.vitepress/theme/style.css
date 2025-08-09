@@ -695,3 +695,12 @@ html, body, #app, .Layout, .VPContent {
 html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-container {
   overscroll-behavior-x: contain !important;
 }
+
+/* Force the entire right aside to inherit transparent background variables */
+.VPDoc .aside, .VPDoc .aside * {
+  --vp-c-bg: transparent !important;
+  --vp-c-bg-soft: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
