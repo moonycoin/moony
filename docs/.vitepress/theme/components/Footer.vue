@@ -54,9 +54,6 @@
 
     <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <div class="footer-copyright">
-        © {{ currentYear }} Moony. Decentralized digital asset governed by immutable smart contracts.
-      </div>
       <div class="footer-legal">
         <a href="#" @click.prevent>Privacy</a>
         <a href="#" @click.prevent>Terms</a>
