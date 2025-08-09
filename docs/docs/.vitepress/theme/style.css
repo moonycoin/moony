@@ -678,3 +678,20 @@ html, body, #app, .Layout, .VPContent {
   border: 0 !important;
   box-shadow: none !important;
 }
+
+/* Hide all horizontal scrollbars to eliminate bottom gradient/overlay */
+*::-webkit-scrollbar:horizontal { 
+  display: none !important; 
+  height: 0 !important; 
+  background: transparent !important; 
+}
+*::-webkit-scrollbar-track:horizontal,
+*::-webkit-scrollbar-thumb:horizontal {
+  display: none !important;
+  background: transparent !important;
+}
+
+/* Prevent horizontal overscroll effects */
+html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-container {
+  overscroll-behavior-x: contain !important;
+}
