@@ -1349,10 +1349,9 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   margin-bottom: 24px;
 }
 
-.footer-social {
-  display: flex;
-  gap: 16px;
-}
+/* Footer social layout for multiple icons */
+.footer-social { display: flex; gap: 12px; align-items: center; }
+.footer-social a { margin: 0; }
 
 /* Footer logo swap (global) */
 .footer-logo-light { display: inline-block; }
