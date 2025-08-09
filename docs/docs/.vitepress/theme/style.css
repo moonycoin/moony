@@ -731,3 +731,19 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
   opacity: 0 !important; 
   z-index: -1 !important; 
 }
+
+/* Break compositing layers around aside to prevent retained gradient */
+.VPDoc .aside-container,
+.VPDoc .aside {
+  isolation: isolate !important;
+  contain: paint style layout !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  transform: translateZ(0) !important; /* create a new layer without the gradient */
+  will-change: auto !important;
+}
+
+/* Ensure the bottom of the aside has no overlay area */
+.VPDoc .aside-container {
+  padding-bottom: 0 !important;
+}
