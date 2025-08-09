@@ -1198,6 +1198,49 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
+/* Responsive hero layout for narrow screens */
+@media (max-width: 640px) {
+  .VPHero .container { 
+    flex-direction: column !important; 
+    text-align: center !important; 
+  }
+  
+  .VPHero .text { 
+    order: 1 !important; 
+    margin-bottom: 2rem !important; 
+  }
+  
+  .VPHero .image { 
+    order: 2 !important; 
+    margin: 0 auto !important; 
+    max-width: 200px !important; 
+  }
+  
+  .VPHero .actions { 
+    justify-content: center !important; 
+    flex-wrap: wrap !important; 
+    gap: 12px !important; 
+  }
+  
+  .VPHero .action .VPButton { 
+    min-width: 140px !important; 
+    padding: 16px 32px !important; 
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero .tagline { 
+    font-size: 1rem !important; 
+    line-height: 1.5 !important; 
+  }
+  
+  .VPHero .action .VPButton { 
+    min-width: 120px !important; 
+    padding: 14px 24px !important; 
+    font-size: 1rem !important; 
+  }
+}
+
 /* Remove any separators or horizontal rules above first content */
 .vp-doc hr:first-child,
 .vp-doc .divider:first-child,
