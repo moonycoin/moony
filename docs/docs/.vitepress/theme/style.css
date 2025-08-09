@@ -659,10 +659,22 @@ html, body, #app, .Layout, .VPContent {
 .VPDocAsideOutline .outline-marker { display: none !important; }
 .VPDocAsideOutline .outline-title { background: transparent !important; }
 
-/* Remove VitePress aside curtain gradient that creates bottom-right box */
-.VPDoc .aside-curtain {
+/* Hard-kill any right-aside curtain gradient (light + dark, any selector variation) */
+.aside-curtain,
+.VPDoc .aside-curtain,
+.VPDoc .container .aside .aside-curtain,
+[class*="aside-curtain"],
+.dark .aside-curtain,
+.dark .VPDoc .aside-curtain,
+.dark .VPDoc .container .aside .aside-curtain,
+.dark [class*="aside-curtain"] {
   display: none !important;
   background: transparent !important;
+  background-image: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
   height: 0 !important;
   width: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
