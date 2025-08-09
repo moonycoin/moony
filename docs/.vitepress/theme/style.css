@@ -1354,11 +1354,14 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   gap: 16px;
 }
 
-/* Footer logo swap (global safety) */
-.footer-logo-light { display: block; }
+/* Footer logo swap (global) */
+.footer-logo-light { display: inline-block; }
 .footer-logo-dark { display: none; }
-.dark .footer-logo-light { display: none; }
-.dark .footer-logo-dark { display: block; }
+.dark .footer-logo-light { display: none !important; }
+.dark .footer-logo-dark { display: inline-block !important; }
+
+/* Prevent inherited filters on footer brand logos */
+.footer-brand img { filter: none !important; opacity: 1 !important; mix-blend-mode: normal !important; }
 
 /* Footer social icon – remove glow, ensure perfect centering */
 .footer-social a {

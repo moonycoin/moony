@@ -71,27 +71,3 @@ import { computed } from 'vue'
 
 const currentYear = computed(() => new Date().getFullYear())
 </script>
-
-<style scoped>
-/* Logo switching for light/dark mode */
-.footer-logo-light {
-  display: block;
-}
-
-.footer-logo-dark {
-  display: none;
-}
-
-:global(.dark) .footer-logo-light {
-  display: none;
-}
-
-:global(.dark) .footer-logo-dark {
-  display: block;
-}
-
-/* Ensure footer links work properly */
-.footer-section a {
-  display: inline-block;
-}
-</style>
