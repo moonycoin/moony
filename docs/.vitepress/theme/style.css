@@ -1479,3 +1479,15 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     justify-content: center;
   }
 }
+
+/* Responsive fixes: avoid clipping at smaller widths */
+.VPHero { overflow: visible !important; }
+.VPHero .tagline { white-space: normal !important; }
+.vp-doc .custom-block.tip { overflow: visible !important; }
+
+/* Allow hero actions to wrap on narrow viewports */
+.VPHero .actions { flex-wrap: wrap !important; row-gap: 12px !important; }
+
+/* Safer content wrapping */
+.VPDoc .content { min-width: 0 !important; }
+.vp-doc { word-break: break-word; overflow-wrap: anywhere; }
