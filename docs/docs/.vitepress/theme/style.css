@@ -658,3 +658,11 @@ html, body, #app, .Layout, .VPContent {
 .VPDocAsideOutline .content { border-left: none !important; overflow: visible !important; }
 .VPDocAsideOutline .outline-marker { display: none !important; }
 .VPDocAsideOutline .outline-title { background: transparent !important; }
+
+/* Remove VitePress aside curtain gradient that creates bottom-right box */
+.VPDoc .aside-curtain {
+  display: none !important;
+  background: transparent !important;
+  height: 0 !important;
+  width: 0 !important;
+}
