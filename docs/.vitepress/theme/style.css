@@ -68,20 +68,26 @@ body {
     rgba(9, 9, 11, 1) 100%) !important;
 }
 
-/* Subtle pink glow overlay for entire page */
+/* Remove global pink glow overlay entirely */
 .Layout::before,
 .VPApp::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at top center, 
-    rgba(255, 105, 180, 0.04) 0%, 
-    transparent 60%);
-  pointer-events: none;
-  z-index: 0;
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* Remove VitePress right-aside bottom gradient curtain */
+.VPDoc .aside-curtain,
+.aside-curtain,
+.dark .VPDoc .aside-curtain {
+  display: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
 }
 
 /* Ensure content is above the overlay */
