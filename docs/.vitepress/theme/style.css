@@ -333,7 +333,6 @@ body {
   color: var(--moony-primary);
   font-weight: 700;
   font-size: 2.25rem;
-  font-family: "Blanquotey", serif;
   letter-spacing: -0.025em;
   margin-bottom: var(--space-lg);
   border-bottom: none;
@@ -356,7 +355,6 @@ body {
   color: var(--moony-primary);
   font-weight: 600;
   font-size: 1.75rem;
-  font-family: "Blanquotey", serif;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-lg);
   position: relative;
@@ -371,15 +369,8 @@ body {
   color: var(--moony-secondary);
   font-weight: 600;
   font-size: 1.25rem;
-  font-family: "Blanquotey", serif;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-md);
-}
-
-.vp-doc h4,
-.vp-doc h5,
-.vp-doc h6 {
-  font-family: "Blanquotey", serif;
 }
 
 /* ================
@@ -1182,12 +1173,10 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .vp-doc h1 {
     font-size: 2rem;
-    font-family: "Blanquotey", serif;
   }
   
   .vp-doc h2 {
     font-size: 1.5rem;
-    font-family: "Blanquotey", serif;
   }
   
   .vp-doc .custom-block.tip {
@@ -1247,14 +1236,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
   .vp-doc h1 {
     font-size: 1.75rem;
-    font-family: "Blanquotey", serif;
     margin-top: var(--space-lg);
     margin-bottom: var(--space-md);
   }
   
   .vp-doc h2 {
     font-size: 1.375rem;
-    font-family: "Blanquotey", serif;
     margin-top: var(--space-lg);
     margin-bottom: var(--space-md);
   }
