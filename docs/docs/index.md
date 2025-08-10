@@ -16,7 +16,7 @@ hero:
       link: https://github.com/moonycoin/moony
 ---
 
-## Welcome to Moony
+# Welcome to Moony
 
 Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed entirely by an immutable smart contract.
 
@@ -24,7 +24,7 @@ Moony is a decentralized digital asset designed to facilitate permissionless tra
 This documentation is for informational purposes only and does not constitute financial or investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 :::
 
-## Tokenomics
+# Tokenomics
 
 Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Inc.
 
@@ -42,7 +42,7 @@ This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive m
 **Click here to learn more about Moony's tokenomics** → [Reserve Contract](/tokenomics/reserve-contract)
 :::
 
-## Use Cases
+# Use Cases
 
 As a permissionless digital asset, Moony can be integrated into various applications and use cases:
 
@@ -57,7 +57,7 @@ The open nature of the protocol encourages innovation and experimentation by ind
 **Click here to learn more about Moony's use cases** → [Ecosystem](/use-cases/ecosystem)
 :::
 
-## Community
+# Community
 
 Moony operates as a public good on the Solana blockchain. There is no company, central team, or official roadmap. Instead, Moony grows through the initiative of independent contributors: developers, creators, product builders, educators, and everyday users who see value in a monetary system that belongs to no one and works for everyone.
 

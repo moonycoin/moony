@@ -1423,6 +1423,18 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   box-shadow: 0 4px 12px rgba(29, 29, 31, 0.3);
 }
 
+/* Dark mode footer social styling */
+.dark .footer-social a {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark .footer-social a:hover {
+  background: var(--moony-accent);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(29, 29, 31, 0.1);
   padding-top: 32px;
