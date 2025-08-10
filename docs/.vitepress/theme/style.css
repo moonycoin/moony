@@ -219,15 +219,7 @@ body {
   mix-blend-mode: normal !important;
 }
 
-.VPHero .image img:hover {
-  filter: 
-      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.2))
-  drop-shadow(0 4px 12px rgba(74, 144, 226, 0.15))
-  drop-shadow(0 0 24px rgba(74, 144, 226, 0.12))
-    brightness(1.6)
-    contrast(0.6)
-    saturate(0.3) !important;
-}
+/* Removed hover effects on icon image */
 
 /* Minimal gradient overlay to match hero text - Light Mode */
 .VPHero .image::after {
@@ -248,9 +240,7 @@ body {
   border-radius: 50%;
 }
 
-.VPHero .image:hover::after {
-  opacity: 0.15;
-}
+/* Removed hover effect on gradient overlay */
 
 /* Dark mode gradient overlay */
 .dark .VPHero .image::after {
@@ -261,9 +251,7 @@ body {
   opacity: 0.8;
 }
 
-.dark .VPHero .image:hover::after {
-  opacity: 0.85;
-}
+/* Removed hover effect on dark mode gradient overlay */
 
 .VPHero .actions {
   margin-top: 56px !important;
