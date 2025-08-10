@@ -413,35 +413,51 @@ body {
    ================ */
 .vp-doc .custom-block.tip {
   background: linear-gradient(135deg, 
-    rgba(29, 29, 31, 0.08) 0%, 
-    rgba(29, 29, 31, 0.05) 100%) !important;
-  border: 2px solid rgba(29, 29, 31, 0.2) !important;
+    rgba(29, 29, 31, 0.06) 0%, 
+    rgba(29, 29, 31, 0.03) 100%) !important;
+  border: 1px solid rgba(29, 29, 31, 0.15) !important;
   color: var(--moony-secondary);
-  padding: 32px !important;
-  border-radius: 20px !important;
-  margin: 40px 0 !important;
-  font-size: 1.0625rem !important;
-  line-height: 1.7 !important;
+  padding: 24px 28px !important;
+  border-radius: 16px !important;
+  margin: 32px 0 !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
   max-width: 100%;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center !important;
   position: relative;
   overflow: hidden;
   box-shadow: 
-    0 8px 32px rgba(29, 29, 31, 0.15),
-    0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    0 4px 20px rgba(29, 29, 31, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.04) !important;
   backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.vp-doc .custom-block.tip:hover {
+  border-color: rgba(29, 29, 31, 0.25) !important;
+  box-shadow: 
+    0 6px 24px rgba(29, 29, 31, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-1px);
 }
 
 .dark .vp-doc .custom-block.tip {
   background: linear-gradient(135deg, 
-    rgba(29, 29, 31, 0.12) 0%, 
-    rgba(29, 29, 31, 0.08) 100%) !important;
+    rgba(255, 255, 255, 0.04) 0%, 
+    rgba(255, 255, 255, 0.02) 100%) !important;
   color: var(--moony-secondary);
-  border-color: rgba(29, 29, 31, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
   box-shadow: 
-    0 8px 32px rgba(29, 29, 31, 0.2),
-    0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    0 1px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark .vp-doc .custom-block.tip:hover {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 
+    0 6px 24px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .vp-doc .custom-block.tip > .custom-block-title {
@@ -451,16 +467,30 @@ body {
 .vp-doc .custom-block.tip a {
   color: var(--moony-accent);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.2s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  display: inline-block;
+  position: relative;
 }
 
 .vp-doc .custom-block.tip a:hover {
-  color: var(--vp-c-brand-2);
+  color: var(--moony-accent);
   border-bottom-color: var(--moony-accent);
   transform: translateY(-1px);
+}
+
+.vp-doc .custom-block.tip a::after {
+  content: ' →';
+  font-weight: 600;
+  color: var(--moony-accent);
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.vp-doc .custom-block.tip a:hover::after {
+  transform: translateX(3px);
 }
 
 /* ================
@@ -818,9 +848,10 @@ html .VPNav[class*="VPNav"],
   }
   
   .vp-doc .custom-block.tip {
-    padding: 24px !important;
-    margin: 30px 0 !important;
-    font-size: 1rem !important;
+    padding: 20px 24px !important;
+    margin: 28px 0 !important;
+    font-size: 0.95rem !important;
+    border-radius: 14px !important;
   }
 }
 
@@ -849,9 +880,11 @@ html .VPNav[class*="VPNav"],
   }
 
   .vp-doc .custom-block.tip {
-    font-size: 0.9rem;
-    padding: var(--space-md);
-    line-height: 1.5;
+    font-size: 0.9rem !important;
+    padding: 18px 20px !important;
+    line-height: 1.5 !important;
+    border-radius: 12px !important;
+    margin: 24px 0 !important;
   }
 
   .vp-doc p,
