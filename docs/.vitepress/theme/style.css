@@ -1,22 +1,22 @@
 /**
  * Apple-Style Moony Documentation
- * Clean, minimal design with neutral colors and light pink accents
+ * Clean, minimal design with neutral colors and sophisticated blue accents
  */
 
 /* ================
    APPLE-STYLE VARIABLES
    ================ */
 :root {
-  /* Light pink palette replacing blues */
-  --vp-c-brand-1: #FF69B4;
-  --vp-c-brand-2: #FF1493;
-  --vp-c-brand-3: #DC143C;
+  /* Sophisticated Apple-style palette */
+  --vp-c-brand-1: #007AFF;
+  --vp-c-brand-2: #0056CC;
+  --vp-c-brand-3: #003D99;
   --vp-c-sponsor: var(--vp-c-text-2);
   
   /* Clean neutral palette */
   --moony-primary: #1d1d1f;
   --moony-secondary: #515154;
-  --moony-accent: #FF69B4;
+  --moony-accent: #007AFF;
   --moony-light-gray: #f5f5f7;
   --moony-medium-gray: #86868b;
   --moony-border: #d2d2d7;
@@ -30,13 +30,13 @@
 }
 
 .dark {
-  --vp-c-brand-1: #FF69B4;
-  --vp-c-brand-2: #FF1493;
-  --vp-c-brand-3: #DC143C;
+  --vp-c-brand-1: #007AFF;
+  --vp-c-brand-2: #0056CC;
+  --vp-c-brand-3: #003D99;
   
   --moony-primary: #f5f5f7;
   --moony-secondary: #a1a1a6;
-  --moony-accent: #FF69B4;
+  --moony-accent: #007AFF;
   --moony-light-gray: #1d1d1f;
   --moony-medium-gray: #86868b;
   --moony-border: #424245;
@@ -68,7 +68,7 @@ body {
     rgba(9, 9, 11, 1) 100%) !important;
 }
 
-/* Subtle pink glow overlay for entire page */
+/* Subtle blue glow overlay for entire page */
 .Layout::before,
 .VPApp::before {
   content: '';
@@ -260,7 +260,7 @@ body {
 }
 
 .VPHero .action .VPButton.brand {
-  background: linear-gradient(135deg, #FF69B4, #FF1493, #DC143C) !important;
+  background: linear-gradient(135deg, #007AFF, #0056CC, #003D99) !important;
   color: white !important;
   box-shadow: 
     0 4px 20px rgba(255, 105, 180, 0.4),
