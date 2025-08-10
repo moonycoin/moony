@@ -546,9 +546,9 @@ body {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
-  width: 280px !important;
-  min-width: 280px !important;
-  max-width: 280px !important;
+  width: 320px !important;
+  min-width: 320px !important;
+  max-width: 320px !important;
   padding: 16px 0 !important;
 }
 
