@@ -692,121 +692,40 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
 }
 
 /* ================
-   HERO SECTION FIXES - AGGRESSIVE OVERRIDE
+   HERO SECTION - MINIMAL OVERRIDE
    ================ */
-.VPHero .container,
-.VPHero .container * {
+
+/* Override VitePress hero layout completely */
+.VPHero .container {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 2rem !important;
-  max-width: 1200px !important;
-  margin: 0 auto !important;
 }
 
-.VPHero .text,
-.VPHero .text * {
+.VPHero .text {
   flex: 1 !important;
-  text-align: left !important;
-  max-width: 600px !important;
 }
 
-.VPHero .image,
-.VPHero .image * {
+.VPHero .image {
   flex-shrink: 0 !important;
-  max-width: 300px !important;
 }
 
-.VPHero .actions,
-.VPHero .actions * {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 1rem !important;
-  margin-top: 2rem !important;
-  flex-wrap: nowrap !important;
-}
-
-.VPHero .action,
-.VPHero .action *,
-.VPHero .action .VPButton {
-  min-width: 140px !important;
-  padding: 16px 32px !important;
-  font-size: 1.125rem !important;
-  white-space: nowrap !important;
-  display: inline-block !important;
-}
-
-.VPHero .tagline,
-.VPHero .tagline * {
-  font-size: 1.25rem !important;
-  line-height: 1.5 !important;
-  margin-top: 1rem !important;
-  color: var(--vp-c-text-2) !important;
-}
-
-/* Force text wrapping and word stacking */
-.VPHero .text h1,
-.VPHero .text h1 * {
-  white-space: normal !important;
-  word-wrap: break-word !important;
-  overflow-wrap: break-word !important;
-  line-height: 1.1 !important;
-  margin-bottom: 0.5rem !important;
-  font-size: 3.5rem !important;
-  font-weight: 700 !important;
-  display: block !important;
-}
-
-/* Override any VitePress br handling */
-.VPHero .text h1 br {
-  display: block !important;
-  content: "" !important;
-  margin-bottom: 0.5rem !important;
-}
-
-/* ================
-   BUTTON LAYOUT FIX - SIDE BY SIDE
-   ================ */
+/* Force buttons to be side by side */
 .VPHero .actions {
   display: flex !important;
   flex-direction: row !important;
   gap: 1rem !important;
   margin-top: 2rem !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
 }
 
 .VPHero .action {
-  display: inline-block !important;
-  float: left !important;
-  margin-right: 1rem !important;
   flex-shrink: 0 !important;
-}
-
-.VPHero .action:last-child {
-  margin-right: 0 !important;
 }
 
 .VPHero .action .VPButton {
   min-width: 140px !important;
   padding: 16px 32px !important;
-  font-size: 1.125rem !important;
-  white-space: nowrap !important;
-  display: inline-block !important;
-}
-
-/* Override any VitePress flexbox conflicts */
-.VPHero * {
-  box-sizing: border-box !important;
-}
-
-/* Force container layout */
-.VPHero .container {
-  width: 100% !important;
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-  padding: 0 2rem !important;
 }
 
 
