@@ -344,7 +344,11 @@ body {
 
 .vp-doc h1:first-of-type {
   border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
   padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .vp-doc h2 {
@@ -1263,6 +1267,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   border-top: none !important;
   border-top-width: 0 !important;
   border-top-style: none !important;
+  border-bottom: none !important;
+  border-bottom-width: 0 !important;
+  border-bottom-style: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 /* Remove VitePress default h1 top border */
