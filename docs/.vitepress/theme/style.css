@@ -7,16 +7,16 @@
    APPLE-STYLE VARIABLES
    ================ */
 :root {
-  /* Light pink palette replacing blues */
-  --vp-c-brand-1: #FF69B4;
-  --vp-c-brand-2: #FF1493;
-  --vp-c-brand-3: #DC143C;
+  /* Professional blue palette */
+  --vp-c-brand-1: #007AFF;
+  --vp-c-brand-2: #0056CC;
+  --vp-c-brand-3: #003D99;
   --vp-c-sponsor: var(--vp-c-text-2);
   
   /* Clean neutral palette */
   --moony-primary: #1d1d1f;
   --moony-secondary: #515154;
-  --moony-accent: #FF69B4;
+  --moony-accent: #007AFF;
   --moony-light-gray: #f5f5f7;
   --moony-medium-gray: #86868b;
   --moony-border: #d2d2d7;
@@ -30,13 +30,13 @@
 }
 
 .dark {
-  --vp-c-brand-1: #FF69B4;
-  --vp-c-brand-2: #FF1493;
-  --vp-c-brand-3: #DC143C;
+  --vp-c-brand-1: #007AFF;
+  --vp-c-brand-2: #0056CC;
+  --vp-c-brand-3: #003D99;
   
   --moony-primary: #f5f5f7;
   --moony-secondary: #a1a1a6;
-  --moony-accent: #FF69B4;
+  --moony-accent: #007AFF;
   --moony-light-gray: #1d1d1f;
   --moony-medium-gray: #86868b;
   --moony-border: #424245;
@@ -100,7 +100,7 @@ body {
     rgba(9, 9, 11, 1) 100%) !important;
 }
 
-/* Subtle pink glow overlay for entire page */
+/* Subtle blue glow overlay for entire page */
 .Layout::before,
 .VPApp::before {
   content: '';
@@ -110,7 +110,7 @@ body {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center, 
-    rgba(255, 105, 180, 0.04) 0%, 
+    rgba(0, 122, 255, 0.04) 0%, 
     transparent 60%);
   pointer-events: none;
   z-index: 0;

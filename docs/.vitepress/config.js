@@ -4,7 +4,7 @@ export default {
   base: '/moony/',
   appearance: 'dark',
       head: [
-      ['meta', { name: 'theme-color', content: '#FF69B4' }],
+      ['meta', { name: 'theme-color', content: '#007AFF' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'en' }],
       ['meta', { property: 'og:title', content: 'Moony Documents' }],
