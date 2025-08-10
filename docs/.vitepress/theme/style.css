@@ -546,6 +546,9 @@ body {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
@@ -1265,18 +1268,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
    ================ */
 
 /* Simple approach: sidebar sticks but has max height to avoid footer */
-.Layout.has-sidebar .VPSidebar,
-.Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
-  background: rgba(245, 245, 247, 0.95) !important;
-  backdrop-filter: blur(20px);
-  border-right: 1px solid var(--moony-border) !important;
-}
 
-.dark .Layout.has-sidebar .VPSidebar,
-.dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
-  background: rgba(24, 24, 27, 0.95) !important;
-  border-right-color: #424245 !important;
-}
 
 /* ================
    FOOTER APPEARS NATURALLY
