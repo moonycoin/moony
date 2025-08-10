@@ -416,7 +416,7 @@ body {
     rgba(29, 29, 31, 0.06) 0%, 
     rgba(29, 29, 31, 0.03) 100%) !important;
   border: 1px solid rgba(29, 29, 31, 0.15) !important;
-  color: var(--moony-secondary);
+  color: var(--moony-secondary) !important;
   padding: 24px 28px !important;
   border-radius: 16px !important;
   margin: 32px 0 !important;
@@ -446,11 +446,17 @@ body {
   background: linear-gradient(135deg, 
     rgba(255, 255, 255, 0.04) 0%, 
     rgba(255, 255, 255, 0.02) 100%) !important;
-  color: var(--moony-secondary);
+  color: #e5e5e7 !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.3),
     0 1px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark .vp-doc .custom-block.tip p,
+.dark .vp-doc .custom-block.tip div,
+.dark .vp-doc .custom-block.tip span {
+  color: #e5e5e7 !important;
 }
 
 .dark .vp-doc .custom-block.tip:hover {
@@ -461,7 +467,15 @@ body {
 }
 
 .vp-doc .custom-block.tip > .custom-block-title {
-  display: none;
+  color: var(--moony-accent);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.dark .vp-doc .custom-block.tip > .custom-block-title {
+  color: #ffffff !important;
 }
 
 .vp-doc .custom-block.tip a {
@@ -487,6 +501,14 @@ body {
   color: var(--moony-accent);
   transition: transform 0.2s ease;
   display: inline-block;
+}
+
+.vp-doc .custom-block.tip p,
+.vp-doc .custom-block.tip div,
+.vp-doc .custom-block.tip span {
+  color: var(--moony-secondary) !important;
+  margin: 0;
+  padding: 0;
 }
 
 .vp-doc .custom-block.tip a:hover::after {
