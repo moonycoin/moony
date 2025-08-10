@@ -459,10 +459,6 @@ body {
   color: #ffffff !important;
 }
 
-.dark .vp-doc .custom-block.tip > .custom-block-title {
-  color: #ffffff !important;
-}
-
 .dark .vp-doc .custom-block.tip:hover {
   border-color: rgba(255, 255, 255, 0.2) !important;
   box-shadow: 
@@ -471,11 +467,7 @@ body {
 }
 
 .vp-doc .custom-block.tip > .custom-block-title {
-  color: var(--moony-accent);
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  display: block;
+  display: none !important;
 }
 
 .vp-doc .custom-block.tip a {
@@ -487,6 +479,10 @@ body {
   padding-bottom: 2px;
   display: inline-block;
   position: relative;
+}
+
+.dark .vp-doc .custom-block.tip a {
+  color: #ffffff !important;
 }
 
 .vp-doc .custom-block.tip a:hover {
@@ -501,6 +497,10 @@ body {
   color: var(--moony-accent);
   transition: transform 0.2s ease;
   display: inline-block;
+}
+
+.dark .vp-doc .custom-block.tip a::after {
+  color: #ffffff !important;
 }
 
 .vp-doc .custom-block.tip p,
