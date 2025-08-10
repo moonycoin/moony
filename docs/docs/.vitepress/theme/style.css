@@ -699,12 +699,14 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
   align-items: center !important;
   justify-content: space-between !important;
   gap: 2rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
 .VPHero .text {
   flex: 1 !important;
   text-align: left !important;
-  max-width: 500px !important;
+  max-width: 600px !important;
 }
 
 .VPHero .image {
@@ -717,13 +719,14 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
   flex-direction: row !important;
   gap: 1rem !important;
   margin-top: 2rem !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;
 }
 
 .VPHero .action .VPButton {
   min-width: 140px !important;
   padding: 16px 32px !important;
   font-size: 1.125rem !important;
+  white-space: nowrap !important;
 }
 
 .VPHero .tagline {
@@ -733,12 +736,25 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
   color: var(--vp-c-text-2) !important;
 }
 
-/* Ensure text wraps properly */
+/* Ensure text wraps properly and words stack correctly */
 .VPHero .text h1 {
   white-space: normal !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
-  line-height: 1.2 !important;
+  line-height: 1.1 !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+}
+
+/* Force proper word wrapping for the heading */
+.VPHero .text h1 br {
+  display: block !important;
+}
+
+/* Ensure buttons stay side by side */
+.VPHero .actions .action {
+  flex-shrink: 0 !important;
 }
 
 
