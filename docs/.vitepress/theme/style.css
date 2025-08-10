@@ -1622,3 +1622,42 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     font-size: 0.85rem !important;
   }
 }
+
+/* ================
+   HERO TEXT LAYOUT FIXES
+   ================ */
+
+/* Force hero text to display on proper lines */
+.VPHero .text {
+  white-space: pre-line !important;
+  line-height: 1.2 !important;
+  word-spacing: normal !important;
+}
+
+/* Ensure the <br> tag creates proper line breaks */
+.VPHero .text br {
+  display: block !important;
+  content: "" !important;
+  margin-top: 0.2em !important;
+}
+
+/* Specific text layout for the hero heading */
+.VPHero .text:contains("Decentralized") {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Responsive text sizing to prevent wrapping */
+@media (max-width: 768px) {
+  .VPHero .text {
+    font-size: 4rem !important;
+    line-height: 1.1 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHero .text {
+    font-size: 3.5rem !important;
+    line-height: 1.1 !important;
+  }
+}
