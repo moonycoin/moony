@@ -6,86 +6,33 @@ title: Proof of Liquidity
 
 # Proof of Liquidity
 
-Moony utilizes a distribution model called **Proof of Liquidity (PoL)**, implemented entirely through the Moony Reserve smart contract. In this model, tokens are issued only in exchange for real, onchain capital.
+Moony employs a distribution mechanism known as Proof of Liquidity (PoL), executed entirely through its immutable reserve smart contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
 
-The PoL model ensures that all circulating supply originates from public market activity, not from premines, insider allocations, or venture capital funding. Every token in circulation is backed by deposited USDC, and every issuance or redemption event is governed by immutable logic within the Reserve Contract.
-
-## Dollar Denominated Access
-
-Moony is paired with USDC, a widely adopted dollar-backed stablecoin issued by Circle. This pairing enables dollar-based valuation, removes volatility from the base currency, and makes participation more accessible to new users. USDC’s transparency and regulatory alignment also reinforce the credibility of Moony’s backing mechanism.
-
-At genesis, the Reserve Contract holds the entire fixed supply of 21 million MOONY and zero USDC. Liquidity enters the system only when a user sends USDC to the Reserve Contract to mint new tokens. As a result, the liquidity base grows directly in proportion to actual demand, and all minting activity is executed through the contract’s onchain bonding curve.
+The Proof of Liquidity model ensures that all circulating supply originates from public market activity, never from premines, insider allocations, or venture funding. Each token in circulation is issued only when USDC, a widely used, dollar‑denominated stablecoin issued by Circle Inc.,is deposited into the Reserve Contract. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. Every issuance and redemption is executed by immutable onchain logic, ensuring transparency, market‑driven pricing, and freedom from discretionary control.
 
 ## Capital-Based Mining
 
-Moony’s Proof of Liquidity (PoL) represents a modern, capital-based alternative to Proof of Work (PoW) mining. Instead of competing with specialized hardware and expending massive amounts of electricity to secure new supply, users mint Moony by depositing USDC into the onchain Reserve Contract.
+Moony’s Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) mining. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants mint Moony by depositing USDC directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
 
-This transforms the process of “mining” into a constructive economic activity rather than an extractive one. Each deposit not only mints new Moony, but also adds lasting value to the network in the form of redeemable onchain liquidity. Where traditional mining externalizes costs to the environment, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
+This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only mints new Moony but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
 
 This process is:
 
-- **Public and market-driven** – Anyone can participate as demand arises, without permission or centralized control.
-- **Deterministic and transparent** – The bonding curve fully governs issuance and pricing, removing subjective decision-making.
-- **Economically constructive** – All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
+- **Public and market-driven**: Anyone can participate as demand arises, without permission or centralized control.
+- **Deterministic and transparent**: The bonding curve fully governs issuance and pricing, removing subjective decision-making.
+- **Economically constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
 
-In PoL, dollars replace electricity as the mining input. Rather than being burned or lost, that capital stays onchain to strengthen the network for every participant.
-
-### Contrasting PoL and Proof of Work
-
-Traditional PoW networks like Bitcoin pioneered decentralized scarcity, but they rely on massive energy consumption and capital outflow. Miners compete using industrial hardware and consume gigawatt-hours of electricity to secure the network and earn block rewards. This model, while proven, comes with trade-offs:
-
-- High energy consumption, much of which is ultimately dissipated as heat.
-- Environmental impact when non-renewable energy sources are used at scale.
-- Indirect capital loss, as energy and hardware investments leave the system permanently.
-
-Moony’s PoL model eliminates this waste entirely:
-
-- No electricity is burned to issue new supply.
-- All contributed USDC remains in the Reserve Contract, serving as redeemable liquidity for the network.
-- Issuance scales with genuine market demand, rather than raw hardware or energy deployment.
-
-### Carbon-Efficient and Sustainable
-
-By combining PoL with Solana’s Proof-of-Stake (PoS) consensus, Moony offers a carbon-efficient and environmentally sustainable distribution model for a finite digital asset. Solana’s network consumes a fraction of the energy used by PoW chains, and PoL’s design ensures that no external resources are wasted to issue new tokens.
-
-- PoS minimizes energy usage per transaction, avoiding the constant power draw of PoW mining.
-- PoL eliminates resource-intensive competition, replacing energy expenditure with productive capital commitment.
-- Distribution naturally follows demand, enabling growth without ecological impact.
-
-This approach aligns digital scarcity with global sustainability goals, proving that a trustless, permissionless monetary system can operate without externalizing environmental cost.
-
-### Systemic Benefits
-
-PoL’s advantages extend beyond environmental efficiency, it fundamentally strengthens Moony’s economic architecture. Every USDC deposit remains within the ecosystem, creating a self-reinforcing loop of liquidity and resilience:
-
-- **Continuous onchain liquidity** – Every minted Moony is backed by USDC in the Reserve Contract, stabilizing market depth and simplifying redemption.
-- **Market-aligned issuance** – New tokens are only created when participants commit real capital, ensuring distribution reflects genuine demand.
-- **Resilient network growth** – Instead of draining resources like PoW, PoL allows liquidity to accumulate over time, benefitting all participants and supporting Moony’s role as a public good.
-
-In short, every token minted through PoL strengthens the network. Capital is retained, liquidity grows, and the ecosystem becomes more robust with each action, creating a sustainable model for the distribution of scarce digital assets.
-
-## Two-Way Liquidity
-
-The Reserve Contract is bidirectional. Users can:
-
-- **Mint** new tokens by depositing USDC into the contract
-- **Redeem** tokens by sending MOONY back to the contract for USDC
-
-All pricing is governed by a transparent bonding curve that adjusts based on circulating supply. When USDC is deposited, the contract calculates the exact number of MOONY to issue at that moment. When MOONY is returned, the contract determines the USDC redemption amount based on current curve pricing.
-
-<div class="custom-tip">
-  <strong>Tip:</strong> <a href="../tokenomics/bonding-curve">Click here to learn more about the Bonding Curve</a>
-</div>
+By combining PoL with Solana’s carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
 
 ## Fee Model
 
-Purchasing MOONY from the Reserve Contract incurs **no fee**, making it cost-effective to enter the ecosystem.
+Acquiring Moony directly from the Reserve Contract carries no fee, enabling cost‑efficient entry into the ecosystem. Redemptions, selling Moony back to the Reserve Contract for USDC, incur a 1% fee. 
 
-Selling MOONY back to the Reserve Contract incurs a **1% fee**, which serves two purposes:
+This mechanism serves two purposes:
 
-- **Security** – The fee discourages sandwich attacks, a form of front-running where bots exploit price movement by inserting trades around a user’s transaction.
-- **Revenue** – The fee is paid to Flipcash Inc., the architect of the smart contract design. Although Moony was launched independently, it uses open infrastructure developed by Flipcash.
+- **Security**: The fee mitigates the risk of sandwich attacks, a form of front‑running in which automated bots attempt to profit from predictable price movements by inserting transactions around a user’s trade.
+- **Revenue**: Fee proceeds are directed to Flipcash Inc., the developer of the Reserve Contract’s architecture. While Moony was launched as an independent protocol, it leverages this infrastructure to facilitate permissionless access.
 
-The sell fee applies only when redeeming directly through the Reserve Contract. Transactions on exchanges or peer-to-peer platforms are unaffected.
+The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
 
 </div>
