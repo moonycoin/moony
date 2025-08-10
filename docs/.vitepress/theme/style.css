@@ -459,6 +459,10 @@ body {
   color: #ffffff !important;
 }
 
+.dark .vp-doc .custom-block.tip > .custom-block-title {
+  color: #ffffff !important;
+}
+
 .dark .vp-doc .custom-block.tip:hover {
   border-color: rgba(255, 255, 255, 0.2) !important;
   box-shadow: 
@@ -467,7 +471,11 @@ body {
 }
 
 .vp-doc .custom-block.tip > .custom-block-title {
-  display: none !important;
+  color: var(--moony-accent);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  display: block;
 }
 
 .vp-doc .custom-block.tip a {

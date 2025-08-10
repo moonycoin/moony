@@ -38,7 +38,7 @@ The Moony reserve contract holds all user deposits as onchain liquidity, enablin
 
 This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity.
 
-::: tip Learn More
+::: tip
 **Click here to learn more about Moony's tokenomics** → [Reserve Contract](/tokenomics/reserve-contract)
 :::
 
@@ -53,7 +53,7 @@ As a permissionless digital asset, Moony can be integrated into various applicat
 
 The open nature of the protocol encourages innovation and experimentation by independent developers and organizations who can build tools, applications, and services around Moony without requiring permission or coordination.
 
-::: tip Explore Use Cases
+::: tip
 **Click here to learn more about Moony's use cases** → [Ecosystem](/use-cases/ecosystem)
 :::
 
@@ -63,6 +63,6 @@ Moony operates as a public good on the Solana blockchain. There is no company, c
 
 The protocol is designed to function autonomously, with smart contracts handling all core operations including token issuance, pricing, and reserve management. This ensures the system operates predictably without requiring ongoing governance or administrative intervention.
 
-::: tip Join the Community
+::: tip
 **Click here to learn more about the Moony community** → [Community](/resources/community)
 :::
