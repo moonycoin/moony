@@ -549,6 +549,7 @@ body {
   width: 280px !important;
   min-width: 280px !important;
   max-width: 280px !important;
+  padding: 16px 0 !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
@@ -633,13 +634,7 @@ html .VPNav[class*="VPNav"],
 .Layout .VPNavBar[class*="VPNavBar"],
 .Layout.has-sidebar .VPNavBar[class*="VPNavBar"],
 .VPApp .VPNavBar[class*="VPNavBar"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  border-right: none !important;
 }
 
 /* Specifically target logo/title area to eliminate border stacking */
@@ -656,13 +651,7 @@ html .VPNav[class*="VPNav"],
 .VPNavBarTitle *,
 .VPNavBarTitle::before,
 .VPNavBarTitle::after {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  border-right: none !important;
   box-shadow: none !important;
   outline: none !important;
 }
@@ -677,13 +666,7 @@ html .VPNav[class*="VPNav"],
 .VPNavBarMenu .content[class*="content"],
 .Layout .VPNavBarMenu[class*="VPNavBarMenu"],
 .Layout.has-sidebar .VPNavBarMenu[class*="VPNavBarMenu"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  border-right: none !important;
 }
 
 .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"],
@@ -691,39 +674,25 @@ html .VPNav[class*="VPNav"],
 .VPNavBarMenuGroup .content[class*="content"],
 .Layout .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"],
 .Layout.has-sidebar .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  border-right: none !important;
 }
 
 /* Specific navigation link backgrounds only */
 .VPNavBarMenuLink[class*="VPNavBarMenuLink"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
 }
 
 .VPNavBarMenuText[class*="VPNavBarMenuText"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
 }
 
 .VPNavBarHamburger[class*="VPNavBarHamburger"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
 }
 
 /* Preserve theme toggle and social links functionality */
 .VPNavBarAppearance[class*="VPNavBarAppearance"],
 .VPNavBarSocialLinks[class*="VPNavBarSocialLinks"] {
-  background: transparent !important;
-  background-color: transparent !important;
   border: none !important;
 }
 
