@@ -1,6 +1,6 @@
 /**
  * Apple-Style Moony Documentation
- * Clean, minimal design with neutral colors and light pink accents
+ * Clean, minimal design with neutral colors and light blue accents
  */
 
 /* ================
@@ -208,9 +208,9 @@ body {
   opacity: 1 !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   filter: 
-    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.15))
-    drop-shadow(0 4px 12px rgba(255, 105, 180, 0.1))
-    drop-shadow(0 0 20px rgba(255, 105, 180, 0.08))
+      drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+  drop-shadow(0 4px 12px rgba(0, 122, 255, 0.1))
+  drop-shadow(0 0 20px rgba(0, 122, 255, 0.08))
     brightness(1.6)
     contrast(0.6)
     saturate(0.3) !important;
@@ -221,9 +221,9 @@ body {
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.2))
-    drop-shadow(0 4px 12px rgba(255, 105, 180, 0.15))
-    drop-shadow(0 0 24px rgba(255, 105, 180, 0.12))
+      drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+  drop-shadow(0 4px 12px rgba(0, 122, 255, 0.15))
+  drop-shadow(0 0 24px rgba(0, 122, 255, 0.12))
     brightness(1.6)
     contrast(0.6)
     saturate(0.3) !important;
@@ -292,10 +292,10 @@ body {
 }
 
 .VPHero .action .VPButton.brand {
-  background: linear-gradient(135deg, #FF69B4, #FF1493, #DC143C) !important;
+  background: linear-gradient(135deg, #007AFF, #0056CC, #003D99) !important;
   color: white !important;
   box-shadow: 
-    0 4px 20px rgba(255, 105, 180, 0.4),
+    0 4px 20px rgba(0, 122, 255, 0.4),
     0 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -317,13 +317,13 @@ body {
 .VPHero .action .VPButton.brand:hover {
   transform: translateY(-3px) !important;
   box-shadow: 
-    0 8px 32px rgba(255, 105, 180, 0.5),
+    0 8px 32px rgba(0, 122, 255, 0.5),
     0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .VPHero .action .VPButton.alt {
   background: rgba(255, 255, 255, 0.9) !important;
-  border: 2px solid rgba(255, 105, 180, 0.2) !important;
+  border: 2px solid rgba(0, 122, 255, 0.2) !important;
   color: var(--moony-primary) !important;
   backdrop-filter: blur(20px) !important;
   box-shadow: 
@@ -342,7 +342,7 @@ body {
 
 .dark .VPHero .action .VPButton.alt {
   background: rgba(29, 29, 31, 0.9) !important;
-  border: 2px solid rgba(255, 105, 180, 0.3) !important;
+  border: 2px solid rgba(0, 122, 255, 0.3) !important;
   color: var(--moony-primary) !important;
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.3),
@@ -444,10 +444,10 @@ body {
    ENHANCED TIP BOX STYLING
    ================ */
 .vp-doc .custom-block.tip {
-  background: linear-gradient(135deg, 
-    rgba(255, 105, 180, 0.08) 0%, 
-    rgba(255, 105, 180, 0.05) 100%) !important;
-  border: 2px solid rgba(255, 105, 180, 0.2) !important;
+    background: linear-gradient(135deg, 
+    rgba(0, 122, 255, 0.08) 0%,
+    rgba(0, 122, 255, 0.05) 100%) !important;
+  border: 2px solid rgba(0, 122, 255, 0.2) !important;
   color: var(--moony-secondary);
   padding: 32px !important;
   border-radius: 20px !important;
@@ -460,19 +460,19 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 
-    0 8px 32px rgba(255, 105, 180, 0.15),
+    0 8px 32px rgba(0, 122, 255, 0.15),
     0 2px 8px rgba(0, 0, 0, 0.08) !important;
   backdrop-filter: blur(20px);
 }
 
 .dark .vp-doc .custom-block.tip {
   background: linear-gradient(135deg, 
-    rgba(255, 105, 180, 0.12) 0%, 
-    rgba(255, 105, 180, 0.08) 100%) !important;
+    rgba(0, 122, 255, 0.12) 0%, 
+    rgba(0, 122, 255, 0.08) 100%) !important;
   color: var(--moony-secondary);
-  border-color: rgba(255, 105, 180, 0.3) !important;
+  border-color: rgba(0, 122, 255, 0.3) !important;
   box-shadow: 
-    0 8px 32px rgba(255, 105, 180, 0.2),
+    0 8px 32px rgba(0, 122, 255, 0.2),
     0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -1037,7 +1037,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.2))
+    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -1046,7 +1046,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(255, 105, 180, 0.3))
+    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -1059,7 +1059,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.15))
+    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -1299,13 +1299,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
+  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(255, 105, 180, 0.2) !important;
+  border-top-color: rgba(0, 122, 255, 0.2) !important;
 }
 
 
@@ -1386,7 +1386,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(255, 105, 180, 0.1);
+  background: rgba(0, 122, 255, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -1397,11 +1397,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 105, 180, 0.1);
+  border-top: 1px solid rgba(0, 122, 255, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
