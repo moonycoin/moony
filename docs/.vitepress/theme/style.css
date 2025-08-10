@@ -446,7 +446,7 @@ body {
   background: linear-gradient(135deg, 
     rgba(255, 255, 255, 0.04) 0%, 
     rgba(255, 255, 255, 0.02) 100%) !important;
-  color: #f5f5f7 !important;
+  color: #ffffff !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.3),
@@ -456,7 +456,7 @@ body {
 .dark .vp-doc .custom-block.tip p,
 .dark .vp-doc .custom-block.tip div,
 .dark .vp-doc .custom-block.tip span {
-  color: #f5f5f7 !important;
+  color: #ffffff !important;
 }
 
 .dark .vp-doc .custom-block.tip:hover {
