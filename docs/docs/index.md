@@ -16,7 +16,7 @@ hero:
       link: https://github.com/moonycoin/moony
 ---
 
-# Welcome to Moony
+# Getting Started
 
 Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed entirely by an immutable smart contract.
 

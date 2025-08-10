@@ -335,7 +335,7 @@ body {
   font-size: 2.25rem;
   letter-spacing: -0.025em;
   margin-bottom: var(--space-lg);
-  border-bottom: 1px solid var(--moony-border);
+  border-bottom: none;
   border-top: none !important;
   padding-bottom: var(--space-md);
   padding-top: 0 !important;
