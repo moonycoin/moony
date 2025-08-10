@@ -4,8 +4,18 @@
       <!-- Brand Section -->
       <div class="footer-section">
         <div class="footer-brand">
-          <img src="/logo-light.svg" alt="Moony" class="footer-logo-light" />
-          <img src="/logo-dark.svg" alt="Moony" class="footer-logo-dark" />
+          <img 
+            v-if="!isDarkMode" 
+            src="/logo-light.svg" 
+            alt="Moony" 
+            class="footer-logo" 
+          />
+          <img 
+            v-else 
+            src="/logo-dark.svg" 
+            alt="Moony" 
+            class="footer-logo" 
+          />
         </div>
         <p class="footer-description">
           Permissionless transactions with Proof of Liquidity
@@ -64,7 +74,33 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
-const currentYear = computed(() => new Date().getFullYear())
+const isDarkMode = ref(false)
+
+const checkTheme = () => {
+  isDarkMode.value = document.documentElement.classList.contains('dark')
+}
+
+onMounted(() => {
+  checkTheme()
+  // Watch for theme changes
+  const observer = new MutationObserver(checkTheme)
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  })
+  
+  // Cleanup function
+  onUnmounted(() => {
+    observer.disconnect()
+  })
+})
 </script>
+
+<style scoped>
+.footer-logo {
+  height: 32px;
+  width: auto;
+}
+</style>
