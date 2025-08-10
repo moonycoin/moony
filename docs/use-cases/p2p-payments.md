@@ -1,50 +1,43 @@
 # P2P Payments
 
-Peer-to-peer (P2P) payments are the most direct expression of Moony’s purpose: value moving between people without intermediaries. By combining a credibly constrained supply with trust-minimized, onchain settlement, Moony enables anyone to send and receive digital cash globally with finality, transparency, and extremely low fees.
+Peer-to-peer (P2P) payments represent Moony’s most direct utility: enabling value transfer between individuals without intermediaries. By combining a credibly fixed supply with on-chain settlement, Moony delivers global digital cash with finality, transparency, and negligible fees.
 
 ## Why It Matters
 
-Traditional payment systems route through layered intermediaries: banks, processors, networks, and compliance vendors, each adding cost, latency, and points of failure or control. Those layers can decline transactions, reverse them days later, or exclude entire regions and communities.
+Legacy payment systems rely on layered intermediaries such as banks, processors, or card networks, each introducing cost, latency, and potential for control or exclusion. Transactions can be delayed, reversed, or denied entirely, with entire regions excluded from participation.
 
 Moony’s P2P model is different:
 
-- **Direct settlement:** Payments are finalized on‑chain between sender and recipient addresses, no custodial middleman needed.
-- **Trust minimization:** Rules are enforced by code. Users do not rely on a counterparty’s promise to settle later.
-- **Censorship resistance:** As long as participants can reach the network, valid transactions are processed by the protocol.
-- **Global accessibility:** Anyone with an internet connection and a compatible wallet can participate, regardless of local banking access.
+- **Direct settlement:** Transfers occur directly on-chain between sender and recipient, with no custodial middleman.
+- **Trust minimization:** Settlement rules are enforced by code, not dependent on counterparties.
 
-The result is a payment primitive that feels like handing someone cash — only it works across any distance, any time of day, with programmatic certainty.
+- **Censorship resistance:** Valid transactions are processed so long as participants can access the network.
+- **Global accessibility:** Anyone with internet access and a compatible wallet can participate.
 
 ## Global Scalability
 
-For P2P to work at human scale, costs and throughput must be practical. Moony launches on the Solana blockchain to achieve that:
+To make P2P viable at scale, both cost and throughput must support everyday usage. These characteristics make Moony suitable for daily transactions, not just high-value transfers. Moony launches on Solana to meet these requirements:
 
-- **Fees:** Typical transfers cost a tiny fraction of a cent in network fees. Fees are predictable and transparent at the time of submission.
-- **Throughput & latency:** Solana’s high‑performance design supports high volumes with low confirmation times, so everyday payments don’t congest the network.
-- **Composability:** The same low‑fee rails that serve P2P transfers also enable higher‑order use cases (micropayments, streaming, machine‑to‑machine settlement) without redesigning the base.
+- **Low Fees:** Typical transfers cost fractions of a cent, with fees known at submission.
+- **Throughput & latency:** Solana’s high-performance network supports rapid confirmations without congestion.
+- **Composability:** The same infrastructure powering P2P also enables micropayments, streaming, and automated settlement.
 
-Together, these properties make Moony credible for daily payments — not just occasional, high‑value transactions.
-
-## Finality, Auditability, and Security
-
-- **Finality:** Once confirmed, a transaction is settled by the network and cannot be unilaterally reversed by third parties.
-- **Auditability:** Balances and transfers are recorded on‑chain, enabling independent verification and financial transparency when desired.
-- **User safety practices:** Moony encourages common‑sense operational security, verifying addresses, using hardware or secure wallets, and starting with small test transfers when sending to a new counterparty.
-
-Finality and auditability together create predictable payments that reduce disputes and operational overhead.
+Together, these properties make Moony credible for daily payments, not just occasional high‑value transactions.
 
 ## Global Financial Inclusion
 
-Billions of people live with limited or unreliable access to modern payment infrastructure. Even where banking exists, cross‑border remittances are costly and slow, and small transactions are often uneconomical.
+Billions of people remain underserved, or entirely excluded, by traditional payment systems. In many regions, the absence of reliable banking infrastructure leaves individuals unable to store value securely, send money across borders, or participate in even the most basic forms of commerce. 
 
-Moony’s P2P model helps address these barriers:
+Where banking does exist, high fees, slow settlement times, and rigid requirements place meaningful participation out of reach for many. Cross‑border remittances can take days to arrive, cost double‑digit percentages in fees, and are often impractical for small amounts, limiting economic mobility and reinforcing systemic barriers.
 
-- **Open access:** Anyone with a smartphone and internet connection can receive Moony within minutes, without opening a bank account or passing gatekeepers that may be unavailable in their region.
-- **Remittance efficiency:** Low fees and rapid settlement allow migrants and cross‑border workers to send value home quickly and predictably.
-- **Micro‑commerce:** Street vendors, creators, and small online sellers can accept small payments without card terminals, chargebacks, or high percentage fees.
-- **24/7/365 operations:** No weekend or holiday shutdowns — P2P works when people need it.
+Moony addresses these challenges:
 
-Inclusion is not only about access — it’s about practical economics. When fees are low and finality is fast, more transactions become worthwhile, widening the circle of participation.
+- **Open access:** Anyone with a smartphone can receive Moony without bank accounts or gatekeepers.
+- **Remittance:** Affordable, near-instant settlement for cross-border payments.
+- **Commerce:** Merchants and creators can accept payments without card fees or chargebacks.
+- **Availability:** Operates 24/7, unaffected by weekends or holidays, like traditional systems.
+
+Moony’s peer‑to‑peer architecture offers a different path: one that bypasses the bottlenecks of legacy finance and extends open participation to anyone with a mobile device. By removing intermediaries and leveraging low‑cost, high‑speed blockchain settlement, Moony makes direct digital transactions viable at a scale and inclusivity level traditional rails cannot match.
 
 ## Interoperable Access
 
@@ -55,20 +48,22 @@ Several key properties enable this interoperability:
 - **Wallet compatibility:** Any Solana‑compatible wallet that supports SPL tokens can hold and transfer Moony. Users are free to manage their balances in the interface of their choice, rather than being locked into a single custodial or proprietary app.
 - **Composability:** Moony can be added to payment apps, point‑of‑sale systems, bots, and custodial or non‑custodial services with minimal friction. Developers can plug into Moony the same way they support any other SPL token, allowing it to circulate naturally through the ecosystem.
 
-Because Moony is permissionless and composable by design, its peer‑to‑peer utility is not constrained to a single application. The token can flow seamlessly between wallets, payment interfaces, and future onchain services — creating a foundation for global accessibility and financial inclusion as the network of integrations grows.
+Because Moony is permissionless and composable by design, its peer‑to‑peer utility is not constrained to a single application. The token can flow seamlessly between wallets, payment interfaces, and future onchain services, creating a foundation for global accessibility and financial inclusion as the network of integrations grows.
 
 ## Flipcash Launch Integration
 
-At launch, Flipcash will provide the first independent public interface for Moony, allowing users to experience it as true digital cash.
+At launch, Flipcash provides the first independent public interface to the Moony Reserve Contract. Through its mobile app, users can mint and redeem Moony instantly, bypassing banks and card networks.
 
-Through its intuitive mobile interface, users can seamlessly mint and redeem Moony directly from the reserve contract and begin transacting within seconds, without relying on banks, card networks, or any centralized intermediary. This immediate usability allows Moony to function like cash for the digital era — fast, final, and user‑controlled.
+Through its intuitive mobile interface, users can seamlessly mint and redeem Moony directly from the reserve contract and begin transacting within seconds, without relying on banks, card networks, or any centralized intermediary. This immediate usability allows Moony to function like cash for the digital era: fast, final, and user‑controlled.
 
 Flipcash makes the on‑chain experience accessible through familiar payment patterns:
 
 - **QR codes:** Scan to pay in person. This simple interaction makes Moony feel like handing someone cash, but with global reach and on‑chain settlement.
 - **Payment links:** Generate a link to share over chat, email, or social media, allowing recipients to claim Moony instantly and securely.
-- **Instant balance and settlement:** Users can see their Moony balance update immediately, pay friends and settle transactions without waiting days for bank processing.
+- **Instant Settlement:** Users can see their Moony balance update immediately, pay friends and settle transactions without waiting days for bank processing.
 
-By abstracting complex onchain mechanics into actions users already understand, Flipcash delivers a mainstream‑ready P2P experience.
+By abstracting complex onchain mechanics into actions users already understand, Flipcash delivers a mainstream‑ready P2P experience. 
 
+  ::: tip 
 While Flipcash is the first independent interface to access the Moony reserve contract, the token remains fully permissionless and interoperable as an SPL asset. Any compatible Solana wallet can store, send, or receive Moony — and future apps can integrate it seamlessly without requiring approval.
+:::
