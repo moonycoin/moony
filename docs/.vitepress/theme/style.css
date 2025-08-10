@@ -101,8 +101,8 @@
   color: var(--moony-secondary) !important;
   font-weight: 400 !important;
   margin-bottom: 56px !important;
-  max-width: none !important;
-  margin-left: 0 !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
   margin-right: auto !important;
   opacity: 0.9;
   white-space: normal !important;
@@ -1309,5 +1309,51 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPHero .text {
     font-size: 3.5rem !important;
     line-height: 1.1 !important;
+  }
+}
+
+/* ================
+   CONTENT WIDTH CONTAINMENT
+   ================ */
+
+/* Ensure main content doesn't extend beyond theme boundaries */
+.VPContent {
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+}
+
+/* Constrain the main content area */
+.vp-doc {
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+/* Ensure hero content stays within bounds */
+.VPHero .text,
+.VPHero .tagline {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Responsive content containment */
+@media (max-width: 768px) {
+  .VPContent {
+    padding: 0 20px !important;
+  }
+  
+  .vp-doc {
+    padding: 0 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPContent {
+    padding: 0 15px !important;
+  }
+  
+  .vp-doc {
+    padding: 0 10px !important;
   }
 }
