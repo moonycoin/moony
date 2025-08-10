@@ -728,4 +728,27 @@ html, body, #app, .Layout, .VPContent, .VPDoc, .vp-doc, .content, .content-conta
   padding: 16px 32px !important;
 }
 
+/* ================
+   ULTIMATE BUTTON OVERRIDE
+   ================ */
+.VPHero .actions,
+.VPHero .actions *,
+.VPHero .actions > *,
+.VPHero .actions > * > * {
+  display: inline-block !important;
+  float: left !important;
+  margin-right: 1rem !important;
+}
+
+.VPHero .actions .action,
+.VPHero .actions .action *,
+.VPHoc .actions .action > * {
+  display: inline-block !important;
+  float: left !important;
+  margin-right: 1rem !important;
+  flex: none !important;
+  flex-direction: unset !important;
+  flex-wrap: unset !important;
+}
+
 
