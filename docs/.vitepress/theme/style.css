@@ -777,14 +777,10 @@ html .VPNav[class*="VPNav"],
 }
 
 .vp-doc .header-anchor {
-  color: var(--moony-accent);
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  display: none !important;
 }
 
-.vp-doc .header-anchor:hover {
-  opacity: 1;
-}
+
 
 .vp-doc code {
   background: rgba(142, 142, 147, 0.12);
