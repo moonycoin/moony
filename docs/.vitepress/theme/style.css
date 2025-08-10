@@ -933,32 +933,10 @@ html .VPNav[class*="VPNav"],
 }
 
 /* ================
-   LAYOUT FIXES
+   APPLE-STYLE POLISH
    ================ */
 .VPContent {
-  background: transparent !important;
-}
-
-/* Ensure proper sidebar layout */
-.Layout.has-sidebar {
-  display: grid !important;
-  grid-template-columns: 280px 1fr !important;
-  gap: 0 !important;
-}
-
-/* Fix sidebar positioning */
-.VPSidebar {
-  position: sticky !important;
-  top: var(--vp-nav-height, 60px) !important;
-  height: calc(100vh - var(--vp-nav-height, 60px)) !important;
-  overflow-y: auto !important;
-  padding: 24px 0 !important;
-}
-
-/* Ensure main content area has proper width */
-.VPContent {
-  min-width: 0 !important;
-  max-width: none !important;
+  background: var(--vp-c-bg);
 }
 
 .vp-doc table {
@@ -1292,13 +1270,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
-  
-  /* Sidebar sticks but stops before footer */
-  position: sticky !important;
-  top: var(--vp-nav-height, 60px) !important;
-  max-height: 70vh !important;
-  overflow-y: auto !important;
-  z-index: 1 !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
@@ -1474,17 +1445,9 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   color: var(--moony-accent);
 }
 
-/* Responsive footer and sidebar */
+/* Responsive footer */
 @media (max-width: 960px) {
-  /* Switch to single column layout on smaller screens */
-  .Layout.has-sidebar {
-    grid-template-columns: 1fr !important;
-  }
-  
-  /* Hide sidebar on smaller screens */
-  .VPSidebar {
-    display: none !important;
-  }
+  /* Footer responsive adjustments */
 }
 
 @media (max-width: 768px) {
