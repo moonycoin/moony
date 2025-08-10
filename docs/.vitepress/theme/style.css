@@ -552,6 +552,20 @@ body {
   padding: 16px 0 !important;
 }
 
+/* Force sidebar width with maximum specificity */
+.VPSidebar,
+.VPSidebar[class*="VPSidebar"],
+.Layout .VPSidebar,
+.Layout.has-sidebar .VPSidebar,
+.VPApp .VPSidebar,
+body .VPSidebar,
+html .VPSidebar,
+#app .VPSidebar {
+  width: 320px !important;
+  min-width: 320px !important;
+  max-width: 320px !important;
+}
+
 .dark .Layout.has-sidebar .VPSidebar,
 .dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(24, 24, 27, 0.95) !important;
