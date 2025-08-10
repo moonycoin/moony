@@ -7,19 +7,19 @@
    APPLE-STYLE VARIABLES
    ================ */
 :root {
-  /* Professional blue palette */
-  --vp-c-brand-1: #007AFF;
-  --vp-c-brand-2: #0056CC;
-  --vp-c-brand-3: #003D99;
+  /* Balanced blue-grey palette */
+  --vp-c-brand-1: #4A90E2;
+  --vp-c-brand-2: #357ABD;
+  --vp-c-brand-3: #2E5A87;
   --vp-c-sponsor: var(--vp-c-text-2);
   
-  /* Clean neutral palette */
+  /* Enhanced neutral palette */
   --moony-primary: #1d1d1f;
   --moony-secondary: #515154;
-  --moony-accent: #007AFF;
-  --moony-light-gray: #f5f5f7;
-  --moony-medium-gray: #86868b;
-  --moony-border: #d2d2d7;
+  --moony-accent: #4A90E2; /* Softer blue */
+  --moony-light-gray: #f8f9fa;
+  --moony-medium-gray: #6c757d;
+  --moony-border: #dee2e6;
   
   /* Enhanced spacing */
   --space-xs: 0.5rem;
@@ -30,15 +30,15 @@
 }
 
 .dark {
-  --vp-c-brand-1: #007AFF;
-  --vp-c-brand-2: #0056CC;
-  --vp-c-brand-3: #003D99;
+  --vp-c-brand-1: #4A90E2;
+  --vp-c-brand-2: #357ABD;
+  --vp-c-brand-3: #2E5A87;
   
   --moony-primary: #f5f5f7;
   --moony-secondary: #a1a1a6;
-  --moony-accent: #007AFF;
+  --moony-accent: #4A90E2;
   --moony-light-gray: #1d1d1f;
-  --moony-medium-gray: #86868b;
+  --moony-medium-gray: #6c757d;
   --moony-border: #424245;
 }
 
@@ -110,7 +110,7 @@ body {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center, 
-    rgba(0, 122, 255, 0.04) 0%, 
+    rgba(74, 144, 226, 0.04) 0%, 
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -208,9 +208,9 @@ body {
   opacity: 1 !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   filter: 
-      drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
-  drop-shadow(0 4px 12px rgba(0, 122, 255, 0.1))
-  drop-shadow(0 0 20px rgba(0, 122, 255, 0.08))
+      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
+  drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
+  drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
     brightness(1.6)
     contrast(0.6)
     saturate(0.3) !important;
@@ -221,9 +221,9 @@ body {
 
 .VPHero .image img:hover {
   filter: 
-      drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
-  drop-shadow(0 4px 12px rgba(0, 122, 255, 0.15))
-  drop-shadow(0 0 24px rgba(0, 122, 255, 0.12))
+      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.2))
+  drop-shadow(0 4px 12px rgba(74, 144, 226, 0.15))
+  drop-shadow(0 0 24px rgba(74, 144, 226, 0.12))
     brightness(1.6)
     contrast(0.6)
     saturate(0.3) !important;
@@ -292,10 +292,10 @@ body {
 }
 
 .VPHero .action .VPButton.brand {
-  background: linear-gradient(135deg, #007AFF, #0056CC, #003D99) !important;
+  background: linear-gradient(135deg, #4A90E2, #357ABD, #2E5A87) !important;
   color: white !important;
   box-shadow: 
-    0 4px 20px rgba(0, 122, 255, 0.4),
+    0 4px 20px rgba(74, 144, 226, 0.4),
     0 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -317,13 +317,13 @@ body {
 .VPHero .action .VPButton.brand:hover {
   transform: translateY(-3px) !important;
   box-shadow: 
-    0 8px 32px rgba(0, 122, 255, 0.5),
+    0 8px 32px rgba(74, 144, 226, 0.5),
     0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .VPHero .action .VPButton.alt {
   background: rgba(255, 255, 255, 0.9) !important;
-  border: 2px solid rgba(0, 122, 255, 0.2) !important;
+  border: 2px solid rgba(74, 144, 226, 0.2) !important;
   color: var(--moony-primary) !important;
   backdrop-filter: blur(20px) !important;
   box-shadow: 
@@ -1529,12 +1529,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   right: 0;
   bottom: 0;
   background-image:
-    repeating-conic-gradient(
-      from 0deg at 50% 50%,
-      transparent 0deg,
-      rgba(0, 122, 255, 0.002) 1deg,
-      transparent 2deg
-    );
+              repeating-conic-gradient(
+            from 0deg at 50% 50%,
+            transparent 0deg,
+            rgba(74, 144, 226, 0.002) 1deg,
+            transparent 2deg
+          );
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
@@ -1548,17 +1548,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    radial-gradient(
-      circle at 25% 25%,
-      rgba(0, 122, 255, 0.001) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 75% 75%,
-      rgba(0, 122, 255, 0.001) 0%,
-      transparent 50%
-    );
+          background-image:
+          radial-gradient(
+            circle at 25% 25%,
+            rgba(74, 144, 226, 0.001) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 75% 75%,
+            rgba(74, 144, 226, 0.001) 0%,
+            transparent 50%
+          );
   opacity: 0.6;
   pointer-events: none;
   z-index: 0;

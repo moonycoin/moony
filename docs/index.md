@@ -17,53 +17,85 @@ hero:
       link: https://github.com/moonycoin/moony
 ---
 
-# Getting Started
-
-Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed entirely by an immutable smart contract.
-
 ::: tip Disclaimer
 This documentation is for informational purposes only and does not constitute financial or investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 :::
 
+# Getting Started
+
+Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed entirely by an immutable smart contract. This design ensures full transparency, removes all forms of discretionary control, and enables open participation in emerging internet capital markets.
+
+
 # Tokenomics
 
-Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Inc.
+Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Inc. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
 
-The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted.
+The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
 **Key Properties:**
 
-- **Transparent:** Issuance follows deterministic onchain logic, with real-time visibility into price and supply
-- **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required  
-- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring verifiable backing
+- **Transparent:** Issuance follows deterministic onchain logic, with real-time visibility into price and supply.
+- **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
+- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring verifiable backing.
 
-This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity.
+This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity. This model aligns issuance with demand, reduces inefficiencies, and ensures that all circulating Moony remains transparently and verifiably supported.
 
 ::: tip
 [Click here to learn more about Moony's tokenomics →](/tokenomics/reserve-contract)
 :::
 
-# Use Cases
+# Composable Ecosystem
 
-As a permissionless digital asset, Moony can be integrated into various applications and use cases:
+Moony is designed as a foundational asset for a programmable, internet-native economy. As a permissionless digital asset, it facilitates seamless value exchange across applications, platforms, and protocols without permission or centralized infrastructure.
 
-- **Payments:** Direct peer-to-peer transactions without intermediaries
-- **DeFi Integration:** Liquidity provision, trading, and financial applications  
-- **Micropayments:** Small-value transactions enabled by low fees
-- **Developer Tools:** SDK and integration libraries for application builders
+Built as an SPL-standard token, Moony can be embedded directly into apps, wallets, and financial primitives. Its low-cost, programmable design unlocks new ways to coordinate, transact, and build across a growing ecosystem of use cases.
 
-The open nature of the protocol encourages innovation and experimentation by independent developers and organizations who can build tools, applications, and services around Moony without requiring permission or coordination.
+Potential use-cases:
+
+- **P2P Payments:** Enable global, permissionless transfers with near-zero fees and minimal latency. Moony empowers direct value exchange without intermediaries, expanding access to digital economies worldwide.
+- **Micropayments:** Power sub-cent transactions and unlock new monetization models, from one-time purchases to continuous streaming payments between users, apps, or autonomous agents.
+- **DeFi Integration:** Use Moony as a composable asset in lending markets, AMMs, staking protocols, and other decentralized financial infrastructure.
+
+Moony combines global accessibility with negligible fees and onchain transparency to support an open economic layer for the internet. Its architecture enables permissionless integration and frictionless value exchange, empowering developers, creators, and users to participate directly in a shared financial future.
 
 ::: tip
 [Click here to learn more about Moony's use cases →](/use-cases/ecosystem)
 :::
 
-# Community
+# Decentralized Community
 
-Moony operates as a public good on the Solana blockchain. There is no company, central team, or official roadmap. Instead, Moony grows through the initiative of independent contributors: developers, creators, product builders, educators, and everyday users who see value in a monetary system that belongs to no one and works for everyone.
+Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony’s evolution is driven by the individuals and communities who participate in its ecosystem. As adoption grows, the protocol’s utility and reach expand organically through collective engagement and voluntary contribution.
 
-The protocol is designed to function autonomously, with smart contracts handling all core operations including token issuance, pricing, and reserve management. This ensures the system operates predictably without requiring ongoing governance or administrative intervention.
+Participation is open to all. Whether you’re a developer, creator, organizer, or enthusiast, there are many ways to contribute. Moony grows through grassroots energy and shared values, not central control. By offering time, talent, or ideas, participants help expand the network and strengthen its foundation.
+
+- **Develop & Integrate:** Builders can extend Moony’s utility by integrating it into apps, platforms, and tools, enabling new use cases across the digital economy.
+- **Create & Transact:** Creators can accept Moony for goods, services, or content, unlocking direct community support and alternative monetization models.
+- **Organize & Connect:** Community leaders can launch regional or thematic groups around shared languages, interests, or goals to drive local adoption.
+- **Educate & Onboard:** Contributors can host events or produce educational resources that help others understand and use Moony.
+- **Share & Express:** Artists, storytellers, and memers can craft content that spreads awareness, shapes culture, and amplifies Moony’s narrative.
+
+As adoption increases, a diverse ecosystem of independent contributors is expected to form, including startups, nonprofits, open-source projects, and grassroots collectives. While none control the protocol, each plays a role in expanding its reach and strengthening its resilience. 
+
+
 
 ::: tip
 [Click here to learn more about the Moony community →](/resources/community)
+:::
+
+# Flipcash Infrastructure
+
+Moony was launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol’s issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony’s immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+
+At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
+
+The Flipcash app enables users to:
+
+- **Interact With Reserve:** Seamlessly convert between MOONY and USDC through an intuitive interface.
+- **Send P2P Payments:** Use QR code based digital cash and URL links to simplify sending and receiving payments.
+
+While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a public good, Moony can be integrated into any third party platform, protocol,wallet, or app. As an SPL-standard digital asset, it is fully compatible with the broader Solana ecosystem, ensuring broad utility, composability, and adoption. 
+
+
+::: tip
+[Click here to learn more about how Moony uses Flipcash →](/resources/community)
 :::
