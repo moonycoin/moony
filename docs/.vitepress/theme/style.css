@@ -1,22 +1,22 @@
 /**
  * Apple-Style Moony Documentation
- * Clean, minimal design with neutral colors and sophisticated grey accents
+ * Clean, minimal design with neutral colors and light pink accents
  */
 
 /* ================
    APPLE-STYLE VARIABLES
    ================ */
 :root {
-  /* Sophisticated grey palette */
-  --vp-c-brand-1: #1d1d1f;
-  --vp-c-brand-2: #424245;
-  --vp-c-brand-3: #6e6e73;
+  /* Light pink palette replacing blues */
+  --vp-c-brand-1: #FF69B4;
+  --vp-c-brand-2: #FF1493;
+  --vp-c-brand-3: #DC143C;
   --vp-c-sponsor: var(--vp-c-text-2);
   
   /* Clean neutral palette */
   --moony-primary: #1d1d1f;
   --moony-secondary: #515154;
-  --moony-accent: #1d1d1f;
+  --moony-accent: #FF69B4;
   --moony-light-gray: #f5f5f7;
   --moony-medium-gray: #86868b;
   --moony-border: #d2d2d7;
@@ -30,13 +30,13 @@
 }
 
 .dark {
-  --vp-c-brand-1: #1d1d1f;
-  --vp-c-brand-2: #424245;
-  --vp-c-brand-3: #6e6e73;
+  --vp-c-brand-1: #FF69B4;
+  --vp-c-brand-2: #FF1493;
+  --vp-c-brand-3: #DC143C;
   
   --moony-primary: #f5f5f7;
   --moony-secondary: #a1a1a6;
-  --moony-accent: #1d1d1f;
+  --moony-accent: #FF69B4;
   --moony-light-gray: #1d1d1f;
   --moony-medium-gray: #86868b;
   --moony-border: #424245;
@@ -57,6 +57,38 @@ body {
   min-height: 100vh;
 }
 
+/* ================
+   RESPONSIVE CONTENT WIDTH FIX
+   ================ */
+/* Ensure content doesn't stretch too wide on large screens */
+@media (min-width: 1200px) {
+  .vp-doc {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3,
+  .vp-doc p {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .vp-doc {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 2000px) {
+  .vp-doc {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 .dark .Layout,
 .dark .VPApp,
 .dark .VPContent,
@@ -68,7 +100,7 @@ body {
     rgba(9, 9, 11, 1) 100%) !important;
 }
 
-/* Subtle grey glow overlay for entire page */
+/* Subtle pink glow overlay for entire page */
 .Layout::before,
 .VPApp::before {
   content: '';
@@ -78,7 +110,7 @@ body {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center, 
-    rgba(29, 29, 31, 0.04) 0%, 
+    rgba(255, 105, 180, 0.04) 0%, 
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -176,9 +208,9 @@ body {
   opacity: 1 !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   filter: 
-    drop-shadow(0 8px 24px rgba(29, 29, 31, 0.15))
-    drop-shadow(0 4px 12px rgba(29, 29, 31, 0.1))
-    drop-shadow(0 0 20px rgba(29, 29, 31, 0.08))
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.15))
+    drop-shadow(0 4px 12px rgba(255, 105, 180, 0.1))
+    drop-shadow(0 0 20px rgba(255, 105, 180, 0.08))
     brightness(1.6)
     contrast(0.6)
     saturate(0.3) !important;
@@ -189,9 +221,9 @@ body {
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 8px 24px rgba(29, 29, 31, 0.2))
-    drop-shadow(0 4px 12px rgba(29, 29, 31, 0.15))
-    drop-shadow(0 0 24px rgba(29, 29, 31, 0.12))
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.2))
+    drop-shadow(0 4px 12px rgba(255, 105, 180, 0.15))
+    drop-shadow(0 0 24px rgba(255, 105, 180, 0.12))
     brightness(1.6)
     contrast(0.6)
     saturate(0.3) !important;
@@ -260,10 +292,10 @@ body {
 }
 
 .VPHero .action .VPButton.brand {
-  background: linear-gradient(135deg, #1d1d1f, #424245, #6e6e73) !important;
+  background: linear-gradient(135deg, #FF69B4, #FF1493, #DC143C) !important;
   color: white !important;
   box-shadow: 
-    0 4px 20px rgba(29, 29, 31, 0.4),
+    0 4px 20px rgba(255, 105, 180, 0.4),
     0 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -285,13 +317,13 @@ body {
 .VPHero .action .VPButton.brand:hover {
   transform: translateY(-3px) !important;
   box-shadow: 
-    0 8px 32px rgba(29, 29, 31, 0.5),
+    0 8px 32px rgba(255, 105, 180, 0.5),
     0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .VPHero .action .VPButton.alt {
   background: rgba(255, 255, 255, 0.9) !important;
-  border: 2px solid rgba(29, 29, 31, 0.2) !important;
+  border: 2px solid rgba(255, 105, 180, 0.2) !important;
   color: var(--moony-primary) !important;
   backdrop-filter: blur(20px) !important;
   box-shadow: 
@@ -310,7 +342,7 @@ body {
 
 .dark .VPHero .action .VPButton.alt {
   background: rgba(29, 29, 31, 0.9) !important;
-  border: 2px solid rgba(29, 29, 31, 0.3) !important;
+  border: 2px solid rgba(255, 105, 180, 0.3) !important;
   color: var(--moony-primary) !important;
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.3),
@@ -344,10 +376,7 @@ body {
 
 .vp-doc h1:first-of-type {
   border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
   padding-top: 0 !important;
-  margin-top: 0 !important;
 }
 
 .vp-doc h2 {
@@ -416,106 +445,54 @@ body {
    ================ */
 .vp-doc .custom-block.tip {
   background: linear-gradient(135deg, 
-    rgba(29, 29, 31, 0.06) 0%, 
-    rgba(29, 29, 31, 0.03) 100%) !important;
-  border: 1px solid rgba(29, 29, 31, 0.15) !important;
-  color: var(--moony-secondary) !important;
-  padding: 24px 28px !important;
-  border-radius: 16px !important;
-  margin: 32px 0 !important;
-  font-size: 1rem !important;
-  line-height: 1.6 !important;
+    rgba(255, 105, 180, 0.08) 0%, 
+    rgba(255, 105, 180, 0.05) 100%) !important;
+  border: 2px solid rgba(255, 105, 180, 0.2) !important;
+  color: var(--moony-secondary);
+  padding: 32px !important;
+  border-radius: 20px !important;
+  margin: 40px 0 !important;
+  font-size: 1.0625rem !important;
+  line-height: 1.7 !important;
   max-width: 100%;
-  text-align: center !important;
+  text-align: justify;
+  text-justify: inter-word;
   position: relative;
   overflow: hidden;
   box-shadow: 
-    0 4px 20px rgba(29, 29, 31, 0.08),
-    0 1px 4px rgba(0, 0, 0, 0.04) !important;
-  backdrop-filter: blur(20px);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.vp-doc .custom-block.tip:hover {
-  border-color: rgba(29, 29, 31, 0.25) !important;
-  box-shadow: 
-    0 6px 24px rgba(29, 29, 31, 0.12),
+    0 8px 32px rgba(255, 105, 180, 0.15),
     0 2px 8px rgba(0, 0, 0, 0.08) !important;
-  transform: translateY(-1px);
+  backdrop-filter: blur(20px);
 }
 
 .dark .vp-doc .custom-block.tip {
   background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.04) 0%, 
-    rgba(255, 255, 255, 0.02) 100%) !important;
-  color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
+    rgba(255, 105, 180, 0.12) 0%, 
+    rgba(255, 105, 180, 0.08) 100%) !important;
+  color: var(--moony-secondary);
+  border-color: rgba(255, 105, 180, 0.3) !important;
   box-shadow: 
-    0 4px 20px rgba(0, 0, 0, 0.3),
-    0 1px 4px rgba(0, 0, 0, 0.2) !important;
-}
-
-.dark .vp-doc .custom-block.tip p,
-.dark .vp-doc .custom-block.tip div,
-.dark .vp-doc .custom-block.tip span {
-  color: #ffffff !important;
-}
-
-.dark .vp-doc .custom-block.tip:hover {
-  border-color: rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 
-    0 6px 24px rgba(0, 0, 0, 0.4),
-    0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    0 8px 32px rgba(255, 105, 180, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 .vp-doc .custom-block.tip > .custom-block-title {
-  display: none !important;
+  display: none;
 }
 
 .vp-doc .custom-block.tip a {
   color: var(--moony-accent);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.2s ease;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
-  display: inline-block;
-  position: relative;
-}
-
-.dark .vp-doc .custom-block.tip a {
-  color: #ffffff !important;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1px;
 }
 
 .vp-doc .custom-block.tip a:hover {
-  color: var(--moony-accent);
+  color: var(--vp-c-brand-2);
   border-bottom-color: var(--moony-accent);
   transform: translateY(-1px);
-}
-
-.vp-doc .custom-block.tip a::after {
-  content: ' →';
-  font-weight: 600;
-  color: var(--moony-accent);
-  transition: transform 0.2s ease;
-  display: inline-block;
-}
-
-.dark .vp-doc .custom-block.tip a::after {
-  color: #ffffff !important;
-}
-
-.vp-doc .custom-block.tip p,
-.vp-doc .custom-block.tip div,
-.vp-doc .custom-block.tip span {
-  color: var(--moony-secondary) !important;
-  margin: 0;
-  padding: 0;
-}
-
-.vp-doc .custom-block.tip a:hover::after {
-  transform: translateX(3px);
 }
 
 /* ================
@@ -540,36 +517,36 @@ body {
 /* ================
    SIDEBAR CONNECTED TO FOOTER
    ================ */
-/* Sidebar styling */
+/* Sidebar ends naturally when footer appears */
 .Layout.has-sidebar .VPSidebar,
 .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--moony-border) !important;
-  width: 320px !important;
-  min-width: 320px !important;
-  max-width: 320px !important;
-  padding: 16px 0 !important;
-}
-
-/* Force sidebar width with maximum specificity */
-.VPSidebar,
-.VPSidebar[class*="VPSidebar"],
-.Layout .VPSidebar,
-.Layout.has-sidebar .VPSidebar,
-.VPApp .VPSidebar,
-body .VPSidebar,
-html .VPSidebar,
-#app .VPSidebar {
-  width: 320px !important;
-  min-width: 320px !important;
-  max-width: 320px !important;
+  
+  /* Sidebar sticks to top but ends when footer comes into view */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  height: calc(100vh - var(--vp-nav-height, 60px) - 60px) !important;
+  overflow-y: auto !important;
+  z-index: 1 !important;
+  align-self: flex-start !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
 .dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(24, 24, 27, 0.95) !important;
   border-right-color: #424245 !important;
+}
+
+
+
+.dark .VPSidebar,
+.dark .VPSidebar[class*="VPSidebar"],
+.dark .Layout .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar {
+  background: rgba(29, 29, 31, 0.95) !important;
+  border-right: 1px solid #424245 !important;
 }
 
 .VPSidebarItem .text {
@@ -648,7 +625,13 @@ html .VPNav[class*="VPNav"],
 .Layout .VPNavBar[class*="VPNavBar"],
 .Layout.has-sidebar .VPNavBar[class*="VPNavBar"],
 .VPApp .VPNavBar[class*="VPNavBar"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 /* Specifically target logo/title area to eliminate border stacking */
@@ -665,7 +648,13 @@ html .VPNav[class*="VPNav"],
 .VPNavBarTitle *,
 .VPNavBarTitle::before,
 .VPNavBarTitle::after {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
   box-shadow: none !important;
   outline: none !important;
 }
@@ -680,7 +669,13 @@ html .VPNav[class*="VPNav"],
 .VPNavBarMenu .content[class*="content"],
 .Layout .VPNavBarMenu[class*="VPNavBarMenu"],
 .Layout.has-sidebar .VPNavBarMenu[class*="VPNavBarMenu"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"],
@@ -688,25 +683,39 @@ html .VPNav[class*="VPNav"],
 .VPNavBarMenuGroup .content[class*="content"],
 .Layout .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"],
 .Layout.has-sidebar .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 /* Specific navigation link backgrounds only */
 .VPNavBarMenuLink[class*="VPNavBarMenuLink"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
 }
 
 .VPNavBarMenuText[class*="VPNavBarMenuText"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
 }
 
 .VPNavBarHamburger[class*="VPNavBarHamburger"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
 }
 
 /* Preserve theme toggle and social links functionality */
 .VPNavBarAppearance[class*="VPNavBarAppearance"],
 .VPNavBarSocialLinks[class*="VPNavBarSocialLinks"] {
+  background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
 }
 
@@ -748,10 +757,14 @@ html .VPNav[class*="VPNav"],
 }
 
 .vp-doc .header-anchor {
-  display: none !important;
+  color: var(--moony-accent);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
 
-
+.vp-doc .header-anchor:hover {
+  opacity: 1;
+}
 
 .vp-doc code {
   background: rgba(142, 142, 147, 0.12);
@@ -837,10 +850,9 @@ html .VPNav[class*="VPNav"],
   }
   
   .vp-doc .custom-block.tip {
-    padding: 20px 24px !important;
-    margin: 28px 0 !important;
-    font-size: 0.95rem !important;
-    border-radius: 14px !important;
+    padding: 24px !important;
+    margin: 30px 0 !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -869,11 +881,9 @@ html .VPNav[class*="VPNav"],
   }
 
   .vp-doc .custom-block.tip {
-    font-size: 0.9rem !important;
-    padding: 18px 20px !important;
-    line-height: 1.5 !important;
-    border-radius: 12px !important;
-    margin: 24px 0 !important;
+    font-size: 0.9rem;
+    padding: var(--space-md);
+    line-height: 1.5;
   }
 
   .vp-doc p,
@@ -1027,7 +1037,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(29, 29, 31, 0.2))
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -1036,7 +1046,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(29, 29, 31, 0.3))
+    drop-shadow(0 12px 32px rgba(255, 105, 180, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -1049,7 +1059,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(29, 29, 31, 0.15))
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -1234,11 +1244,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   border-top: none !important;
   border-top-width: 0 !important;
   border-top-style: none !important;
-  border-bottom: none !important;
-  border-bottom-width: 0 !important;
-  border-bottom-style: none !important;
-  border-left: none !important;
-  border-right: none !important;
 }
 
 /* Remove VitePress default h1 top border */
@@ -1251,7 +1256,25 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
    ================ */
 
 /* Simple approach: sidebar sticks but has max height to avoid footer */
+.Layout.has-sidebar .VPSidebar,
+.Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(245, 245, 247, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-right: 1px solid var(--moony-border) !important;
+  
+  /* Sidebar sticks but stops before footer */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+  z-index: 1 !important;
+}
 
+.dark .Layout.has-sidebar .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-right-color: #424245 !important;
+}
 
 /* ================
    FOOTER APPEARS NATURALLY
@@ -1276,13 +1299,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(29, 29, 31, 0.1) !important;
+  border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(29, 29, 31, 0.2) !important;
+  border-top-color: rgba(255, 105, 180, 0.2) !important;
 }
 
 
@@ -1363,7 +1386,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(29, 29, 31, 0.1);
+  background: rgba(255, 105, 180, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -1374,23 +1397,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(29, 29, 31, 0.3);
-}
-
-/* Dark mode footer social styling */
-.dark .footer-social a {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-.dark .footer-social a:hover {
-  background: var(--moony-accent);
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(29, 29, 31, 0.1);
+  border-top: 1px solid rgba(255, 105, 180, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -1420,11 +1431,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   color: var(--moony-accent);
 }
 
-/* Responsive footer */
-@media (max-width: 960px) {
-  /* Footer responsive adjustments */
-}
-
+/* Responsive footer and sidebar */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -1433,6 +1440,28 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPFooter {
     padding: 40px 20px 30px !important;
+  }
+  
+  /* Reset sidebar on mobile only */
+  .VPSidebar,
+  .VPSidebar[class*="VPSidebar"],
+  .Layout .VPSidebar,
+  .Layout.has-sidebar .VPSidebar {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    align-self: auto !important;
+  }
+  
+  .VPFooter {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    z-index: auto !important;
   }
   
   .footer-bottom {
@@ -1453,24 +1482,5 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-social {
     justify-content: center;
-  }
-}
-/* ================
-   MINIMAL HERO FIXES
-   ================ */
-
-/* Fix hero text line breaks */
-.VPHero .text {
-  white-space: pre-line !important;
-}
-
-/* Keep buttons side by side */
-.VPHero .actions {
-  flex-wrap: nowrap !important;
-}
-
-@media (max-width: 640px) {
-  .VPHero .actions {
-    flex-wrap: nowrap !important;
   }
 }
