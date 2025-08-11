@@ -783,32 +783,32 @@ html .VPNav[class*="VPNav"],
 /* ================
    RESPONSIVE DESIGN
    ================ */
-@media (max-width: 960px) {
+@media (max-width: 960px) and (min-width: 769px) {
   .VPHero {
-    padding: 100px 20px 120px !important;
-    min-height: 70vh !important;
+    padding: 100px 20px 120px;
+    min-height: 70vh;
   }
   
   .VPHero .text {
-    font-size: 4rem !important;
+    font-size: 4rem;
   }
   
   .VPHero .tagline {
-    font-size: 1.375rem !important;
+    font-size: 1.375rem;
   }
   
   .VPHero .image img {
-    max-width: 220px !important;
+    max-width: 220px;
   }
   
   .VPHero .action .VPButton {
-    padding: 16px 32px !important;
-    font-size: 1.0625rem !important;
+    padding: 16px 32px;
+    font-size: 1.0625rem;
   }
   
   .vp-doc {
-    padding: 50px 30px !important;
-    margin: 30px 20px !important;
+    padding: 50px 30px;
+    margin: 30px 20px;
   }
 }
 
@@ -1702,7 +1702,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /* Mobile hero section improvements */
 @media (max-width: 768px) {
   .VPHero {
-    padding: 1.5rem 0.75rem;
+    padding: 1rem 0.5rem !important;
     text-align: left;
   }
   
@@ -1721,26 +1721,26 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPHero .text h1 {
-    font-size: 1.2rem;
-    line-height: 1.1;
-    margin-bottom: 0.3rem;
+    font-size: 1rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.3rem !important;
   }
   
   .VPHero .tagline {
-    font-size: 0.7rem;
-    margin: 0.2rem 0 0.5rem 0;
-    line-height: 1.1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
+    font-size: 0.65rem !important;
+    margin: 0.2rem 0 0.5rem 0 !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
   }
   
   .VPHero .image {
     order: 2;
-    width: 45px;
-    height: 45px;
-    margin: 0;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1932,25 +1932,25 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPHero .text h1 {
-    font-size: 1.1rem;
-    line-height: 1.1;
-    margin-bottom: 0.3rem;
+    font-size: 0.9rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.3rem !important;
   }
   
   .VPHero .tagline {
-    font-size: 0.65rem;
-    margin: 0.2rem 0;
-    line-height: 1.1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.6rem !important;
+    margin: 0.2rem 0 !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
   
   .VPHero .image {
     order: 2;
-    width: 40px;
-    height: 40px;
-    margin: 0;
+    width: 35px !important;
+    height: 35px !important;
+    margin: 0 !important;
     display: flex;
     align-items: center;
     justify-content: center;
