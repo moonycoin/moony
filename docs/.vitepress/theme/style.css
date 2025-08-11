@@ -2447,3 +2447,19 @@ html body .VPApp .Layout .VPDocAside::after {
   background-color: transparent !important !important;
   background: none !important !important;
 }
+
+/* Override any gradients on body, html, and all parent elements */
+html,
+body,
+.VPApp,
+.Layout,
+.VPContent,
+html *,
+body *,
+.VPApp *,
+.Layout *,
+.VPContent * {
+  background-image: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
