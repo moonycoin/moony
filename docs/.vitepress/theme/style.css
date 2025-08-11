@@ -1746,6 +1746,22 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     text-align: center !important;
   }
   
+  .VPHero .container {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .VPHero .container {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
           .VPHero .main {
           flex-direction: column;
           gap: 0.5rem;
