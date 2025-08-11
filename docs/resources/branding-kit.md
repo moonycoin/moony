@@ -40,8 +40,10 @@ Moony can be represented using the Unicode character ⍜ (U+235C “APL Function
 
 This notation strengthens Moony’s position as a functional unit of account, supporting both usability and brand recognition.
 
-# Download Logo Files:**
+# Download Logo Files:
 
 These resources are provided to make it simple for developers, designers, and community members to integrate Moony’s identity into wallets, applications, media, and promotional materials without friction.
 
+::: tip 
 Download Moony Logo Files – Black & White (ZIP)
+:::
