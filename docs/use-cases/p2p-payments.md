@@ -62,8 +62,6 @@ Flipcash makes the on‑chain experience accessible through familiar payment pat
 - **Payment links:** Generate a link to share over chat, email, or social media, allowing recipients to claim Moony instantly and securely.
 - **Instant Settlement:** Users can see their Moony balance update immediately, pay friends and settle transactions without waiting days for bank processing.
 
-By abstracting complex onchain mechanics into actions users already understand, Flipcash delivers a mainstream‑ready P2P experience. 
-
-  ::: tip 
-While Flipcash is the first independent interface to access the Moony reserve contract, the token remains fully permissionless and interoperable as an SPL asset. Any compatible Solana wallet can store, send, or receive Moony — and future apps can integrate it seamlessly without requiring approval.
+::: tip 
+While Flipcash is the first independent interface to access the Moony reserve contract, the token remains fully permissionless and interoperable as an SPL asset. Any compatible Solana wallet can store, send, or receive Moony, and future apps can integrate it seamlessly without requiring approval.
 :::

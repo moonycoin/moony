@@ -2682,3 +2682,62 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* ================
+   TIP BOX STYLING
+   ================ */
+
+/* Tip box styling for all pages */
+.vp-doc .custom-block.tip {
+  background: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-brand) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  padding: 16px !important;
+  margin: 16px 0 32px 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Make tip boxes smaller on docs pages (excluding home page) */
+.vp-doc:not(.home) .custom-block.tip {
+  padding: 12px 16px !important;
+  margin: 12px 0 24px 0 !important;
+  min-height: 40px !important;
+}
+
+/* Ensure text fits on one line for docs pages */
+.vp-doc:not(.home) .custom-block.tip p {
+  margin: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
+}
+
+/* Home page tip boxes keep original size */
+.vp-doc.home .custom-block.tip {
+  padding: 20px !important;
+  margin: 16px 0 32px 0 !important;
+  min-height: auto !important;
+}
+
+.vp-doc.home .custom-block.tip p {
+  margin: 0 !important;
+  white-space: normal !important;
+  line-height: 1.5 !important;
+  font-size: 1rem !important;
+}
+
+/* Tip box divider for visual separation */
+.vp-doc .custom-block.tip::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -16px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, var(--vp-c-brand), transparent) !important;
+  opacity: 0.8 !important;
+}
+
