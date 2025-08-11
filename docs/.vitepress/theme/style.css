@@ -982,6 +982,9 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .dark .VPSidebar::after {
   display: none !important;
   content: none !important;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 
 /* Ensure clean PNG transparency for hero images */
