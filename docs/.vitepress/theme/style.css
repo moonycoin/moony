@@ -1699,6 +1699,46 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
+/* Portrait warning styles */
+.portrait-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--moony-primary);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 9999;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.portrait-warning .icon {
+  font-size: 3rem;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Force portrait mode on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .Layout {
+    display: none !important;
+  }
+  
+  .portrait-warning {
+    display: flex !important;
+  }
+}
+
 /* Mobile hero section improvements */
 @media (max-width: 768px) {
   .VPHero {
