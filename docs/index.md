@@ -10,10 +10,10 @@ hero:
     alt: Moony Icon
   actions:
     - theme: brand
-      text: View Docs
+      text: "📄 View Docs"
       link: /tokenomics/reserve-contract
     - theme: alt
-      text: View GitHub
+      text: "🐙 View GitHub"
       link: https://github.com/moonycoin/moony
 ---
 
