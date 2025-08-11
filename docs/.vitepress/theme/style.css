@@ -1834,6 +1834,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     border-radius: var(--mobile-border-radius) !important;
     transition: all 0.2s ease !important;
   }
+  
+  /* Reduce gap between hero and content below on mobile */
+  .vp-doc > *:first-child {
+    margin-top: 0.25rem !important;
+  }
 }
 
 /* Mobile footer improvements */
@@ -2065,6 +2070,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     min-width: 120px !important;
     padding: 0.75rem 1.25rem !important;
     font-size: 0.9rem !important;
+  }
+  
+  /* Reduce gap between hero and content below on mobile landscape */
+  .vp-doc > *:first-child {
+    margin-top: 0.25rem !important;
   }
 }
 
