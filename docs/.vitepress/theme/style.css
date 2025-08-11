@@ -1746,12 +1746,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     text-align: left;
   }
   
-  .VPHero .main {
-    flex-direction: row;
-    gap: 0.75rem;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+          .VPHero .main {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
   
   .VPHero .text {
     order: 1;
@@ -1777,10 +1778,10 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
         }
   
   .VPHero .image {
-    order: 2;
-    width: 40px !important;
-    height: 40px !important;
-    margin: 0 !important;
+    order: 1;
+    width: 35px !important;
+    height: 35px !important;
+    margin: 0 auto 0.3rem auto !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1957,18 +1958,18 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPHero .main {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .VPHero .text {
-    order: 1;
+    order: 2;
     flex: 1;
-    text-align: left;
-    max-width: calc(100% - 80px);
+    text-align: center;
+    max-width: 100%;
   }
   
           .VPHero .text h1 {
@@ -1987,10 +1988,10 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
         }
   
   .VPHero .image {
-    order: 2;
-    width: 35px !important;
-    height: 35px !important;
-    margin: 0 !important;
+    order: 1;
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 auto 0.2rem auto !important;
     display: flex;
     align-items: center;
     justify-content: center;
