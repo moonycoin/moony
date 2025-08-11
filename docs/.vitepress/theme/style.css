@@ -814,12 +814,12 @@ html .VPNav[class*="VPNav"],
 
 @media (max-width: 768px) {
   .vp-doc {
-    padding: 40px 0.5rem 40px 0.2rem !important;
-    margin: 25px 1rem !important;
+    padding: 40px 1rem !important;
+    margin: 25px auto !important;
     transform: scale(0.9);
     transform-origin: top center;
-    width: 111.11%; /* Compensate for scale(0.9) = 1/0.9 */
-    margin-left: -8%; /* Shift further left for better centering */
+    width: 90%; /* Reduced width for better mobile fit */
+    max-width: 400px; /* Prevent it from getting too wide */
   }
   
   .vp-doc h1 {
@@ -1043,12 +1043,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 @media (max-width: 768px) {
   .vp-doc {
-    padding: 40px 0.5rem 40px 0.2rem !important;
-    margin: 25px 1rem !important;
+    padding: 40px 1rem !important;
+    margin: 25px auto !important;
     transform: scale(0.9);
     transform-origin: top center;
-    width: 111.11%; /* Compensate for scale(0.9) = 1/0.9 */
-    margin-left: -8%; /* Shift further left for better centering */
+    width: 90%; /* Reduced width for better mobile fit */
+    max-width: 400px; /* Prevent it from getting too wide */
   }
   
   .vp-doc h1 {
