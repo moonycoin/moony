@@ -1843,13 +1843,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   /* Aggressively remove any spacing after hero */
   .VPHero + * {
-    margin-top: -4rem !important;
+    margin-top: -8rem !important;
     padding-top: 0 !important;
   }
   
   /* Target the first content element specifically */
   .VPHero ~ .vp-doc > *:first-child {
-    margin-top: -3.5rem !important;
+    margin-top: -7rem !important;
     padding-top: 2.5rem !important;
   }
 }
@@ -2093,13 +2093,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   /* Aggressively remove any spacing after hero */
   .VPHero + * {
-    margin-top: -4rem !important;
+    margin-top: -8rem !important;
     padding-top: 0 !important;
   }
   
   /* Target the first content element specifically */
   .VPHero ~ .vp-doc > *:first-child {
-    margin-top: -3.5rem !important;
+    margin-top: -7rem !important;
     padding-top: 2.5rem !important;
   }
 }
