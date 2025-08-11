@@ -814,8 +814,8 @@ html .VPNav[class*="VPNav"],
 
 @media (max-width: 768px) {
   .vp-doc {
-    padding: 40px 25px !important;
-    margin: 25px 15px !important;
+    padding: 40px 1rem !important;
+    margin: 25px 1rem !important;
   }
   
   .vp-doc h1 {
@@ -1037,8 +1037,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 @media (max-width: 768px) {
   .vp-doc {
-    padding: 40px 25px !important;
-    margin: 25px 15px !important;
+    padding: 40px 1rem !important;
+    margin: 25px 1rem !important;
   }
   
   .vp-doc h1 {
@@ -2103,8 +2103,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPHero ~ .vp-doc > *:first-child {
     margin-top: -4.5rem !important;
     padding-top: 5rem !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
   }
 }
 
