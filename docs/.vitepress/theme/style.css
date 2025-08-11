@@ -2423,7 +2423,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   --elegant-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
   --elegant-border: 1px solid rgba(0, 0, 0, 0.06);
   --elegant-border-hover: 1px solid rgba(0, 0, 0, 0.1);
-  --elegant-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95));
+  --elegant-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95)), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.8'/%3E%3C/svg%3E");
 }
 
 /* Enhanced shadows and depth for dark mode */
@@ -2432,7 +2432,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   --elegant-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.4);
   --elegant-border: 1px solid rgba(255, 255, 255, 0.08);
   --elegant-border-hover: 1px solid rgba(255, 255, 255, 0.12);
-  --elegant-gradient: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.95));
+  --elegant-gradient: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.95)), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.9'/%3E%3C/svg%3E");
 }
 
 /* Enhanced navigation bar with subtle polish */
