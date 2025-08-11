@@ -2761,5 +2761,10 @@ body {
   .VPFooter {
     margin-top: 1rem !important;
   }
+  
+  /* Hide all footer links except GitHub logo on mobile */
+  .VPFooter a:not([href*="github"]) {
+    display: none !important;
+  }
 }
 
