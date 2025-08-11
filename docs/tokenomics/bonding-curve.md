@@ -16,16 +16,42 @@ This mechanism applies symmetrically to both minting and redemption. When new Mo
 
 ## Model Parameters
 
-The bonding curve follows a non‑linear exponential function: 
+The bonding curve follows a non‑linear exponential function:
 
-Price = base_price * (1 + rate) ^ supply_percent
+```math
+Price = base\_price × (1 + rate)^{supply\_percent}
+```
 
-Where:
-base_price = $0.01 USDC (price of the first token)
-rate = 0.20 (20% price increase for each 1% of total supply issued)
-supply_percent = percentage of the 21,000,000 total supply currently in circulation
+### **Key Variables**
 
-This model guarantees deterministic, transparent price progression. The first Moony token is priced at $0.01 USDC, while the final token will approach $1,000,000 USDC. The non‑linear curve is central to Moony’s economic design, early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
+```math
+base\_price = $0.01 \text{ USDC}
+```
+*The price of the first token*
+
+```math
+rate = 0.20 \text{ (20%)}
+```
+*Price increase for each 1% of total supply issued*
+
+```math
+supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
+```
+*Percentage of the total fixed supply currently in circulation*
+
+### **Price Examples**
+
+| Supply Level | Circulating Tokens | Price per Token |
+|--------------|-------------------|-----------------|
+| 0.1%        | 21,000            | $0.012 USDC     |
+| 1%          | 210,000           | $0.012 USDC     |
+| 10%         | 2,100,000         | $0.062 USDC     |
+| 50%         | 10,500,000        | $0.32 USDC      |
+| 90%         | 18,900,000        | $1.95 USDC      |
+| 99%         | 20,790,000        | $6.19 USDC      |
+| 99.9%       | 20,979,000        | $19.6 USDC      |
+
+This model guarantees **deterministic, transparent price progression**. The first Moony token is priced at $0.01 USDC, while the final token will approach $1,000,000 USDC. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
 
 ## Market Dynamics
 
