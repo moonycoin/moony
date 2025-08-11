@@ -2417,3 +2417,18 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: transparent !important;
   background-color: transparent !important;
 }
+
+/* Maximum specificity override for sidebar gradients */
+html body .VPApp .Layout .VPSidebar,
+html body .VPApp .Layout.has-sidebar .VPSidebar,
+html body .VPApp .Layout .VPSidebar *,
+html body .VPApp .Layout.has-sidebar .VPSidebar *,
+html body .VPApp .Layout .VPSidebar::before,
+html body .VPApp .Layout.has-sidebar .VPSidebar::before,
+html body .VPApp .Layout .VPSidebar::after,
+html body .VPApp .Layout.has-sidebar .VPSidebar::after {
+  background-image: none !important !important;
+  background: transparent !important !important;
+  background-color: transparent !important !important;
+  background: none !important !important;
+}
