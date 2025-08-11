@@ -1405,7 +1405,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 }
 
 /* Alternative noise effect using CSS filters for better performance */
-.Layout::before,
+/* .Layout::before,
 .VPApp::before {
   content: '';
   position: fixed;
@@ -1418,7 +1418,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     transparent 60%);
   pointer-events: none;
   z-index: 0;
-}
+} */
 
 /* Enhanced noise effect for the main content area - REMOVED TO FIX BRIGHT WHITE GRADIENT IN SIDEBAR */
 /* .VPContent::before {
