@@ -2463,3 +2463,17 @@ body *,
   background: transparent !important;
   background-color: transparent !important;
 }
+
+/* Remove VitePress right-aside bottom gradient curtain - THIS IS THE KEY FIX */
+.VPDoc .aside-curtain,
+.aside-curtain,
+.dark .VPDoc .aside-curtain {
+  display: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+}
