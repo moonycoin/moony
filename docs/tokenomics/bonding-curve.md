@@ -39,29 +39,6 @@ supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
 ```
 *Percentage of the total fixed supply currently in circulation*
 
-### **Price Examples**
-
-| Supply Level | Circulating Tokens | Price per 1% | Total Cost for Next 1% |
-|--------------|-------------------|---------------|------------------------|
-| 1%          | 210,000           | $0.01 USDC    | $2,100 USDC            |
-| 5%          | 1,050,000         | $0.0207 USDC  | $4,347 USDC            |
-| 10%         | 2,100,000         | $0.043 USDC   | $9,030 USDC            |
-| 25%         | 5,250,000         | $0.149 USDC   | $31,290 USDC           |
-| 50%         | 10,500,000        | $0.516 USDC   | $108,360 USDC          |
-| 75%         | 15,750,000        | $1.79 USDC    | $375,900 USDC          |
-| 90%         | 18,900,000        | $6.19 USDC    | $1,299,900 USDC        |
-| 95%         | 19,950,000        | $15.4 USDC    | $3,234,000 USDC        |
-| 98%         | 20,580,000        | $37.2 USDC    | $7,812,000 USDC        |
-| 99%         | 20,790,000        | $61.9 USDC    | $13,000,000 USDC       |
-| 99.5%       | 20,895,000        | $92.9 USDC    | $19,500,000 USDC       |
-| 99.9%       | 20,979,000        | $185 USDC     | $38,850,000 USDC       |
-| 99.95%      | 20,989,500         | $278 USDC     | $58,380,000 USDC       |
-| 99.99%      | 20,997,900         | $555 USDC     | $116,550,000 USDC      |
-| 99.995%     | 20,998,950          | $833 USDC     | $174,930,000 USDC      |
-| 100%        | 21,000,000          | $1,250 USDC   | $262,500,000 USDC      |
-
-**Note**: The exponential growth becomes nearly vertical at the end. The final 0.005% of supply (105,000 tokens) costs $262.5 million USDC, making each individual token worth approximately $2,500. As the curve approaches 100%, individual tokens become prohibitively expensive, with the very last few tokens indeed costing close to $1,000,000 each as the bonding curve becomes nearly infinite.
-
 This model guarantees **deterministic, transparent price progression**. The first 1% of Moony supply is priced at $0.01 per token, while the final tokens will approach $1,000,000 each. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
 
 ## Market Dynamics
