@@ -2748,3 +2748,18 @@ body {
   opacity: 0.8 !important;
 }
 
+/* ================
+   MOBILE FOOTER GAP FIX
+   ================ */
+
+@media (max-width: 768px) {
+  /* Reduce gap between main container and footer on mobile */
+  .vp-doc {
+    margin-bottom: 2rem !important;
+  }
+  
+  .VPFooter {
+    margin-top: 1rem !important;
+  }
+}
+
