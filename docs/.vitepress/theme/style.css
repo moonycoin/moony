@@ -1824,12 +1824,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPHero .action .VPButton {
-    min-width: 20px;
-    min-height: 10px;
-    padding: 0.1rem 0.15rem;
-    font-size: 0.5rem;
-    border-radius: var(--mobile-border-radius);
-    transition: all 0.2s ease;
+    min-width: 20px !important;
+    min-height: 10px !important;
+    padding: 0.1rem 0.15rem !important;
+    font-size: 0.5rem !important;
+    border-radius: var(--mobile-border-radius) !important;
+    transition: all 0.2s ease !important;
   }
 }
 
@@ -2056,9 +2056,9 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPHero .action .VPButton {
-    min-width: 20px;
-    padding: 0.1rem 0.15rem;
-    font-size: 0.5rem;
+    min-width: 20px !important;
+    padding: 0.1rem 0.15rem !important;
+    font-size: 0.5rem !important;
   }
 }
 
