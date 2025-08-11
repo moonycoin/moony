@@ -27,15 +27,15 @@ This documentation is for informational purposes only and does not constitute fi
 
 # Tokenomics
 
-Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Inc. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
+Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Inc. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process. At genesis, the entire supply is deposited into the reserve contract. No tokens were allocated to any team, treasury, investors, or insiders. Instead, the supply remains unissued until users interact with the contract.
 
 The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
 **Key Properties:**
 
-- **Transparent:** Issuance follows deterministic onchain logic, with real-time visibility into price and supply.
 - **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
-- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring verifiable backing.
+- **Fair Distribution:** The entire supply is deposted into the reserve at launch. No allocation is given to any team, treasury, investors, or insiders.
+- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquditity to support the market as it grows.
 
 This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity. This model aligns issuance with demand, reduces inefficiencies, and ensures that all circulating Moony remains transparently and verifiably supported.
 
