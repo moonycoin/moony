@@ -1757,7 +1757,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPHero .text {
     order: 2;
     flex: 1;
-    text-align: center;
+    text-align: center !important;
     max-width: 100%;
     font-size: 3.7rem !important;
     line-height: 1.1 !important;
@@ -1796,17 +1796,18 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPHero .actions {
     order: 3;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.75rem;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-top: 0.75rem;
   }
   
   .VPHero .action .VPButton {
-    min-width: 180px;
-    min-height: var(--mobile-touch-target);
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+    min-width: 140px;
+    min-height: 44px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
     border-radius: var(--mobile-border-radius);
     transition: all 0.2s ease;
   }
@@ -2026,11 +2027,14 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     gap: 0.75rem;
     order: 3;
     margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
   }
   
   .VPHero .action .VPButton {
-    min-width: 160px;
+    min-width: 140px;
     padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
   }
 }
 
