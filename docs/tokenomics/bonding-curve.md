@@ -6,17 +6,13 @@ This mechanism applies symmetrically to both minting and redemption. When new Mo
 
 ## Core Principles
 
-- **Price Increases with Demand:**  
- As users mint Moony from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.
+- **Price Increases with Demand:** As users mint Moony from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.
 
-- **Price Also Governs Redemption:**  
- When users redeem Moony for USDC through the Reserve, the curve calculates the return value based on the current supply position.
+- **Price Also Governs Redemption:** When users redeem Moony for USDC through the Reserve, the curve calculates the return value based on the current supply position.
 
-- **Predictable and Transparent:**  
-  Pricing is fully deterministic, enforced by on‑chain logic, and free from discretionary control.
+- **Predictable and Transparent:** Pricing is fully deterministic, enforced by on‑chain logic, and free from discretionary control.
 
-- **Aligned Incentives:**  
-  Early adopters gain an advantage, while later participants strengthen network liquidity through higher‑priced entries.
+- **Aligned Incentives:** Early adopters gain an advantage, while later participants strengthen network liquidity through higher‑priced entries.
 
 ## Model Parameters
 
