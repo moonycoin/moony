@@ -1822,7 +1822,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin-top: 0.75rem;
     margin-bottom: 0 !important;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 0.5rem 0 2rem;
     box-sizing: border-box;
   }
   
@@ -2057,7 +2057,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 0.5rem 0 2rem;
     box-sizing: border-box;
   }
   
