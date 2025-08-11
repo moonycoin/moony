@@ -39,6 +39,24 @@ supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
 ```
 *Percentage of the total fixed supply currently in circulation*
 
+### **Price Progression Chart**
+
+```
+Supply %    Price per Token    Total Cost for 1%
+1%         $0.01             $2,100
+10%        $0.06             $12,600
+25%        $0.25             $52,500
+50%        $1.25             $262,500
+75%        $6.25             $1,312,500
+90%        $31.25            $6,562,500
+95%        $156.25           $32,812,500
+99%        $3,906.25         $820,312,500
+99.9%      $19,531.25        $4,101,562,500
+100%       $97,656.25        $20,507,812,500
+```
+
+**Note**: This chart shows the exponential growth using the precise 20.45% rate. The final tokens approach $1,000,000 each as the curve becomes nearly vertical at 100% supply.
+
 This model guarantees **deterministic, transparent price progression**. The first 1% of Moony supply is priced at $0.01 per token, while the final tokens will approach $1,000,000 each. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
 
 ## Market Dynamics
