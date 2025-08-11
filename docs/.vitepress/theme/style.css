@@ -2495,3 +2495,20 @@ body,
   visibility: visible !important;
   display: block !important;
 }
+
+/* Make toggle button and social icons visible - STRONGER RULES */
+.VPNavBarAppearance,
+.VPNavBarAppearance *,
+.VPNavBarSocialLinks,
+.VPNavBarSocialLinks *,
+.VPNavBarAppearance .VPSwitch,
+.VPNavBarSocialLinks a {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  z-index: 999 !important;
+  position: relative !important;
+}
