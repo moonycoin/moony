@@ -1762,7 +1762,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
           .VPHero .text h1 {
-          font-size: 0.4rem !important;
+          font-size: 0.1rem !important;
           line-height: 1.1 !important;
           margin-bottom: 0.3rem !important;
         }
@@ -1973,7 +1973,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
           .VPHero .text h1 {
-          font-size: 0.35rem !important;
+          font-size: 0.1rem !important;
           line-height: 1.1 !important;
           margin-bottom: 0.3rem !important;
         }
