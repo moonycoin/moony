@@ -2473,3 +2473,169 @@ body,
   opacity: 0 !important;
 }
 
+/* ================
+   ELEGANT POLISH & ENHANCEMENTS
+   ================ */
+
+/* Refined shadows and depth for light mode */
+:root {
+  --elegant-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --elegant-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --elegant-border: 1px solid rgba(0, 0, 0, 0.06);
+  --elegant-border-hover: 1px solid rgba(0, 0, 0, 0.1);
+  --elegant-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95));
+}
+
+/* Enhanced shadows and depth for dark mode */
+.dark {
+  --elegant-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --elegant-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --elegant-border: 1px solid rgba(255, 255, 255, 0.08);
+  --elegant-border-hover: 1px solid rgba(255, 255, 255, 0.12);
+  --elegant-gradient: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.95));
+}
+
+/* Enhanced navigation bar with subtle polish */
+.VPNav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: var(--elegant-border);
+  box-shadow: var(--elegant-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.VPNav:hover {
+  box-shadow: var(--elegant-shadow-hover);
+}
+
+/* Refined hero section with elegant depth */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--elegant-gradient);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* Enhanced buttons with refined styling */
+.VPButton {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--elegant-shadow);
+  border: var(--elegant-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.VPButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elegant-shadow-hover);
+  border-color: var(--elegant-border-hover);
+}
+
+/* Refined content cards and containers */
+.vp-doc .custom-block {
+  border: var(--elegant-border);
+  box-shadow: var(--elegant-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.vp-doc .custom-block:hover {
+  box-shadow: var(--elegant-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* Enhanced sidebar with subtle polish */
+.VPSidebar {
+  border-right: var(--elegant-border);
+  box-shadow: var(--elegant-shadow);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Refined table styling */
+.vp-doc table {
+  border: var(--elegant-border);
+  box-shadow: var(--elegant-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Enhanced code blocks */
+.vp-doc pre {
+  border: var(--elegant-border);
+  box-shadow: var(--elegant-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Refined footer with elegant styling */
+.VPFooter {
+  border-top: var(--elegant-border);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Enhanced navigation links with subtle hover effects */
+.VPNavBarMenuLink {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.VPNavBarMenuLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-c-brand);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.VPNavBarMenuLink:hover::after {
+  width: 100%;
+}
+
+/* Refined tip boxes with enhanced styling */
+.vp-doc .custom-block.tip {
+  background: var(--elegant-gradient);
+  border: var(--elegant-border);
+  box-shadow: var(--elegant-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vp-doc .custom-block.tip:hover {
+  box-shadow: var(--elegant-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* Enhanced mobile responsiveness with elegant transitions */
+@media (max-width: 768px) {
+  .VPNav {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+  
+  .VPHero::before {
+    opacity: 0.5;
+  }
+  
+  .VPButton {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+}
+
