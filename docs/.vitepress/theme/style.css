@@ -2659,3 +2659,81 @@ body {
   --vp-c-bg-soft: var(--elegant-gradient) !important;
 }
 
+/* ================
+   UNIFIED HEADER & SIDEBAR STYLING
+   ================ */
+
+/* Consistent Header Styling for Both Themes */
+.VPNav {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dark .VPNav {
+  background: rgba(15, 15, 17, 0.95) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Consistent Sidebar Styling for Both Themes */
+.VPSidebar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dark .VPSidebar {
+  background: rgba(15, 15, 17, 0.95) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Enhanced Navigation Elements */
+.VPNavBar {
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+.VPNavBarMenuLink {
+  color: var(--vp-c-text-1) !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-brand) !important;
+}
+
+/* Consistent Button Styling */
+.VPNavBarAppearance .VPSwitch,
+.VPNavBarSocialLinks a {
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.dark .VPNavBarAppearance .VPSwitch,
+.dark .VPNavBarSocialLinks a {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.VPNavBarAppearance .VPSwitch:hover,
+.VPNavBarSocialLinks a:hover {
+  background: rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .VPNavBarAppearance .VPSwitch:hover,
+.dark .VPNavBarSocialLinks a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
