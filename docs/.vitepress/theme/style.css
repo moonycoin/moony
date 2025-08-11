@@ -1765,10 +1765,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           font-size: 0.1rem !important;
           line-height: 1.1 !important;
           margin-bottom: 0.3rem !important;
+          font-weight: 800 !important;
         }
   
           .VPHero .tagline {
-          font-size: 0.35rem !important;
+          font-size: 0.05rem !important;
           margin: 0.2rem 0 0.5rem 0 !important;
           line-height: 1.1 !important;
           white-space: normal !important;
@@ -1976,10 +1977,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           font-size: 0.1rem !important;
           line-height: 1.1 !important;
           margin-bottom: 0.3rem !important;
+          font-weight: 800 !important;
         }
   
           .VPHero .tagline {
-          font-size: 0.3rem !important;
+          font-size: 0.05rem !important;
           margin: 0.2rem 0 !important;
           line-height: 1.1 !important;
           white-space: normal !important;
