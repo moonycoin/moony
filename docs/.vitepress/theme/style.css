@@ -1760,21 +1760,21 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     max-width: calc(100% - 80px);
   }
   
-  .VPHero .text h1 {
-    font-size: 1rem !important;
-    line-height: 1.1 !important;
-    margin-bottom: 0.3rem !important;
-  }
+          .VPHero .text h1 {
+          font-size: 0.7rem !important;
+          line-height: 1.1 !important;
+          margin-bottom: 0.3rem !important;
+        }
   
-  .VPHero .tagline {
-    font-size: 0.65rem !important;
-    margin: 0.2rem 0 0.5rem 0 !important;
-    line-height: 1.1 !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    max-width: 100% !important;
-  }
+          .VPHero .tagline {
+          font-size: 0.5rem !important;
+          margin: 0.2rem 0 0.5rem 0 !important;
+          line-height: 1.1 !important;
+          white-space: nowrap !important;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+          max-width: 100% !important;
+        }
   
   .VPHero .image {
     order: 2;
@@ -1971,20 +1971,20 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     max-width: calc(100% - 80px);
   }
   
-  .VPHero .text h1 {
-    font-size: 0.9rem !important;
-    line-height: 1.1 !important;
-    margin-bottom: 0.3rem !important;
-  }
+          .VPHero .text h1 {
+          font-size: 0.6rem !important;
+          line-height: 1.1 !important;
+          margin-bottom: 0.3rem !important;
+        }
   
-  .VPHero .tagline {
-    font-size: 0.6rem !important;
-    margin: 0.2rem 0 !important;
-    line-height: 1.1 !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
+          .VPHero .tagline {
+          font-size: 0.45rem !important;
+          margin: 0.2rem 0 !important;
+          line-height: 1.1 !important;
+          white-space: nowrap !important;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+        }
   
   .VPHero .image {
     order: 2;
