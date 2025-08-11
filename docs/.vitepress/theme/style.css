@@ -2673,7 +2673,7 @@ body {
 }
 
 .dark .VPNav {
-  background: rgba(15, 15, 17, 0.95) !important;
+  background: var(--elegant-gradient) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
 }
@@ -2688,7 +2688,7 @@ body {
 }
 
 .dark .VPSidebar {
-  background: rgba(15, 15, 17, 0.95) !important;
+  background: var(--elegant-gradient) !important;
   border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
   box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3) !important;
 }
