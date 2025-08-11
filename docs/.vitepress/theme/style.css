@@ -2688,7 +2688,7 @@ body {
 }
 
 .dark .VPSidebar {
-  background: var(--elegant-gradient) !important;
+  background: linear-gradient(135deg, rgba(24, 24, 27, 0.98), rgba(18, 18, 21, 0.99), rgba(15, 15, 17, 1), rgba(9, 9, 11, 1)) !important;
   border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
   box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3) !important;
 }
