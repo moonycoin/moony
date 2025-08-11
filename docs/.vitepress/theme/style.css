@@ -2493,3 +2493,10 @@ body *,
   z-index: 100 !important;
   position: relative !important;
 }
+
+/* Make GitHub icon visible */
+.VPNavBarSocialLinks a[href*="github"] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
