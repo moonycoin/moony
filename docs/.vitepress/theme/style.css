@@ -1769,7 +1769,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
         }
   
           .VPHero .tagline {
-          font-size: 0.05rem !important;
+          font-size: 0.8rem !important;
           margin: 0.2rem 0 0.5rem 0 !important;
           line-height: 1.1 !important;
           white-space: normal !important;
@@ -1981,7 +1981,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
         }
   
           .VPHero .tagline {
-          font-size: 0.05rem !important;
+          font-size: 0.8rem !important;
           margin: 0.2rem 0 !important;
           line-height: 1.1 !important;
           white-space: normal !important;
