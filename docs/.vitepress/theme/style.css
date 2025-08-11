@@ -519,6 +519,12 @@ body {
   overflow-y: auto !important;
   z-index: 1 !important;
   align-self: flex-start !important;
+  
+  /* Fixed width to prevent stretching on wide screens */
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  flex-shrink: 0 !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
@@ -1256,12 +1262,24 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   max-height: 70vh !important;
   overflow-y: auto !important;
   z-index: 1 !important;
+  
+  /* Fixed width to prevent stretching on wide screens */
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  flex-shrink: 0 !important;
 }
 
 .dark .Layout.has-sidebar .VPSidebar,
 .dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
   background: rgba(24, 24, 27, 0.95) !important;
   border-right-color: #424245 !important;
+  
+  /* Fixed width to prevent stretching on wide screens */
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  flex-shrink: 0 !important;
 }
 
 /* ================
