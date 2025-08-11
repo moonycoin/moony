@@ -92,9 +92,6 @@ The Flipcash app enables users to:
 - **Interact With Reserve:** Seamlessly convert between MOONY and USDC through an intuitive interface.
 - **Send P2P Payments:** Use QR code based digital cash and URL links to simplify sending and receiving payments.
 
-While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a public good, Moony can be integrated into any third party platform, protocol,wallet, or app. As an SPL-standard digital asset, it is fully compatible with the broader Solana ecosystem, ensuring broad utility, composability, and adoption. 
-
-
 ::: tip
-[Click here to learn more about how Moony uses Flipcash →](/resources/community)
+While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a digital public good, Moony can be integrated into any third party platform, protocol,wallet, or app. As an SPL-standard digital asset, it is fully compatible with the broader Solana ecosystem, ensuring broad utility, composability, and adoption.
 :::
