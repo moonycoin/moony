@@ -1743,7 +1743,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 @media (max-width: 768px) {
   .VPHero {
     padding: 1rem 0.5rem !important;
-    text-align: left;
+    text-align: center !important;
   }
   
           .VPHero .main {
@@ -1762,14 +1762,14 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
           .VPHero .text h1 {
-          font-size: 1rem !important;
+          font-size: 0.6rem !important;
           line-height: 1.1 !important;
           margin-bottom: 0.3rem !important;
           font-weight: 800 !important;
         }
   
           .VPHero .tagline {
-          font-size: 0.8rem !important;
+          font-size: 0.4rem !important;
           margin: 0.2rem 0 0.5rem 0 !important;
           line-height: 1.1 !important;
           white-space: normal !important;
@@ -1974,14 +1974,14 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
           .VPHero .text h1 {
-          font-size: 1rem !important;
+          font-size: 0.6rem !important;
           line-height: 1.1 !important;
           margin-bottom: 0.3rem !important;
           font-weight: 800 !important;
         }
   
           .VPHero .tagline {
-          font-size: 0.8rem !important;
+          font-size: 0.4rem !important;
           margin: 0.2rem 0 !important;
           line-height: 1.1 !important;
           white-space: normal !important;
