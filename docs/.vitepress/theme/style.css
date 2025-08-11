@@ -977,6 +977,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background-color: #424245 !important;
 }
 
+/* Remove sidebar pseudo-elements that cause gradient artifacts */
+.dark .VPSidebar::before,
+.dark .VPSidebar::after {
+  display: none !important;
+  content: none !important;
+}
+
 /* Ensure clean PNG transparency for hero images */
 .VPHero .image,
 .VPHero .image *,
