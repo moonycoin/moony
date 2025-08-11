@@ -19,7 +19,7 @@ This mechanism applies symmetrically to both minting and redemption. When new Mo
 The bonding curve follows a non‑linear exponential function:
 
 ```math
-Price = base\_price × (1 + rate)^{supply\_percent}
+Price = base\_price × (1 + rate)^{supply\_percent - 1}
 ```
 
 ### **Key Variables**
@@ -27,12 +27,12 @@ Price = base\_price × (1 + rate)^{supply\_percent}
 ```math
 base\_price = $0.01 \text{ USDC}
 ```
-*The price of the first token*
+*The price for the first 1% of supply*
 
 ```math
 rate = 0.20 \text{ (20%)}
 ```
-*Price increase for each 1% of total supply issued*
+*Price increase for each additional 1% of total supply issued*
 
 ```math
 supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
@@ -41,17 +41,22 @@ supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
 
 ### **Price Examples**
 
-| Supply Level | Circulating Tokens | Price per Token |
-|--------------|-------------------|-----------------|
-| 0.1%        | 21,000            | $0.012 USDC     |
-| 1%          | 210,000           | $0.012 USDC     |
-| 10%         | 2,100,000         | $0.062 USDC     |
-| 50%         | 10,500,000        | $0.32 USDC      |
-| 90%         | 18,900,000        | $1.95 USDC      |
-| 99%         | 20,790,000        | $6.19 USDC      |
-| 99.9%       | 20,979,000        | $19.6 USDC      |
+| Supply Level | Circulating Tokens | Price per 1% | Total Cost for Next 1% |
+|--------------|-------------------|---------------|------------------------|
+| 1%          | 210,000           | $0.01 USDC    | $2,100 USDC            |
+| 2%          | 420,000           | $0.012 USDC   | $2,520 USDC            |
+| 5%          | 1,050,000         | $0.0207 USDC  | $4,347 USDC            |
+| 10%         | 2,100,000         | $0.043 USDC   | $9,030 USDC            |
+| 25%         | 5,250,000         | $0.149 USDC   | $31,290 USDC           |
+| 50%         | 10,500,000        | $0.516 USDC   | $108,360 USDC          |
+| 75%         | 15,750,000        | $1.79 USDC    | $375,900 USDC          |
+| 90%         | 18,900,000        | $6.19 USDC    | $1,299,900 USDC        |
+| 99%         | 20,790,000        | $21.5 USDC    | $4,515,000 USDC        |
+| 100%        | 21,000,000        | $47.6 USDC    | $10,000,000 USDC       |
 
-This model guarantees **deterministic, transparent price progression**. The first Moony token is priced at $0.01 USDC, while the final token will approach $1,000,000 USDC. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
+**Note**: The final 1% of supply (from 99% to 100%) would cost approximately $10 million USDC, and the very last individual tokens would approach $1,000,000 each as the curve becomes extremely steep.
+
+This model guarantees **deterministic, transparent price progression**. The first 1% of Moony supply is priced at $0.01 per token, while the final tokens will approach $1,000,000 each. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
 
 ## Market Dynamics
 
