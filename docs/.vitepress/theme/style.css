@@ -1420,8 +1420,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   z-index: 0;
 }
 
-/* Enhanced noise effect for the main content area */
-.VPContent::before {
+/* Enhanced noise effect for the main content area - REMOVED TO FIX BRIGHT WHITE GRADIENT IN SIDEBAR */
+/* .VPContent::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1438,7 +1438,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
-}
+} */
 
 /* Subtle grain effect for text readability */
 .vp-doc::before {
