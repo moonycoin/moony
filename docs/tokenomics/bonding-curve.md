@@ -30,7 +30,7 @@ base\_price = $0.01 \text{ USDC}
 *The price for the first 1% of supply*
 
 ```math
-rate = 0.20 \text{ (20%)}
+rate = 0.2045 \text{ (20.45%)}
 ```
 *Price increase for each additional 1% of total supply issued*
 
