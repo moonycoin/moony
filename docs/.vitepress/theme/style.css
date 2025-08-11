@@ -814,7 +814,7 @@ html .VPNav[class*="VPNav"],
 
 @media (max-width: 768px) {
   .vp-doc {
-    padding: 40px 0.5rem !important;
+    padding: 40px 0.5rem 40px 0.2rem !important;
     margin: 25px 1rem !important;
     transform: scale(0.9);
     transform-origin: top center;
@@ -1041,7 +1041,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 @media (max-width: 768px) {
   .vp-doc {
-    padding: 40px 0.5rem !important;
+    padding: 40px 0.5rem 40px 0.2rem !important;
     margin: 25px 1rem !important;
     transform: scale(0.9);
     transform-origin: top center;
