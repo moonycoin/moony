@@ -3,7 +3,8 @@ export default {
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/moony/',
   appearance: 'dark',
-      head: [
+  head: [
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' }],
       ['meta', { name: 'theme-color', content: '#007AFF' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'en' }],
@@ -68,6 +69,8 @@ export default {
         dateStyle: 'full',
         timeStyle: 'medium'
       }
-    }
+    },
+    mobileMenu: true,
+    mobileMenuGroup: true
   }
 }
