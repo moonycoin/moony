@@ -2477,3 +2477,19 @@ body *,
   box-shadow: none !important;
   opacity: 0 !important;
 }
+
+/* Ensure header elements remain visible and properly styled */
+.VPNav,
+.VPNav *,
+.VPNavBar,
+.VPNavBar *,
+.VPNavBar .VPNavBarMenuLink,
+.VPNavBar .VPNavBarMenuLink *,
+.VPNavBar .VPNavBarMenuLink .VPNavBarMenuLinkIcon,
+.VPNavBar .VPNavBarMenuLink .VPNavBarMenuLinkIcon * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  z-index: 100 !important;
+  position: relative !important;
+}
