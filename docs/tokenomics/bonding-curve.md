@@ -51,10 +51,13 @@ supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
 | 50%         | 10,500,000        | $0.516 USDC   | $108,360 USDC          |
 | 75%         | 15,750,000        | $1.79 USDC    | $375,900 USDC          |
 | 90%         | 18,900,000        | $6.19 USDC    | $1,299,900 USDC        |
-| 99%         | 20,790,000        | $21.5 USDC    | $4,515,000 USDC        |
-| 100%        | 21,000,000        | $47.6 USDC    | $10,000,000 USDC       |
+| 95%         | 19,950,000        | $15.4 USDC    | $3,234,000 USDC        |
+| 99%         | 20,790,000        | $61.9 USDC    | $13,000,000 USDC       |
+| 99.9%       | 20,979,000        | $185 USDC     | $38,850,000 USDC       |
+| 99.99%      | 20,997,900         | $555 USDC     | $116,550,000 USDC      |
+| 100%        | 21,000,000         | $1,667 USDC   | $350,000,000 USDC      |
 
-**Note**: The final 1% of supply (from 99% to 100%) would cost approximately $10 million USDC, and the very last individual tokens would approach $1,000,000 each as the curve becomes extremely steep.
+**Note**: The exponential growth becomes extremely steep at the end. The final 0.01% of supply (21,000 tokens) costs $350 million USDC, making each individual token worth approximately $16,667. The very last few tokens would indeed approach $1,000,000 each as the curve becomes nearly vertical.
 
 This model guarantees **deterministic, transparent price progression**. The first 1% of Moony supply is priced at $0.01 per token, while the final tokens will approach $1,000,000 each. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
 
