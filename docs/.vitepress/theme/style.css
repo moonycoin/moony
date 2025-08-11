@@ -1837,7 +1837,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   /* Reduce gap between hero and content below on mobile */
   .vp-doc > *:first-child {
-    margin-top: 0.25rem !important;
+    margin-top: 0 !important;
   }
 }
 
@@ -2074,7 +2074,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   /* Reduce gap between hero and content below on mobile landscape */
   .vp-doc > *:first-child {
-    margin-top: 0.25rem !important;
+    margin-top: 0 !important;
   }
 }
 
