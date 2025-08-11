@@ -2432,3 +2432,18 @@ html body .VPApp .Layout.has-sidebar .VPSidebar::after {
   background-color: transparent !important !important;
   background: none !important !important;
 }
+
+/* Target the "On this page" aside bar specifically */
+.VPDocAside,
+.VPDocAside *,
+.VPDocAside::before,
+.VPDocAside::after,
+html body .VPApp .Layout .VPDocAside,
+html body .VPApp .Layout .VPDocAside *,
+html body .VPApp .Layout .VPDocAside::before,
+html body .VPApp .Layout .VPDocAside::after {
+  background-image: none !important !important;
+  background: transparent !important !important;
+  background-color: transparent !important !important;
+  background: none !important !important;
+}
