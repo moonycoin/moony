@@ -2700,19 +2700,19 @@ body {
 
 /* Make tip boxes smaller on docs pages (excluding home page) */
 .vp-doc:not(.home) .custom-block.tip {
-  padding: 12px 16px !important;
-  margin: 12px 0 24px 0 !important;
-  min-height: 40px !important;
+  padding: 14px 16px !important;
+  margin: 14px 0 28px 0 !important;
+  min-height: auto !important;
 }
 
-/* Ensure text fits on one line for docs pages */
+/* Ensure text fits on one line for docs pages but don't cut off */
 .vp-doc:not(.home) .custom-block.tip p {
   margin: 0 !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  font-size: 0.9rem !important;
-  line-height: 1.4 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
 }
 
 /* Home page tip boxes keep original size */
