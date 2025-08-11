@@ -63,7 +63,7 @@ body {
 /* Ensure content doesn't stretch too wide on large screens */
 @media (min-width: 1200px) {
   .vp-doc {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
   
@@ -77,14 +77,14 @@ body {
 
 @media (min-width: 1600px) {
   .vp-doc {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 2000px) {
   .vp-doc {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 }
