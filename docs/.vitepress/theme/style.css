@@ -10133,17 +10133,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 /* Small mobile devices (320px and up) */
 @media (max-width: 480px) {
-  /* AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
+  /* ULTRA AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
   .VPFooter {
-    margin-top: -12rem !important;
-    transform: translateY(-12rem) !important;
+    margin-top: -20rem !important;
+    transform: translateY(-20rem) !important;
   }
   
   /* Maximum specificity for footer positioning */
   .Layout .VPApp .VPFooter,
   .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -12rem !important;
-    transform: translateY(-12rem) !important;
+    margin-top: -20rem !important;
+    transform: translateY(-20rem) !important;
   }
   
   /* Hide default footer content but keep container visible */
@@ -10182,17 +10182,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 /* Medium mobile devices (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-  /* AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
+  /* ULTRA AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
   .VPFooter {
-    margin-top: -10rem !important;
-    transform: translateY(-10rem) !important;
+    margin-top: -18rem !important;
+    transform: translateY(-18rem) !important;
   }
   
   /* Maximum specificity for footer positioning */
   .Layout .VPApp .VPFooter,
   .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -10rem !important;
-    transform: translateY(-10rem) !important;
+    margin-top: -18rem !important;
+    transform: translateY(-18rem) !important;
   }
   
   /* Hide default footer content but keep container visible */
@@ -10232,17 +10232,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 /* Large mobile devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
+  /* ULTRA AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
   .VPFooter {
-    margin-top: -8rem !important;
-    transform: translateY(-8rem) !important;
+    margin-top: -15rem !important;
+    transform: translateY(-15rem) !important;
   }
   
   /* Maximum specificity for footer positioning */
   .Layout .VPApp .VPFooter,
   .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -8rem !important;
-    transform: translateY(-8rem) !important;
+    margin-top: -15rem !important;
+    transform: translateY(-15rem) !important;
   }
   
   /* Hide default footer content but keep container visible */
