@@ -45,11 +45,10 @@ supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
 ```
 Supply %    Price per Token    Total Cost for 1%
 1%         $0.01             $2,100
-10%        $0.06             $12,600
-25%        $0.25             $52,500
-50%        $1.25             $262,500
-75%        $6.25             $1,312,500
-100%       $97,656.25        $20,507,812,500
+
+(insert infographics in this space)
+
+
 ```
 
 **Note**: This chart shows the exponential growth using the precise 20.45% rate. The final tokens approach $1,000,000 each as the curve becomes nearly vertical at 100% supply.
