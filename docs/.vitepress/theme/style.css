@@ -2762,7 +2762,7 @@ body {
     margin-top: 1rem !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
-    padding: 1rem 0 0 0 !important;
+    padding: 2rem 0 0 0 !important;
   }
   
   /* Hide ALL footer links on mobile */
@@ -2778,6 +2778,18 @@ body {
   
   /* Remove any extra footer spacing */
   .VPFooter * {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target the brand section specifically to remove bottom spacing */
+  .VPFooter .VPFooterBrand {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target the tagline specifically to remove bottom spacing */
+  .VPFooter .VPFooterBrand .tagline {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
