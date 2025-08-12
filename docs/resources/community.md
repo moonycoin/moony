@@ -5,7 +5,8 @@ description: Join the Moony community - a decentralized movement powered by cont
 
 # Community
 
-Moony is more than a token, it is an open, decentralized movement built on the principle that monetary infrastructure should function as a public good. There is no company, central team, or official roadmap dictating its future. Instead, Moony evolves through the initiative of independent contributors: developers, creators, product builders, educators, merchants, and everyday users who see value in a monetary system that belongs to no one and works for everyone.
+Moony is more than a token, it is a shared movement for open value exchange. Built on the principle that its core infrastructure must remain open, permissionless, and immutable, Moony is designed to endure as a public good for anyone, anywhere. With no company, central team, or fixed roadmap, its future is written by the people who build upon it: developers, creators, educators, merchants, and everyday users who believe in a system that belongs to no one and empowers everyone.
+
 
 From inception, Moony’s governance has been encoded entirely in a transparent, immutable smart contract backed by a public, on‑chain reserve. This ensures that no entity, corporate or otherwise, can alter its supply, pricing, or rules of operation. Moony’s future depends not on central oversight, but on the willingness of its participants to build, use, and advocate for the asset in ways that align with the values of open access and permissionless participation.
 
