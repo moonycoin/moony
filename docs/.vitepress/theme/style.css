@@ -418,20 +418,19 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
+/* Remove bottom margin on mobile to eliminate empty space */
+@media (max-width: 768px) {
+  .vp-doc {
+    margin: 0px auto 0px !important;
+  }
+}
+
 .dark .vp-doc {
   background: rgba(24, 24, 27, 0.9) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.3),
     0 1px 3px rgba(0, 0, 0, 0.4) !important;
-}
-
-/* SIMPLE MOBILE FIX: Remove bottom margin to eliminate empty space */
-@media (max-width: 768px) {
-  .vp-doc {
-    margin-bottom: 0 !important;
-    padding-bottom: 20px !important;
-  }
 }
 
 /* ================
@@ -10133,7 +10132,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   height: 2px;
   background: var(--vp-c-brand);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(-50
+  transform: translateX(-50%);
+}
+
+.VPNavBarMenuLink:hover::after {
+  width: 100%;
+}
 
 /* ================
    SIMPLE MOBILE FOOTER - NO COMPLEX TRANSFORMS
