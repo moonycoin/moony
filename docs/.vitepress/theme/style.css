@@ -426,6 +426,14 @@ body {
     0 1px 3px rgba(0, 0, 0, 0.4) !important;
 }
 
+/* SIMPLE MOBILE FIX: Remove bottom margin to eliminate empty space */
+@media (max-width: 768px) {
+  .vp-doc {
+    margin-bottom: 0 !important;
+    padding-bottom: 20px !important;
+  }
+}
+
 /* ================
    ENHANCED TIP BOX STYLING
    ================ */
@@ -10128,153 +10136,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   transform: translateX(-50
 
 /* ================
-   MOBILE FOOTER GAP ELIMINATION - AGGRESSIVE APPROACH
+   SIMPLE MOBILE FOOTER - NO COMPLEX TRANSFORMS
    ================ */
-
-/* Small mobile devices (320px and up) */
-@media (max-width: 480px) {
-  /* TESTING BASELINE: Pull footer up by -50rem to find the limit */
-  .VPFooter {
-    margin-top: -50rem !important;
-    transform: translateY(-50rem) !important;
-  }
-  
-  /* Maximum specificity for footer positioning */
-  .Layout .VPApp .VPFooter,
-  .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -50rem !important;
-    transform: translateY(-50rem) !important;
-  }
-  
-  /* Hide default footer content but keep container visible */
-  .VPFooter > * {
-    display: none !important;
-  }
-  
-  /* Add light mode SVG logo above the tagline */
-  .VPFooter::before {
-    content: "" !important;
-    display: block !important;
-    width: 6rem !important;
-    height: 3rem !important;
-    margin: 0 auto 0.5rem auto !important;
-    background-image: url("/logo-light.svg") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
-  
-  /* Create a custom mobile footer within the footer container */
-  .VPFooter::after {
-    content: "Permissionless transactions with Proof of Liquidity" !important;
-    display: block !important;
-    height: auto !important;
-    min-height: 3rem !important;
-    background: var(--vp-c-bg-soft) !important;
-    margin: 0 !important;
-    padding: 0.75rem !important;
-    text-align: center !important;
-    font-size: 0.8rem !important;
-    color: var(--vp-c-text-2) !important;
-    border-top: 1px solid var(--vp-c-divider) !important;
-  }
-}
-
-/* Medium mobile devices (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  /* ULTRA AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
-  .VPFooter {
-    margin-top: -18rem !important;
-    transform: translateY(-18rem) !important;
-  }
-  
-  /* Maximum specificity for footer positioning */
-  .Layout .VPApp .VPFooter,
-  .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -18rem !important;
-    transform: translateY(-18rem) !important;
-  }
-  
-  /* Hide default footer content but keep container visible */
-  .VPFooter > * {
-    display: none !important;
-  }
-  
-  /* Add light mode SVG logo above the tagline - medium size */
-  .VPFooter::before {
-    content: "" !important;
-    display: block !important;
-    width: 9rem !important;
-    height: 4.5rem !important;
-    margin: 0 auto 0.75rem auto !important;
-    background-image: url("/logo-light.svg") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
-  
-  /* Create a custom mobile footer within the footer container */
-  .VPFooter::after {
-    content: "Permissionless transactions with Proof of Liquidity" !important;
-    display: block !important;
-    height: auto !important;
-    height: auto !important;
-    min-height: 4rem !important;
-    background: var(--vp-c-bg-soft) !important;
-    margin: 0 !important;
-    padding: 1rem !important;
-    text-align: center !important;
-    font-size: 0.875rem !important;
-    color: var(--vp-c-text-2) !important;
-    border-top: 1px solid var(--vp-c-divider) !important;
-  }
-}
-
-/* Large mobile devices (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* ULTRA AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
-  .VPFooter {
-    margin-top: -15rem !important;
-    transform: translateY(-15rem) !important;
-  }
-  
-  /* Maximum specificity for footer positioning */
-  .Layout .VPApp .VPFooter,
-  .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -15rem !important;
-    transform: translateY(-15rem) !important;
-  }
-  
-  /* Hide default footer content but keep container visible */
-  .VPFooter > * {
-    display: none !important;
-  }
-  
-  /* Add light mode SVG logo above the tagline - larger for tablets */
-  .VPFooter::before {
-    content: "" !important;
-    display: block !important;
-    width: 12rem !important;
-    height: 6rem !important;
-    margin: 0 auto 1rem auto !important;
-    background-image: url("/logo-light.svg") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
-  
-  /* Create a custom mobile footer within the footer container */
-  .VPFooter::after {
-    content: "Permissionless transactions with Proof of Liquidity" !important;
-    display: block !important;
-    height: auto !important;
-    min-height: 5rem !important;
-    background: var(--vp-c-bg-soft) !important;
-    margin: 0 !important;
-    padding: 1.25rem !important;
-    text-align: center !important;
-    font-size: 1rem !important;
-    color: var(--vp-c-text-2) !important;
-    border-top: 1px solid var(--vp-c-divider) !important;
-  }
-}
+/* Mobile footer appears normally without complex positioning */
