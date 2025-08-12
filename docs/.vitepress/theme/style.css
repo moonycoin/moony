@@ -2758,8 +2758,8 @@ body {
     margin-bottom: 2rem !important;
   }
   
-  /* Hide the entire default footer on mobile */
-  .VPFooter {
+  /* Hide the entire default footer on mobile with maximum specificity */
+  .VPFooter.VPFooter.VPFooter {
     display: none !important;
   }
   
@@ -2771,6 +2771,27 @@ body {
     background: transparent;
     margin: 0;
     padding: 0;
+  }
+}
+
+/* Maximum specificity override for mobile footer */
+@media (max-width: 768px) {
+  /* Force footer to be hidden with maximum specificity */
+  .Layout .VPApp .VPFooter,
+  .Layout .VPApp .VPFooter *,
+  .Layout .VPApp .VPFooter.VPFooter,
+  .Layout .VPApp .VPFooter.VPFooter * {
+    display: none !important;
+  }
+  
+  /* Ensure our custom spacing works */
+  .Layout .VPApp .VPFooter::after {
+    content: '' !important;
+    display: block !important;
+    height: 4rem !important;
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
