@@ -2754,14 +2754,19 @@ body {
 
 /* Small mobile devices (320px and up) */
 @media (max-width: 480px) {
+  /* DEBUGGING: Make any invisible elements visible to see what's in the white space */
+  .Layout .VPApp .VPContent * {
+    outline: 1px solid red !important;
+  }
+  
   /* Reduce gap between main container and footer on small mobile */
   .vp-doc {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
   }
   
   /* Target home page specifically for small mobile */
   .vp-doc.home {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0 !important;
   }
   
   /* Reduce any spacing from the main content wrapper */
@@ -2813,6 +2818,27 @@ body {
     margin-bottom: 0 !important;
   }
   
+  /* TARGET ADDITIONAL POTENTIAL SPACING SOURCES */
+  /* Target the VPApp container itself */
+  .Layout .VPApp {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the Layout container */
+  .Layout {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target any potential gap elements */
+  .Layout .VPApp .VPContent .gap,
+  .Layout .VPApp .VPContent .spacer,
+  .Layout .VPApp .VPContent .margin,
+  .Layout .VPApp .VPContent .padding {
+    display: none !important;
+  }
+  
   /* Hide footer content but keep container visible */
   .VPFooter > * {
     display: none !important;
@@ -2851,12 +2877,12 @@ body {
 @media (min-width: 481px) and (max-width: 768px) {
   /* Reduce gap between main container and footer on medium mobile */
   .vp-doc {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
   }
   
   /* Target home page specifically for medium mobile */
   .vp-doc.home {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0 !important;
   }
   
   /* Reduce any spacing from the main content wrapper */
@@ -2908,6 +2934,27 @@ body {
     margin-bottom: 0 !important;
   }
   
+  /* TARGET ADDITIONAL POTENTIAL SPACING SOURCES */
+  /* Target the VPApp container itself */
+  .Layout .VPApp {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the Layout container */
+  .Layout {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target any potential gap elements */
+  .Layout .VPApp .VPContent .gap,
+  .Layout .VPApp .VPContent .spacer,
+  .Layout .VPApp .VPContent .margin,
+  .Layout .VPApp .VPContent .padding {
+    display: none !important;
+  }
+  
   /* Hide footer content but keep container visible */
   .VPFooter > * {
     display: none !important;
@@ -2946,12 +2993,12 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Reduce gap between main container and footer on large mobile/tablet */
   .vp-doc {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0 !important;
   }
   
   /* Target home page specifically for large mobile/tablet */
   .vp-doc.home {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
   }
   
   /* Reduce any spacing from the main content wrapper */
@@ -3001,6 +3048,27 @@ body {
   .Layout .VPApp .VPContent .main-content {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+  }
+  
+  /* TARGET ADDITIONAL POTENTIAL SPACING SOURCES */
+  /* Target the VPApp container itself */
+  .Layout .VPApp {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the Layout container */
+  .Layout {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target any potential gap elements */
+  .Layout .VPApp .VPContent .gap,
+  .Layout .VPApp .VPContent .spacer,
+  .Layout .VPApp .VPContent .margin,
+  .Layout .VPApp .VPContent .padding {
+    display: none !important;
   }
   
   /* Hide footer content but keep container visible */
