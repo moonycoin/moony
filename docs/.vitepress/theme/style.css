@@ -2758,58 +2758,19 @@ body {
     margin-bottom: 2rem !important;
   }
   
+  /* Hide the entire default footer on mobile */
   .VPFooter {
-    margin-top: 1rem !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    padding: 2rem 0 0 0 !important;
-    min-height: auto !important;
-    height: auto !important;
-    transform: translateY(-10rem) !important;
-    margin-bottom: -10rem !important;
-  }
-  
-  /* Hide ALL footer links on mobile */
-  .VPFooter a {
     display: none !important;
   }
   
-  /* Hide footer section headers */
-  .VPFooter h3,
-  .VPFooter h4 {
-    display: none !important;
-  }
-  
-  /* Remove any extra footer spacing */
-  .VPFooter * {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* Target the brand section specifically to remove bottom spacing */
-  .VPFooter .VPFooterBrand {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: 0 !important;
-  }
-  
-  /* Target the tagline specifically to remove bottom spacing */
-  .VPFooter .VPFooterBrand .tagline {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: 0.5rem !important;
-  }
-  
-  /* Aggressively remove footer height and spacing */
-  .VPFooter .VPFooterBrand .logo {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* Force footer to minimum height */
-  .VPFooter {
-    height: fit-content !important;
-    max-height: none !important;
+  /* Create a custom mobile footer */
+  .VPFooter::after {
+    content: '';
+    display: block;
+    height: 4rem;
+    background: transparent;
+    margin: 0;
+    padding: 0;
   }
 }
 
