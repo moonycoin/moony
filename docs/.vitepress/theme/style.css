@@ -2776,6 +2776,23 @@ body {
     padding-bottom: 0 !important;
   }
   
+  /* CRITICAL: Remove the last-child margin that VitePress adds */
+  .vp-doc > *:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* CRITICAL: Remove spacing between elements on mobile */
+  .vp-doc > * + * {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* CRITICAL: Remove spacing after headings on mobile */
+  .vp-doc > h1 + *,
+  .vp-doc > h2 + *,
+  .vp-doc > h3 + * {
+    margin-top: 0.25rem !important;
+  }
+  
   /* Hide footer content but keep container visible */
   .VPFooter > * {
     display: none !important;
