@@ -2753,9 +2753,27 @@ body {
    ================ */
 
 @media (max-width: 768px) {
-  /* Reduce gap between main container and footer on mobile */
+  /* Aggressively reduce gap between main container and footer on mobile */
   .vp-doc {
-    margin-bottom: 2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Target home page specifically for even more aggressive spacing reduction */
+  .vp-doc.home {
+    margin-bottom: 0.25rem !important;
+  }
+  
+  /* Reduce any spacing from the main content wrapper */
+  .VPContent {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target the main content area */
+  .vp-doc .content,
+  .vp-doc .main {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
   
   /* Hide footer content but keep container visible */
