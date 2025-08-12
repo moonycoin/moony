@@ -2758,34 +2758,37 @@ body {
     margin-bottom: 2rem !important;
   }
   
-  /* Hide the entire default footer on mobile with maximum specificity */
-  .VPFooter.VPFooter.VPFooter {
+  /* Hide footer content but keep container visible */
+  .VPFooter > * {
     display: none !important;
   }
   
-  /* Create a custom mobile footer */
-  .VPFooter::after {
-    content: '';
-    display: block;
-    height: 4rem;
-    background: transparent;
-    margin: 0;
-    padding: 0;
+  /* Create a custom mobile footer within the footer container */
+  .VPFooter::before {
+    content: '© 2024 Moony • Permissionless transactions with Proof of Liquidity' !important;
+    display: block !important;
+    height: auto !important;
+    min-height: 4rem !important;
+    background: var(--vp-c-bg-soft) !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    text-align: center !important;
+    font-size: 0.875rem !important;
+    color: var(--vp-c-text-2) !important;
+    border-top: 1px solid var(--vp-c-divider) !important;
   }
 }
 
 /* Maximum specificity override for mobile footer */
 @media (max-width: 768px) {
-  /* Force footer to be hidden with maximum specificity */
-  .Layout .VPApp .VPFooter,
-  .Layout .VPApp .VPFooter *,
-  .Layout .VPApp .VPFooter.VPFooter,
-  .Layout .VPApp .VPFooter.VPFooter * {
+  /* Hide footer content with maximum specificity but keep container */
+  .Layout .VPApp .VPFooter > *,
+  .Layout .VPApp .VPFooter.VPFooter > * {
     display: none !important;
   }
   
-  /* Create a custom mobile footer with proper content */
-  .Layout .VPApp .VPFooter::after {
+  /* Ensure our custom footer content is visible */
+  .Layout .VPApp .VPFooter::before {
     content: '© 2024 Moony • Permissionless transactions with Proof of Liquidity' !important;
     display: block !important;
     height: auto !important;
