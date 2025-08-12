@@ -24,20 +24,21 @@ Price = base\_price × (1 + rate)^{supply\_percent - 1}
 
 ### **Key Variables**
 
-```math
-base\_price = $0.01 \text{ USDC}
-```
 *The price for the first 1% of supply*
 
 ```math
-rate = 0.2045 \text{ (20.45%)}
+base\_price = $0.01 \text{ USDC}
 ```
 *Price increase for each additional 1% of total supply issued*
 
 ```math
-supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
+rate = 0.2045 \text{ (20.45%)}
 ```
 *Percentage of the total fixed supply currently in circulation*
+
+```math
+supply\_percent = \frac{\text{Current Circulating Supply}}{21,000,000} × 100
+```
 
 ### **Price Progression Chart**
 
@@ -48,10 +49,6 @@ Supply %    Price per Token    Total Cost for 1%
 25%        $0.25             $52,500
 50%        $1.25             $262,500
 75%        $6.25             $1,312,500
-90%        $31.25            $6,562,500
-95%        $156.25           $32,812,500
-99%        $3,906.25         $820,312,500
-99.9%      $19,531.25        $4,101,562,500
 100%       $97,656.25        $20,507,812,500
 ```
 
