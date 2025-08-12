@@ -2603,6 +2603,1891 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   transform: scale(1.05);
 }
 
+.VPNavBarSocialLinks a,
+.VPNavBarSocialLinks .VPSocialLink {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Nuclear option - override any possible background with CSS custom properties */
+:root {
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dark:root {
+  --vp-nav-bg-color: rgba(29, 29, 31, 0.95) !important;
+}
+
+/* Apply the custom property everywhere */
+.VPNav,
+.VPNav * {
+  --vp-c-bg: var(--vp-nav-bg-color) !important;
+}
+
+/* ================
+   CONTENT ENHANCEMENTS
+   ================ */
+.vp-doc {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.vp-doc .header-anchor {
+  color: var(--moony-accent);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.vp-doc .header-anchor:hover {
+  opacity: 1;
+}
+
+.vp-doc code {
+  background: rgba(142, 142, 147, 0.12);
+  color: var(--moony-accent);
+  padding: 0.3em 0.5em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.vp-doc pre {
+  border-radius: 16px;
+  border: 1px solid var(--moony-border);
+  background: var(--moony-light-gray);
+  font-size: 0.9rem;
+}
+
+.dark .vp-doc pre {
+  background: var(--moony-light-gray);
+}
+
+/* ================
+   RESPONSIVE DESIGN
+   ================ */
+@media (max-width: 960px) and (min-width: 769px) {
+  .VPHero {
+    padding: 100px 20px 120px;
+    min-height: 70vh;
+  }
+  
+  .VPHero .text {
+    font-size: 4rem;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.375rem;
+  }
+  
+  .VPHero .image img {
+    max-width: 220px;
+  }
+  
+  .VPHero .action .VPButton {
+    padding: 16px 32px;
+    font-size: 1.0625rem;
+  }
+  
+  .vp-doc {
+    padding: 50px 30px;
+    margin: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 40px 0.5rem !important;
+    margin: 25px auto !important;
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: 110%; /* Expand container width */
+    max-width: 500px; /* Allow it to get wider */
+    margin-left: -2rem !important; /* Shift left to expand towards page border */
+  }
+  
+  .vp-doc h1 {
+    font-size: 2rem;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+  
+  .vp-doc .custom-block.tip {
+    padding: 24px !important;
+    margin: 30px 0 !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .vp-doc {
+    padding: 30px 0.5rem !important;
+    margin: 20px 1rem !important;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .vp-doc .custom-block.tip {
+    font-size: 0.9rem;
+    padding: var(--space-md);
+    line-height: 1.5;
+  }
+
+  .vp-doc p,
+  .vp-doc li {
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.375rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+}
+
+/* ================
+   SUBTLE ANIMATIONS
+   ================ */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================
+   APPLE-STYLE POLISH
+   ================ */
+.VPContent {
+  background: var(--vp-c-bg);
+}
+
+.vp-doc table {
+  border-collapse: collapse;
+  margin: var(--space-xl) 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--moony-border);
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--moony-border);
+}
+
+.vp-doc th {
+  background: var(--moony-light-gray);
+  font-weight: 600;
+  color: var(--moony-primary);
+}
+
+/* ================
+   SMOOTH SCROLLING
+   ================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================
+   FOCUS STYLES
+   ================ */
+.vp-doc a:focus,
+.VPButton:focus {
+  outline: 2px solid var(--moony-accent);
+  outline-offset: 2px;
+}
+
+/* ================
+   NUCLEAR BORDER COLOR FIX - MAXIMUM SPECIFICITY
+   ================ */
+
+/* Override all possible VitePress border color variables */
+:root.dark {
+  --vp-c-divider: #424245 !important;
+  --vp-c-border: #424245 !important;
+  --vp-c-gutter: #424245 !important;
+  --vp-sidebar-border-color: #424245 !important;
+  --vp-nav-border-color: #424245 !important;
+}
+
+/* Nuclear approach - force exact same border on both elements */
+html.dark body .VPApp .Layout .VPNav[class*="VPNav"],
+html.dark body .VPApp .Layout.has-sidebar .VPNav[class*="VPNav"],
+html.dark body .VPApp .VPNav[class*="VPNav"],
+.dark[class] .VPNav[class*="VPNav"],
+.dark[class] .Layout[class] .VPNav[class*="VPNav"] {
+  border-bottom: 1px solid #424245 !important;
+  border-bottom-color: #424245 !important;
+  box-shadow: 0 1px 0 0 #424245 !important;
+}
+
+html.dark body .VPApp .Layout .VPSidebar[class*="VPSidebar"],
+html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
+.dark[class] .VPSidebar[class*="VPSidebar"],
+.dark[class] .Layout[class] .VPSidebar[class*="VPSidebar"] {
+  border-right: 1px solid #424245 !important;
+  border-right-color: #424245 !important;
+  box-shadow: 1px 0 0 0 #424245 !important;
+}
+
+/* Force border color on all possible border-related pseudo-elements */
+.dark .VPNav::before,
+.dark .VPNav::after,
+.dark .VPSidebar::before,
+.dark .VPSidebar::after {
+  border-color: #424245 !important;
+  background-color: #424245 !important;
+}
+
+/* Remove sidebar pseudo-elements that cause gradient artifacts */
+.dark .VPSidebar::before,
+.dark .VPSidebar::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Ensure clean PNG transparency for hero images */
+.VPHero .image,
+.VPHero .image *,
+.VPHero .VPImage,
+.VPHero .VPImage *,
+.VPHero img,
+.Layout .VPHero .image,
+.Layout .VPHero .image * {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Remove any potential background inheritance */
+.VPHero .image::before,
+.VPHero .image::after {
+  display: none !important;
+}
+
+/* Alternative stronger gradient effect - uncomment to use instead */
+/*
+.VPHero .image img {
+  filter: 
+    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+    sepia(1)
+    hue-rotate(300deg)
+    saturate(2)
+    brightness(1.2) !important;
+}
+
+.VPHero .image img:hover {
+  filter: 
+    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
+    sepia(1)
+    hue-rotate(300deg)
+    saturate(2.2)
+    brightness(1.3)
+    contrast(1.2) !important;
+}
+*/
+
+/* For a more subtle text-matching effect, use this instead */
+/*
+.VPHero .image img {
+  filter: 
+    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+    grayscale(0.3)
+    sepia(0.4)
+    hue-rotate(300deg)
+    saturate(1.4)
+    brightness(1.05) !important;
+}
+*/
+
+/* ================
+   RESPONSIVE PREMIUM DESIGN
+   ================ */
+@media (max-width: 960px) {
+  .vp-doc {
+    padding: 50px 30px !important;
+    margin: 30px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 40px 0.5rem !important;
+    margin: 25px auto !important;
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: 110%; /* Expand container width */
+    max-width: 500px; /* Allow it to get wider */
+    margin-left: -2rem !important; /* Shift left to expand towards page border */
+  }
+  
+  .vp-doc h1 {
+    font-size: 2rem;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+  
+  .vp-doc .custom-block.tip {
+    padding: 24px !important;
+    margin: 30px 0 !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .vp-doc {
+    padding: 30px 0.5rem !important;
+    margin: 20px 1rem !important;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .vp-doc .custom-block.tip {
+    font-size: 0.9rem;
+    padding: var(--space-md);
+    line-height: 1.5;
+  }
+
+  .vp-doc p,
+  .vp-doc li {
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.375rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+}
+
+/* Remove any separators or horizontal rules above first content */
+.vp-doc hr:first-child,
+.vp-doc .divider:first-child,
+.vp-doc > *:first-child::before {
+  display: none !important;
+}
+
+.vp-doc > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+
+/* Aggressively remove any borders on h1 elements */
+.vp-doc h1,
+.vp-doc .header-anchor + h1,
+[class*="vp-doc"] h1 {
+  border-top: none !important;
+  border-top-width: 0 !important;
+  border-top-style: none !important;
+}
+
+/* Remove VitePress default h1 top border */
+.VPDoc h1 {
+  border-top: none !important;
+}
+
+/* ================
+   SIDEBAR THAT ENDS BEFORE FOOTER
+   ================ */
+
+/* Simple approach: sidebar sticks but has max height to avoid footer */
+.Layout.has-sidebar .VPSidebar,
+.Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(245, 245, 247, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-right: 1px solid var(--moony-border) !important;
+  
+  /* Sidebar sticks but stops before footer */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+  z-index: 1 !important;
+  
+  /* Fixed width to prevent stretching on wide screens */
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  flex-shrink: 0 !important;
+}
+
+.dark .Layout.has-sidebar .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-right-color: #424245 !important;
+  
+  /* Fixed width to prevent stretching on wide screens */
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  flex-shrink: 0 !important;
+}
+
+/* ================
+   FOOTER APPEARS NATURALLY
+   ================ */
+
+/* Footer appears normally on home page */
+.Layout.is-home .VPFooter {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  z-index: auto !important;
+  margin-top: 60px !important;
+}
+
+/* Footer only appears on home page now */
+
+/* Default footer styling for fallback */
+.VPFooter {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  padding: 60px 40px 40px !important;
+}
+
+.dark .VPFooter {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-top-color: rgba(0, 122, 255, 0.2) !important;
+}
+
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  color: var(--moony-primary);
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 12px;
+}
+
+.footer-section a {
+  color: var(--moony-secondary);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-section a:hover {
+  color: var(--moony-accent);
+  border-bottom-color: var(--moony-accent);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.footer-brand-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--moony-primary);
+}
+
+.footer-description {
+  color: var(--moony-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 122, 255, 0.1);
+  border-radius: 8px;
+  color: var(--moony-accent);
+  transition: all 0.3s ease;
+  border-bottom: none !important;
+}
+
+.footer-social a:hover {
+  background: var(--moony-accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 122, 255, 0.1);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-copyright {
+  color: var(--moony-secondary);
+  font-size: 0.875rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-legal a {
+  color: var(--moony-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--moony-accent);
+}
+
+/* Responsive footer and sidebar */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .VPFooter {
+    padding: 40px 20px 30px !important;
+  }
+  
+  /* Reset sidebar on mobile only */
+  .VPSidebar,
+  .VPSidebar[class*="VPSidebar"],
+  .Layout .VPSidebar,
+  .Layout.has-sidebar .VPSidebar {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    align-self: auto !important;
+  }
+  
+  .VPFooter {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    z-index: auto !important;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-legal {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* ================
+   NOISE/GRAIN EFFECT
+   ================ */
+/* Add subtle noise texture to the background */
+.Layout::after,
+.VPApp::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+/* Alternative noise effect using CSS filters for better performance */
+/* .Layout::before,
+.VPApp::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top center,
+    rgba(0, 122, 255, 0.04) 0%,
+    transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+} */
+
+/* Enhanced noise effect for the main content area - REMOVED TO FIX BRIGHT WHITE GRADIENT IN SIDEBAR */
+/* .VPContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+              repeating-conic-gradient(
+            from 0deg at 50% 50%,
+            transparent 0deg,
+            rgba(74, 144, 226, 0.002) 1deg,
+            transparent 2deg
+          );
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
+} */
+
+/* Subtle grain effect for text readability */
+.vp-doc::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+          background-image:
+          radial-gradient(
+            circle at 25% 25%,
+            rgba(74, 144, 226, 0.001) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 75% 75%,
+            rgba(74, 144, 226, 0.001) 0%,
+            transparent 50%
+          );
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ================
+   MOBILE-ONLY OPTIMIZATIONS
+   ================ */
+/* All mobile optimizations are wrapped in media queries to ensure desktop experience remains untouched */
+
+/* Mobile-specific CSS variables */
+@media (max-width: 768px) {
+  :root {
+    --mobile-touch-target: 44px;
+    --mobile-border-radius: 8px;
+    --mobile-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --mobile-spacing: 1rem;
+  }
+}
+
+/* Enhanced mobile navigation */
+@media (max-width: 768px) {
+  .VPNav {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .VPNavBar {
+    padding: 0.75rem 1rem;
+    min-height: var(--mobile-touch-target);
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .VPNavBarHamburger {
+    width: var(--mobile-touch-target);
+    height: var(--mobile-touch-target);
+    padding: 0.75rem;
+    border-radius: var(--mobile-border-radius);
+    transition: all 0.2s ease;
+  }
+  
+  .VPNavBarHamburger:hover {
+    background: rgba(74, 144, 226, 0.1);
+    transform: scale(1.05);
+  }
+  
+  .VPNavBarMenuLink {
+    padding: 0.75rem 1rem;
+    min-height: var(--mobile-touch-target);
+    border-radius: var(--mobile-border-radius);
+    transition: all 0.2s ease;
+  }
+  
+  .VPNavBarMenuLink:hover {
+    background: rgba(74, 144, 226, 0.1);
+    transform: translateX(4px);
+  }
+}
+
+/* Mobile sidebar improvements */
+@media (max-width: 768px) {
+  .VPSidebar {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .dark .VPSidebar {
+    background: rgba(29, 29, 31, 0.95);
+  }
+  
+  .VPSidebarItem .link {
+    padding: 0.75rem 1rem;
+    min-height: var(--mobile-touch-target);
+    border-radius: var(--mobile-border-radius);
+    transition: all 0.2s ease;
+  }
+  
+  .VPSidebarItem .link:hover {
+    background: rgba(74, 144, 226, 0.1);
+    transform: translateX(4px);
+  }
+  
+  .VPSidebarItem .text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .VPSidebarItem.is-active > .item > .link {
+    background: rgba(74, 144, 226, 0.15);
+    border-left: 3px solid var(--moony-accent);
+    font-weight: 600;
+  }
+}
+
+/* Mobile content improvements */
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 0.5rem;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .vp-doc h1 {
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--moony-accent);
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.1rem;
+    margin: 0.75rem 0 0.4rem 0;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid var(--moony-border);
+  }
+  
+  .vp-doc h3 {
+    font-size: 1rem;
+    margin: 0.6rem 0 0.3rem 0;
+    color: var(--moony-accent);
+    font-weight: 600;
+  }
+  
+  .vp-doc p {
+    margin: 0.5rem 0;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 0.85rem;
+  }
+  
+  .vp-doc ul,
+  .vp-doc ol {
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .vp-doc li {
+    margin: 0.3rem 0;
+    line-height: 1.3;
+    font-size: 0.85rem;
+  }
+  
+  .vp-doc blockquote {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--moony-accent);
+    background: rgba(74, 144, 226, 0.05);
+    border-radius: var(--mobile-border-radius);
+  }
+  
+  .dark .vp-doc blockquote {
+    background: rgba(74, 144, 226, 0.1);
+  }
+}
+
+/* Mobile table improvements */
+@media (max-width: 768px) {
+  .vp-doc table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--mobile-border-radius);
+    box-shadow: var(--mobile-shadow);
+    margin: 1rem 0;
+  }
+  
+  .vp-doc th,
+  .vp-doc td {
+    padding: 0.75rem;
+    min-width: 120px;
+    white-space: nowrap;
+  }
+  
+  .vp-doc th {
+    position: sticky;
+    top: 0;
+    background: var(--moony-light-gray);
+    font-weight: 600;
+    z-index: 10;
+  }
+  
+  .dark .vp-doc th {
+    background: var(--moony-light-gray);
+  }
+}
+
+/* Mobile code block improvements */
+@media (max-width: 768px) {
+  .vp-doc pre {
+    padding: 1rem;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--mobile-border-radius);
+    box-shadow: var(--mobile-shadow);
+    margin: 1rem 0;
+  }
+  
+  .vp-doc code {
+    font-size: 14px;
+    padding: 0.25rem 0.5rem;
+    background: rgba(74, 144, 226, 0.1);
+    border-radius: 4px;
+  }
+  
+  .dark .vp-doc code {
+    background: rgba(74, 144, 226, 0.2);
+  }
+  
+  .vp-doc pre code {
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+  }
+}
+
+/* Mobile custom block improvements */
+@media (max-width: 768px) {
+  .vp-doc .custom-block {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: var(--mobile-border-radius);
+    box-shadow: var(--mobile-shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .vp-doc .custom-block.tip {
+    background: rgba(74, 144, 226, 0.05);
+    border-left: 4px solid var(--moony-accent);
+  }
+  
+  .dark .vp-doc .custom-block.tip {
+    background: rgba(74, 144, 226, 0.1);
+  }
+  
+  .vp-doc .custom-block.warning {
+    background: rgba(255, 193, 7, 0.05);
+    border-left: 4px solid #ffc107;
+  }
+  
+  .dark .vp-doc .custom-block.warning {
+    background: rgba(255, 193, 7, 0.1);
+  }
+  
+  .vp-doc .custom-block > *:first-child {
+    margin-top: 0;
+  }
+  
+  .vp-doc .custom-block > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Portrait warning styles */
+.portrait-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--moony-primary);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 9999;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.portrait-warning .icon {
+  font-size: 3rem;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Force portrait mode on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .Layout {
+    display: none !important;
+  }
+  
+  .portrait-warning {
+    display: flex !important;
+  }
+}
+
+/* Mobile hero section improvements */
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 1rem 0.5rem !important;
+    text-align: center !important;
+  }
+  
+  .VPHero .container {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .VPHero .container {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+          .VPHero .main {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+  .VPHero .text {
+    order: 2;
+    flex: 1;
+    text-align: center !important;
+    max-width: 100%;
+    font-size: 3.7rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.3rem !important;
+    font-weight: 800 !important;
+    margin-left: 0.5rem !important;
+    margin-right: auto !important;
+  }
+  
+          .VPHero .tagline {
+          font-size: 0.87rem !important;
+          margin: 0.2rem 0 0.5rem 0.5rem !important;
+          line-height: 1.1 !important;
+          white-space: normal !important;
+          overflow: visible !important;
+          text-overflow: clip !important;
+          max-width: 100% !important;
+          text-align: center !important;
+        }
+  
+  .VPHero .image {
+    order: 1;
+    width: 35px !important;
+    height: 35px !important;
+    margin: 0 auto 0.3rem auto !important;
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    flex-shrink: 0;
+  }
+  
+  .VPHero .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--mobile-border-radius);
+  }
+  
+  .VPHero .actions {
+    order: 3;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.75rem;
+    margin-bottom: 0 !important;
+    width: 100%;
+    padding: 0 0.25rem 0 4rem;
+    box-sizing: border-box;
+  }
+  
+  .VPHero .action .VPButton {
+    min-width: 120px !important;
+    min-height: 44px !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.9rem !important;
+    border-radius: var(--mobile-border-radius) !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  /* Reduce gap between hero and content below on mobile */
+  .vp-doc > *:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Aggressively remove any spacing after hero */
+  .VPHero + * {
+    margin-top: -5rem !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the first content element specifically */
+  .VPHero ~ .vp-doc > *:first-child {
+    margin-top: -4.5rem !important;
+    padding-top: 5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Mobile footer improvements */
+@media (max-width: 768px) {
+  .VPFooter {
+    padding: 2rem 1rem;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section a {
+    color: var(--moony-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem;
+    border-radius: var(--mobile-border-radius);
+    display: inline-block;
+  }
+  
+  .footer-section a:hover {
+    color: var(--moony-accent);
+    background: rgba(74, 144, 226, 0.1);
+  }
+  
+  .dark .footer-section a:hover {
+    background: rgba(74, 144, 226, 0.2);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--moony-border);
+  }
+  
+  .footer-legal {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* Extra small mobile optimizations */
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    width: var(--mobile-touch-target);
+    height: var(--mobile-touch-target);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(74, 144, 226, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .footer-social a:hover {
+    background: var(--moony-accent);
+    transform: scale(1.1);
+  }
+}
+
+/* Touch-friendly interactions for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .VPNavBarMenuLink,
+  .VPSidebarItem .link,
+  .VPButton,
+  .footer-section a {
+    min-height: var(--mobile-touch-target);
+    min-width: var(--mobile-touch-target);
+  }
+  
+  .VPNavBarMenuLink {
+    padding: 0.75rem 1rem;
+  }
+  
+  .VPSidebarItem .link {
+    padding: 0.75rem 1rem;
+  }
+  
+  .vp-doc .header-anchor {
+    width: var(--mobile-touch-target);
+    height: var(--mobile-touch-target);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .vp-doc .header-anchor:hover {
+    opacity: 1;
+  }
+  
+  .vp-doc a {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  .VPButton {
+    min-height: var(--mobile-touch-target);
+    padding: 0.875rem 1.5rem;
+  }
+  
+  .VPButton:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Landscape mobile optimizations */
+@media (max-width: 768px) and (orientation: landscape) {
+  .VPHero {
+    padding: 1.5rem;
+  }
+  
+  .VPHero .main {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .VPHero .text {
+    order: 2;
+    flex: 1;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+                                                                                                                                                                                                                                                                                                        .VPHero .text {
+                       font-size: 3.7rem !important;
+                       line-height: 1.1 !important;
+                       margin-bottom: 0.3rem !important;
+                       font-weight: 800 !important;
+                       margin-left: 0.5rem !important;
+                       margin-right: auto !important;
+                     }
+  
+                                                                                                                                   .VPHero .tagline {
+                        font-size: 0.87rem !important;
+                        margin: 0.2rem 0 0.5rem 0.5rem !important;
+                        line-height: 1.1 !important;
+                        white-space: normal !important;
+                        overflow: visible !important;
+                        text-overflow: clip !important;
+                        text-align: center !important;
+                      }
+  
+  .VPHero .image {
+    order: 1;
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 auto 0.2rem auto !important;
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    flex-shrink: 0;
+  }
+  
+  .VPHero .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--mobile-border-radius);
+  }
+  
+  .vp-doc {
+    padding: 0.6rem;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .VPNav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .VPNavBar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .VPHero .actions {
+    flex-direction: row;
+    gap: 0.75rem;
+    order: 3;
+    margin-top: 1rem;
+    margin-bottom: 0 !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0.25rem 0 4rem;
+    box-sizing: border-box;
+  }
+  
+  .VPHero .action .VPButton {
+    min-width: 120px !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Reduce gap between hero and content below on mobile landscape */
+  .vp-doc > *:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Aggressively remove any spacing after hero */
+  .VPHero + * {
+    margin-top: -5rem !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the first content element specifically */
+  .VPHero ~ .vp-doc > *:first-child {
+    margin-top: -4.5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+
+/* High-DPI display optimizations for mobile */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .vp-doc {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .VPNav,
+  .VPSidebar {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Mobile search improvements */
+@media (max-width: 768px) {
+  .VPLocalSearch {
+    margin: 1rem 0;
+    position: relative;
+  }
+  
+  .VPLocalSearch .input {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 0.875rem 1rem;
+    border-radius: var(--mobile-border-radius);
+    border: 2px solid var(--moony-border);
+    background: var(--moony-light-gray);
+    color: var(--moony-primary);
+    width: 100%;
+    max-width: 100%;
+    box-shadow: var(--mobile-shadow);
+    transition: all 0.2s ease;
+  }
+  
+  .VPLocalSearch .input:focus {
+    outline: none;
+    border-color: var(--moony-accent);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  }
+  
+  .VPLocalSearch .result {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--moony-light-gray);
+    border: 1px solid var(--moony-border);
+    border-radius: var(--mobile-border-radius);
+    box-shadow: var(--mobile-shadow);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 201;
+    margin-top: 0.5rem;
+  }
+  
+  .dark .VPLocalSearch .result {
+    background: var(--moony-light-gray);
+  }
+  
+  .VPLocalSearch .result-item {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--moony-border);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .VPLocalSearch .result-item:hover,
+  .VPLocalSearch .result-item:focus {
+    background: rgba(74, 144, 226, 0.1);
+  }
+}
+
+/* Mobile pagination improvements */
+@media (max-width: 768px) {
+  .VPDocFooter {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--moony-border);
+  }
+  
+  .VPDocFooter .pager {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  
+  .VPDocFooter .pager-link {
+    flex: 1;
+    padding: 0.875rem 1rem;
+    background: var(--moony-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--mobile-border-radius);
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    min-height: var(--mobile-touch-target);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .VPDocFooter .pager-link:hover {
+    background: var(--vp-c-brand-2);
+    transform: translateY(-1px);
+    box-shadow: var(--mobile-shadow);
+  }
+  
+  .VPDocFooter .pager-link:active {
+    transform: translateY(0);
+  }
+}
+
+/* Mobile back to top button */
+@media (max-width: 768px) {
+  .VPDocAside .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--moony-accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: var(--mobile-shadow);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+  }
+  
+  .VPDocAside .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .VPDocAside .back-to-top:hover {
+    background: var(--vp-c-brand-2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  }
+  
+  .VPDocAside .back-to-top:active {
+    transform: translateY(0);
+  }
+}
+
+/* Mobile accessibility improvements */
+@media (max-width: 768px) {
+  .vp-doc *:focus-visible {
+    outline: 2px solid var(--moony-accent);
+    outline-offset: 2px;
+    border-radius: var(--mobile-border-radius);
+  }
+  
+  .vp-doc {
+    scroll-behavior: smooth;
+  }
+  
+  .vp-doc > *:first-child {
+    scroll-margin-top: 80px;
+  }
+  
+  .vp-doc > *:last-child {
+    margin-bottom: 2rem;
+  }
+  
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 {
+    scroll-margin-top: 100px;
+  }
+  
+  .vp-doc a:not(.header-anchor) {
+    word-break: break-word;
+    hyphens: auto;
+    text-decoration: underline;
+    text-decoration-color: var(--moony-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+  
+  .vp-doc a:not(.header-anchor):hover {
+    text-decoration-color: var(--vp-c-brand-2);
+  }
+  
+  .vp-doc a:not(.header-anchor):active {
+    color: var(--vp-c-brand-2);
+  }
+  
+  .vp-doc img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--mobile-border-radius);
+    box-shadow: var(--mobile-shadow);
+    transition: transform 0.2s ease;
+  }
+  
+  .vp-doc img:hover {
+    transform: scale(1.02);
+  }
+  
+  .vp-doc .custom-block {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .vp-doc h1 {
+    border-bottom: 2px solid var(--moony-accent);
+    padding-bottom: 0.5rem;
+  }
+  
+  .vp-doc h2 {
+    border-bottom: 1px solid var(--moony-border);
+    padding-bottom: 0.25rem;
+  }
+  
+  .vp-doc h3 {
+    color: var(--moony-accent);
+    font-weight: 600;
+  }
+  
+  .vp-doc > * + * {
+    margin-top: 1rem;
+  }
+  
+  .vp-doc > h1 + *,
+  .vp-doc > h2 + *,
+  .vp-doc > h3 + * {
+    margin-top: 0.75rem;
+  }
+}
+
+/* Mobile print styles */
+@media print and (max-width: 768px) {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .VPDocAside .back-to-top {
+    display: none !important;
+  }
+  
+  .vp-doc {
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  .vp-doc pre,
+  .vp-doc table {
+    page-break-inside: avoid;
+  }
+}
+
+/* Only remove the specific gradient curtain that was causing the white artifact */
+/* All other background overrides removed to allow noise texture to show */
+
+/* Remove VitePress right-aside bottom gradient curtain - THIS IS THE KEY FIX */
+.VPDoc .aside-curtain,
+.aside-curtain,
+.dark .VPDoc .aside-curtain {
+  display: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+}
+
+/* ================
+   ELEGANT POLISH & ENHANCEMENTS
+   ================ */
+
+/* Refined shadows and depth for light mode */
+:root {
+  --elegant-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --elegant-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --elegant-border: 1px solid rgba(0, 0, 0, 0.06);
+  --elegant-border-hover: 1px solid rgba(0, 0, 0, 0.1);
+  --elegant-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.98));
+  --elegant-gradient-alt: linear-gradient(135deg, rgba(248, 250, 252, 0.95), rgba(241, 245, 249, 0.98));
+  --elegant-shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.04);
+  --elegant-shadow-medium: 0 6px 24px rgba(0, 0, 0, 0.08);
+  --elegant-shadow-strong: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Enhanced shadows and depth for dark mode */
+.dark {
+  --elegant-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --elegant-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --elegant-border: 1px solid rgba(255, 255, 255, 0.08);
+  --elegant-border-hover: 1px solid rgba(255, 255, 255, 0.12);
+  --elegant-gradient: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.95));
+  --elegant-gradient-alt: linear-gradient(135deg, rgba(40, 40, 40, 0.85), rgba(35, 35, 35, 0.95));
+  --elegant-shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.2);
+  --elegant-shadow-medium: 0 6px 24px rgba(0, 0, 0, 0.3);
+  --elegant-shadow-strong: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Enhanced navigation bar with subtle polish */
+.VPNav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: var(--elegant-border);
+  box-shadow: var(--elegant-shadow-soft);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.VPNav:hover {
+  box-shadow: var(--elegant-shadow-medium);
+}
+
+/* Refined hero section with enhanced depth and gradients */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--elegant-gradient);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/* Enhanced hero icon with better gradients and shadows */
+.VPHero .image {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(var(--elegant-shadow-medium));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+/* Enhanced hero text with subtle shadows and depth */
+.VPHero .text {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.VPHero .tagline {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Enhanced buttons with refined styling */
+.VPButton {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--elegant-shadow-soft);
+  border: var(--elegant-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.VPButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.VPButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elegant-shadow-medium);
+  border-color: var(--elegant-border-hover);
+}
+
+.VPButton:hover::before {
+  left: 100%;
+}
+
+/* Enhanced tip boxes with better shadows and gradients */
+.vp-doc .custom-block.tip {
+  background: var(--elegant-gradient-alt);
+  border: var(--elegant-border);
+  box-shadow: var(--elegant-shadow-soft);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.vp-doc .custom-block.tip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vp-c-brand), var(--vp-c-brand-light), var(--vp-c-brand));
+  opacity: 0.8;
+}
+
+.vp-doc .custom-block.tip:hover {
+  box-shadow: var(--elegant-shadow-medium);
+  transform: translateY(-1px);
+  border-color: var(--elegant-border-hover);
+}
+
+/* Enhanced sidebar with better shadows and gradients */
+.VPSidebar {
+  background: var(--elegant-gradient-alt);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: var(--elegant-border);
+  box-shadow: var(--elegant-shadow-soft);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.VPSidebar:hover {
+  box-shadow: var(--elegant-shadow-medium);
+}
+
+/* Enhanced navigation links with subtle hover effects */
+.VPNavBarMenuLink {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.VPNavBarMenuLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-c-brand);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.VPNavBarMenuLink:hover::after {
+  width: 100%;
+}
+
+/* Enhanced appearance toggle and social links */
+.VPNavBarAppearance .VPSwitch {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--elegant-shadow-soft);
+}
+
+.VPNavBarAppearance .VPSwitch:hover {
+  box-shadow: var(--elegant-shadow-medium);
+  transform: scale(1.05);
+}
+
 .VPNavBarSocialLinks a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: var(--elegant-shadow-soft);
@@ -2790,7 +4675,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 }
 
 /* ================
-   MOBILE FOOTER GAP FIX
+   MOBILE FOOTER GAP FIX - NEW APPROACH
    ================ */
 
 /* Small mobile devices (320px and up) */
@@ -2814,13 +4699,49 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     opacity: 1 !important;
   }
   
-  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up */
+  /* NEW APPROACH: Fix footer height constraints and overflow issues */
   .VPFooter {
-    margin-top: -4rem !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: relative !important;
+    z-index: 100 !important;
   }
   
-  /* Reduce gap between main container and footer on small mobile */
+  /* Force footer to display completely without truncation */
+  .VPFooter * {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  
+  /* Target nested container structure revealed by red borders */
+  .Layout .VPApp .VPContent {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the main content wrapper that holds the vp-doc */
+  .Layout .VPApp .VPContent > div {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Force vp-doc to expand to fill available space */
   .vp-doc {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
     margin-bottom: 0 !important;
   }
   
@@ -2840,6 +4761,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc .main {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   /* CRITICAL: Remove the last-child margin that VitePress adds */
@@ -2865,17 +4788,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin-bottom: 0 !important;
   }
   
-  /* Target the main content wrapper that holds the vp-doc */
-  .Layout .VPApp .VPContent > div {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
   /* Target any content wrapper elements */
   .Layout .VPApp .VPContent .content-wrapper,
   .Layout .VPApp .VPContent .main-content {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   /* TARGET ADDITIONAL POTENTIAL SPACING SOURCES */
@@ -2883,12 +4802,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .Layout .VPApp {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   /* Target the Layout container */
   .Layout {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   /* Target any potential gap elements */
@@ -2929,277 +4852,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     text-align: center !important;
     font-size: 0.8rem !important;
     color: var(--vp-c-text-2) !important;
-    border-top: 1px solid var(--vp-c-divider) !important;
-  }
-}
-
-/* Medium mobile devices (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up */
-  .VPFooter {
-    margin-top: -4rem !important;
-  }
-  
-  /* Reduce gap between main container and footer on medium mobile */
-  .vp-doc {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target home page specifically for medium mobile */
-  .vp-doc.home {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Reduce any spacing from the main content wrapper */
-  .VPContent {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* Target the main content area */
-  .vp-doc .content,
-  .vp-doc .main {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* CRITICAL: Remove the last-child margin that VitePress adds */
-  .vp-doc > *:last-child {
-    margin-bottom: 0 !important;
-  }
-  
-  /* CRITICAL: Remove spacing between elements on medium mobile */
-  .vp-doc > * + * {
-    margin-top: 0.5rem !important;
-  }
-  
-  /* CRITICAL: Remove spacing after headings on medium mobile */
-  .vp-doc > h1 + *,
-  .vp-doc > h2 + *,
-  .vp-doc > h3 + * {
-    margin-top: 0.25rem !important;
-  }
-  
-  /* TARGET MAIN CONTAINER SPACING - Remove bottom padding/margin from the content wrapper */
-  .Layout .VPApp .VPContent .vp-doc {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target the main content wrapper that holds the vp-doc */
-  .Layout .VPApp .VPContent > div {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target any content wrapper elements */
-  .Layout .VPApp .VPContent .content-wrapper,
-  .Layout .VPApp .VPContent .main-content {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* TARGET ADDITIONAL POTENTIAL SPACING SOURCES */
-  /* Target the VPApp container itself */
-  .Layout .VPApp {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target the Layout container */
-  .Layout {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target any potential gap elements */
-  .Layout .VPApp .VPContent .gap,
-  .Layout .VPApp .VPContent .spacer,
-  .Layout .VPApp .VPContent .margin,
-  .Layout .VPApp .VPContent .padding {
-    display: none !important;
-  }
-  
-  /* Hide footer content but keep container visible */
-  .VPFooter > * {
-    display: none !important;
-  }
-  
-  /* Add light mode SVG logo above the tagline - medium size for medium devices */
-  .VPFooter::before {
-    content: '' !important;
-    display: block !important;
-    width: 9rem !important;
-    height: 4.5rem !important;
-    margin: 0 auto 0.5rem auto !important;
-    background-image: url("/logo-light.svg") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
-  
-  /* Create a custom mobile footer within the footer container */
-  .VPFooter::after {
-    content: 'Permissionless transactions with Proof of Liquidity' !important;
-    display: block !important;
-    height: auto !important;
-    min-height: 4rem !important;
-    background: var(--vp-c-bg-soft) !important;
-    margin: 0 !important;
-    padding: 1rem !important;
-    text-align: center !important;
-    font-size: 0.875rem !important;
-    color: var(--vp-c-text-2) !important;
-    border-top: 1px solid var(--vp-c-divider) !important;
-  }
-}
-
-/* Large mobile devices (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up */
-  .VPFooter {
-    margin-top: -4rem !important;
-  }
-  
-  /* Reduce gap between main container and footer on large mobile/tablet */
-  .vp-doc {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target home page specifically for large mobile/tablet */
-  .vp-doc.home {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Reduce any spacing from the main content wrapper */
-  .VPContent {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* Target the main content area */
-  .vp-doc .content,
-  .vp-doc .main {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* CRITICAL: Remove the last-child margin that VitePress adds */
-  .vp-doc > *:last-child {
-    margin-bottom: 0 !important;
-  }
-  
-  /* CRITICAL: Remove spacing between elements on large mobile/tablet */
-  .vp-doc > * + * {
-    margin-top: 0.75rem !important;
-  }
-  
-  /* CRITICAL: Remove spacing after headings on large mobile/tablet */
-  .vp-doc > h1 + *,
-  .vp-doc > h2 + *,
-  .vp-doc > h3 + * {
-    margin-top: 0.5rem !important;
-  }
-  
-  /* TARGET MAIN CONTAINER SPACING - Remove bottom padding/margin from the content wrapper */
-  .Layout .VPApp .VPContent .vp-doc {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target the main content wrapper that holds the vp-doc */
-  .Layout .VPApp .VPContent > div {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target any content wrapper elements */
-  .Layout .VPApp .VPContent .content-wrapper,
-  .Layout .VPApp .VPContent .main-content {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* TARGET ADDITIONAL POTENTIAL SPACING SOURCES */
-  /* Target the VPApp container itself */
-  .Layout .VPApp {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target the Layout container */
-  .Layout {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  /* Target any potential gap elements */
-  .Layout .VPApp .VPContent .gap,
-  .Layout .VPApp .VPContent .spacer,
-  .Layout .VPApp .VPContent .margin,
-  .Layout .VPApp .VPContent .padding {
-    display: none !important;
-  }
-  
-  /* Hide footer content but keep container visible */
-  .VPFooter > * {
-    display: none !important;
-  }
-  
-  /* Add light mode SVG logo above the tagline - larger for tablets */
-  .VPFooter::before {
-    content: '' !important;
-    display: block !important;
-    width: 12rem !important;
-    height: 6rem !important;
-    margin: 0 auto 0.75rem auto !important;
-    background-image: url("/logo-light.svg") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
-  
-  /* Create a custom mobile footer within the footer container */
-  .VPFooter::after {
-    content: 'Permissionless transactions with Proof of Liquidity' !important;
-    display: block !important;
-    height: auto !important;
-    min-height: 5rem !important;
-    background: var(--vp-c-bg-soft) !important;
-    margin: 0 !important;
-    padding: 1.25rem !important;
-    text-align: center !important;
-    font-size: 1rem !important;
-    color: var(--vp-c-text-2) !important;
-    border-top: 1px solid var(--vp-c-divider) !important;
-  }
-}
-
-/* Maximum specificity override for mobile footer - applies to all mobile sizes */
-@media (max-width: 1024px) {
-  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up with maximum specificity */
-  .Layout .VPApp .VPFooter,
-  .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -4rem !important;
-  }
-  
-  /* Hide footer content with maximum specificity but keep container */
-  .Layout .VPApp .VPFooter > *,
-  .Layout .VPApp .VPFooter.VPFooter > * {
-    display: none !important;
-  }
-  
-  /* Ensure our custom logo is visible above the tagline */
-  .Layout .VPApp .VPFooter::before {
-    background-image: url("/logo-light.svg") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-  }
-  
-  /* Ensure our custom footer content is visible below the logo */
-  .Layout .VPApp .VPFooter::after {
-    background: var(--vp-c-bg-soft) !important;
     border-top: 1px solid var(--vp-c-divider) !important;
   }
 }
