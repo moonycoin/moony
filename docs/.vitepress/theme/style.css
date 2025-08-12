@@ -2773,6 +2773,11 @@ body {
     opacity: 1 !important;
   }
   
+  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up */
+  .VPFooter {
+    margin-top: -4rem !important;
+  }
+  
   /* Reduce gap between main container and footer on small mobile */
   .vp-doc {
     margin-bottom: 0 !important;
@@ -2889,6 +2894,11 @@ body {
 
 /* Medium mobile devices (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
+  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up */
+  .VPFooter {
+    margin-top: -4rem !important;
+  }
+  
   /* Reduce gap between main container and footer on medium mobile */
   .vp-doc {
     margin-bottom: 0 !important;
@@ -3005,6 +3015,11 @@ body {
 
 /* Large mobile devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up */
+  .VPFooter {
+    margin-top: -4rem !important;
+  }
+  
   /* Reduce gap between main container and footer on large mobile/tablet */
   .vp-doc {
     margin-bottom: 0 !important;
@@ -3121,6 +3136,12 @@ body {
 
 /* Maximum specificity override for mobile footer - applies to all mobile sizes */
 @media (max-width: 1024px) {
+  /* ELIMINATE WHITE SPACE: Use negative margins to pull footer up with maximum specificity */
+  .Layout .VPApp .VPFooter,
+  .Layout .VPApp .VPFooter.VPFooter {
+    margin-top: -4rem !important;
+  }
+  
   /* Hide footer content with maximum specificity but keep container */
   .Layout .VPApp .VPFooter > *,
   .Layout .VPApp .VPFooter.VPFooter > * {
