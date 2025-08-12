@@ -10133,17 +10133,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 /* Small mobile devices (320px and up) */
 @media (max-width: 480px) {
-  /* ULTRA AGGRESSIVE GAP ELIMINATION: Pull footer up dramatically */
+  /* TESTING BASELINE: Pull footer up by -50rem to find the limit */
   .VPFooter {
-    margin-top: -20rem !important;
-    transform: translateY(-20rem) !important;
+    margin-top: -50rem !important;
+    transform: translateY(-50rem) !important;
   }
   
   /* Maximum specificity for footer positioning */
   .Layout .VPApp .VPFooter,
   .Layout .VPApp .VPFooter.VPFooter {
-    margin-top: -20rem !important;
-    transform: translateY(-20rem) !important;
+    margin-top: -50rem !important;
+    transform: translateY(-50rem) !important;
   }
   
   /* Hide default footer content but keep container visible */
