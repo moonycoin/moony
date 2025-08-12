@@ -2767,10 +2767,10 @@ body {
   .VPFooter::before {
     content: '' !important;
     display: block !important;
-    width: 2rem !important;
+    width: 3rem !important;
     height: 2rem !important;
     margin: 0 auto 0.5rem auto !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 2v20'/%3E%3Cpath d='M2 12h20'/%3E%3C/svg%3E") !important;
+    background-image: url("/logo-light.svg") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -2804,10 +2804,10 @@ body {
   .Layout .VPApp .VPFooter::before {
     content: '' !important;
     display: block !important;
-    width: 2rem !important;
+    width: 3rem !important;
     height: 2rem !important;
     margin: 0 auto 0.5rem auto !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 2v20'/%3E%3Cpath d='M2 12h20'/%3E%3C/svg%3E") !important;
+    background-image: url("/logo-light.svg") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
