@@ -2762,9 +2762,14 @@ body {
     margin-top: 1rem !important;
   }
   
-  /* Hide all footer links except GitHub logo on mobile */
-  .VPFooter a:not([href*="github"]) {
+  /* Hide footer links on mobile but keep basic structure */
+  .VPFooter a {
     display: none !important;
+  }
+  
+  /* Show GitHub link specifically */
+  .VPFooter a[href*="github"] {
+    display: inline-block !important;
   }
 }
 
