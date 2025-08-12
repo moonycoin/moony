@@ -2767,8 +2767,8 @@ body {
   .VPFooter::before {
     content: '' !important;
     display: block !important;
-    width: 6rem !important;
-    height: 3rem !important;
+    width: 12rem !important;
+    height: 6rem !important;
     margin: 0 auto 0.5rem auto !important;
     background-image: url("/logo-light.svg") !important;
     background-size: contain !important;
@@ -2804,8 +2804,8 @@ body {
   .Layout .VPApp .VPFooter::before {
     content: '' !important;
     display: block !important;
-    width: 6rem !important;
-    height: 3rem !important;
+    width: 12rem !important;
+    height: 6rem !important;
     margin: 0 auto 0.5rem auto !important;
     background-image: url("/logo-light.svg") !important;
     background-size: contain !important;
