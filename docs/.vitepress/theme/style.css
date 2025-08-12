@@ -2763,8 +2763,21 @@ body {
     display: none !important;
   }
   
-  /* Create a custom mobile footer within the footer container */
+  /* Add light mode SVG logo above the tagline */
   .VPFooter::before {
+    content: '' !important;
+    display: block !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin: 0 auto 0.5rem auto !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 2v20'/%3E%3Cpath d='M2 12h20'/%3E%3C/svg%3E") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  
+  /* Create a custom mobile footer within the footer container */
+  .VPFooter::after {
     content: 'Permissionless transactions with Proof of Liquidity' !important;
     display: block !important;
     height: auto !important;
@@ -2776,19 +2789,6 @@ body {
     font-size: 0.875rem !important;
     color: var(--vp-c-text-2) !important;
     border-top: 1px solid var(--vp-c-divider) !important;
-  }
-  
-  /* Add light mode SVG logo above the tagline */
-  .VPFooter::after {
-    content: '' !important;
-    display: block !important;
-    width: 2rem !important;
-    height: 2rem !important;
-    margin: 0 auto 0.5rem auto !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 2v20'/%3E%3Cpath d='M2 12h20'/%3E%3C/svg%3E") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
   }
 }
 
@@ -2800,8 +2800,21 @@ body {
     display: none !important;
   }
   
-  /* Ensure our custom footer content is visible */
+  /* Ensure our custom logo is visible above the tagline */
   .Layout .VPApp .VPFooter::before {
+    content: '' !important;
+    display: block !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin: 0 auto 0.5rem auto !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 2v20'/%3E%3Cpath d='M2 12h20'/%3E%3C/svg%3E") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  
+  /* Ensure our custom footer content is visible below the logo */
+  .Layout .VPApp .VPFooter::after {
     content: 'Permissionless transactions with Proof of Liquidity' !important;
     display: block !important;
     height: auto !important;
@@ -2813,19 +2826,6 @@ body {
     font-size: 0.875rem !important;
     color: var(--vp-c-text-2) !important;
     border-top: 1px solid var(--vp-c-divider) !important;
-  }
-  
-  /* Ensure our custom logo is visible */
-  .Layout .VPApp .VPFooter::after {
-    content: '' !important;
-    display: block !important;
-    width: 2rem !important;
-    height: 2rem !important;
-    margin: 0 auto 0.5rem auto !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 2v20'/%3E%3Cpath d='M2 12h20'/%3E%3C/svg%3E") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
   }
 }
 
