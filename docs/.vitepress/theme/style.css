@@ -2752,13 +2752,14 @@ body {
    MOBILE FOOTER GAP FIX
    ================ */
 
-@media (max-width: 768px) {
-  /* Aggressively reduce gap between main container and footer on mobile */
+/* Small mobile devices (320px and up) */
+@media (max-width: 480px) {
+  /* Reduce gap between main container and footer on small mobile */
   .vp-doc {
     margin-bottom: 0.5rem !important;
   }
   
-  /* Target home page specifically for even more aggressive spacing reduction */
+  /* Target home page specifically for small mobile */
   .vp-doc.home {
     margin-bottom: 0.25rem !important;
   }
@@ -2781,12 +2782,12 @@ body {
     margin-bottom: 0 !important;
   }
   
-  /* CRITICAL: Remove spacing between elements on mobile */
+  /* CRITICAL: Remove spacing between elements on small mobile */
   .vp-doc > * + * {
     margin-top: 0.5rem !important;
   }
   
-  /* CRITICAL: Remove spacing after headings on mobile */
+  /* CRITICAL: Remove spacing after headings on small mobile */
   .vp-doc > h1 + *,
   .vp-doc > h2 + *,
   .vp-doc > h3 + * {
@@ -2817,7 +2818,102 @@ body {
     display: none !important;
   }
   
-  /* Add light mode SVG logo above the tagline */
+  /* Add light mode SVG logo above the tagline - smaller for small devices */
+  .VPFooter::before {
+    content: '' !important;
+    display: block !important;
+    width: 6rem !important;
+    height: 3rem !important;
+    margin: 0 auto 0.5rem auto !important;
+    background-image: url("/logo-light.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  
+  /* Create a custom mobile footer within the footer container */
+  .VPFooter::after {
+    content: 'Permissionless transactions with Proof of Liquidity' !important;
+    display: block !important;
+    height: auto !important;
+    min-height: 3rem !important;
+    background: var(--vp-c-bg-soft) !important;
+    margin: 0 !important;
+    padding: 0.75rem !important;
+    text-align: center !important;
+    font-size: 0.8rem !important;
+    color: var(--vp-c-text-2) !important;
+    border-top: 1px solid var(--vp-c-divider) !important;
+  }
+}
+
+/* Medium mobile devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Reduce gap between main container and footer on medium mobile */
+  .vp-doc {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Target home page specifically for medium mobile */
+  .vp-doc.home {
+    margin-bottom: 0.25rem !important;
+  }
+  
+  /* Reduce any spacing from the main content wrapper */
+  .VPContent {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target the main content area */
+  .vp-doc .content,
+  .vp-doc .main {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* CRITICAL: Remove the last-child margin that VitePress adds */
+  .vp-doc > *:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* CRITICAL: Remove spacing between elements on medium mobile */
+  .vp-doc > * + * {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* CRITICAL: Remove spacing after headings on medium mobile */
+  .vp-doc > h1 + *,
+  .vp-doc > h2 + *,
+  .vp-doc > h3 + * {
+    margin-top: 0.25rem !important;
+  }
+  
+  /* TARGET MAIN CONTAINER SPACING - Remove bottom padding/margin from the content wrapper */
+  .Layout .VPApp .VPContent .vp-doc {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the main content wrapper that holds the vp-doc */
+  .Layout .VPApp .VPContent > div {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target any content wrapper elements */
+  .Layout .VPApp .VPContent .content-wrapper,
+  .Layout .VPApp .VPContent .main-content {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Hide footer content but keep container visible */
+  .VPFooter > * {
+    display: none !important;
+  }
+  
+  /* Add light mode SVG logo above the tagline - medium size for medium devices */
   .VPFooter::before {
     content: '' !important;
     display: block !important;
@@ -2846,8 +2942,103 @@ body {
   }
 }
 
-/* Maximum specificity override for mobile footer */
-@media (max-width: 768px) {
+/* Large mobile devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Reduce gap between main container and footer on large mobile/tablet */
+  .vp-doc {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Target home page specifically for large mobile/tablet */
+  .vp-doc.home {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Reduce any spacing from the main content wrapper */
+  .VPContent {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target the main content area */
+  .vp-doc .content,
+  .vp-doc .main {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* CRITICAL: Remove the last-child margin that VitePress adds */
+  .vp-doc > *:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* CRITICAL: Remove spacing between elements on large mobile/tablet */
+  .vp-doc > * + * {
+    margin-top: 0.75rem !important;
+  }
+  
+  /* CRITICAL: Remove spacing after headings on large mobile/tablet */
+  .vp-doc > h1 + *,
+  .vp-doc > h2 + *,
+  .vp-doc > h3 + * {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* TARGET MAIN CONTAINER SPACING - Remove bottom padding/margin from the content wrapper */
+  .Layout .VPApp .VPContent .vp-doc {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the main content wrapper that holds the vp-doc */
+  .Layout .VPApp .VPContent > div {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target any content wrapper elements */
+  .Layout .VPApp .VPContent .content-wrapper,
+  .Layout .VPApp .VPContent .main-content {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Hide footer content but keep container visible */
+  .VPFooter > * {
+    display: none !important;
+  }
+  
+  /* Add light mode SVG logo above the tagline - larger for tablets */
+  .VPFooter::before {
+    content: '' !important;
+    display: block !important;
+    width: 12rem !important;
+    height: 6rem !important;
+    margin: 0 auto 0.75rem auto !important;
+    background-image: url("/logo-light.svg") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  
+  /* Create a custom mobile footer within the footer container */
+  .VPFooter::after {
+    content: 'Permissionless transactions with Proof of Liquidity' !important;
+    display: block !important;
+    height: auto !important;
+    min-height: 5rem !important;
+    background: var(--vp-c-bg-soft) !important;
+    margin: 0 !important;
+    padding: 1.25rem !important;
+    text-align: center !important;
+    font-size: 1rem !important;
+    color: var(--vp-c-text-2) !important;
+    border-top: 1px solid var(--vp-c-divider) !important;
+  }
+}
+
+/* Maximum specificity override for mobile footer - applies to all mobile sizes */
+@media (max-width: 1024px) {
   /* Hide footer content with maximum specificity but keep container */
   .Layout .VPApp .VPFooter > *,
   .Layout .VPApp .VPFooter.VPFooter > * {
@@ -2856,11 +3047,6 @@ body {
   
   /* Ensure our custom logo is visible above the tagline */
   .Layout .VPApp .VPFooter::before {
-    content: '' !important;
-    display: block !important;
-    width: 9rem !important;
-    height: 4.5rem !important;
-    margin: 0 auto 0.5rem auto !important;
     background-image: url("/logo-light.svg") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -2869,16 +3055,7 @@ body {
   
   /* Ensure our custom footer content is visible below the logo */
   .Layout .VPApp .VPFooter::after {
-    content: 'Permissionless transactions with Proof of Liquidity' !important;
-    display: block !important;
-    height: auto !important;
-    min-height: 4rem !important;
     background: var(--vp-c-bg-soft) !important;
-    margin: 0 !important;
-    padding: 1rem !important;
-    text-align: center !important;
-    font-size: 0.875rem !important;
-    color: var(--vp-c-text-2) !important;
     border-top: 1px solid var(--vp-c-divider) !important;
   }
 }
