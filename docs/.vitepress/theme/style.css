@@ -2760,6 +2760,7 @@ body {
   
   .VPFooter {
     margin-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
   
   /* Hide ALL footer links on mobile */
