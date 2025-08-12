@@ -2766,5 +2766,11 @@ body {
   .VPFooter a {
     display: none !important;
   }
+  
+  /* Hide footer section headers */
+  .VPFooter h3,
+  .VPFooter h4 {
+    display: none !important;
+  }
 }
 
