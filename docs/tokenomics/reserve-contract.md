@@ -10,27 +10,21 @@ The design ensures a fair start, eliminates insider advantages, and aligns issua
 
 The Reserve Contract governs all token issuance and redemption. Users interact directly by exchanging USDC for MOONY or vice versa, with pricing determined by an onchain bonding curve. This system ensures continuous liquidity and transparent, market‑driven distribution.
 
-- **Proof of Liquidity:**  
- All circulating Moony is backed 1:1 by USDC held in the contract, ensuring full redeemability and reinforcing user confidence in the protocol. 
+- **Proof of Liquidity:** All circulating Moony is backed 1:1 by USDC held in the contract, ensuring full redeemability and reinforcing user confidence in the protocol. 
 
-- **Bonding Curve:**  
-  Moony’s pricing follows a mathematical curve that adjusts dynamically based on circulating supply, creating a transparent and predictable pricing model.
+- **Bonding Curve:** Moony’s pricing follows a mathematical curve that adjusts dynamically based on circulating supply, creating a transparent and predictable pricing model.
 
 Together, these mechanisms make the Reserve Contract the core of Moony’s architecture. Fully onchain, autonomous, and immutable, it operates without control from any foundation, team, or privileged actor. The rules that define issuance, pricing, and redemption are permanently encoded in its smart contract, ensuring openness and finality from inception.
 
 ## Design Principles
 
-- **Immutable:**  
-  The Reserve Contract is unchangeable once deployed. It has no upgrade path, admin keys, or privileged access. The rules governing issuance, pricing, and redemption are fixed and permanently encoded. Users are protected from governance risk, policy changes, or centralized interference.
+- **Immutable:** The Reserve Contract is unchangeable once deployed. It has no upgrade path, admin keys, or privileged access. The rules governing issuance, pricing, and redemption are fixed and permanently encoded. Users are protected from governance risk, policy changes, or centralized interference.
 
-- **Non-custodial:**  
-  Users interface directly with the Reserve Contract from their own wallets, with the protocol never taking custody of funds. During minting, USDC is transferred on‑chain to the contract; during redemption, the contract returns USDC directly to the user. All interactions occur entirely on‑chain, without intermediaries or reliance on off‑chain accounts.
+- **Non-custodial:** Users interface directly with the Reserve Contract from their own wallets, with the protocol never taking custody of funds. During minting, USDC is transferred on‑chain to the contract; during redemption, the contract returns USDC directly to the user. All interactions occur entirely on‑chain, without intermediaries or reliance on off‑chain accounts.
 
-- **Permissionless:**  
-  The Reserve is open and accessible to anyone, anywhere, without gatekeepers, whitelists, or KYC requirements. Participation is fully permissionless, enabling both individuals and developers to interact with the protocol on equal terms.
+- **Permissionless:** The Reserve is open and accessible to anyone, anywhere, without gatekeepers, whitelists, or KYC requirements. Participation is fully permissionless, enabling both individuals and developers to interact with the protocol on equal terms.
 
-- **Transparent:**  
-  All contract activity is recorded on‑chain and is publicly verifiable. Participants can monitor supply, reserves, and pricing in real time, with no hidden mechanics or opaque governance processes.
+- **Transparent:** All contract activity is recorded on‑chain and is publicly verifiable. Participants can monitor supply, reserves, and pricing in real time, with no hidden mechanics or opaque governance processes.
 
 ## Open Participation
 
