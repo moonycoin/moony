@@ -2784,14 +2784,19 @@ body {
     display: none !important;
   }
   
-  /* Ensure our custom spacing works */
+  /* Create a custom mobile footer with proper content */
   .Layout .VPApp .VPFooter::after {
-    content: '' !important;
+    content: '© 2024 Moony • Permissionless transactions with Proof of Liquidity' !important;
     display: block !important;
-    height: 4rem !important;
-    background: transparent !important;
+    height: auto !important;
+    min-height: 4rem !important;
+    background: var(--vp-c-bg-soft) !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 1rem !important;
+    text-align: center !important;
+    font-size: 0.875rem !important;
+    color: var(--vp-c-text-2) !important;
+    border-top: 1px solid var(--vp-c-divider) !important;
   }
 }
 
