@@ -2482,10 +2482,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.VPHero .image:hover {
-  filter: drop-shadow(var(--elegant-shadow-strong));
-  transform: translateY(-2px) scale(1.02);
-}
+
 
 /* Enhanced hero text with subtle shadows and depth */
 .VPHero .text {
