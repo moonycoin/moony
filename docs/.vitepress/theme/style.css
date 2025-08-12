@@ -2762,11 +2762,8 @@ body {
     margin-top: 1rem !important;
   }
   
-  /* Hide specific footer links on mobile */
-  .VPFooter a[href*="documentation"],
-  .VPFooter a[href*="use-cases"],
-  .VPFooter a[href*="resources"],
-  .VPFooter a[href*="github.com"] {
+  /* Hide ALL footer links on mobile */
+  .VPFooter a {
     display: none !important;
   }
 }
