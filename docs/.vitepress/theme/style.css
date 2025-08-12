@@ -2763,6 +2763,8 @@ body {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     padding: 2rem 0 0 0 !important;
+    min-height: auto !important;
+    height: auto !important;
   }
   
   /* Hide ALL footer links on mobile */
@@ -2786,12 +2788,26 @@ body {
   .VPFooter .VPFooterBrand {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    margin-top: 0 !important;
   }
   
   /* Target the tagline specifically to remove bottom spacing */
   .VPFooter .VPFooterBrand .tagline {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Aggressively remove footer height and spacing */
+  .VPFooter .VPFooterBrand .logo {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Force footer to minimum height */
+  .VPFooter {
+    height: fit-content !important;
+    max-height: none !important;
   }
 }
 
