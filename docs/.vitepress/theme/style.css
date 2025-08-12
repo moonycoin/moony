@@ -2762,14 +2762,12 @@ body {
     margin-top: 1rem !important;
   }
   
-  /* Hide footer links on mobile but keep basic structure */
-  .VPFooter a {
+  /* Hide specific footer links on mobile */
+  .VPFooter a[href*="documentation"],
+  .VPFooter a[href*="use-cases"],
+  .VPFooter a[href*="resources"],
+  .VPFooter a[href*="github.com"] {
     display: none !important;
-  }
-  
-  /* Show GitHub link specifically */
-  .VPFooter a[href*="github"] {
-    display: inline-block !important;
   }
 }
 
