@@ -436,6 +436,35 @@ body {
   .VPApp {
     background-color: rgba(0, 0, 255, 0.1) !important;
   }
+  
+  /* More aggressive debugging with higher specificity */
+  html body .VPApp .Layout .VPContent {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    border: 3px solid red !important;
+  }
+  
+  html body .VPApp .Layout {
+    background-color: rgba(0, 255, 0, 0.3) !important;
+    border: 3px solid green !important;
+  }
+  
+  html body .VPApp {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+    border: 3px solid blue !important;
+  }
+  
+  /* Add visible text to confirm CSS is loading */
+  .VPContent::before {
+    content: "DEBUG: VPContent" !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+    background: red !important;
+    color: white !important;
+    padding: 5px !important;
+    z-index: 9999 !important;
+    font-size: 12px !important;
+  }
 }
 
 .dark .vp-doc {
