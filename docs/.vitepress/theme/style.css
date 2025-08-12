@@ -2793,6 +2793,25 @@ body {
     margin-top: 0.25rem !important;
   }
   
+  /* TARGET MAIN CONTAINER SPACING - Remove bottom padding/margin from the content wrapper */
+  .Layout .VPApp .VPContent .vp-doc {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target the main content wrapper that holds the vp-doc */
+  .Layout .VPApp .VPContent > div {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* Target any content wrapper elements */
+  .Layout .VPApp .VPContent .content-wrapper,
+  .Layout .VPApp .VPContent .main-content {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
   /* Hide footer content but keep container visible */
   .VPFooter > * {
     display: none !important;
