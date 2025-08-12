@@ -423,6 +423,19 @@ body {
   .vp-doc {
     margin: 0px auto 0px !important;
   }
+  
+  /* Debug: Add red background to see content boundaries */
+  .VPContent {
+    background-color: rgba(255, 0, 0, 0.1) !important;
+  }
+  
+  .Layout {
+    background-color: rgba(0, 255, 0, 0.1) !important;
+  }
+  
+  .VPApp {
+    background-color: rgba(0, 0, 255, 0.1) !important;
+  }
 }
 
 .dark .vp-doc {
