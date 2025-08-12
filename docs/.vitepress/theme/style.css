@@ -2754,9 +2754,23 @@ body {
 
 /* Small mobile devices (320px and up) */
 @media (max-width: 480px) {
-  /* DEBUGGING: Make any invisible elements visible to see what's in the white space */
+  /* AGGRESSIVE DEBUGGING: Make any invisible elements visible to see what's in the white space */
+  .Layout .VPApp .VPContent *,
+  .Layout .VPApp .VPContent,
+  .Layout .VPApp,
+  .Layout,
+  .VPContent,
+  .vp-doc,
+  .VPFooter {
+    outline: 2px solid red !important;
+    background-color: rgba(255, 0, 0, 0.1) !important;
+  }
+  
+  /* Force visibility of any hidden elements */
   .Layout .VPApp .VPContent * {
-    outline: 1px solid red !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   
   /* Reduce gap between main container and footer on small mobile */
