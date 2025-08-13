@@ -429,6 +429,11 @@ body {
     margin-top: 0 !important; /* Remove auto margin */
     flex-shrink: 0 !important;
     padding-top: 10px !important; /* Minimal top padding */
+    display: block !important; /* Force display */
+    visibility: visible !important; /* Force visibility */
+    opacity: 1 !important; /* Force opacity */
+    background: red !important; /* Debug: make footer visible */
+    border: 3px solid blue !important; /* Debug: add border */
   }
   
   /* Remove any bottom spacing from the main content */
@@ -5647,22 +5652,30 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin-right: auto !important;
   }
   
-          .VPHero .tagline {
-          font-size: 0.87rem !important;
-          margin: 0.2rem 0 0.5rem 0.5rem !important;
-          line-height: 1.1 !important;
-          white-space: normal !important;
-          overflow: visible !important;
-          text-overflow: clip !important;
-          max-width: 100% !important;
-          text-align: center !important;
-        }
+                                                                                                                                                                                                                                                                                                        .VPHero .text {
+                       font-size: 3.7rem !important;
+                       line-height: 1.1 !important;
+                       margin-bottom: 0.3rem !important;
+                       font-weight: 800 !important;
+                       margin-left: 0.5rem !important;
+                       margin-right: auto !important;
+                     }
+  
+                                                                                                                                   .VPHero .tagline {
+                        font-size: 0.87rem !important;
+                        margin: 0.2rem 0 0.5rem 0.5rem !important;
+                        line-height: 1.1 !important;
+                        white-space: normal !important;
+                        overflow: visible !important;
+                        text-overflow: clip !important;
+                        text-align: center !important;
+                      }
   
   .VPHero .image {
     order: 1;
-    width: 35px !important;
-    height: 35px !important;
-    margin: 0 auto 0.3rem auto !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 auto 0.2rem auto !important;
     display: none !important;
     align-items: center;
     justify-content: center;
@@ -9394,9 +9407,9 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPHero .image {
     order: 1;
-    width: 35px !important;
-    height: 35px !important;
-    margin: 0 auto 0.3rem auto !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 auto 0.2rem auto !important;
     display: none !important;
     align-items: center;
     justify-content: center;
