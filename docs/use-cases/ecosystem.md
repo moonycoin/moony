@@ -16,14 +16,14 @@ Moony’s design naturally supports a broad range of use cases as adoption grows
   Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive Moony anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.
 
 ::: tip 
-Click here to learn more about how Moony can be used for P2P Payments. 
+Learn more about how Moony can be used for P2P Payments. 
 :::
 
 - **Micropayments:**  
   Moony’s divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can’t handle. From pay‑per‑use digital content to streaming payments, Moony unlocks new economic models that previously required centralized platforms with high fees.
 
 ::: tip 
-Click here to learn more about how Moony can be used for Micropayments. 
+Learn more about how Moony can be used for Micropayments. 
 :::
 
 
@@ -31,7 +31,7 @@ Click here to learn more about how Moony can be used for Micropayments.
   Moony can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use Moony in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.
 
 ::: tip 
-Click here to learn more about how Moony can be used in (DeFi).
+Learn more about how Moony can be used in (DeFi).
 :::
 
 These examples demonstrate Moony’s flexibility without relying on any single application or feature set. Its future utility will emerge from open participation and the creativity of independent contributors. The Moony ecosystem is built to grow organically through composability, openness, and collective participation. Each new integration strengthens the network, reinforcing Moony’s identity as a decentralized public good designed to endure and thrive without centralized governance.
