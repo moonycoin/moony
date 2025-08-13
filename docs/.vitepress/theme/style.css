@@ -424,21 +424,11 @@ body {
     margin: 0px auto 0px !important;
   }
   
-  /* Hide the default VitePress footer completely on mobile */
-  .VPFooter:not(.footer-container) {
-    display: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-  }
-  
-  /* Target any remaining footer elements */
-  footer:not(.footer-container) {
-    display: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  /* Show the footer but with minimal spacing */
+  .VPFooter {
+    margin-top: 0 !important; /* Remove auto margin */
+    flex-shrink: 0 !important;
+    padding-top: 10px !important; /* Minimal top padding */
   }
   
   /* Remove any bottom spacing from the main content */
@@ -470,7 +460,7 @@ body {
   .vp-doc {
     flex: 1 !important;
     margin-bottom: 0 !important;
-    padding-bottom: 20px !important; /* Minimal bottom padding */
+    padding-bottom: 5px !important; /* Very minimal bottom padding */
   }
   
   /* Ensure footer sticks to bottom */
