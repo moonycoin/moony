@@ -510,6 +510,31 @@ body {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
+  
+  /* Mobile portrait footer styling */
+  .VPFooter {
+    text-align: center !important;
+  }
+  
+  .VPFooter .footer-brand {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .VPFooter .footer-description {
+    font-size: 0.9rem !important; /* Reduce tagline size */
+    line-height: 1.4 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .VPFooter .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 
 .dark .vp-doc {
