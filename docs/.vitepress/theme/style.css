@@ -507,6 +507,50 @@ body {
     z-index: 9999 !important;
   }
   
+  /* Eliminate white space below content container */
+  .vp-doc {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+  
+  /* Target any VitePress default spacing */
+  .VPContent .main {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Remove any bottom spacing from the page */
+  .VPPage {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target the specific content wrapper */
+  .VPContent .content {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Nuclear option: remove all bottom spacing from everything */
+  .VPContent *,
+  .Layout *,
+  .VPApp * {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Add minimal breathing room only at the very bottom */
+  body {
+    padding-bottom: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  html {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
   /* Ensure footer sticks to bottom */
   .VPFooter {
     margin-top: auto !important;
