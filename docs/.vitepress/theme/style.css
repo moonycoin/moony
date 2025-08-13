@@ -748,13 +748,13 @@ body {
   
   /* Tip box styling for mobile portrait - smaller text to fit on one line */
   .vp-doc .custom-block.tip {
-    font-size: 0.9rem !important; /* Smaller font for mobile */
-    line-height: 1.4 !important; /* Tighter line height */
+    font-size: 0.75rem !important; /* Much smaller font so all text fits on one line */
+    line-height: 1.2 !important; /* Very tight line height for mobile */
     padding: 20px !important; /* Reduced padding for mobile */
     margin: 25px 0 !important; /* Reduced margins for mobile */
     white-space: nowrap !important; /* Prevent line breaks */
-    overflow: hidden !important; /* Hide overflow */
-    text-overflow: ellipsis !important; /* Add ellipsis if text is too long */
+    overflow: visible !important; /* Show all text */
+    text-align: center !important; /* Center the text for better mobile appearance */
   }
 }
 
