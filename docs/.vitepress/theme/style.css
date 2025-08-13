@@ -524,21 +524,21 @@ body {
     flex-direction: column !important;
     align-items: flex-start !important;
     flex: 0 0 auto !important; /* Don't grow, don't shrink */
-    margin-right: 20px !important; /* Space between brand and content */
+    margin-right: 15px !important; /* Smaller space between brand and content */
   }
   
   .VPFooter .footer-brand {
     display: flex !important;
     justify-content: flex-start !important; /* Left align like desktop */
     align-items: center !important;
-    margin-bottom: 2px !important; /* Even smaller spacing */
+    margin-bottom: 1px !important; /* Minimal spacing */
   }
   
   .VPFooter .footer-description {
-    font-size: 0.5rem !important; /* Even smaller tagline */
-    line-height: 1.1 !important; /* Very tight line height */
+    font-size: 0.4rem !important; /* Extremely small tagline */
+    line-height: 1.0 !important; /* Minimal line height */
     text-align: left !important; /* Left align like desktop */
-    margin-bottom: 3px !important; /* Very small spacing */
+    margin-bottom: 2px !important; /* Minimal spacing */
   }
   
   .VPFooter .footer-social {
@@ -549,14 +549,14 @@ body {
   
   /* Make logo much smaller on mobile */
   .VPFooter .footer-logo {
-    height: 20px !important; /* Much smaller logo */
+    height: 16px !important; /* Very small logo */
     width: auto !important;
   }
   
   /* Make GitHub icon smaller on mobile */
   .VPFooter .footer-social svg {
-    width: 16px !important; /* Smaller GitHub icon */
-    height: 16px !important;
+    width: 12px !important; /* Very small GitHub icon */
+    height: 12px !important;
   }
   
   /* Content sections grid - horizontal layout like desktop */
@@ -564,7 +564,7 @@ body {
     display: flex !important; /* Use flexbox instead of grid */
     flex-direction: row !important; /* Horizontal layout */
     justify-content: space-between !important; /* Distribute sections evenly */
-    gap: 12px !important; /* Slightly more gap for readability */
+    gap: 8px !important; /* Very small gap between sections */
     margin-bottom: 0 !important; /* No bottom margin for single row */
     flex: 1 !important; /* Take remaining space */
   }
@@ -577,8 +577,8 @@ body {
   
   /* Reduce text sizes for compact footer */
   .VPFooter h4 {
-    font-size: 0.6rem !important; /* Slightly larger headers for readability */
-    margin-bottom: 3px !important; /* Small spacing */
+    font-size: 0.45rem !important; /* Very small headers */
+    margin-bottom: 2px !important; /* Minimal spacing */
     font-weight: 600 !important;
   }
   
@@ -589,12 +589,12 @@ body {
   }
   
   .VPFooter li {
-    margin-bottom: 1px !important; /* Very small spacing */
+    margin-bottom: 0px !important; /* No spacing between items */
   }
   
   .VPFooter a {
-    font-size: 0.5rem !important; /* Very small links */
-    line-height: 1.1 !important; /* Very tight line height */
+    font-size: 0.4rem !important; /* Extremely small links */
+    line-height: 1.0 !important; /* Minimal line height */
     color: var(--moony-secondary) !important;
     text-decoration: none !important;
   }
