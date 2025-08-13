@@ -746,14 +746,13 @@ body {
     color: var(--moony-accent) !important;
   }
   
-  /* Style tip boxes that contain "Click here" text for mobile portrait */
-  /* Target the second tip box (likely contains "Click here") */
-  .vp-doc .custom-block.tip:nth-of-type(2) {
-    font-size: 0.7rem !important; /* Small font so "Click here" text fits in container */
-    line-height: 1.1 !important; /* Very tight line height */
+  /* Style ALL tip boxes that contain "Click here" text for mobile portrait */
+  /* Target all tip boxes that might contain "Click here" text */
+  .vp-doc .custom-block.tip {
+    font-size: 0.6rem !important; /* Much smaller font so ALL "Click here" text fits in container */
+    line-height: 1.0 !important; /* Very tight line height */
     white-space: nowrap !important; /* Prevent line breaks */
-    overflow: hidden !important; /* Hide any overflow */
-    text-overflow: ellipsis !important; /* Add ellipsis if needed */
+    overflow: visible !important; /* Show all text */
   }
 
 }
