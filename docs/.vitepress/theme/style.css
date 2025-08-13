@@ -119,9 +119,9 @@
   grid-row: 2 !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: center !important;
-  padding: 0 !important;
+  padding: 40px 0 0 0 !important;
   font-size: 3.5rem !important;
   color: #ffffff !important;
   font-weight: 300 !important;
@@ -134,7 +134,6 @@
   text-align: center !important;
   text-transform: lowercase !important;
   width: 100% !important;
-  height: 50vh !important;
 }
 
 
