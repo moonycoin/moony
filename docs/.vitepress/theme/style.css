@@ -789,6 +789,23 @@ body {
   
   /* NEW SIMPLE MOBILE HEADER FOR PORTRAIT MODE */
   @media (max-width: 768px) {
+    /* CRITICAL: Ensure content is visible on mobile portrait */
+    .VPApp > *:not(::before) {
+      display: revert !important;
+    }
+    
+    .VPContent {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
+    .vp-doc {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
     /* Enhanced button styling for mobile */
     .vp-doc .custom-block.tip.click-here-tip {
       background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%) !important;
