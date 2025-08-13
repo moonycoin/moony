@@ -808,69 +808,43 @@ body {
     width: auto !important;
   }
   
-  /* Theme toggle positioned on the right with professional styling */
+  /* Simple, working theme toggle */
   .VPNavBarAppearance {
     display: flex !important;
     align-items: center !important;
-    margin-left: auto !important; /* Push to right side */
-    margin-right: 16px !important; /* Perfect right spacing */
-    flex-shrink: 0 !important; /* Don't shrink */
+    margin-left: auto !important;
+    margin-right: 16px !important;
   }
   
   .VPNavBarAppearance .VPSwitch {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 48px !important; /* Wider for capsule shape */
-    height: 24px !important; /* Taller than wide for proper capsule */
-    border-radius: 12px !important; /* Half height for perfect capsule */
-    background: rgba(255, 255, 255, 0.1) !important; /* Subtle background */
-    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
-    color: rgba(255, 255, 255, 0.8) !important; /* Subtle white */
+    width: 44px !important;
+    height: 22px !important;
+    border-radius: 11px !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    position: relative !important;
     cursor: pointer !important;
-    transition: all 0.2s ease !important;
-    overflow: hidden !important; /* Keep toggle icon inside container */
-    position: relative !important; /* For proper positioning */
+    transition: background 0.3s ease !important;
   }
   
-  /* Ensure toggle button (moving part) is properly contained */
-  .VPNavBarAppearance .VPSwitch .VPSwitchAppearance {
+  .VPNavBarAppearance .VPSwitch::after {
+    content: '' !important;
     position: absolute !important;
-    top: 2px !important; /* Small margin from top */
-    left: 2px !important; /* Start position for light mode */
-    width: 20px !important; /* Toggle button width */
-    height: 20px !important; /* Toggle button height */
-    border-radius: 10px !important; /* Perfect circle */
-    background: rgba(255, 255, 255, 0.9) !important; /* White toggle button */
-    transition: all 0.3s ease !important;
-    z-index: 2 !important;
+    top: 2px !important;
+    left: 2px !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    background: white !important;
+    transition: transform 0.3s ease !important;
   }
   
-  /* Dark mode toggle button position */
-  .dark .VPNavBarAppearance .VPSwitch .VPSwitchAppearance {
-    left: 26px !important; /* Position for dark mode (right side) */
-  }
-  
-  .VPNavBarAppearance .VPSwitch:hover {
-    background: rgba(255, 255, 255, 0.1) !important; /* Subtle hover */
-    color: rgba(255, 255, 255, 1) !important; /* Full white on hover */
+  .dark .VPNavBarAppearance .VPSwitch::after {
+    transform: translateX(22px) !important;
   }
   
   .VPNavBarAppearance .VPSwitch svg {
-    width: 16px !important; /* Perfect proportion for capsule container */
-    height: 16px !important;
-  }
-  
-  /* Dark mode theme toggle - consistent with light mode */
-  .dark .VPNavBarAppearance .VPSwitch {
-    background: transparent !important;
-    border: none !important;
-    color: rgba(255, 255, 255, 0.8) !important;
-  }
-  
-  .dark .VPNavBarAppearance .VPSwitch:hover {
-    background: rgba(255, 255, 255, 0.1) !important;
-    color: rgba(255, 255, 255, 1) !important;
+    display: none !important;
   }
   
 
