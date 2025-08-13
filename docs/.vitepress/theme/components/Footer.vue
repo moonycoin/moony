@@ -17,11 +17,10 @@
 
     <!-- Content Sections - 3-column grid -->
     <div class="footer-content-grid">
-      <!-- Documentation -->
+      <!-- Tokenomics -->
       <div class="footer-section">
-        <h4>Documentation</h4>
+        <h4>Tokenomics</h4>
         <ul>
-          <li><a href="/">Getting Started</a></li>
           <li><a href="/tokenomics/reserve-contract">Reserve Contract</a></li>
           <li><a href="/tokenomics/proof-of-liquidity">Proof of Liquidity</a></li>
           <li><a href="/tokenomics/bonding-curve">Bonding Curve</a></li>
