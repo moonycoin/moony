@@ -521,15 +521,15 @@ body {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important; /* Reduced from 10px */
     /* Remove from grid entirely */
   }
   
   .VPFooter .footer-description {
-    font-size: 0.9rem !important; /* Reduce tagline size */
-    line-height: 1.4 !important;
+    font-size: 0.8rem !important; /* Reduced from 0.9rem */
+    line-height: 1.3 !important; /* Reduced from 1.4 */
     text-align: center !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 12px !important; /* Reduced from 15px */
     /* Remove from grid entirely */
   }
   
@@ -537,7 +537,7 @@ body {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-bottom: 20px !important; /* Space before the sections grid */
+    margin-bottom: 15px !important; /* Reduced from 20px */
     /* Remove from grid entirely */
   }
   
@@ -545,15 +545,15 @@ body {
   .VPFooter .footer-container {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important; /* Three equal columns */
-    gap: 15px !important;
-    margin-bottom: 20px !important;
+    gap: 12px !important; /* Reduced from 15px */
+    margin-bottom: 15px !important; /* Reduced from 20px */
     /* Only contains the actual footer sections, not the brand */
   }
   
   /* Reduce text sizes for compact footer */
   .VPFooter h4 {
-    font-size: 0.85rem !important;
-    margin-bottom: 8px !important;
+    font-size: 0.8rem !important; /* Reduced from 0.85rem */
+    margin-bottom: 6px !important; /* Reduced from 8px */
     font-weight: 600 !important;
   }
   
@@ -564,12 +564,12 @@ body {
   }
   
   .VPFooter li {
-    margin-bottom: 4px !important;
+    margin-bottom: 3px !important; /* Reduced from 4px */
   }
   
   .VPFooter a {
-    font-size: 0.75rem !important;
-    line-height: 1.3 !important;
+    font-size: 0.7rem !important; /* Reduced from 0.75rem */
+    line-height: 1.2 !important; /* Reduced from 1.3 */
     color: var(--moony-secondary) !important;
     text-decoration: none !important;
   }
@@ -581,13 +581,13 @@ body {
   /* Footer bottom styling */
   .VPFooter .footer-bottom {
     text-align: center !important;
-    padding-top: 15px !important;
+    padding-top: 12px !important; /* Reduced from 15px */
     border-top: 1px solid var(--moony-border) !important;
   }
   
   .VPFooter .footer-legal a {
-    font-size: 0.7rem !important;
-    margin: 0 8px !important;
+    font-size: 0.65rem !important; /* Reduced from 0.7rem */
+    margin: 0 6px !important; /* Reduced from 8px */
     color: var(--moony-secondary) !important;
   }
 }
