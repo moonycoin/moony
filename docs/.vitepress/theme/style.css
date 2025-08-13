@@ -94,7 +94,7 @@
   padding: 0 !important;
   width: 100% !important;
   text-align: center !important;
-  height: 100vh !important;
+  height: 50vh !important;
 }
 
 .VPHero .image img {
@@ -119,9 +119,9 @@
   grid-row: 2 !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   align-items: center !important;
-  padding: 20px 0 0 0 !important;
+  padding: 0 !important;
   font-size: 3.5rem !important;
   color: #ffffff !important;
   font-weight: 300 !important;
@@ -134,9 +134,7 @@
   text-align: center !important;
   text-transform: lowercase !important;
   width: 100% !important;
-  position: relative !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  height: 50vh !important;
 }
 
 
