@@ -446,6 +446,52 @@ body {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
+  
+  /* Fix mobile 100vh bug and normalize bottom spacing */
+  .Layout,
+  .VPApp,
+  .VPContent {
+    min-height: 100dvh !important; /* Use dynamic viewport height */
+    height: 100dvh !important;
+  }
+  
+  /* Implement robust sticky footer */
+  .Layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .VPContent {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .vp-doc {
+    flex: 1 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 20px !important; /* Minimal bottom padding */
+  }
+  
+  /* Ensure footer sticks to bottom */
+  .VPFooter {
+    margin-top: auto !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* Add tight-bottom class for last section */
+  .vp-doc > *:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Target any remaining spacing issues */
+  .vp-doc > section:last-child,
+  .vp-doc > div:last-child,
+  .vp-doc > article:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 .dark .vp-doc {
@@ -1833,16 +1879,24 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin-right: auto !important;
   }
   
-          .VPHero .tagline {
-          font-size: 0.87rem !important;
-          margin: 0.2rem 0 0.5rem 0.5rem !important;
-          line-height: 1.1 !important;
-          white-space: normal !important;
-          overflow: visible !important;
-          text-overflow: clip !important;
-          max-width: 100% !important;
-          text-align: center !important;
-        }
+                                                                                                                                                                                                                                                                                                        .VPHero .text {
+                       font-size: 3.7rem !important;
+                       line-height: 1.1 !important;
+                       margin-bottom: 0.3rem !important;
+                       font-weight: 800 !important;
+                       margin-left: 0.5rem !important;
+                       margin-right: auto !important;
+                     }
+  
+                                                                                                                                   .VPHero .tagline {
+                        font-size: 0.87rem !important;
+                        margin: 0.2rem 0 0.5rem 0.5rem !important;
+                        line-height: 1.1 !important;
+                        white-space: normal !important;
+                        overflow: visible !important;
+                        text-overflow: clip !important;
+                        text-align: center !important;
+                      }
   
   .VPHero .image {
     order: 1;
@@ -6196,23 +6250,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Only remove the specific gradient curtain that was causing the white artifact */
-/* All other background overrides removed to allow noise texture to show */
-
-/* Remove VitePress right-aside bottom gradient curtain - THIS IS THE KEY FIX */
-.VPDoc .aside-curtain,
-.aside-curtain,
-.dark .VPDoc .aside-curtain {
-  display: none !important;
-  background: transparent !important;
-  background-image: none !important;
-  height: 0 !important;
-  width: 0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  opacity: 0 !important;
-}
-
 /* ================
    ELEGANT POLISH & ENHANCEMENTS
    ================ */
@@ -8081,23 +8118,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Only remove the specific gradient curtain that was causing the white artifact */
-/* All other background overrides removed to allow noise texture to show */
-
-/* Remove VitePress right-aside bottom gradient curtain - THIS IS THE KEY FIX */
-.VPDoc .aside-curtain,
-.aside-curtain,
-.dark .VPDoc .aside-curtain {
-  display: none !important;
-  background: transparent !important;
-  background-image: none !important;
-  height: 0 !important;
-  width: 0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  opacity: 0 !important;
-}
-
 /* ================
    ELEGANT POLISH & ENHANCEMENTS
    ================ */
@@ -8166,8 +8186,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   filter: drop-shadow(var(--elegant-shadow-medium));
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 /* Enhanced hero text with subtle shadows and depth */
 .VPHero .text {
@@ -9966,23 +9984,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Only remove the specific gradient curtain that was causing the white artifact */
-/* All other background overrides removed to allow noise texture to show */
-
-/* Remove VitePress right-aside bottom gradient curtain - THIS IS THE KEY FIX */
-.VPDoc .aside-curtain,
-.aside-curtain,
-.dark .VPDoc .aside-curtain {
-  display: none !important;
-  background: transparent !important;
-  background-image: none !important;
-  height: 0 !important;
-  width: 0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  opacity: 0 !important;
-}
-
 /* ================
    ELEGANT POLISH & ENHANCEMENTS
    ================ */
@@ -10051,8 +10052,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   filter: drop-shadow(var(--elegant-shadow-medium));
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 /* Enhanced hero text with subtle shadows and depth */
 .VPHero .text {
