@@ -640,6 +640,7 @@ body {
     align-items: center !important;
     margin-bottom: 12px !important;
     flex-direction: column !important; /* Stack logo over tagline */
+    text-align: center !important; /* Ensure text alignment is centered */
   }
   
   /* Logo size for mobile */
@@ -647,6 +648,9 @@ body {
     height: 32px !important;
     width: auto !important;
     margin-bottom: 8px !important; /* Space between logo and tagline */
+    display: block !important; /* Ensure block display for centering */
+    margin-left: auto !important; /* Center horizontally */
+    margin-right: auto !important; /* Center horizontally */
   }
   
   .VPFooter .footer-description {
