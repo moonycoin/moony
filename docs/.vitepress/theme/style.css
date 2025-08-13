@@ -832,30 +832,29 @@ body {
 }
 
 /* ================
-   DESKTOP FOOTER STYLING - COMPLETELY REDESIGNED
+   DESKTOP FOOTER - BRAND NEW DESIGN
    ================ */
 @media (min-width: 769px) {
   .VPFooter {
-    background: linear-gradient(135deg, 
-      rgba(255, 255, 255, 0.98) 0%, 
-      rgba(248, 250, 252, 0.95) 100%) !important;
-    backdrop-filter: blur(30px) !important;
-    border-top: none !important;
-    padding: 120px 0 80px 0 !important;
-    margin-top: 120px !important;
-    display: block !important;
-    width: 100% !important;
+    background: linear-gradient(180deg, 
+      rgba(255, 255, 255, 0.95) 0%, 
+      rgba(245, 247, 250, 0.9) 100%) !important;
+    backdrop-filter: blur(20px) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+    padding: 80px 0 40px 0 !important;
+    margin-top: 100px !important;
     position: relative !important;
     overflow: hidden !important;
   }
   
   .dark .VPFooter {
-    background: linear-gradient(135deg, 
-      rgba(15, 23, 42, 0.98) 0%, 
-      rgba(30, 41, 59, 0.95) 100%) !important;
+    background: linear-gradient(180deg, 
+      rgba(17, 24, 39, 0.95) 0%, 
+      rgba(31, 41, 55, 0.9) 100%) !important;
+    border-top-color: rgba(255, 255, 255, 0.08) !important;
   }
   
-  /* Subtle background pattern */
+  /* Subtle geometric background */
   .VPFooter::before {
     content: '' !important;
     position: absolute !important;
@@ -864,59 +863,68 @@ body {
     right: 0 !important;
     bottom: 0 !important;
     background-image: 
-      radial-gradient(circle at 20% 80%, rgba(74, 144, 226, 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(74, 144, 226, 0.03) 0%, transparent 50%) !important;
+      linear-gradient(45deg, rgba(59, 130, 246, 0.02) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(59, 130, 246, 0.02) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.02) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.02) 75%) !important;
+    background-size: 20px 20px !important;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px !important;
+    opacity: 0.6 !important;
     pointer-events: none !important;
   }
   
-  /* Main footer container */
+  /* Main container */
   .VPFooter .footer-container {
-    max-width: 1400px !important;
+    max-width: 1200px !important;
     margin: 0 auto !important;
-    padding: 0 60px !important;
+    padding: 0 40px !important;
     position: relative !important;
     z-index: 1 !important;
   }
   
-  /* Hero brand section */
+  /* Brand section - modern and clean */
   .VPFooter .footer-brand-section {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    margin-bottom: 100px !important;
-    position: relative !important;
+    margin-bottom: 60px !important;
+    padding-bottom: 40px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .dark .VPFooter .footer-brand-section {
+    border-bottom-color: rgba(255, 255, 255, 0.06) !important;
   }
   
   .VPFooter .footer-brand {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    margin-bottom: 32px !important;
+    margin-bottom: 24px !important;
   }
   
   .VPFooter .footer-logo {
-    height: 64px !important;
+    height: 48px !important;
     width: auto !important;
-    margin-bottom: 24px !important;
-    filter: drop-shadow(0 4px 12px rgba(74, 144, 226, 0.2)) !important;
+    margin-bottom: 20px !important;
+    filter: drop-shadow(0 2px 8px rgba(59, 130, 246, 0.15)) !important;
   }
   
   .VPFooter .footer-description {
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
     line-height: 1.6 !important;
     color: var(--moony-secondary) !important;
-    margin-bottom: 40px !important;
-    max-width: 600px !important;
+    margin-bottom: 32px !important;
+    max-width: 500px !important;
     text-align: center !important;
     font-weight: 400 !important;
-    letter-spacing: -0.01em !important;
   }
   
-  /* Social links with enhanced styling */
+  /* Social links - minimal and elegant */
   .VPFooter .footer-social {
     display: flex !important;
-    gap: 20px !important;
+    gap: 16px !important;
     justify-content: center !important;
   }
   
@@ -924,57 +932,33 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 56px !important;
-    height: 56px !important;
-    background: linear-gradient(135deg, 
-      rgba(74, 144, 226, 0.1) 0%, 
-      rgba(74, 144, 226, 0.05) 100%) !important;
-    border-radius: 16px !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: rgba(59, 130, 246, 0.08) !important;
+    border-radius: 12px !important;
     color: var(--moony-accent) !important;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    border: 1px solid rgba(74, 144, 226, 0.15) !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-  
-  .VPFooter .footer-social a::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: -100% !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
-    transition: left 0.6s ease !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(59, 130, 246, 0.12) !important;
   }
   
   .VPFooter .footer-social a:hover {
-    background: linear-gradient(135deg, 
-      rgba(74, 144, 226, 0.2) 0%, 
-      rgba(74, 144, 226, 0.1) 100%) !important;
-    transform: translateY(-4px) !important;
-    box-shadow: 0 16px 40px rgba(74, 144, 226, 0.25) !important;
-    border-color: rgba(74, 144, 226, 0.3) !important;
-  }
-  
-  .VPFooter .footer-social a:hover::before {
-    left: 100% !important;
+    background: rgba(59, 130, 246, 0.15) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2) !important;
   }
   
   .VPFooter .footer-social svg {
-    width: 24px !important;
-    height: 24px !important;
-    z-index: 1 !important;
+    width: 20px !important;
+    height: 20px !important;
   }
   
-  /* Content sections with modern grid */
+  /* Content grid - clean 3-column layout */
   .VPFooter .footer-content-grid {
     display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 60px !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 40px !important;
     width: 100% !important;
-    margin-bottom: 80px !important;
-    padding: 0 20px !important;
+    margin-bottom: 50px !important;
   }
   
   .VPFooter .footer-section {
@@ -982,23 +966,23 @@ body {
   }
   
   .VPFooter h4 {
-    font-size: 1.25rem !important;
-    font-weight: 700 !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
     color: var(--moony-primary) !important;
-    margin-bottom: 28px !important;
-    letter-spacing: -0.02em !important;
+    margin-bottom: 20px !important;
+    letter-spacing: -0.01em !important;
     position: relative !important;
   }
   
   .VPFooter h4::after {
     content: '' !important;
     position: absolute !important;
-    bottom: -8px !important;
+    bottom: -6px !important;
     left: 0 !important;
-    width: 32px !important;
-    height: 3px !important;
-    background: linear-gradient(90deg, var(--moony-accent), rgba(74, 144, 226, 0.5)) !important;
-    border-radius: 2px !important;
+    width: 24px !important;
+    height: 2px !important;
+    background: var(--moony-accent) !important;
+    border-radius: 1px !important;
   }
   
   .VPFooter ul {
@@ -1008,16 +992,16 @@ body {
   }
   
   .VPFooter li {
-    margin-bottom: 20px !important;
+    margin-bottom: 12px !important;
   }
   
   .VPFooter a {
-    font-size: 1.0625rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
     color: var(--moony-secondary) !important;
     text-decoration: none !important;
-    transition: all 0.3s ease !important;
-    padding: 8px 0 !important;
+    transition: all 0.2s ease !important;
+    padding: 4px 0 !important;
     display: inline-block !important;
     position: relative !important;
   }
@@ -1028,80 +1012,50 @@ body {
     bottom: 0 !important;
     left: 0 !important;
     width: 0 !important;
-    height: 2px !important;
+    height: 1px !important;
     background: var(--moony-accent) !important;
-    transition: width 0.3s ease !important;
-    border-radius: 1px !important;
+    transition: width 0.2s ease !important;
   }
   
   .VPFooter a:hover {
     color: var(--moony-accent) !important;
-    transform: translateX(4px) !important;
   }
   
   .VPFooter a:hover::before {
     width: 100% !important;
   }
   
-  /* Footer bottom with enhanced styling */
+  /* Footer bottom - clean and minimal */
   .VPFooter .footer-bottom {
     width: 100% !important;
     text-align: center !important;
-    padding-top: 60px !important;
-    border-top: 1px solid rgba(74, 144, 226, 0.1) !important;
-    position: relative !important;
+    padding-top: 30px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
   }
   
-  .VPFooter .footer-bottom::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 200px !important;
-    height: 1px !important;
-    background: linear-gradient(90deg, 
-      transparent 0%, 
-      rgba(74, 144, 226, 0.3) 50%, 
-      transparent 100%) !important;
+  .dark .VPFooter .footer-bottom {
+    border-top-color: rgba(255, 255, 255, 0.06) !important;
   }
   
   .VPFooter .footer-legal {
     display: flex !important;
     justify-content: center !important;
-    gap: 40px !important;
-    margin-top: 20px !important;
+    gap: 32px !important;
+    flex-wrap: wrap !important;
   }
   
   .VPFooter .footer-legal a {
-    font-size: 1rem !important;
+    font-size: 0.875rem !important;
     color: var(--moony-secondary) !important;
     text-decoration: none !important;
-    transition: all 0.3s ease !important;
-    padding: 12px 20px !important;
-    border-radius: 8px !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-  
-  .VPFooter .footer-legal a::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: -100% !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: rgba(74, 144, 226, 0.05) !important;
-    transition: left 0.3s ease !important;
+    transition: color 0.2s ease !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
   }
   
   .VPFooter .footer-legal a:hover {
     color: var(--moony-accent) !important;
-    transform: translateY(-2px) !important;
-  }
-  
-  .VPFooter .footer-legal a:hover::before {
-    left: 0 !important;
+    background: rgba(59, 130, 246, 0.05) !important;
   }
 }
 
