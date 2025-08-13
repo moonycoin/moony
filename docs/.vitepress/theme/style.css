@@ -536,10 +536,11 @@ body {
   }
   
   .VPFooter .footer-description {
-    font-size: 0.4rem !important; /* Extremely small tagline */
+    font-size: 0.35rem !important; /* Even smaller tagline to fit on one line */
     line-height: 1.0 !important; /* Minimal line height */
     text-align: center !important; /* Center align for mobile */
     margin-bottom: 2px !important; /* Minimal spacing */
+    white-space: nowrap !important; /* Prevent line breaks */
   }
   
   .VPFooter .footer-social {
