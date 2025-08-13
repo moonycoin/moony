@@ -861,6 +861,12 @@ body {
     width: auto !important;
   }
   
+  /* Reduce glow on header logo in dark mode */
+  .dark .VPNavBarTitle .logo {
+    filter: brightness(1) contrast(1) saturate(1) !important;
+    box-shadow: none !important;
+  }
+  
   /* Simple, clean mobile theme toggle */
   .VPNavBarAppearance {
     display: flex !important;
@@ -917,6 +923,17 @@ body {
   }
 
 
+}
+
+/* ================
+   DESKTOP HEADER LOGO STYLING
+   ================ */
+@media (min-width: 769px) {
+  /* Reduce glow on desktop header logo in dark mode */
+  .dark .VPNavBarTitle .logo {
+    filter: brightness(1) contrast(1) saturate(1) !important;
+    box-shadow: none !important;
+  }
 }
 
 /* ================
