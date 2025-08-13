@@ -209,11 +209,9 @@ body {
       drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
       drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
       drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
-      brightness(1.8)
-      contrast(0.5)
-      saturate(0.4)
-      sepia(0.1)
-      hue-rotate(5deg) !important;
+      brightness(1.6)
+      contrast(0.6)
+      saturate(0.3) !important;
   background: transparent !important;
   background-color: transparent !important;
   mix-blend-mode: normal !important;
@@ -244,7 +242,7 @@ body {
     0 0 40px rgba(74, 144, 226, 0.08) !important;
 }
 
-/* Additional glow effect for light mode */
+/* Additional glow effect for light mode only */
 .VPHero .image::before {
   content: '';
   position: absolute;
@@ -264,6 +262,19 @@ body {
   z-index: -1;
 }
 
+/* Enhanced filters for light mode only */
+.VPHero .image img {
+  filter: 
+      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
+      drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
+      drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
+      brightness(1.8)
+      contrast(0.5)
+      saturate(0.4)
+      sepia(0.1)
+      hue-rotate(5deg) !important;
+}
+
 /* Dark mode gradient overlay */
 .dark .VPHero .image::after {
   background: linear-gradient(135deg, 
@@ -271,6 +282,22 @@ body {
     rgba(161, 161, 166, 0.6) 100%);
   mix-blend-mode: screen;
   opacity: 0.8;
+}
+
+/* Reset filters for dark mode to original appearance */
+.dark .VPHero .image img {
+  filter: 
+      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
+      drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
+      drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
+      brightness(1.6)
+      contrast(0.6)
+      saturate(0.3) !important;
+}
+
+/* Hide light mode glow effect in dark mode */
+.dark .VPHero .image::before {
+  display: none !important;
 }
 
 
