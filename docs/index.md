@@ -2,11 +2,10 @@
 layout: home
 
 hero:
-  text: "Moony"
   tagline: "Permissionless transactions with Proof of Liquidity"
   image:
-    light: /moony-logo-light.svg
-    dark: /moony-logo-light.svg
+    light: /logo-light.svg
+    dark: /logo-light.svg
     alt: Moony Logo
   actions:
     - theme: brand

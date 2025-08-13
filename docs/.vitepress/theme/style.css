@@ -41,15 +41,6 @@
   margin-bottom: 40px !important;
 }
 
-.VPHero .title {
-  font-size: 3.5rem !important;
-  font-weight: 700 !important;
-  color: var(--moony-primary) !important;
-  margin-bottom: 24px !important;
-  letter-spacing: -0.02em !important;
-  line-height: 1.1 !important;
-}
-
 .VPHero .tagline {
   font-size: 1.5rem !important;
   color: var(--moony-secondary) !important;
@@ -62,7 +53,7 @@
 }
 
 .VPHero .image {
-  margin-bottom: 40px !important;
+  margin-bottom: 32px !important;
   display: flex !important;
   justify-content: center !important;
 }
@@ -126,10 +117,6 @@
 @media (max-width: 768px) {
   .VPHero {
     padding: 60px 0 40px 0 !important;
-  }
-  
-  .VPHero .title {
-    font-size: 2.5rem !important;
   }
   
   .VPHero .tagline {
