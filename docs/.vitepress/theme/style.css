@@ -833,6 +833,24 @@ body {
     position: relative !important; /* For proper positioning */
   }
   
+  /* Ensure toggle button (moving part) is properly contained */
+  .VPNavBarAppearance .VPSwitch .VPSwitchAppearance {
+    position: absolute !important;
+    top: 2px !important; /* Small margin from top */
+    left: 2px !important; /* Start position for light mode */
+    width: 20px !important; /* Toggle button width */
+    height: 20px !important; /* Toggle button height */
+    border-radius: 10px !important; /* Perfect circle */
+    background: rgba(255, 255, 255, 0.9) !important; /* White toggle button */
+    transition: all 0.3s ease !important;
+    z-index: 2 !important;
+  }
+  
+  /* Dark mode toggle button position */
+  .dark .VPNavBarAppearance .VPSwitch .VPSwitchAppearance {
+    left: 26px !important; /* Position for dark mode (right side) */
+  }
+  
   .VPNavBarAppearance .VPSwitch:hover {
     background: rgba(255, 255, 255, 0.1) !important; /* Subtle hover */
     color: rgba(255, 255, 255, 1) !important; /* Full white on hover */
