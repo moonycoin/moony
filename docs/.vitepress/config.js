@@ -62,8 +62,8 @@ export default {
   ],
   themeConfig: {
     logo: {
-      light: '/logo-light.svg',
-      dark: '/logo-dark.svg'
+      light: '/icon-light.png',
+      dark: '/icon-light.png'
     },
     siteTitle: false,
     nav: [

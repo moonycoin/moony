@@ -4,14 +4,7 @@
     <div class="footer-brand-section">
       <div class="footer-brand">
         <img 
-          v-if="!isDarkMode" 
-          src="/logo-light.svg" 
-          alt="Moony" 
-          class="footer-logo" 
-        />
-        <img 
-          v-else 
-          src="/logo-dark.svg" 
+          src="/icon-light.png" 
           alt="Moony" 
           class="footer-logo" 
         />
