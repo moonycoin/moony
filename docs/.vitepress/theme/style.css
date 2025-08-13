@@ -745,6 +745,17 @@ body {
   .VPFooter .footer-legal a:hover {
     color: var(--moony-accent) !important;
   }
+  
+  /* Tip box styling for mobile portrait - smaller text to fit on one line */
+  .vp-doc .custom-block.tip {
+    font-size: 0.9rem !important; /* Smaller font for mobile */
+    line-height: 1.4 !important; /* Tighter line height */
+    padding: 20px !important; /* Reduced padding for mobile */
+    margin: 25px 0 !important; /* Reduced margins for mobile */
+    white-space: nowrap !important; /* Prevent line breaks */
+    overflow: hidden !important; /* Hide overflow */
+    text-overflow: ellipsis !important; /* Add ellipsis if text is too long */
+  }
 }
 
 .dark .vp-doc {
