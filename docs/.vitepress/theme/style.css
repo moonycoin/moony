@@ -998,11 +998,13 @@ html .VPNav[class*="VPNav"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -1238,11 +1240,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -2891,11 +2895,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -3131,11 +3137,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -4776,11 +4784,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -5016,11 +5026,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -6652,11 +6664,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -6892,11 +6906,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -8518,11 +8534,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -8758,11 +8776,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc {
     padding: 40px 0.5rem !important;
     margin: 25px auto !important;
-    transform: scale(0.9);
-    transform-origin: top left;
-    width: 110%; /* Expand container width */
-    max-width: 500px; /* Allow it to get wider */
-    margin-left: -2rem !important; /* Shift left to expand towards page border */
+    /* Remove problematic transform and negative margins */
+    transform: none !important;
+    transform-origin: unset !important;
+    width: auto !important; /* Remove forced width expansion */
+    max-width: 100% !important; /* Use natural width */
+    margin-left: auto !important; /* Center properly */
+    margin-right: auto !important;
   }
   
   .vp-doc h1 {
@@ -9507,16 +9527,24 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin-right: auto !important;
   }
   
-          .VPHero .tagline {
-          font-size: 0.87rem !important;
-          margin: 0.2rem 0 0.5rem 0.5rem !important;
-          line-height: 1.1 !important;
-          white-space: normal !important;
-          overflow: visible !important;
-          text-overflow: clip !important;
-          max-width: 100% !important;
-          text-align: center !important;
-        }
+                                                                                                                                                                                                                                                                                                        .VPHero .text {
+                       font-size: 3.7rem !important;
+                       line-height: 1.1 !important;
+                       margin-bottom: 0.3rem !important;
+                       font-weight: 800 !important;
+                       margin-left: 0.5rem !important;
+                       margin-right: auto !important;
+                     }
+  
+                                                                                                                                   .VPHero .tagline {
+                        font-size: 0.87rem !important;
+                        margin: 0.2rem 0 0.5rem 0.5rem !important;
+                        line-height: 1.1 !important;
+                        white-space: normal !important;
+                        overflow: visible !important;
+                        text-overflow: clip !important;
+                        text-align: center !important;
+                      }
   
   .VPHero .image {
     order: 1;
