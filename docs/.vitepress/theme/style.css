@@ -791,11 +791,12 @@ body {
     display: none !important; /* Hide mobile menu */
   }
   
-  /* Show GitHub icon in mobile header */
+  /* Show GitHub icon and theme toggle in mobile header */
   .VPNavBarSocialLinks {
     display: flex !important;
     align-items: center !important;
     margin-left: auto !important;
+    gap: 12px !important; /* Space between GitHub and theme toggle */
   }
   
   .VPNavBarSocialLinks a[href*="github"] {
@@ -811,6 +812,47 @@ body {
   .VPNavBarSocialLinks a[href*="github"] svg {
     width: 20px !important;
     height: 20px !important;
+  }
+  
+  /* Theme toggle styling for mobile */
+  .VPNavBarAppearance {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .VPNavBarAppearance .VPSwitch {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: var(--moony-accent) !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .VPNavBarAppearance .VPSwitch:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  .VPNavBarAppearance .VPSwitch svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  
+  /* Dark mode theme toggle */
+  .dark .VPNavBarAppearance .VPSwitch {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .dark .VPNavBarAppearance .VPSwitch:hover {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
   }
   
 
