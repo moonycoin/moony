@@ -124,6 +124,7 @@
   letter-spacing: -0.03em !important;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
   text-align: center !important;
+  text-transform: lowercase !important;
   width: 100% !important;
   position: relative !important;
   left: 50% !important;
