@@ -745,9 +745,9 @@ body {
     display: none !important; /* Hide GitHub icon */
   }
   
-  /* Simple mobile header layout */
+  /* Mobile header layout - logo left, toggle right */
   .VPNavBarTitle {
-    flex: 1 !important;
+    flex: 0 0 auto !important;
     display: flex !important;
     align-items: center !important;
     padding-left: 20px !important;
@@ -817,6 +817,7 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+    width: 100% !important;
   }
 
 
