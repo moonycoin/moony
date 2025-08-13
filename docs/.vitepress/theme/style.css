@@ -732,56 +732,67 @@ body {
     }
   }
   
-  /* Mobile header: clean, professional layout with just logo and theme toggle */
+  /* NEW SIMPLE MOBILE HEADER FOR PORTRAIT MODE */
   @media (max-width: 768px) {
-    .VPNavBarHamburger {
-      display: none !important; /* Hide hamburger menu */
-    }
-    
-    .VPNavBarMenu {
-      display: none !important; /* Hide mobile menu */
-    }
-    
+    /* Hide unnecessary elements */
+    .VPNavBarHamburger,
+    .VPNavBarMenu,
     .VPNavBarSocialLinks {
-      display: none !important; /* Hide GitHub icon */
+      display: none !important;
     }
     
-    /* Mobile header layout - logo left, toggle right */
-    .VPNavBarTitle {
-      flex: 0 0 auto !important;
+    /* Simple header container */
+    .VPNavBar {
+      height: 60px !important;
+      padding: 0 20px !important;
+      background: rgba(255, 255, 255, 0.9) !important;
+      backdrop-filter: blur(10px) !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .dark .VPNavBar {
+      background: rgba(0, 0, 0, 0.9) !important;
+      border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    /* Header content layout */
+    .VPNavBarContent {
       display: flex !important;
       align-items: center !important;
-      padding-left: 20px !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    
+    /* Logo on the left */
+    .VPNavBarTitle {
+      display: flex !important;
+      align-items: center !important;
     }
     
     .VPNavBarTitle .logo {
-      height: 28px !important;
+      height: 32px !important;
       width: auto !important;
     }
     
-    /* Reduce glow on header logo in dark mode */
-    .dark .VPNavBarTitle .logo {
-      filter: brightness(1) contrast(1) saturate(1) !important;
-      box-shadow: none !important;
-    }
-    
-    /* Simple, clean mobile theme toggle */
+    /* Simple toggle on the right */
     .VPNavBarAppearance {
       display: flex !important;
       align-items: center !important;
-      margin-left: auto !important;
-      margin-right: 16px !important;
     }
     
     .VPNavBarAppearance .VPSwitch {
-      width: 48px !important;
-      height: 24px !important;
-      border-radius: 12px !important;
-      background: rgba(255, 255, 255, 0.1) !important;
-      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      width: 44px !important;
+      height: 22px !important;
+      background: #ccc !important;
+      border-radius: 11px !important;
       position: relative !important;
       cursor: pointer !important;
-      transition: background 0.3s ease !important;
+      transition: background 0.2s ease !important;
+    }
+    
+    .dark .VPNavBarAppearance .VPSwitch {
+      background: #666 !important;
     }
     
     .VPNavBarAppearance .VPSwitch::after {
@@ -789,36 +800,20 @@ body {
       position: absolute !important;
       top: 2px !important;
       left: 2px !important;
-      width: 20px !important;
-      height: 20px !important;
-      border-radius: 50% !important;
+      width: 18px !important;
+      height: 18px !important;
       background: white !important;
-      transition: transform 0.3s ease !important;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+      border-radius: 50% !important;
+      transition: transform 0.2s ease !important;
     }
     
     .dark .VPNavBarAppearance .VPSwitch::after {
-      transform: translateX(24px) !important;
+      transform: translateX(22px) !important;
     }
     
+    /* Hide default toggle icons */
     .VPNavBarAppearance .VPSwitch svg {
       display: none !important;
-    }
-    
-    /* Mobile header height and spacing */
-    .VPNavBar {
-      height: 72px !important;
-      padding: 0 16px 12px 16px !important;
-      display: flex !important;
-      align-items: center !important;
-    }
-    
-    .VPNavBarContent {
-      height: 100% !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      width: 100% !important;
     }
   }
 
