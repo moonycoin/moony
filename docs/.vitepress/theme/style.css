@@ -852,6 +852,164 @@ body {
 
 }
 
+/* ================
+   DESKTOP FOOTER STYLING
+   ================ */
+@media (min-width: 769px) {
+  .VPFooter {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+    padding: 80px 40px 40px !important;
+    margin-top: 80px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .dark .VPFooter {
+    background: rgba(24, 24, 27, 0.95) !important;
+    border-top-color: rgba(0, 122, 255, 0.2) !important;
+  }
+  
+  /* Brand section styling for desktop */
+  .VPFooter .footer-brand-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-bottom: 60px !important;
+    width: 100% !important;
+  }
+  
+  .VPFooter .footer-brand {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .VPFooter .footer-logo {
+    height: 48px !important;
+    width: auto !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .VPFooter .footer-description {
+    font-size: 1.125rem !important;
+    line-height: 1.6 !important;
+    color: var(--moony-secondary) !important;
+    margin-bottom: 24px !important;
+    max-width: 400px !important;
+    text-align: center !important;
+  }
+  
+  .VPFooter .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .VPFooter .footer-social a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: rgba(74, 144, 226, 0.1) !important;
+    border-radius: 12px !important;
+    color: var(--moony-accent) !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(74, 144, 226, 0.2) !important;
+  }
+  
+  .VPFooter .footer-social a:hover {
+    background: var(--moony-accent) !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(74, 144, 226, 0.3) !important;
+    border-color: var(--moony-accent) !important;
+  }
+  
+  .VPFooter .footer-social svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  /* Content grid for desktop */
+  .VPFooter .footer-content-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 80px !important;
+    width: 100% !important;
+    margin-bottom: 60px !important;
+  }
+  
+  .VPFooter .footer-section {
+    text-align: left !important;
+  }
+  
+  .VPFooter h4 {
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: var(--moony-primary) !important;
+    margin-bottom: 24px !important;
+    letter-spacing: -0.02em !important;
+  }
+  
+  .VPFooter ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .VPFooter li {
+    margin-bottom: 16px !important;
+  }
+  
+  .VPFooter a {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: var(--moony-secondary) !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    border-bottom: 1px solid transparent !important;
+  }
+  
+  .VPFooter a:hover {
+    color: var(--moony-accent) !important;
+    border-bottom-color: var(--moony-accent) !important;
+  }
+  
+  /* Footer bottom for desktop */
+  .VPFooter .footer-bottom {
+    width: 100% !important;
+    text-align: center !important;
+    padding-top: 40px !important;
+    border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  }
+  
+  .VPFooter .footer-legal {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 32px !important;
+  }
+  
+  .VPFooter .footer-legal a {
+    font-size: 0.9375rem !important;
+    color: var(--moony-secondary) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+    padding: 8px 0 !important;
+  }
+  
+  .VPFooter .footer-legal a:hover {
+    color: var(--moony-accent) !important;
+  }
+}
+
 .dark .vp-doc {
   background: rgba(24, 24, 27, 0.9) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
