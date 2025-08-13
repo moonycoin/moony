@@ -32,8 +32,8 @@
   background: #000000 !important;
   min-height: 100vh !important;
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  grid-template-rows: 1fr !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: auto 1fr auto !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -74,8 +74,8 @@
   grid-column: 1 / -1 !important;
   grid-row: 1 !important;
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  grid-template-rows: 1fr !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: auto 1fr auto !important;
   height: 100vh !important;
 }
 
@@ -83,10 +83,10 @@
   display: contents !important;
 }
 
-/* Left side - Massive logo that dominates */
+/* Centered logo that dominates */
 .VPHero .image {
   grid-column: 1 !important;
-  grid-row: 1 !important;
+  grid-row: 2 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -111,36 +111,37 @@
   75% { transform: translateY(-20px) rotateY(-2deg); }
 }
 
-/* Right side - Content flowing around logo */
+/* Content underneath logo - vertical flow */
 .VPHero .tagline {
-  grid-column: 2 !important;
-  grid-row: 1 !important;
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  align-items: flex-start !important;
-  padding: 0 60px !important;
+  align-items: center !important;
+  padding: 40px 60px 0 60px !important;
   font-size: 3.5rem !important;
   color: #ffffff !important;
   font-weight: 300 !important;
   line-height: 1.2 !important;
-  max-width: none !important;
-  margin: 0 !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif !important;
   letter-spacing: -0.03em !important;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
+  text-align: center !important;
 }
 
-/* Actions positioned at bottom right */
+/* Actions positioned underneath tagline */
 .VPHero .actions {
-  grid-column: 2 !important;
-  grid-row: 1 !important;
+  grid-column: 1 / -1 !important;
+  grid-row: 3 !important;
   display: flex !important;
-  flex-direction: column !important;
-  gap: 20px !important;
-  justify-content: flex-end !important;
-  align-items: flex-start !important;
-  padding: 0 60px 80px 60px !important;
+  flex-direction: row !important;
+  gap: 32px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 40px 60px 80px 60px !important;
   position: relative !important;
   z-index: 3 !important;
 }
