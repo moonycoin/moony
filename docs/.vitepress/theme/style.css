@@ -33,7 +33,7 @@
   min-height: 100vh !important;
   display: grid !important;
   grid-template-columns: 1fr !important;
-  grid-template-rows: auto 1fr auto !important;
+  grid-template-rows: auto auto auto !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -75,7 +75,7 @@
   grid-row: 1 !important;
   display: grid !important;
   grid-template-columns: 1fr !important;
-  grid-template-rows: auto 1fr auto !important;
+  grid-template-rows: auto auto auto !important;
   height: 100vh !important;
 }
 
@@ -108,12 +108,12 @@
 /* Content underneath logo - vertical flow */
 .VPHero .tagline {
   grid-column: 1 / -1 !important;
-  grid-row: 3 !important;
+  grid-row: 2 !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: center !important;
-  padding: 40px 0 0 0 !important;
+  padding: 20px 0 0 0 !important;
   font-size: 3.5rem !important;
   color: #ffffff !important;
   font-weight: 300 !important;
