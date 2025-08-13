@@ -515,22 +515,34 @@ body {
     height: auto !important;
   }
   
-  /* Target any VitePress default spacing */
-  .VPContent .main {
+  /* Constrain .vp-doc container to content height only */
+  .vp-doc {
+    height: fit-content !important;
+    min-height: fit-content !important;
+    max-height: fit-content !important;
+    overflow: visible !important;
+    position: relative !important;
+  }
+  
+  /* Force container to shrink to content */
+  .vp-doc > *:last-child {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
   
-  /* Remove any bottom spacing from the page */
-  .VPPage {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  /* Remove any flexbox stretching */
+  .vp-doc {
+    flex: none !important;
+    flex-shrink: 1 !important;
+    flex-grow: 0 !important;
   }
   
-  /* Target the specific content wrapper */
+  /* Target the content wrapper to prevent expansion */
   .VPContent .content {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    flex: none !important;
   }
   
   /* Nuclear option: remove all bottom spacing from everything */
