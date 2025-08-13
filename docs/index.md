@@ -7,14 +7,6 @@ hero:
     light: /logo-light.svg
     dark: /logo-light.svg
     alt: Moony Logo
-  actions:
-    - theme: brand
-      text: "View Docs"
-      link: /tokenomics/reserve-contract
-    - theme: alt
-      text: "View GitHub"
-      link: https://github.com/moonycoin/moony
-      icon: github
 ---
 
 # Getting Started
