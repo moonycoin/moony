@@ -126,78 +126,7 @@
   text-align: center !important;
 }
 
-/* Actions positioned underneath tagline */
-.VPHero .actions {
-  grid-column: 1 / -1 !important;
-  grid-row: 4 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 32px !important;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 40px 0 80px 0 !important;
-  position: relative !important;
-  z-index: 3 !important;
-}
 
-.VPHero .action {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 16px !important;
-  padding: 18px 36px !important;
-  border-radius: 50px !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
-  text-decoration: none !important;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif !important;
-  position: relative !important;
-  overflow: hidden !important;
-  min-width: 200px !important;
-  justify-content: center !important;
-}
-
-/* Primary Action - Glowing white */
-.VPHero .action.brand {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
-  border: 2px solid rgba(255, 255, 255, 0.3) !important;
-  box-shadow: 
-    0 0 20px rgba(255, 255, 255, 0.2),
-    inset 0 0 20px rgba(255, 255, 255, 0.05) !important;
-  backdrop-filter: blur(20px) !important;
-}
-
-.VPHero .action.brand:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
-  border-color: rgba(255, 255, 255, 0.5) !important;
-  transform: translateY(-4px) !important;
-  box-shadow: 
-    0 0 40px rgba(255, 255, 255, 0.4),
-    inset 0 0 40px rgba(255, 255, 255, 0.1) !important;
-}
-
-/* Secondary Action - Transparent with glow */
-.VPHero .action.alt {
-  background: transparent !important;
-  color: #ffffff !important;
-  border: 2px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1) !important;
-}
-
-.VPHero .action.alt:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-color: rgba(255, 255, 255, 0.4) !important;
-  transform: translateY(-4px) !important;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2) !important;
-}
-
-.VPHero .action.alt .icon {
-  width: 22px !important;
-  height: 22px !important;
-  fill: currentColor !important;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)) !important;
-}
 
 /* Mobile - Stack vertically */
 @media (max-width: 768px) {
@@ -233,16 +162,7 @@
     text-align: center !important;
   }
   
-  .VPHero .actions {
-    grid-column: 1 !important;
-    grid-row: 3 !important;
-    padding: 0 20px 60px 20px !important;
-    align-items: center !important;
-  }
-  
-  .VPHero .action {
-    min-width: 280px !important;
-  }
+
 }
 
 /* ================
