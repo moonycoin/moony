@@ -88,13 +88,13 @@
   grid-column: 1 !important;
   grid-row: 1 !important;
   display: flex !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   justify-content: center !important;
   position: relative !important;
-  padding: 40px 0 0 0 !important;
+  padding: 20px 0 0 0 !important;
   width: 100% !important;
   text-align: center !important;
-  height: 60vh !important;
+  height: auto !important;
 }
 
 .VPHero .image img {
