@@ -785,14 +785,32 @@ body {
   /* Ensure mobile navigation menu works properly */
   .VPNavBarMenu {
     z-index: 9999 !important; /* Higher than landscape overlay */
+    display: block !important; /* Ensure menu is visible */
+    visibility: visible !important; /* Ensure menu is visible */
+    opacity: 1 !important; /* Ensure menu is visible */
   }
   
   .VPNavBarMenu .VPNavBarMenuGroup {
     z-index: 9999 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   
   .VPNavBarMenu .VPNavBarMenuLink {
     z-index: 9999 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure hamburger button is clickable */
+  .VPNavBarHamburger {
+    z-index: 10000 !important; /* Highest z-index */
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important; /* Ensure clicks work */
   }
 
 }
@@ -803,6 +821,23 @@ body {
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.3),
     0 1px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ================
+   MOBILE NAVIGATION FIXES
+   ================ */
+/* Ensure mobile navigation works properly */
+.VPNavBarMenu {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.VPNavBarHamburger {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 
 /* ================
