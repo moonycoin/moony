@@ -516,11 +516,13 @@ body {
     text-align: center !important;
   }
   
+  /* Brand section - completely separate from grid */
   .VPFooter .footer-brand {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     margin-bottom: 10px !important;
+    /* Remove from grid entirely */
   }
   
   .VPFooter .footer-description {
@@ -528,46 +530,24 @@ body {
     line-height: 1.4 !important;
     text-align: center !important;
     margin-bottom: 15px !important;
+    /* Remove from grid entirely */
   }
   
   .VPFooter .footer-social {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    margin-bottom: 20px !important; /* Space before the sections grid */
+    /* Remove from grid entirely */
   }
   
-  /* Make footer sections display side by side on mobile */
+  /* Make footer sections display side by side on mobile - separate from brand */
   .VPFooter .footer-container {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important; /* Three equal columns */
     gap: 15px !important;
     margin-bottom: 20px !important;
-    margin-top: 20px !important; /* Add space above the sections */
-  }
-  
-  /* Ensure brand section is above the grid */
-  .VPFooter .footer-brand {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-bottom: 10px !important;
-    grid-column: 1 / -1 !important; /* Span full width above the grid */
-  }
-  
-  .VPFooter .footer-description {
-    font-size: 0.9rem !important; /* Reduce tagline size */
-    line-height: 1.4 !important;
-    text-align: center !important;
-    margin-bottom: 15px !important;
-    grid-column: 1 / -1 !important; /* Span full width above the grid */
-  }
-  
-  .VPFooter .footer-social {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    grid-column: 1 / -1 !important; /* Span full width above the grid */
-    margin-bottom: 20px !important; /* Space before the sections grid */
+    /* Only contains the actual footer sections, not the brand */
   }
   
   /* Reduce text sizes for compact footer */
@@ -6373,8 +6353,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 /* Enhanced hero text with subtle shadows and depth */
 .VPHero .text {
   position: relative;
@@ -6992,7 +6970,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
   margin-bottom: 40px;
 }
