@@ -518,32 +518,33 @@ body {
   
   /* Brand section - completely separate from grid */
   .VPFooter .footer-brand-section {
-    text-align: left !important; /* Left align like desktop */
+    text-align: center !important; /* Center align for mobile */
     margin-bottom: 0 !important; /* No bottom margin for single row */
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
+    align-items: center !important; /* Center align items */
     flex: 0 0 auto !important; /* Don't grow, don't shrink */
     margin-right: 15px !important; /* Smaller space between brand and content */
   }
   
   .VPFooter .footer-brand {
     display: flex !important;
-    justify-content: flex-start !important; /* Left align like desktop */
+    justify-content: center !important; /* Center align for mobile */
     align-items: center !important;
     margin-bottom: 1px !important; /* Minimal spacing */
+    flex-direction: column !important; /* Stack logo over tagline */
   }
   
   .VPFooter .footer-description {
     font-size: 0.4rem !important; /* Extremely small tagline */
     line-height: 1.0 !important; /* Minimal line height */
-    text-align: left !important; /* Left align like desktop */
+    text-align: center !important; /* Center align for mobile */
     margin-bottom: 2px !important; /* Minimal spacing */
   }
   
   .VPFooter .footer-social {
     display: flex !important; /* Show GitHub logo again */
-    justify-content: flex-start !important; /* Left align like desktop */
+    justify-content: center !important; /* Center align for mobile */
     align-items: center !important;
   }
   
@@ -551,6 +552,9 @@ body {
   .VPFooter .footer-logo {
     height: 16px !important; /* Very small logo */
     width: auto !important;
+    display: block !important; /* Ensure block display for centering */
+    margin-left: auto !important; /* Center horizontally */
+    margin-right: auto !important; /* Center horizontally */
   }
   
   /* Make GitHub icon smaller on mobile */
