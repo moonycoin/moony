@@ -5,7 +5,6 @@ hero:
   tagline: "Permissionless transactions with Proof of Liquidity"
   image:
     light: /logo-light.svg
-    dark: /logo-dark.svg
     alt: Moony Logo
 ---
 
