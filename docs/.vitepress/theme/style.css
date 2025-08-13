@@ -424,6 +424,22 @@ body {
     margin: 0px auto 0px !important;
   }
   
+  /* Debug: Identify what's creating white space on non-home pages */
+  .VPContent {
+    background: rgba(255, 0, 0, 0.1) !important; /* Light red background */
+    border: 2px solid red !important; /* Red border */
+  }
+  
+  .Layout {
+    background: rgba(0, 255, 0, 0.1) !important; /* Light green background */
+    border: 2px solid green !important; /* Green border */
+  }
+  
+  .VPApp {
+    background: rgba(0, 0, 255, 0.1) !important; /* Light blue background */
+    border: 2px solid blue !important; /* Blue border */
+  }
+  
   /* Show the footer but with minimal spacing */
   .VPFooter {
     margin-top: 0 !important; /* Remove auto margin */
