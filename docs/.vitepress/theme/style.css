@@ -535,10 +535,10 @@ body {
   }
   
   .VPFooter .footer-description {
-    font-size: 0.55rem !important; /* Much smaller text */
+    font-size: 0.5rem !important; /* Even smaller tagline */
     line-height: 1.1 !important; /* Very tight line height */
     text-align: left !important; /* Left align like desktop */
-    margin-bottom: 4px !important; /* Even smaller spacing */
+    margin-bottom: 3px !important; /* Very small spacing */
   }
   
   .VPFooter .footer-social {
@@ -547,12 +547,24 @@ body {
     align-items: center !important;
   }
   
+  /* Make logo much smaller on mobile */
+  .VPFooter .footer-logo {
+    height: 20px !important; /* Much smaller logo */
+    width: auto !important;
+  }
+  
+  /* Make GitHub icon smaller on mobile */
+  .VPFooter .footer-social svg {
+    width: 16px !important; /* Smaller GitHub icon */
+    height: 16px !important;
+  }
+  
   /* Content sections grid - horizontal layout like desktop */
   .VPFooter .footer-content-grid {
     display: flex !important; /* Use flexbox instead of grid */
     flex-direction: row !important; /* Horizontal layout */
     justify-content: space-between !important; /* Distribute sections evenly */
-    gap: 10px !important; /* Smaller gap between sections */
+    gap: 12px !important; /* Slightly more gap for readability */
     margin-bottom: 0 !important; /* No bottom margin for single row */
     flex: 1 !important; /* Take remaining space */
   }
@@ -565,8 +577,8 @@ body {
   
   /* Reduce text sizes for compact footer */
   .VPFooter h4 {
-    font-size: 0.65rem !important; /* Much smaller headers */
-    margin-bottom: 4px !important; /* Very small spacing */
+    font-size: 0.6rem !important; /* Slightly larger headers for readability */
+    margin-bottom: 3px !important; /* Small spacing */
     font-weight: 600 !important;
   }
   
@@ -577,11 +589,11 @@ body {
   }
   
   .VPFooter li {
-    margin-bottom: 2px !important; /* Very small spacing */
+    margin-bottom: 1px !important; /* Very small spacing */
   }
   
   .VPFooter a {
-    font-size: 0.55rem !important; /* Much smaller links */
+    font-size: 0.5rem !important; /* Very small links */
     line-height: 1.1 !important; /* Very tight line height */
     color: var(--moony-secondary) !important;
     text-decoration: none !important;
