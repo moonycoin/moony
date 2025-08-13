@@ -819,6 +819,20 @@ body {
     justify-content: space-between !important;
     width: 100% !important;
   }
+  
+  /* Mobile header layout - logo left, toggle right */
+  .VPNavBarTitle {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 20px !important;
+  }
+  
+  .VPNavBarAppearance {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+    margin-right: 20px !important;
+  }
 
 
 }
