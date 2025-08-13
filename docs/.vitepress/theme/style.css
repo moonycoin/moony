@@ -540,9 +540,7 @@ body {
   }
   
   .VPFooter .footer-social {
-    display: flex !important;
-    justify-content: flex-start !important; /* Left align like desktop */
-    align-items: center !important;
+    display: none !important; /* Hide GitHub logo on mobile */
   }
   
   /* Content sections grid - horizontal layout like desktop */
@@ -4445,23 +4443,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Only remove the specific gradient curtain that was causing the white artifact */
-/* All other background overrides removed to allow noise texture to show */
-
-/* Remove VitePress right-aside bottom gradient curtain - THIS IS THE KEY FIX */
-.VPDoc .aside-curtain,
-.aside-curtain,
-.dark .VPDoc .aside-curtain {
-  display: none !important;
-  background: transparent !important;
-  background-image: none !important;
-  height: 0 !important;
-  width: 0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  opacity: 0 !important;
-}
-
 /* ================
    ELEGANT POLISH & ENHANCEMENTS
    ================ */
@@ -4530,8 +4511,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   filter: drop-shadow(var(--elegant-shadow-medium));
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 /* Enhanced hero text with subtle shadows and depth */
 .VPHero .text {
