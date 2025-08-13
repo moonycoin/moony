@@ -782,7 +782,7 @@ body {
     }
   }
   
-  /* Mobile header: hide hamburger menu, show GitHub icon */
+  /* Mobile header: clean, professional layout with just logo and theme toggle */
   .VPNavBarHamburger {
     display: none !important; /* Hide hamburger menu */
   }
@@ -791,53 +791,43 @@ body {
     display: none !important; /* Hide mobile menu */
   }
   
-  /* Show GitHub icon and theme toggle in mobile header */
   .VPNavBarSocialLinks {
+    display: none !important; /* Hide GitHub icon */
+  }
+  
+  /* Clean mobile header layout */
+  .VPNavBarTitle {
+    flex: 1 !important; /* Logo takes up available space */
     display: flex !important;
     align-items: center !important;
-    margin-left: auto !important;
-    gap: 8px !important; /* Tighter spacing between GitHub and theme toggle */
   }
   
-  .VPNavBarSocialLinks a[href*="github"] {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 32px !important;
-    height: 32px !important;
-    color: var(--moony-accent) !important;
-    text-decoration: none !important;
+  .VPNavBarTitle .logo {
+    height: 32px !important; /* Consistent logo size */
+    width: auto !important;
   }
   
-  .VPNavBarSocialLinks a[href*="github"] svg {
-    width: 20px !important;
-    height: 20px !important;
-  }
-  
-  /* Theme toggle styling for mobile - positioned on the right */
+  /* Theme toggle positioned on the right */
   .VPNavBarAppearance {
-    position: absolute !important;
-    right: 15px !important; /* Push to right side of header */
-    top: 50% !important;
-    transform: translateY(-50%) !important;
     display: flex !important;
     align-items: center !important;
-    z-index: 100 !important;
+    margin-left: auto !important; /* Push to right side */
+    flex-shrink: 0 !important; /* Don't shrink */
   }
   
   .VPNavBarAppearance .VPSwitch {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 40px !important; /* Larger button */
-    height: 40px !important; /* Larger button */
-    border-radius: 10px !important;
+    width: 36px !important; /* Perfect mobile size */
+    height: 36px !important;
+    border-radius: 8px !important;
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     color: var(--moony-accent) !important;
     cursor: pointer !important;
     transition: all 0.2s ease !important;
-    overflow: hidden !important; /* Keep toggle button inside container */
+    overflow: hidden !important;
   }
   
   .VPNavBarAppearance .VPSwitch:hover {
@@ -846,8 +836,8 @@ body {
   }
   
   .VPNavBarAppearance .VPSwitch svg {
-    width: 22px !important; /* Larger icon for larger button */
-    height: 22px !important; /* Larger icon for larger button */
+    width: 20px !important; /* Perfect icon size */
+    height: 20px !important;
   }
   
   /* Dark mode theme toggle */
