@@ -1,7 +1,27 @@
 /**
  * Apple-Style Moony Documentation
  * Clean, minimal design with neutral colors and light blue accents
+ * FORCED LIGHT MODE - NO THEME TOGGLE
  */
+
+/* ================
+   FORCE LIGHT MODE - HIDE THEME TOGGLE
+   ================ */
+/* Hide theme toggle completely */
+.VPNavBarAppearance,
+.VPSwitch,
+[data-vp-theme] {
+  display: none !important;
+}
+
+/* Force light mode */
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: light;
+}
 
 /* ================
    APPLE-STYLE VARIABLES

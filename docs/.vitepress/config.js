@@ -2,7 +2,7 @@ export default {
   title: 'Moony Documents',
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/moony/',
-  appearance: 'dark',
+  appearance: 'light',
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' }],
     ['meta', { name: 'theme-color', content: '#007AFF' }],
@@ -18,6 +18,14 @@ export default {
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://moonycoin.github.io/moony/og-image.svg' }],
     ['script', {}, `
+      // Force light mode and prevent theme switching
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      
+      // Remove any existing theme toggle elements
+      const themeToggles = document.querySelectorAll('.VPNavBarAppearance, .VPSwitch, [data-vp-theme]');
+      themeToggles.forEach(toggle => toggle.remove());
+      
       // Force portrait mode on mobile
       if (window.innerWidth <= 768 && window.innerHeight < window.innerWidth) {
         const warning = document.createElement('div');
@@ -105,6 +113,7 @@ export default {
       }
     },
     mobileMenu: true,
-    mobileMenuGroup: true
+    mobileMenuGroup: true,
+    appearance: false
   }
 }
