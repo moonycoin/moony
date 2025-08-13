@@ -86,7 +86,7 @@
 /* Centered logo that dominates */
 .VPHero .image {
   grid-column: 1 !important;
-  grid-row: 2 !important;
+  grid-row: 1 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -121,7 +121,7 @@
   flex-direction: column !important;
   justify-content: flex-start !important;
   align-items: center !important;
-  padding: 60px 0 0 0 !important;
+  padding: 20px 0 0 0 !important;
   font-size: 3.5rem !important;
   color: #ffffff !important;
   font-weight: 300 !important;
