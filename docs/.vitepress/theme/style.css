@@ -795,23 +795,25 @@ body {
     display: none !important; /* Hide GitHub icon */
   }
   
-  /* Clean mobile header layout */
+  /* Enhanced mobile header layout - matching landscape quality */
   .VPNavBarTitle {
     flex: 1 !important; /* Logo takes up available space */
     display: flex !important;
     align-items: center !important;
+    padding-left: 20px !important; /* Better left spacing */
   }
   
   .VPNavBarTitle .logo {
-    height: 32px !important; /* Consistent logo size */
+    height: 28px !important; /* Slightly smaller for better proportion */
     width: auto !important;
   }
   
-  /* Theme toggle positioned on the right */
+  /* Theme toggle positioned on the right with better styling */
   .VPNavBarAppearance {
     display: flex !important;
     align-items: center !important;
     margin-left: auto !important; /* Push to right side */
+    margin-right: 20px !important; /* Better right spacing */
     flex-shrink: 0 !important; /* Don't shrink */
   }
   
@@ -819,15 +821,16 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 36px !important; /* Perfect mobile size */
-    height: 36px !important;
-    border-radius: 8px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    width: 32px !important; /* Better proportion */
+    height: 32px !important;
+    border-radius: 6px !important; /* Subtle radius */
+    background: rgba(255, 255, 255, 0.08) !important; /* Subtle background */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Subtle border */
     color: var(--moony-accent) !important;
     cursor: pointer !important;
     transition: all 0.2s ease !important;
     overflow: hidden !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
   }
   
   .VPNavBarAppearance .VPSwitch:hover {
@@ -836,8 +839,8 @@ body {
   }
   
   .VPNavBarAppearance .VPSwitch svg {
-    width: 20px !important; /* Perfect icon size */
-    height: 20px !important;
+    width: 18px !important; /* Perfect proportion for 32px button */
+    height: 18px !important;
   }
   
   /* Dark mode theme toggle */
