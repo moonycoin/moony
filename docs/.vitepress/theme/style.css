@@ -697,11 +697,66 @@ body {
   }
   
   /* Style ONLY tip boxes with "Click here" text for mobile portrait */
+  /* Enhanced button styling for tip boxes */
   .vp-doc .custom-block.tip.click-here-tip {
-    font-size: 0.6rem !important; /* Small font so "Click here" text fits in container */
-    line-height: 1.0 !important; /* Very tight line height */
-    white-space: nowrap !important; /* Prevent line breaks */
-    overflow: visible !important; /* Show all text */
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%) !important;
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+    border-radius: 16px !important;
+    padding: 24px 32px !important;
+    margin: 32px 0 !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+  }
+  
+  .vp-doc .custom-block.tip.click-here-tip::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent) !important;
+    transition: left 0.6s ease !important;
+  }
+  
+  .vp-doc .custom-block.tip.click-here-tip:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+    border-color: rgba(59, 130, 246, 0.3) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.2) !important;
+  }
+  
+  .vp-doc .custom-block.tip.click-here-tip:hover::before {
+    left: 100% !important;
+  }
+  
+  .vp-doc .custom-block.tip.click-here-tip a {
+    color: var(--moony-accent) !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+  
+  .vp-doc .custom-block.tip.click-here-tip a:hover {
+    color: var(--moony-accent) !important;
+  }
+  
+  /* Dark mode enhancements */
+  .dark .vp-doc .custom-block.tip.click-here-tip {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.08) 100%) !important;
+    border-color: rgba(59, 130, 246, 0.25) !important;
+  }
+  
+  .dark .vp-doc .custom-block.tip.click-here-tip:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.12) 100%) !important;
+    border-color: rgba(59, 130, 246, 0.35) !important;
   }
   
   /* Disable landscape mode for mobile - show message to rotate device */
@@ -734,6 +789,68 @@ body {
   
   /* NEW SIMPLE MOBILE HEADER FOR PORTRAIT MODE */
   @media (max-width: 768px) {
+    /* Enhanced button styling for mobile */
+    .vp-doc .custom-block.tip.click-here-tip {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%) !important;
+      border: 1px solid rgba(59, 130, 246, 0.2) !important;
+      border-radius: 12px !important;
+      padding: 20px 24px !important;
+      margin: 24px 0 !important;
+      text-align: center !important;
+      transition: all 0.3s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
+      cursor: pointer !important;
+    }
+    
+    .vp-doc .custom-block.tip.click-here-tip::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: -100% !important;
+      width: 100% !important;
+      height: 100% !important;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent) !important;
+      transition: left 0.6s ease !important;
+    }
+    
+    .vp-doc .custom-block.tip.click-here-tip:hover {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%) !important;
+      border-color: rgba(59, 130, 246, 0.3) !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2) !important;
+    }
+    
+    .vp-doc .custom-block.tip.click-here-tip:hover::before {
+      left: 100% !important;
+    }
+    
+    .vp-doc .custom-block.tip.click-here-tip a {
+      color: var(--moony-accent) !important;
+      text-decoration: none !important;
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      letter-spacing: -0.01em !important;
+      display: block !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+    
+    .vp-doc .custom-block.tip.click-here-tip a:hover {
+      color: var(--moony-accent) !important;
+    }
+    
+    /* Dark mode enhancements for mobile */
+    .dark .vp-doc .custom-block.tip.click-here-tip {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.08) 100%) !important;
+      border-color: rgba(59, 130, 246, 0.25) !important;
+    }
+    
+    .dark .vp-doc .custom-block.tip.click-here-tip:hover {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.12) 100%) !important;
+      border-color: rgba(59, 130, 246, 0.35) !important;
+    }
+    
     /* Hide unnecessary elements */
     .VPNavBarHamburger,
     .VPNavBarMenu,
