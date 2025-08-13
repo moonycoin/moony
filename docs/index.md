@@ -39,7 +39,7 @@ The Moony reserve contract holds all user deposits as onchain liquidity, enablin
 
 This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity. This model aligns issuance with demand, reduces inefficiencies, and ensures that all circulating Moony remains transparently and verifiably supported.
 
-::: tip
+::: tip click-here-tip
 [Click here to learn more about Moony's tokenomics →](/tokenomics/reserve-contract)
 :::
 
@@ -57,7 +57,7 @@ Potential use-cases:
 
 Moony combines global accessibility with negligible fees and onchain transparency to support an open economic layer for the internet. Its architecture enables permissionless integration and frictionless value exchange, empowering developers, creators, and users to participate directly in a shared financial future.
 
-::: tip
+::: tip click-here-tip
 [Click here to learn more about Moony's use cases →](/use-cases/ecosystem)
 :::
 
@@ -77,7 +77,7 @@ As adoption increases, a diverse ecosystem of independent contributors is expect
 
 
 
-::: tip
+::: tip click-here-tip
 [Click here to learn more about the Moony community →](/resources/community)
 :::
 

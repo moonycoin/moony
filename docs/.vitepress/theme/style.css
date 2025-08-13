@@ -746,10 +746,9 @@ body {
     color: var(--moony-accent) !important;
   }
   
-  /* Style ALL tip boxes that contain "Click here" text for mobile portrait */
-  /* Target all tip boxes that might contain "Click here" text */
-  .vp-doc .custom-block.tip {
-    font-size: 0.6rem !important; /* Much smaller font so ALL "Click here" text fits in container */
+  /* Style ONLY tip boxes with "Click here" text for mobile portrait */
+  .vp-doc .custom-block.tip.click-here-tip {
+    font-size: 0.6rem !important; /* Small font so "Click here" text fits in container */
     line-height: 1.0 !important; /* Very tight line height */
     white-space: nowrap !important; /* Prevent line breaks */
     overflow: visible !important; /* Show all text */
