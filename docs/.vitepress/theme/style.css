@@ -97,12 +97,15 @@
 }
 
 .VPHero .image img {
-  height: 120vh !important;
+  height: 200vh !important;
   width: auto !important;
+  max-width: none !important;
+  min-height: 200vh !important;
   filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.3)) !important;
   transition: all 0.3s ease !important;
   position: relative !important;
   z-index: 3 !important;
+  transform: scale(1.5) !important;
 }
 
 /* Content underneath logo - vertical flow */
