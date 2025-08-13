@@ -8,19 +8,11 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'layout-bottom': () => {
-        // Show footer on home page always, and on mobile for all pages
+        // Only show footer on home page
         if (typeof window !== 'undefined') {
           const currentPath = window.location.pathname
           const basePath = '/moony/'
-          const isHomePage = currentPath === basePath || currentPath === basePath + 'index.html' || currentPath === '/'
-          
-          // Always show on home page
-          if (isHomePage) {
-            return h(Footer)
-          }
-          
-          // Show on mobile for all pages
-          if (window.innerWidth <= 768) {
+          if (currentPath === basePath || currentPath === basePath + 'index.html' || currentPath === '/') {
             return h(Footer)
           }
         }
