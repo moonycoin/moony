@@ -98,17 +98,9 @@
   height: 80vh !important;
   width: auto !important;
   filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.3)) !important;
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transition: all 0.3s ease !important;
   position: relative !important;
   z-index: 3 !important;
-  animation: logoFloat 8s ease-in-out infinite !important;
-}
-
-@keyframes logoFloat {
-  0%, 100% { transform: translateY(0px) rotateY(0deg); }
-  25% { transform: translateY(-20px) rotateY(2deg); }
-  50% { transform: translateY(-40px) rotateY(0deg); }
-  75% { transform: translateY(-20px) rotateY(-2deg); }
 }
 
 /* Content underneath logo - vertical flow */
