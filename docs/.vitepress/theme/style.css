@@ -821,11 +821,11 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 40px !important; /* Larger container to contain toggle animation */
-    height: 40px !important;
-    border-radius: 6px !important; /* Subtle radius */
-    background: transparent !important; /* Transparent background */
-    border: none !important; /* No border */
+    width: 48px !important; /* Wider for capsule shape */
+    height: 24px !important; /* Taller than wide for proper capsule */
+    border-radius: 12px !important; /* Half height for perfect capsule */
+    background: rgba(255, 255, 255, 0.1) !important; /* Subtle background */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
     color: rgba(255, 255, 255, 0.8) !important; /* Subtle white */
     cursor: pointer !important;
     transition: all 0.2s ease !important;
@@ -839,8 +839,8 @@ body {
   }
   
   .VPNavBarAppearance .VPSwitch svg {
-    width: 20px !important; /* Perfect proportion for 40px container */
-    height: 20px !important;
+    width: 16px !important; /* Perfect proportion for capsule container */
+    height: 16px !important;
   }
   
   /* Dark mode theme toggle - consistent with light mode */
