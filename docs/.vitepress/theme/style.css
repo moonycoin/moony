@@ -424,11 +424,8 @@ body {
     margin: 0px auto 0px !important;
   }
   
-  /* Debug: Identify what's creating white space on non-home pages */
+  /* Essential layout properties without debug colors */
   .VPContent {
-    background: rgba(255, 0, 0, 0.1) !important; /* Light red background */
-    border: 2px solid red !important; /* Red border */
-    /* Make red wrapper expand to contain orange container */
     min-height: auto !important;
     height: auto !important;
     display: flex !important;
@@ -437,9 +434,6 @@ body {
   }
   
   .Layout {
-    background: rgba(0, 255, 0, 0.1) !important; /* Light green background */
-    border: 2px solid green !important; /* Green border */
-    /* Make green wrapper expand to contain orange container */
     min-height: auto !important;
     height: auto !important;
     display: flex !important;
@@ -448,9 +442,6 @@ body {
   }
   
   .VPApp {
-    background: rgba(0, 0, 255, 0.1) !important; /* Light blue background */
-    border: 2px solid blue !important; /* Blue border */
-    /* Make blue wrapper expand to contain orange container */
     min-height: auto !important;
     height: auto !important;
     display: flex !important;
@@ -466,8 +457,6 @@ body {
     display: block !important; /* Force display */
     visibility: visible !important; /* Force visibility */
     opacity: 1 !important; /* Force opacity */
-    background: red !important; /* Debug: make footer visible */
-    border: 3px solid blue !important; /* Debug: add border */
   }
   
   /* Remove any bottom spacing from the main content */
@@ -500,85 +489,6 @@ body {
     flex: 1 !important;
     margin-bottom: 0 !important;
     padding-bottom: 5px !important; /* Very minimal bottom padding */
-  }
-  
-  /* Debug: Make .vp-doc container completely visible */
-  .vp-doc {
-    background: rgba(255, 165, 0, 0.3) !important; /* Orange background */
-    border: 4px solid orange !important; /* Orange border */
-    outline: 2px dashed purple !important; /* Purple dashed outline */
-    position: relative !important;
-  }
-  
-  /* Debug: Add pseudo-element to show container boundaries */
-  .vp-doc::after {
-    content: 'CONTENT CONTAINER END' !important;
-    position: absolute !important;
-    bottom: -20px !important;
-    left: 0 !important;
-    right: 0 !important;
-    background: red !important;
-    color: white !important;
-    padding: 5px !important;
-    font-size: 12px !important;
-    text-align: center !important;
-    z-index: 9999 !important;
-  }
-  
-  /* Eliminate white space below content container */
-  .vp-doc {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    min-height: auto !important;
-    height: auto !important;
-  }
-  
-  /* Constrain .vp-doc container to content height only */
-  .vp-doc {
-    height: fit-content !important;
-    min-height: fit-content !important;
-    max-height: fit-content !important;
-    overflow: visible !important;
-    position: relative !important;
-  }
-  
-  /* Force container to shrink to content */
-  .vp-doc > *:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  
-  /* Remove any flexbox stretching */
-  .vp-doc {
-    flex: none !important;
-    flex-shrink: 1 !important;
-    flex-grow: 0 !important;
-  }
-  
-  /* Target the content wrapper to prevent expansion */
-  .VPContent .content {
-    height: auto !important;
-    min-height: auto !important;
-    max-height: none !important;
-    flex: none !important;
-  }
-  
-  /* Nuclear option: remove all bottom spacing from everything */
-  .VPContent *,
-  .Layout *,
-  .VPApp * {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Add minimal breathing room only at the very bottom */
-  body {
-    padding-bottom: 10px !important;
-    margin-bottom: 0 !important;
-  }
-  
-  html {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
   }
   
   /* Ensure footer sticks to bottom */
@@ -4325,48 +4235,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Mobile back to top button */
-@media (max-width: 768px) {
-  .VPDocAside .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: var(--moony-accent);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    box-shadow: var(--mobile-shadow);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-  }
-  
-  .VPDocAside .back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .VPDocAside .back-to-top:hover {
-    background: var(--vp-c-brand-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-  }
-  
-  .VPDocAside .back-to-top:active {
-    transform: translateY(0);
-  }
-}
-
 /* Mobile accessibility improvements */
 @media (max-width: 768px) {
   .vp-doc *:focus-visible {
@@ -6222,48 +6090,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Mobile back to top button */
-@media (max-width: 768px) {
-  .VPDocAside .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: var(--moony-accent);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    box-shadow: var(--mobile-shadow);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-  }
-  
-  .VPDocAside .back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .VPDocAside .back-to-top:hover {
-    background: var(--vp-c-brand-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-  }
-  
-  .VPDocAside .back-to-top:active {
-    transform: translateY(0);
-  }
-}
-
 /* Mobile accessibility improvements */
 @media (max-width: 768px) {
   .vp-doc *:focus-visible {
@@ -8094,48 +7920,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
 }
 
-/* Mobile back to top button */
-@media (max-width: 768px) {
-  .VPDocAside .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: var(--moony-accent);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    box-shadow: var(--mobile-shadow);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-  }
-  
-  .VPDocAside .back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .VPDocAside .back-to-top:hover {
-    background: var(--vp-c-brand-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-  }
-  
-  .VPDocAside .back-to-top:active {
-    transform: translateY(0);
-  }
-}
-
 /* Mobile accessibility improvements */
 @media (max-width: 768px) {
   .vp-doc *:focus-visible {
@@ -9968,48 +9752,6 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPDocFooter .pager-link:active {
-    transform: translateY(0);
-  }
-}
-
-/* Mobile back to top button */
-@media (max-width: 768px) {
-  .VPDocAside .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: var(--moony-accent);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    box-shadow: var(--mobile-shadow);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-  }
-  
-  .VPDocAside .back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .VPDocAside .back-to-top:hover {
-    background: var(--vp-c-brand-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-  }
-  
-  .VPDocAside .back-to-top:active {
     transform: translateY(0);
   }
 }
