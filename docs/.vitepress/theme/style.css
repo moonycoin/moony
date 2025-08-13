@@ -814,25 +814,30 @@ body {
     height: 20px !important;
   }
   
-  /* Theme toggle styling for mobile */
+  /* Theme toggle styling for mobile - positioned on the right */
   .VPNavBarAppearance {
+    position: absolute !important;
+    right: 15px !important; /* Push to right side of header */
+    top: 50% !important;
+    transform: translateY(-50%) !important;
     display: flex !important;
     align-items: center !important;
-    margin-left: 0 !important; /* Ensure it's right next to GitHub */
+    z-index: 100 !important;
   }
   
   .VPNavBarAppearance .VPSwitch {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 32px !important;
-    height: 32px !important;
-    border-radius: 8px !important;
+    width: 40px !important; /* Larger button */
+    height: 40px !important; /* Larger button */
+    border-radius: 10px !important;
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     color: var(--moony-accent) !important;
     cursor: pointer !important;
     transition: all 0.2s ease !important;
+    overflow: hidden !important; /* Keep toggle button inside container */
   }
   
   .VPNavBarAppearance .VPSwitch:hover {
@@ -841,8 +846,8 @@ body {
   }
   
   .VPNavBarAppearance .VPSwitch svg {
-    width: 18px !important;
-    height: 18px !important;
+    width: 22px !important; /* Larger icon for larger button */
+    height: 22px !important; /* Larger icon for larger button */
   }
   
   /* Dark mode theme toggle */
