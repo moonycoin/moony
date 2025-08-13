@@ -617,63 +617,17 @@ body {
     height: 12px !important;
   }
   
-  /* Content sections grid - horizontal layout like desktop */
+  /* Hide all footer content below tagline on mobile */
   .VPFooter .footer-content-grid {
-    display: flex !important; /* Use flexbox instead of grid */
-    flex-direction: row !important; /* Horizontal layout */
-    justify-content: space-between !important; /* Distribute sections evenly */
-    gap: 8px !important; /* Very small gap between sections */
-    margin-bottom: 0 !important; /* No bottom margin for single row */
-    flex: 1 !important; /* Take remaining space */
+    display: none !important;
   }
   
-  /* Individual footer sections */
   .VPFooter .footer-section {
-    flex: 1 !important; /* Equal width distribution */
-    text-align: left !important; /* Left align like desktop */
+    display: none !important;
   }
   
-  /* Reduce text sizes for compact footer */
-  .VPFooter h4 {
-    font-size: 0.45rem !important; /* Very small headers */
-    margin-bottom: 2px !important; /* Minimal spacing */
-    font-weight: 600 !important;
-  }
-  
-  .VPFooter ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-  }
-  
-  .VPFooter li {
-    margin-bottom: 0px !important; /* No spacing between items */
-  }
-  
-  .VPFooter a {
-    font-size: 0.4rem !important; /* Extremely small links */
-    line-height: 1.0 !important; /* Minimal line height */
-    color: var(--moony-secondary) !important;
-    text-decoration: none !important;
-  }
-  
-  .VPFooter a:hover {
-    color: var(--moony-accent) !important;
-  }
-  
-  /* Footer bottom styling - separate row below */
   .VPFooter .footer-bottom {
-    text-align: center !important;
-    padding-top: 10px !important; /* Space above the bottom row */
-    border-top: 1px solid var(--moony-border) !important;
-    margin-top: 10px !important; /* Space below the main footer row */
-    width: 100% !important; /* Full width for the bottom row */
-  }
-  
-  .VPFooter .footer-legal a {
-    font-size: 0.6rem !important; /* Slightly larger for readability */
-    margin: 0 8px !important; /* More spacing for legal links */
-    color: var(--moony-secondary) !important;
+    display: none !important;
   }
   
   /* Mobile footer - professional redesign */
@@ -687,9 +641,9 @@ body {
   /* Brand section - centered and prominent */
   .VPFooter .footer-brand-section {
     text-align: center !important;
-    margin-bottom: 25px !important;
-    padding-bottom: 20px !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
   }
   
   .VPFooter .footer-brand {
@@ -733,70 +687,13 @@ body {
     color: var(--moony-accent) !important;
   }
   
-  /* Content sections - horizontal layout in one row */
+  /* Hide all footer content below tagline on mobile */
   .VPFooter .footer-content-grid {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    gap: 15px !important;
-    margin-bottom: 25px !important;
+    display: none !important;
   }
   
-  /* Individual footer sections */
-  .VPFooter .footer-section {
-    flex: 1 !important;
-    text-align: center !important;
-  }
-  
-  /* Section headers */
-  .VPFooter h4 {
-    font-size: 0.85rem !important;
-    margin-bottom: 12px !important;
-    font-weight: 600 !important;
-    color: var(--moony-primary) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-  }
-  
-  .VPFooter ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-  }
-  
-  .VPFooter li {
-    margin-bottom: 8px !important;
-  }
-  
-  .VPFooter a {
-    font-size: 0.8rem !important;
-    line-height: 1.3 !important;
-    color: var(--moony-secondary) !important;
-    text-decoration: none !important;
-    transition: color 0.2s ease !important;
-  }
-  
-  .VPFooter a:hover {
-    color: var(--moony-accent) !important;
-  }
-  
-  /* Footer bottom styling */
   .VPFooter .footer-bottom {
-    text-align: center !important;
-    padding-top: 20px !important;
-    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
-  }
-  
-  .VPFooter .footer-legal a {
-    font-size: 0.75rem !important;
-    margin: 0 12px !important;
-    color: var(--moony-secondary) !important;
-    text-decoration: none !important;
-    transition: color 0.2s ease !important;
-  }
-  
-  .VPFooter .footer-legal a:hover {
-    color: var(--moony-accent) !important;
+    display: none !important;
   }
   
   /* Style ONLY tip boxes with "Click here" text for mobile portrait */
