@@ -97,7 +97,7 @@
 }
 
 .VPHero .image img {
-  height: 80vh !important;
+  height: 120vh !important;
   width: auto !important;
   filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.3)) !important;
   transition: all 0.3s ease !important;
