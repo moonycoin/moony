@@ -659,9 +659,7 @@ body {
   }
   
   .VPFooter .footer-social {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: none !important; /* Hide GitHub logo on mobile */
   }
   
   /* GitHub icon size */
@@ -671,16 +669,18 @@ body {
     color: var(--moony-accent) !important;
   }
   
-  /* Content sections - clean vertical layout */
+  /* Content sections - horizontal layout in one row */
   .VPFooter .footer-content-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important; /* Single column on mobile */
-    gap: 25px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 15px !important;
     margin-bottom: 25px !important;
   }
   
   /* Individual footer sections */
   .VPFooter .footer-section {
+    flex: 1 !important;
     text-align: center !important;
   }
   
