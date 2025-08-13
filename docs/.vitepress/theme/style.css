@@ -821,15 +821,16 @@ body {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 28px !important; /* Perfect size for mobile */
-    height: 28px !important;
-    border-radius: 4px !important; /* Subtle radius */
+    width: 40px !important; /* Larger container to contain toggle animation */
+    height: 40px !important;
+    border-radius: 6px !important; /* Subtle radius */
     background: transparent !important; /* Transparent background */
     border: none !important; /* No border */
     color: rgba(255, 255, 255, 0.8) !important; /* Subtle white */
     cursor: pointer !important;
     transition: all 0.2s ease !important;
-    overflow: visible !important; /* Allow icon to breathe */
+    overflow: hidden !important; /* Keep toggle icon inside container */
+    position: relative !important; /* For proper positioning */
   }
   
   .VPNavBarAppearance .VPSwitch:hover {
@@ -838,8 +839,8 @@ body {
   }
   
   .VPNavBarAppearance .VPSwitch svg {
-    width: 16px !important; /* Perfect proportion for 28px button */
-    height: 16px !important;
+    width: 20px !important; /* Perfect proportion for 40px container */
+    height: 20px !important;
   }
   
   /* Dark mode theme toggle - consistent with light mode */
