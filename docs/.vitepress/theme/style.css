@@ -796,7 +796,7 @@ body {
     display: flex !important;
     align-items: center !important;
     margin-left: auto !important;
-    gap: 12px !important; /* Space between GitHub and theme toggle */
+    gap: 8px !important; /* Tighter spacing between GitHub and theme toggle */
   }
   
   .VPNavBarSocialLinks a[href*="github"] {
@@ -818,6 +818,7 @@ body {
   .VPNavBarAppearance {
     display: flex !important;
     align-items: center !important;
+    margin-left: 0 !important; /* Ensure it's right next to GitHub */
   }
   
   .VPNavBarAppearance .VPSwitch {
