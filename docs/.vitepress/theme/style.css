@@ -639,16 +639,18 @@ body {
     justify-content: center !important;
     align-items: center !important;
     margin-bottom: 12px !important;
+    flex-direction: column !important; /* Stack logo over tagline */
   }
   
   /* Logo size for mobile */
   .VPFooter .footer-logo {
     height: 32px !important;
     width: auto !important;
+    margin-bottom: 8px !important; /* Space between logo and tagline */
   }
   
   .VPFooter .footer-description {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important; /* Slightly smaller tagline */
     line-height: 1.4 !important;
     text-align: center !important;
     margin-bottom: 15px !important;
