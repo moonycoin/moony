@@ -24,6 +24,136 @@
 }
 
 /* ================
+   HERO SECTION ENHANCEMENTS
+   ================ */
+.VPHero {
+  text-align: center !important;
+  padding: 80px 0 60px 0 !important;
+}
+
+.VPHero .container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+}
+
+.VPHero .main {
+  margin-bottom: 40px !important;
+}
+
+.VPHero .title {
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  color: var(--moony-primary) !important;
+  margin-bottom: 24px !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
+}
+
+.VPHero .tagline {
+  font-size: 1.5rem !important;
+  color: var(--moony-secondary) !important;
+  margin-bottom: 40px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  max-width: 600px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.VPHero .image {
+  margin-bottom: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.VPHero .image img {
+  height: 120px !important;
+  width: auto !important;
+  filter: drop-shadow(0 4px 12px rgba(74, 144, 226, 0.15)) !important;
+}
+
+.VPHero .actions {
+  display: flex !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
+
+.VPHero .action {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPHero .action.brand {
+  background: var(--moony-accent) !important;
+  color: white !important;
+}
+
+.VPHero .action.brand:hover {
+  background: #357ABD !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.3) !important;
+}
+
+.VPHero .action.alt {
+  background: rgba(74, 144, 226, 0.1) !important;
+  color: var(--moony-accent) !important;
+  border: 1px solid rgba(74, 144, 226, 0.2) !important;
+}
+
+.VPHero .action.alt:hover {
+  background: rgba(74, 144, 226, 0.15) !important;
+  border-color: rgba(74, 144, 226, 0.3) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* GitHub icon styling */
+.VPHero .action.alt .icon {
+  width: 20px !important;
+  height: 20px !important;
+  fill: currentColor !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 60px 0 40px 0 !important;
+  }
+  
+  .VPHero .title {
+    font-size: 2.5rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.25rem !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .VPHero .image img {
+    height: 80px !important;
+  }
+  
+  .VPHero .actions {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .VPHero .action {
+    width: 100% !important;
+    max-width: 280px !important;
+    justify-content: center !important;
+  }
+}
+
+/* ================
    APPLE-STYLE VARIABLES
    ================ */
 :root {

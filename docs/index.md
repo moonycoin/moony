@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  text: "Decentralized<br>Digital Value"
+  text: "Moony"
   tagline: "Permissionless transactions with Proof of Liquidity"
   image:
-    light: /icon-light.png
-    dark: /icon-dark.png
-    alt: Moony Icon
+    light: /moony-logo-light.svg
+    dark: /moony-logo-light.svg
+    alt: Moony Logo
   actions:
     - theme: brand
       text: "View Docs"
@@ -15,6 +15,7 @@ hero:
     - theme: alt
       text: "View GitHub"
       link: https://github.com/moonycoin/moony
+      icon: github
 ---
 
 # Getting Started
