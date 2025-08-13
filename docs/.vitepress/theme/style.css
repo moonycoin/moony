@@ -24,26 +24,21 @@
 }
 
 /* ================
-   APPLE-INSPIRED HERO - AMAZING DESIGN
+   COMPLETELY DIFFERENT LAYOUT - LOGO DOMINATES SCREEN
    ================ */
 .VPHero {
-  text-align: center !important;
+  text-align: left !important;
   padding: 0 !important;
-  background: linear-gradient(180deg, 
-    #fafafa 0%, 
-    #f5f5f7 25%, 
-    #f2f2f2 50%, 
-    #f5f5f7 75%, 
-    #fafafa 100%) !important;
+  background: #000000 !important;
   min-height: 100vh !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  grid-template-rows: 1fr !important;
   position: relative !important;
   overflow: hidden !important;
 }
 
-/* Subtle geometric background pattern */
+/* Animated background with moving particles */
 .VPHero::before {
   content: '' !important;
   position: absolute !important;
@@ -52,89 +47,100 @@
   right: 0 !important;
   bottom: 0 !important;
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(0, 122, 255, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(88, 86, 214, 0.03) 0%, transparent 50%),
-    linear-gradient(45deg, transparent 48%, rgba(0, 122, 255, 0.02) 50%, transparent 52%) !important;
-  background-size: 200px 200px, 300px 300px, 100px 100px !important;
-  opacity: 0.8 !important;
+    radial-gradient(2px 2px at 40px 60px, #ffffff, transparent),
+    radial-gradient(2px 2px at 20px 50px, #ffffff, transparent),
+    radial-gradient(2px 2px at 30px 100px, #ffffff, transparent),
+    radial-gradient(2px 2px at 40px 60px, #ffffff, transparent),
+    radial-gradient(2px 2px at 110px 90px, #ffffff, transparent),
+    radial-gradient(2px 2px at 90px 40px, #ffffff, transparent) !important;
+  background-repeat: repeat !important;
+  background-size: 200px 200px !important;
+  animation: particleMove 20s linear infinite !important;
+  opacity: 0.3 !important;
   pointer-events: none !important;
 }
 
+@keyframes particleMove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-200px); }
+}
+
 .VPHero .container {
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-  padding: 0 32px !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
   position: relative !important;
   z-index: 2 !important;
+  grid-column: 1 / -1 !important;
+  grid-row: 1 !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  grid-template-rows: 1fr !important;
+  height: 100vh !important;
 }
 
 .VPHero .main {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 0 !important;
+  display: contents !important;
 }
 
-/* Hero Logo Section - Apple-inspired prominence */
+/* Left side - Massive logo that dominates */
 .VPHero .image {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
   display: flex !important;
+  align-items: center !important;
   justify-content: center !important;
   position: relative !important;
-  margin-bottom: 60px !important;
+  padding: 0 60px !important;
 }
 
 .VPHero .image img {
-  height: 320px !important;
+  height: 80vh !important;
   width: auto !important;
-  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15)) !important;
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.3)) !important;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   position: relative !important;
   z-index: 3 !important;
+  animation: logoFloat 8s ease-in-out infinite !important;
 }
 
-/* Elegant glow effect behind logo */
-.VPHero .image::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 500px !important;
-  height: 500px !important;
-  background: radial-gradient(circle, 
-    rgba(0, 122, 255, 0.08) 0%, 
-    rgba(88, 86, 214, 0.06) 30%, 
-    rgba(0, 122, 255, 0.04) 60%,
-    transparent 80%) !important;
-  border-radius: 50% !important;
-  z-index: 1 !important;
-  animation: gentlePulse 8s ease-in-out infinite !important;
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px) rotateY(0deg); }
+  25% { transform: translateY(-20px) rotateY(2deg); }
+  50% { transform: translateY(-40px) rotateY(0deg); }
+  75% { transform: translateY(-20px) rotateY(-2deg); }
 }
 
-@keyframes gentlePulse {
-  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.05); }
-}
-
-/* Hero Tagline - Apple-style typography */
+/* Right side - Content flowing around logo */
 .VPHero .tagline {
-  font-size: 2.4rem !important;
-  color: #1d1d1f !important;
-  font-weight: 600 !important;
-  line-height: 1.3 !important;
-  max-width: 800px !important;
-  margin: 0 auto 80px auto !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  padding: 0 60px !important;
+  font-size: 3.5rem !important;
+  color: #ffffff !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  max-width: none !important;
+  margin: 0 !important;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif !important;
-  letter-spacing: -0.02em !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  letter-spacing: -0.03em !important;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
 }
 
-/* Hero Actions - Apple-style buttons */
+/* Actions positioned at bottom right */
 .VPHero .actions {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
   display: flex !important;
-  gap: 32px !important;
-  justify-content: center !important;
-  flex-wrap: wrap !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: 0 60px 80px 60px !important;
   position: relative !important;
   z-index: 3 !important;
 }
@@ -143,8 +149,8 @@
   display: inline-flex !important;
   align-items: center !important;
   gap: 16px !important;
-  padding: 20px 40px !important;
-  border-radius: 980px !important;
+  padding: 18px 36px !important;
+  border-radius: 50px !important;
   font-weight: 600 !important;
   font-size: 1.1rem !important;
   text-decoration: none !important;
@@ -152,107 +158,95 @@
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif !important;
   position: relative !important;
   overflow: hidden !important;
+  min-width: 200px !important;
+  justify-content: center !important;
 }
 
-/* Primary Action - Apple Blue */
+/* Primary Action - Glowing white */
 .VPHero .action.brand {
-  background: #007AFF !important;
+  background: rgba(255, 255, 255, 0.1) !important;
   color: #ffffff !important;
-  border: none !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 
-    0 8px 32px rgba(0, 122, 255, 0.3),
-    0 4px 16px rgba(0, 0, 0, 0.1) !important;
-}
-
-.VPHero .action.brand::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: -100% !important;
-  width: 100% !important;
-  height: 100% !important;
-  background: linear-gradient(90deg, 
-    transparent, 
-    rgba(255, 255, 255, 0.2), 
-    transparent) !important;
-  transition: left 0.6s ease !important;
-}
-
-.VPHero .action.brand:hover {
-  background: #0056CC !important;
-  transform: translateY(-4px) !important;
-  box-shadow: 
-    0 16px 48px rgba(0, 122, 255, 0.4),
-    0 8px 24px rgba(0, 0, 0, 0.15) !important;
-}
-
-.VPHero .action.brand:hover::before {
-  left: 100% !important;
-}
-
-/* Secondary Action - Apple Glass */
-.VPHero .action.alt {
-  background: rgba(255, 255, 255, 0.8) !important;
-  color: #007AFF !important;
-  border: 1px solid rgba(0, 122, 255, 0.2) !important;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    0 4px 16px rgba(0, 0, 0, 0.05) !important;
+    0 0 20px rgba(255, 255, 255, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(20px) !important;
 }
 
-.VPHero .action.alt:hover {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border-color: rgba(0, 122, 255, 0.3) !important;
+.VPHero .action.brand:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
   transform: translateY(-4px) !important;
   box-shadow: 
-    0 16px 48px rgba(0, 0, 0, 0.15),
-    0 8px 24px rgba(0, 0, 0, 0.08) !important;
+    0 0 40px rgba(255, 255, 255, 0.4),
+    inset 0 0 40px rgba(255, 255, 255, 0.1) !important;
 }
 
-/* GitHub Icon Styling */
+/* Secondary Action - Transparent with glow */
+.VPHero .action.alt {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1) !important;
+}
+
+.VPHero .action.alt:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2) !important;
+}
+
 .VPHero .action.alt .icon {
   width: 22px !important;
   height: 22px !important;
   fill: currentColor !important;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) !important;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)) !important;
 }
 
-/* Mobile Responsiveness */
+/* Mobile - Stack vertically */
 @media (max-width: 768px) {
+  .VPHero {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto 1fr auto !important;
+    text-align: center !important;
+  }
+  
   .VPHero .container {
-    padding: 0 24px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto 1fr auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
   }
   
-  .VPHero .main {
-    gap: 0 !important;
-  }
-  
-  .VPHero .tagline {
-    font-size: 2rem !important;
-    margin-bottom: 60px !important;
+  .VPHero .image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    padding: 60px 20px 40px 20px !important;
   }
   
   .VPHero .image img {
-    height: 240px !important;
+    height: 50vh !important;
   }
   
-  .VPHero .image::before {
-    width: 360px !important;
-    height: 360px !important;
+  .VPHero .tagline {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    padding: 0 20px 40px 20px !important;
+    font-size: 2.5rem !important;
+    align-items: center !important;
+    text-align: center !important;
   }
   
   .VPHero .actions {
-    flex-direction: column !important;
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    padding: 0 20px 60px 20px !important;
     align-items: center !important;
-    gap: 24px !important;
   }
   
   .VPHero .action {
-    width: 100% !important;
-    max-width: 320px !important;
-    justify-content: center !important;
-    padding: 18px 36px !important;
+    min-width: 280px !important;
   }
 }
 
