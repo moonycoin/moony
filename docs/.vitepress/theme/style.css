@@ -542,6 +542,32 @@ body {
     grid-template-columns: 1fr 1fr 1fr !important; /* Three equal columns */
     gap: 15px !important;
     margin-bottom: 20px !important;
+    margin-top: 20px !important; /* Add space above the sections */
+  }
+  
+  /* Ensure brand section is above the grid */
+  .VPFooter .footer-brand {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+    grid-column: 1 / -1 !important; /* Span full width above the grid */
+  }
+  
+  .VPFooter .footer-description {
+    font-size: 0.9rem !important; /* Reduce tagline size */
+    line-height: 1.4 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    grid-column: 1 / -1 !important; /* Span full width above the grid */
+  }
+  
+  .VPFooter .footer-social {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    grid-column: 1 / -1 !important; /* Span full width above the grid */
+    margin-bottom: 20px !important; /* Space before the sections grid */
   }
   
   /* Reduce text sizes for compact footer */
