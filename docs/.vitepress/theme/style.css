@@ -795,6 +795,19 @@ body {
     display: none !important; /* Hide GitHub icon */
   }
   
+  /* Ensure proper mobile header height and spacing */
+  .VPNavBar {
+    height: 64px !important;
+    padding: 0 16px !important;
+  }
+  
+  .VPNavBarContent {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  
   /* Enhanced mobile header layout - matching landscape quality */
   .VPNavBarTitle {
     flex: 1 !important; /* Logo takes up available space */
@@ -808,43 +821,190 @@ body {
     width: auto !important;
   }
   
-  /* Simple, working theme toggle */
+  /* Enhanced mobile header styling */
+  .VPNavBar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .dark .VPNavBar {
+    background: rgba(29, 29, 31, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Enhanced mobile theme toggle with better design */
   .VPNavBarAppearance {
     display: flex !important;
     align-items: center !important;
     margin-left: auto !important;
     margin-right: 16px !important;
+    position: relative !important;
+    /* Add a subtle background for better visibility */
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    padding: 4px !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  
+  .dark .VPNavBarAppearance {
+    background: rgba(0, 0, 0, 0.2) !important;
   }
   
   .VPNavBarAppearance .VPSwitch {
-    width: 44px !important;
-    height: 22px !important;
-    border-radius: 11px !important;
-    background: rgba(255, 255, 255, 0.15) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    width: 52px !important;
+    height: 28px !important;
+    border-radius: 14px !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
     position: relative !important;
     cursor: pointer !important;
-    transition: background 0.3s ease !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    overflow: hidden !important;
   }
   
-  .VPNavBarAppearance .VPSwitch::after {
+  /* Create the toggle slider using ::before pseudo-element */
+  .VPNavBarAppearance .VPSwitch::before {
     content: '' !important;
     position: absolute !important;
     top: 2px !important;
     left: 2px !important;
-    width: 18px !important;
-    height: 18px !important;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50% !important;
-    background: white !important;
-    transition: transform 0.3s ease !important;
+    background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+    z-index: 1 !important;
+  }
+  
+  .dark .VPNavBarAppearance .VPSwitch::before {
+    transform: translateX(24px) !important;
+    background: linear-gradient(135deg, #4A90E2, #357ABD) !important;
+  }
+  
+  /* Add sun and moon icons using data attributes and CSS */
+  .VPNavBarAppearance .VPSwitch::after {
+    content: '☀️' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 6px !important;
+    transform: translateY(-50%) !important;
+    font-size: 12px !important;
+    opacity: 0.8 !important;
+    transition: all 0.3s ease !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
   }
   
   .dark .VPNavBarAppearance .VPSwitch::after {
-    transform: translateX(22px) !important;
+    content: '🌙' !important;
+    left: auto !important;
+    right: 6px !important;
   }
   
+  /* Hover effects for better interactivity */
+  .VPNavBarAppearance .VPSwitch:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 
+      0 4px 16px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  .VPNavBarAppearance .VPSwitch:active {
+    transform: scale(0.98) !important;
+  }
+  
+  /* Hide default VitePress icons */
   .VPNavBarAppearance .VPSwitch svg {
     display: none !important;
+  }
+  
+  /* Add a subtle glow effect */
+  .VPNavBarAppearance .VPSwitch::after {
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.3) !important;
+  }
+  
+  .dark .VPNavBarAppearance .VPSwitch::after {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3) !important;
+  }
+  
+  /* Enhanced mobile touch interactions */
+  @media (hover: none) and (pointer: coarse) {
+    .VPNavBarAppearance .VPSwitch {
+      /* Larger touch target for mobile */
+      min-height: 44px !important;
+      min-width: 44px !important;
+      /* Ensure the toggle area is large enough for touch */
+      padding: 8px !important;
+    }
+    
+    .VPNavBarAppearance .VPSwitch::before {
+      /* Larger slider for better touch feedback */
+      width: 28px !important;
+      height: 28px !important;
+    }
+    
+    .dark .VPNavBarAppearance .VPSwitch::before {
+      transform: translateX(20px) !important;
+    }
+    
+    /* Add haptic feedback simulation */
+    .VPNavBarAppearance .VPSwitch:active {
+      transform: scale(0.95) !important;
+      transition: transform 0.1s ease !important;
+    }
+  }
+  
+  /* Improved accessibility for mobile */
+  .VPNavBarAppearance .VPSwitch:focus {
+    outline: 2px solid var(--moony-accent) !important;
+    outline-offset: 2px !important;
+  }
+  
+  /* Smooth animation for theme switching */
+  .VPNavBarAppearance .VPSwitch * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+  
+  /* Add a subtle pulse animation for better visual feedback */
+  @keyframes themeTogglePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  .VPNavBarAppearance .VPSwitch:active {
+    animation: themeTogglePulse 0.2s ease-in-out !important;
+  }
+  
+  /* Improved mobile portrait layout */
+  @media (max-width: 480px) {
+    .VPNavBarAppearance {
+      margin-right: 12px !important;
+      padding: 6px !important;
+    }
+    
+    .VPNavBarAppearance .VPSwitch {
+      width: 48px !important;
+      height: 26px !important;
+    }
+    
+    .VPNavBarAppearance .VPSwitch::before {
+      width: 22px !important;
+      height: 22px !important;
+    }
+    
+    .dark .VPNavBarAppearance .VPSwitch::before {
+      transform: translateX(22px) !important;
+    }
   }
   
 
