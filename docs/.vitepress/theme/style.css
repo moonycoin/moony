@@ -24,26 +24,21 @@
 }
 
 /* ================
-   DRAMATIC NEW HERO SECTION - BOLD TRANSFORMATION
+   CLEAN, ELEGANT HERO - LOGO CENTERED
    ================ */
 .VPHero {
   text-align: center !important;
-  padding: 0 !important;
-  background: linear-gradient(180deg, 
-    #0f0f23 0%, 
-    #1a1a2e 25%, 
-    #16213e 50%, 
-    #0f3460 75%, 
-    #533483 100%) !important;
+  padding: 120px 0 80px 0 !important;
+  background: #ffffff !important;
   position: relative !important;
   overflow: hidden !important;
-  min-height: 100vh !important;
+  min-height: 80vh !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
 
-/* Animated cosmic background */
+/* Subtle background texture */
 .VPHero::before {
   content: '' !important;
   position: absolute !important;
@@ -52,34 +47,18 @@
   right: 0 !important;
   bottom: 0 !important;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, #eee, transparent),
-    radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
-    radial-gradient(1px 1px at 90px 40px, #fff, transparent),
-    radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
-    radial-gradient(2px 2px at 160px 30px, #ddd, transparent) !important;
-  background-repeat: repeat !important;
-  background-size: 200px 100px !important;
-  animation: sparkle 20s linear infinite !important;
-  opacity: 0.8 !important;
+    radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.02) 0%, transparent 50%) !important;
+  opacity: 1 !important;
   pointer-events: none !important;
 }
 
-@keyframes sparkle {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-100px); }
-}
-
 .VPHero .container {
-  max-width: 1200px !important;
+  max-width: 800px !important;
   margin: 0 auto !important;
   padding: 0 32px !important;
   position: relative !important;
   z-index: 2 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 100vh !important;
 }
 
 .VPHero .main {
@@ -87,32 +66,20 @@
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  gap: 40px !important;
+  gap: 60px !important;
 }
 
 .VPHero .tagline {
-  font-size: 2.5rem !important;
-  color: #ffffff !important;
+  font-size: 1.8rem !important;
+  color: #333333 !important;
   margin-bottom: 0 !important;
-  font-weight: 200 !important;
-  line-height: 1.3 !important;
-  max-width: 800px !important;
+  font-weight: 300 !important;
+  line-height: 1.5 !important;
+  max-width: 600px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  letter-spacing: 0.05em !important;
-  text-shadow: 
-    0 0 20px rgba(255, 255, 255, 0.8),
-    0 0 40px rgba(255, 255, 255, 0.4),
-    0 0 60px rgba(255, 255, 255, 0.2) !important;
-  text-transform: uppercase !important;
-  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace !important;
-  position: relative !important;
-  animation: glow 3s ease-in-out infinite alternate !important;
-}
-
-@keyframes glow {
-  from { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.4), 0 0 60px rgba(255, 255, 255, 0.2); }
-  to { text-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 50px rgba(255, 255, 255, 0.6), 0 0 70px rgba(255, 255, 255, 0.4); }
+  letter-spacing: -0.01em !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 .VPHero .image {
@@ -120,237 +87,117 @@
   display: flex !important;
   justify-content: center !important;
   position: relative !important;
-  margin-top: 20px !important;
+  margin-top: 0 !important;
 }
 
-/* Dramatic floating logo with cosmic effects */
+/* Clean, prominent logo */
 .VPHero .image img {
-  height: 180px !important;
+  height: 200px !important;
   width: auto !important;
-  filter: 
-    drop-shadow(0 0 30px rgba(255, 255, 255, 0.8)),
-    drop-shadow(0 0 60px rgba(138, 43, 226, 0.6)),
-    drop-shadow(0 0 90px rgba(75, 0, 130, 0.4)) !important;
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1)) !important;
+  transition: all 0.3s ease !important;
   position: relative !important;
   z-index: 2 !important;
-  animation: float 6s ease-in-out infinite !important;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotateY(0deg); }
-  25% { transform: translateY(-10px) rotateY(2deg); }
-  50% { transform: translateY(-20px) rotateY(0deg); }
-  75% { transform: translateY(-10px) rotateY(-2deg); }
-}
-
-.VPHero .image::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 300px !important;
-  height: 300px !important;
-  background: radial-gradient(circle, 
-    rgba(138, 43, 226, 0.3) 0%, 
-    rgba(75, 0, 130, 0.2) 30%, 
-    rgba(138, 43, 226, 0.1) 60%,
-    transparent 80%) !important;
-  border-radius: 50% !important;
-  z-index: 1 !important;
-  animation: rotate 20s linear infinite !important;
-}
-
-.VPHero .image::after {
-  content: '' !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 400px !important;
-  height: 400px !important;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    rgba(138, 43, 226, 0.1) 90deg,
-    transparent 180deg,
-    rgba(75, 0, 130, 0.1) 270deg,
-    transparent 360deg
-  ) !important;
-  border-radius: 50% !important;
-  z-index: 0 !important;
-  animation: rotate 30s linear infinite reverse !important;
-}
-
-@keyframes rotate {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+.VPHero .image img:hover {
+  transform: scale(1.05) !important;
+  filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.15)) !important;
 }
 
 .VPHero .actions {
   display: flex !important;
-  gap: 30px !important;
+  gap: 24px !important;
   justify-content: center !important;
   flex-wrap: wrap !important;
   position: relative !important;
   z-index: 2 !important;
-  margin-top: 40px !important;
+  margin-top: 0 !important;
 }
 
 .VPHero .action {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 15px !important;
-  padding: 20px 40px !important;
-  border-radius: 0 !important;
-  font-weight: 700 !important;
-  font-size: 1.2rem !important;
+  gap: 12px !important;
+  padding: 16px 32px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
   text-decoration: none !important;
-  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transition: all 0.3s ease !important;
   position: relative !important;
   overflow: hidden !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.1em !important;
-  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
-/* Primary action button - Cyberpunk neon */
+/* Primary action button - Clean blue */
 .VPHero .action.brand {
-  background: transparent !important;
-  color: #00ffff !important;
-  border: 2px solid #00ffff !important;
-  box-shadow: 
-    0 0 20px rgba(0, 255, 255, 0.5),
-    0 0 40px rgba(0, 255, 255, 0.3),
-    inset 0 0 20px rgba(0, 255, 255, 0.1) !important;
-  position: relative !important;
-}
-
-.VPHero .action.brand::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  background: linear-gradient(45deg, 
-    transparent 30%, 
-    rgba(0, 255, 255, 0.1) 50%, 
-    transparent 70%) !important;
-  transform: translateX(-100%) !important;
-  transition: transform 0.6s ease !important;
-}
-
-.VPHero .action.brand::after {
-  content: '' !important;
-  position: absolute !important;
-  top: -2px !important;
-  left: -2px !important;
-  right: -2px !important;
-  bottom: -2px !important;
-  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff) !important;
-  z-index: -1 !important;
-  animation: borderGlow 3s linear infinite !important;
-}
-
-@keyframes borderGlow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  background: #007AFF !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0, 122, 255, 0.3) !important;
 }
 
 .VPHero .action.brand:hover {
-  transform: translateY(-8px) scale(1.05) !important;
-  box-shadow: 
-    0 0 40px rgba(0, 255, 255, 0.8),
-    0 0 80px rgba(0, 255, 255, 0.5),
-    inset 0 0 40px rgba(0, 255, 255, 0.2) !important;
-  color: #ffffff !important;
+  background: #0056CC !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 122, 255, 0.4) !important;
 }
 
-.VPHero .action.brand:hover::before {
-  transform: translateX(100%) !important;
-}
-
-/* Secondary action button - Holographic */
+/* Secondary action button - Clean outline */
 .VPHero .action.alt {
-  background: linear-gradient(45deg, 
-    rgba(255, 255, 255, 0.1) 0%, 
-    rgba(138, 43, 226, 0.2) 50%, 
-    rgba(255, 255, 255, 0.1) 100%) !important;
-  color: #ffffff !important;
-  border: 2px solid rgba(255, 255, 255, 0.3) !important;
-  box-shadow: 
-    0 0 20px rgba(138, 43, 226, 0.4),
-    0 0 40px rgba(138, 43, 226, 0.2),
-    inset 0 0 20px rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(10px) !important;
+  background: transparent !important;
+  color: #007AFF !important;
+  border: 2px solid #007AFF !important;
 }
 
 .VPHero .action.alt:hover {
-  background: linear-gradient(45deg, 
-    rgba(255, 255, 255, 0.2) 0%, 
-    rgba(138, 43, 226, 0.4) 50%, 
-    rgba(255, 255, 255, 0.2) 100%) !important;
-  transform: translateY(-8px) scale(1.05) !important;
-  box-shadow: 
-    0 0 40px rgba(138, 43, 226, 0.6),
-    0 0 80px rgba(138, 43, 226, 0.3),
-    inset 0 0 40px rgba(255, 255, 255, 0.2) !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
+  background: #007AFF !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
 }
 
 /* GitHub icon styling */
 .VPHero .action.alt .icon {
-  width: 24px !important;
-  height: 24px !important;
+  width: 20px !important;
+  height: 20px !important;
   fill: currentColor !important;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) !important;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .VPHero {
-    padding: 0 !important;
-    min-height: 100vh !important;
+    padding: 80px 0 60px 0 !important;
+    min-height: auto !important;
   }
   
   .VPHero .container {
     padding: 0 20px !important;
   }
   
+  .VPHero .main {
+    gap: 40px !important;
+  }
+  
   .VPHero .tagline {
-    font-size: 1.8rem !important;
-    margin-bottom: 0 !important;
+    font-size: 1.5rem !important;
   }
   
   .VPHero .image img {
-    height: 120px !important;
-  }
-  
-  .VPHero .image::before {
-    width: 200px !important;
-    height: 200px !important;
-  }
-  
-  .VPHero .image::after {
-    width: 280px !important;
-    height: 280px !important;
+    height: 150px !important;
   }
   
   .VPHero .actions {
     flex-direction: column !important;
     align-items: center !important;
-    gap: 25px !important;
-    margin-top: 30px !important;
+    gap: 20px !important;
   }
   
   .VPHero .action {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 280px !important;
     justify-content: center !important;
-    padding: 18px 36px !important;
-    font-size: 1.1rem !important;
+    padding: 16px 32px !important;
   }
 }
 
