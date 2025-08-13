@@ -782,36 +782,38 @@ body {
     }
   }
   
-  /* Ensure mobile navigation menu works properly */
-  .VPNavBarMenu {
-    z-index: 9999 !important; /* Higher than landscape overlay */
-    display: block !important; /* Ensure menu is visible */
-    visibility: visible !important; /* Ensure menu is visible */
-    opacity: 1 !important; /* Ensure menu is visible */
-  }
-  
-  .VPNavBarMenu .VPNavBarMenuGroup {
-    z-index: 9999 !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  .VPNavBarMenu .VPNavBarMenuLink {
-    z-index: 9999 !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  /* Ensure hamburger button is clickable */
+  /* Mobile header: hide hamburger menu, show GitHub icon */
   .VPNavBarHamburger {
-    z-index: 10000 !important; /* Highest z-index */
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important; /* Ensure clicks work */
+    display: none !important; /* Hide hamburger menu */
   }
+  
+  .VPNavBarMenu {
+    display: none !important; /* Hide mobile menu */
+  }
+  
+  /* Show GitHub icon in mobile header */
+  .VPNavBarSocialLinks {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important;
+  }
+  
+  .VPNavBarSocialLinks a[href*="github"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    color: var(--moony-accent) !important;
+    text-decoration: none !important;
+  }
+  
+  .VPNavBarSocialLinks a[href*="github"] svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+
 
 }
 
@@ -823,22 +825,7 @@ body {
     0 1px 3px rgba(0, 0, 0, 0.4) !important;
 }
 
-/* ================
-   MOBILE NAVIGATION FIXES
-   ================ */
-/* Ensure mobile navigation works properly */
-.VPNavBarMenu {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
 
-.VPNavBarHamburger {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-}
 
 /* ================
    ENHANCED TIP BOX STYLING
