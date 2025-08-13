@@ -746,16 +746,16 @@ body {
     color: var(--moony-accent) !important;
   }
   
-  /* Tip box styling for mobile portrait - smaller text to fit on one line */
-  .vp-doc .custom-block.tip {
-    font-size: 0.75rem !important; /* Much smaller font so all text fits on one line */
-    line-height: 1.2 !important; /* Very tight line height for mobile */
-    padding: 20px !important; /* Reduced padding for mobile */
-    margin: 25px 0 !important; /* Reduced margins for mobile */
+  /* Style tip boxes that contain "Click here" text for mobile portrait */
+  /* Target the second tip box (likely contains "Click here") */
+  .vp-doc .custom-block.tip:nth-of-type(2) {
+    font-size: 0.7rem !important; /* Small font so "Click here" text fits in container */
+    line-height: 1.1 !important; /* Very tight line height */
     white-space: nowrap !important; /* Prevent line breaks */
-    overflow: visible !important; /* Show all text */
-    text-align: center !important; /* Center the text for better mobile appearance */
+    overflow: hidden !important; /* Hide any overflow */
+    text-overflow: ellipsis !important; /* Add ellipsis if needed */
   }
+
 }
 
 .dark .vp-doc {
