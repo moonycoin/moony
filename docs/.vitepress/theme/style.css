@@ -957,7 +957,7 @@ body {
   }
   
   .VPFooter .footer-section {
-    text-align: left !important;
+    text-align: center !important;
   }
   
   .VPFooter h4 {
@@ -973,7 +973,8 @@ body {
     content: '' !important;
     position: absolute !important;
     bottom: -6px !important;
-    left: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     width: 24px !important;
     height: 2px !important;
     background: var(--moony-accent) !important;
