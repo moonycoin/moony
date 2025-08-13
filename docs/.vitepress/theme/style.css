@@ -518,13 +518,16 @@ body {
   
   /* Brand section - completely separate from grid */
   .VPFooter .footer-brand-section {
-    text-align: center !important;
+    text-align: left !important; /* Left align like desktop */
     margin-bottom: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
   
   .VPFooter .footer-brand {
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-start !important; /* Left align like desktop */
     align-items: center !important;
     margin-bottom: 8px !important; /* Reduced from 10px */
   }
@@ -532,22 +535,29 @@ body {
   .VPFooter .footer-description {
     font-size: 0.8rem !important; /* Reduced from 0.9rem */
     line-height: 1.3 !important; /* Reduced from 1.4 */
-    text-align: center !important;
+    text-align: left !important; /* Left align like desktop */
     margin-bottom: 12px !important; /* Reduced from 15px */
   }
   
   .VPFooter .footer-social {
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-start !important; /* Left align like desktop */
     align-items: center !important;
   }
   
-  /* Content sections grid - separate from brand */
+  /* Content sections grid - horizontal layout like desktop */
   .VPFooter .footer-content-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important; /* Three equal columns */
-    gap: 12px !important; /* Reduced from 15px */
-    margin-bottom: 15px !important; /* Reduced from 20px */
+    display: flex !important; /* Use flexbox instead of grid */
+    flex-direction: row !important; /* Horizontal layout */
+    justify-content: space-between !important; /* Distribute sections evenly */
+    gap: 20px !important; /* Space between sections */
+    margin-bottom: 15px !important;
+  }
+  
+  /* Individual footer sections */
+  .VPFooter .footer-section {
+    flex: 1 !important; /* Equal width distribution */
+    text-align: left !important; /* Left align like desktop */
   }
   
   /* Reduce text sizes for compact footer */
@@ -2070,22 +2080,26 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 20px;
     text-align: center;
   }
   
   .footer-section h4 {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   
   .footer-section ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   .footer-section li {
-    margin: 0.5rem 0;
+    margin-bottom: 8px;
   }
   
   .footer-section a {
@@ -2095,6 +2109,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     padding: 0.5rem;
     border-radius: var(--mobile-border-radius);
     display: inline-block;
+    font-size: 0.7rem;
+    line-height: 1.2;
   }
   
   .footer-section a:hover {
@@ -5814,22 +5830,26 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 20px;
     text-align: center;
   }
   
   .footer-section h4 {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   
   .footer-section ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   .footer-section li {
-    margin: 0.5rem 0;
+    margin-bottom: 8px;
   }
   
   .footer-section a {
@@ -5839,6 +5859,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     padding: 0.5rem;
     border-radius: var(--mobile-border-radius);
     display: inline-block;
+    font-size: 0.7rem;
+    line-height: 1.2;
   }
   
   .footer-section a:hover {
