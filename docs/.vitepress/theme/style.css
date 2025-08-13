@@ -733,105 +733,93 @@ body {
   }
   
   /* Mobile header: clean, professional layout with just logo and theme toggle */
-  .VPNavBarHamburger {
-    display: none !important; /* Hide hamburger menu */
-  }
-  
-  .VPNavBarMenu {
-    display: none !important; /* Hide mobile menu */
-  }
-  
-  .VPNavBarSocialLinks {
-    display: none !important; /* Hide GitHub icon */
-  }
-  
-  /* Mobile header layout - logo left, toggle right */
-  .VPNavBarTitle {
-    flex: 0 0 auto !important;
-    display: flex !important;
-    align-items: center !important;
-    padding-left: 20px !important;
-  }
-  
-  .VPNavBarTitle .logo {
-    height: 28px !important;
-    width: auto !important;
-  }
-  
-  /* Reduce glow on header logo in dark mode */
-  .dark .VPNavBarTitle .logo {
-    filter: brightness(1) contrast(1) saturate(1) !important;
-    box-shadow: none !important;
-  }
-  
-  /* Simple, clean mobile theme toggle */
-  .VPNavBarAppearance {
-    display: flex !important;
-    align-items: center !important;
-    margin-left: auto !important;
-    margin-right: 16px !important;
-  }
-  
-  .VPNavBarAppearance .VPSwitch {
-    width: 48px !important;
-    height: 24px !important;
-    border-radius: 12px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    position: relative !important;
-    cursor: pointer !important;
-    transition: background 0.3s ease !important;
-  }
-  
-  .VPNavBarAppearance .VPSwitch::after {
-    content: '' !important;
-    position: absolute !important;
-    top: 2px !important;
-    left: 2px !important;
-    width: 20px !important;
-    height: 20px !important;
-    border-radius: 50% !important;
-    background: white !important;
-    transition: transform 0.3s ease !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-  }
-  
-  .dark .VPNavBarAppearance .VPSwitch::after {
-    transform: translateX(24px) !important;
-  }
-  
-  .VPNavBarAppearance .VPSwitch svg {
-    display: none !important;
-  }
-  
-  /* Mobile header height and spacing */
-  .VPNavBar {
-    height: 72px !important;
-    padding: 0 16px 12px 16px !important;
-    display: flex !important;
-    align-items: center !important;
-  }
-  
-  .VPNavBarContent {
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    width: 100% !important;
-  }
-  
-  /* Mobile header layout - logo left, toggle right */
-  .VPNavBarTitle {
-    flex: 0 0 auto !important;
-    display: flex !important;
-    align-items: center !important;
-    padding-left: 20px !important;
-  }
-  
-  .VPNavBarAppearance {
-    flex: 0 0 auto !important;
-    margin-left: auto !important;
-    margin-right: 20px !important;
+  @media (max-width: 768px) {
+    .VPNavBarHamburger {
+      display: none !important; /* Hide hamburger menu */
+    }
+    
+    .VPNavBarMenu {
+      display: none !important; /* Hide mobile menu */
+    }
+    
+    .VPNavBarSocialLinks {
+      display: none !important; /* Hide GitHub icon */
+    }
+    
+    /* Mobile header layout - logo left, toggle right */
+    .VPNavBarTitle {
+      flex: 0 0 auto !important;
+      display: flex !important;
+      align-items: center !important;
+      padding-left: 20px !important;
+    }
+    
+    .VPNavBarTitle .logo {
+      height: 28px !important;
+      width: auto !important;
+    }
+    
+    /* Reduce glow on header logo in dark mode */
+    .dark .VPNavBarTitle .logo {
+      filter: brightness(1) contrast(1) saturate(1) !important;
+      box-shadow: none !important;
+    }
+    
+    /* Simple, clean mobile theme toggle */
+    .VPNavBarAppearance {
+      display: flex !important;
+      align-items: center !important;
+      margin-left: auto !important;
+      margin-right: 16px !important;
+    }
+    
+    .VPNavBarAppearance .VPSwitch {
+      width: 48px !important;
+      height: 24px !important;
+      border-radius: 12px !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      position: relative !important;
+      cursor: pointer !important;
+      transition: background 0.3s ease !important;
+    }
+    
+    .VPNavBarAppearance .VPSwitch::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 2px !important;
+      left: 2px !important;
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 50% !important;
+      background: white !important;
+      transition: transform 0.3s ease !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    }
+    
+    .dark .VPNavBarAppearance .VPSwitch::after {
+      transform: translateX(24px) !important;
+    }
+    
+    .VPNavBarAppearance .VPSwitch svg {
+      display: none !important;
+    }
+    
+    /* Mobile header height and spacing */
+    .VPNavBar {
+      height: 72px !important;
+      padding: 0 16px 12px 16px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+    
+    .VPNavBarContent {
+      height: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+    }
   }
 
 
