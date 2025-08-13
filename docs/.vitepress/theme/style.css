@@ -428,16 +428,34 @@ body {
   .VPContent {
     background: rgba(255, 0, 0, 0.1) !important; /* Light red background */
     border: 2px solid red !important; /* Red border */
+    /* Make red wrapper expand to contain orange container */
+    min-height: 100dvh !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
   }
   
   .Layout {
     background: rgba(0, 255, 0, 0.1) !important; /* Light green background */
     border: 2px solid green !important; /* Green border */
+    /* Make green wrapper expand to contain orange container */
+    min-height: 100dvh !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
   }
   
   .VPApp {
     background: rgba(0, 0, 255, 0.1) !important; /* Light blue background */
     border: 2px solid blue !important; /* Blue border */
+    /* Make blue wrapper expand to contain orange container */
+    min-height: 100dvh !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
   }
   
   /* Show the footer but with minimal spacing */
