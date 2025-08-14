@@ -35,7 +35,7 @@ With global accessibility and negligible fees, Moony forms the basis of an open,
 As a composable SPL token, Moony can be embedded directly into smart contracts, payment flows, and onchain systems. Its programmable design and native compatibility unlock new forms of coordination and monetization, expanding what’s possible in digital commerce and laying the foundation for a user-owned, innovation-driven economy.
 
 
-### Potential use-cases:
+### Potential Applications:
 
 - **P2P Payments:** Enable global, permissionless transfers with near-zero fees and minimal latency. Moony empowers direct value exchange without intermediaries, expanding access to digital economies worldwide.
 - **Micropayments:** Power sub-cent transactions and unlock new monetization models, from one-time purchases to continuous streaming payments between users, apps, or autonomous agents.
@@ -48,15 +48,15 @@ As a composable SPL token, Moony can be embedded directly into smart contracts, 
 
 ## Decentralized Community
 
-Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony’s growth is shaped by the individuals and communities who use and support it. As adoption increases, the protocol’s utility and reach expand organically through collective participation and voluntary contribution.
+Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony’s growth is shaped by the individuals and communities who use and support it. As adoption grows, the protocol’s utility and reach expand organically through the voluntary efforts of individuals, communities, and independent projects.
 
 Moony’s economic architecture is designed to reward that participation. Its Proof of Liquidity (PoL) model issues new tokens only when users deposit USDC into the reserve contract, expanding liquidity and distributing supply in direct response to demand. As usage grows—through integrations, transactions, or broader adoption—the price of newly minted tokens increases via the bonding curve, aligning incentives across the network. Those who help expand Moony’s reach also stand to benefit from the value they help create.
 
-Because there is no central treasury or administrative gatekeeper, value accrues to the network itself and to those who build, integrate, educate, and transact. Growing the network is not only a shared mission but also a self-reinforcing strategy. Every new integration, creator, or community that joins strengthens the ecosystem and amplifies the potential impact of every contribution.
+Because there is no administrative gatekeeper, value accrues to the network itself and to those who build, integrate, educate, and transact. Growing the network is not only a shared mission but also a self-reinforcing strategy. Every new integration, creator, or community that joins strengthens the ecosystem and amplifies the potential impact of every contribution.
 
 Participation is open to all. Whether you’re a developer, creator, organizer, or enthusiast, there are many ways to contribute. Moony grows through grassroots energy and shared values, not central control. By offering time, talent, or ideas, participants help expand the network and strengthen its foundation. A diverse ecosystem of independent contributors is expected to emerge, including startups, nonprofits, open-source projects, and grassroots collectives. While none control the protocol, each plays a role in expanding its reach and reinforcing its resilience.
 
-Ways to contribute:
+###How To Contribute:
 
 - **Build:** Integrate Moony into apps, platforms, and tools to unlock new use cases across the digital economy.
 - **Transact:** Accept Moony for goods, services, or content to enable direct community support and alternative monetization.
@@ -74,11 +74,9 @@ Moony was launched using infrastructure developed by Flipcash Inc., an independe
 
 At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
 
-### The Flipcash app enables users to:
+### Flipcash Enables Users To:
 
-- **Interact With Reserve:** Seamlessly convert between MOONY and USDC through an intuitive interface.
-- **Send P2P Payments:** Use QR code based digital cash and URL links to simplify sending and receiving payments.
+- **Interact With Reserve:** Seamlessly convert between Moony and USDC through an intuitive interface.
+- **Send P2P Payments:** Use QR code based digital cash and URL links to send and receive payments.
 
-::: tip
 While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a digital public good, Moony can be integrated into any third party platform, protocol,wallet, or app. As an SPL-standard digital asset, it is fully compatible with the broader Solana ecosystem, ensuring broad utility, composability, and adoption.
-:::
