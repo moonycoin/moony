@@ -6,7 +6,7 @@ No tokens were allocated to any team, treasury, investors, or insiders. Instead,
 
 The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
-### Core Mechanisms
+## Core Mechanisms
 
 The Reserve Contract governs all token issuance and redemption. Users interact with the Reserve directly by exchanging USDC for Moony or vice versa, with pricing determined by an onchain bonding curve. This system ensures continuous liquidity and transparent, market‑driven distribution.
 
