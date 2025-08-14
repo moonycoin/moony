@@ -6,13 +6,13 @@ title: Proof of Liquidity
 
 # Proof of Liquidity
 
-Moony employs a distribution mechanism known as Proof of Liquidity (PoL), executed entirely through its immutable reserve smart contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
+Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented entirely through its immutable on-chain reserve contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
 
-The Proof of Liquidity model ensures that all circulating supply originates from public market activity, never from premines, insider allocations, or venture funding. Each token in circulation is issued only when USDC, a widely used, dollar‑denominated stablecoin issued by Circle Inc.,is deposited into the Reserve Contract. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. Every issuance and redemption is executed by immutable onchain logic, ensuring transparency, market‑driven pricing, and freedom from discretionary control.
+The PoL model guarantees that all circulating supply emerges from public, on-chain activity—never from premines, insider allocations, or venture funding. Each Moony token is issued in exchange for USDC, a widely used, dollar-pegged stablecoin issued by Circle Internet Group, Inc. This stable pairing offers clear pricing, lowers entry barriers, and strengthens trust among new participants. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. Every issuance and redemption is executed by immutable onchain logic, ensuring transparency, market‑driven pricing, and freedom from discretionary control.
 
 ## Capital-Based Mining
 
-Moony’s Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) mining. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants mint Moony by depositing USDC directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
+Moony’s Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) distribution models. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants mint Moony by depositing USDC directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
 
 This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only mints new Moony but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
 
