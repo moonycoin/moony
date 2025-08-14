@@ -1,6 +1,6 @@
 /**
  * Apple-Style Moony Documentation
- * Clean, minimal design with neutral colors and light blue accents
+ * Clean, minimal design with neutral colors - black, white, and grey palette
  * FORCED LIGHT MODE - NO THEME TOGGLE
  */
 
@@ -29,19 +29,21 @@
    APPLE-STYLE VARIABLES
    ================ */
 :root {
-  /* Balanced blue-grey palette */
-  --vp-c-brand-1: #4A90E2;
-  --vp-c-brand-2: #357ABD;
-  --vp-c-brand-3: #2E5A87;
+  /* Clean black, white, and grey palette */
+  --vp-c-brand-1: #1d1d1f;
+  --vp-c-brand-2: #424245;
+  --vp-c-brand-3: #6e6e73;
   --vp-c-sponsor: var(--vp-c-text-2);
   
   /* Enhanced neutral palette */
   --moony-primary: #1d1d1f;
   --moony-secondary: #515154;
-  --moony-accent: #4A90E2; /* Softer blue */
+  --moony-accent: #424245; /* Dark grey accent */
   --moony-light-gray: #f8f9fa;
   --moony-medium-gray: #6c757d;
   --moony-border: #dee2e6;
+  --moony-subtle: #f5f5f7;
+  --moony-muted: #86868b;
   
   /* Enhanced spacing */
   --space-xs: 0.5rem;
@@ -55,16 +57,18 @@
 }
 
 .dark {
-  --vp-c-brand-1: #4A90E2;
-  --vp-c-brand-2: #357ABD;
-  --vp-c-brand-3: #2E5A87;
+  --vp-c-brand-1: #f5f5f7;
+  --vp-c-brand-2: #a1a1a6;
+  --vp-c-brand-3: #86868b;
   
   --moony-primary: #f5f5f7;
   --moony-secondary: #a1a1a6;
-  --moony-accent: #4A90E2;
+  --moony-accent: #a1a1a6; /* Light grey accent */
   --moony-light-gray: #1d1d1f;
   --moony-medium-gray: #6c757d;
   --moony-border: #424245;
+  --moony-subtle: #2a2a2a;
+  --moony-muted: #6e6e73;
   
   /* Elegant gradient */
   --elegant-gradient: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.95)), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.12'/%3E%3C/svg%3E");
@@ -100,10 +104,10 @@ footer *,
    AMAZING HERO SECTION
    ================ */
 .hero-section {
-  background: white;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 50%, #f5f5f7 100%);
   padding: 80px 20px;
   text-align: center;
-  color: #333;
+  color: #1d1d1f;
   position: relative;
   overflow: hidden;
   margin-top: 120px;
@@ -116,8 +120,8 @@ footer *,
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.3;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d2d2d7' fill-opacity='0.15'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.4;
 }
 
 .hero-content {
@@ -143,21 +147,25 @@ footer *,
 
 .hero-title {
   font-size: 3rem;
-  font-weight: 100;
+  font-weight: 200;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  color: #1d1d1f;
+  text-shadow: 0 1px 2px rgba(29, 29, 31, 0.05);
 }
 
 .hero-description {
   font-size: 1.25rem;
   line-height: 1.6;
   margin: 0 0 150px 0;
-  opacity: 0.95;
+  opacity: 0.9;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  color: #515154;
+  font-weight: 400;
 }
 
 .hero-actions {
@@ -189,17 +197,19 @@ footer *,
 }
 
 .hero-button.primary {
-  background: black;
+  background: #1d1d1f;
   color: white;
-  border-color: black;
+  border-color: #1d1d1f;
+  box-shadow: 0 4px 12px rgba(29, 29, 31, 0.15);
 }
 
 
 
 .hero-button.secondary {
   background: transparent;
-  color: black;
-  border-color: black;
+  color: #1d1d1f;
+  border-color: #424245;
+  transition: all 0.2s ease;
 }
 
 
@@ -353,7 +363,7 @@ body {
   background: var(--elegant-gradient) !important;
 }
 
-/* Subtle blue glow overlay for entire page - REMOVED TO FIX GRADIENT ARTIFACT */
+/* Subtle grey glow overlay for entire page - REMOVED TO FIX GRADIENT ARTIFACT */
 /* .Layout::before,
 .VPApp::before {
   content: '';
@@ -363,7 +373,7 @@ body {
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center, 
-    rgba(74, 144, 226, 0.04) 0%, 
+    rgba(66, 66, 69, 0.04) 0%, 
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -427,9 +437,9 @@ body {
   opacity: 1 !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   filter: 
-      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
-      drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
-      drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
+      drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
+      drop-shadow(0 4px 12px rgba(66, 66, 69, 0.1))
+      drop-shadow(0 0 20px rgba(66, 66, 69, 0.08))
       brightness(1.6)
       contrast(0.6)
       saturate(0.3) !important;
@@ -452,15 +462,15 @@ body {
   background: linear-gradient(135deg, 
     rgba(29, 29, 31, 0.15) 0%, 
     rgba(81, 81, 84, 0.08) 50%,
-    rgba(74, 144, 226, 0.12) 100%);
+    rgba(66, 66, 69, 0.12) 100%);
   pointer-events: none;
   mix-blend-mode: soft-light;
   opacity: 0.25;
   transition: all 0.4s ease;
   border-radius: 50%;
   box-shadow: 
-    inset 0 0 60px rgba(74, 144, 226, 0.1),
-    0 0 40px rgba(74, 144, 226, 0.08) !important;
+    inset 0 0 60px rgba(66, 66, 69, 0.1),
+    0 0 40px rgba(66, 66, 69, 0.08) !important;
 }
 
 /* Additional glow effect for light mode only */
@@ -473,8 +483,8 @@ body {
   width: 320px;
   height: 320px;
   background: radial-gradient(circle, 
-    rgba(74, 144, 226, 0.08) 0%, 
-    rgba(74, 144, 226, 0.04) 40%,
+    rgba(66, 66, 69, 0.08) 0%, 
+    rgba(66, 66, 69, 0.04) 40%,
     transparent 70%);
   pointer-events: none;
   opacity: 0.6;
@@ -486,9 +496,9 @@ body {
 /* Enhanced filters for light mode only */
 .VPHero .image img {
   filter: 
-      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
-      drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
-      drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
+      drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
+      drop-shadow(0 4px 12px rgba(66, 66, 69, 0.1))
+      drop-shadow(0 0 20px rgba(66, 66, 69, 0.08))
       brightness(1.8)
       contrast(0.5)
       saturate(0.4)
@@ -508,9 +518,9 @@ body {
 /* Reset filters for dark mode to original appearance */
 .dark .VPHero .image img {
   filter: 
-      drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15))
-      drop-shadow(0 4px 12px rgba(74, 144, 226, 0.1))
-      drop-shadow(0 0 20px rgba(74, 144, 226, 0.08))
+      drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
+      drop-shadow(0 4px 12px rgba(66, 66, 69, 0.1))
+      drop-shadow(0 0 20px rgba(66, 66, 69, 0.08))
       brightness(1.6)
       contrast(0.6)
       saturate(0.3) !important;
@@ -552,10 +562,10 @@ body {
 }
 
 .VPHero .action .VPButton.brand {
-  background: linear-gradient(135deg, #4A90E2, #357ABD, #2E5A87) !important;
+  background: linear-gradient(135deg, #424245, #6e6e73, #86868b) !important;
   color: white !important;
   box-shadow: 
-    0 4px 20px rgba(74, 144, 226, 0.4),
+    0 4px 20px rgba(66, 66, 69, 0.4),
     0 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -577,13 +587,13 @@ body {
 .VPHero .action .VPButton.brand:hover {
   transform: translateY(-3px) !important;
   box-shadow: 
-    0 8px 32px rgba(74, 144, 226, 0.5),
+    0 8px 32px rgba(66, 66, 69, 0.5),
     0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .VPHero .action .VPButton.alt {
   background: rgba(255, 255, 255, 0.9) !important;
-  border: 2px solid rgba(74, 144, 226, 0.2) !important;
+  border: 2px solid rgba(66, 66, 69, 0.2) !important;
   color: var(--moony-primary) !important;
   backdrop-filter: blur(20px) !important;
   box-shadow: 
@@ -602,7 +612,7 @@ body {
 
 .dark .VPHero .action .VPButton.alt {
   background: rgba(29, 29, 31, 0.9) !important;
-  border: 2px solid rgba(0, 122, 255, 0.3) !important;
+  border: 2px solid rgba(66, 66, 69, 0.3) !important;
   color: var(--moony-primary) !important;
   box-shadow: 
     0 4px 20px rgba(0, 0, 0, 0.3),
@@ -944,7 +954,7 @@ body {
     .VPNavBarAppearance .VPSwitch {
       width: 44px !important;
       height: 22px !important;
-      background: #ccc !important;
+      background: #d2d2d7 !important;
       border-radius: 11px !important;
       position: relative !important;
       cursor: pointer !important;
@@ -952,7 +962,7 @@ body {
     }
     
     .dark .VPNavBarAppearance .VPSwitch {
-      background: #666 !important;
+      background: #6e6e73 !important;
     }
     
     .VPNavBarAppearance .VPSwitch::after {
@@ -1008,9 +1018,9 @@ body {
    ================ */
 .vp-doc .custom-block.tip {
     background: linear-gradient(135deg, 
-    rgba(0, 122, 255, 0.08) 0%,
-    rgba(0, 122, 255, 0.05) 100%) !important;
-  border: 2px solid rgba(0, 122, 255, 0.2) !important;
+    rgba(66, 66, 69, 0.08) 0%,
+    rgba(66, 66, 69, 0.05) 100%) !important;
+  border: 2px solid rgba(66, 66, 69, 0.2) !important;
   color: var(--moony-secondary);
   padding: 32px !important;
   border-radius: 20px !important;
@@ -1023,19 +1033,19 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 
-    0 8px 32px rgba(0, 122, 255, 0.15),
+    0 8px 32px rgba(66, 66, 69, 0.15),
     0 2px 8px rgba(0, 0, 0, 0.08) !important;
   backdrop-filter: blur(20px);
 }
 
 .dark .vp-doc .custom-block.tip {
   background: linear-gradient(135deg, 
-    rgba(0, 122, 255, 0.12) 0%, 
-    rgba(0, 122, 255, 0.08) 100%) !important;
+    rgba(66, 66, 69, 0.12) 0%, 
+    rgba(66, 66, 69, 0.08) 100%) !important;
   color: var(--moony-secondary);
-  border-color: rgba(0, 122, 255, 0.3) !important;
+  border-color: rgba(66, 66, 69, 0.3) !important;
   box-shadow: 
-    0 8px 32px rgba(0, 122, 255, 0.2),
+    0 8px 32px rgba(66, 66, 69, 0.2),
     0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -1588,7 +1598,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -1597,7 +1607,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
+    drop-shadow(0 12px 32px rgba(66, 66, 69, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -1610,7 +1620,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -1778,13 +1788,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  border-top: 1px solid rgba(66, 66, 69, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(0, 122, 255, 0.2) !important;
+  border-top-color: rgba(66, 66, 69, 0.2) !important;
 }
 
 
@@ -1865,7 +1875,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(0, 122, 255, 0.1);
+  background: rgba(66, 66, 69, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -1876,11 +1886,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(66, 66, 69, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 122, 255, 0.1);
+  border-top: 1px solid rgba(66, 66, 69, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -1993,7 +2003,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center,
-    rgba(0, 122, 255, 0.04) 0%,
+    rgba(66, 66, 69, 0.04) 0%,
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -2011,7 +2021,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
               repeating-conic-gradient(
             from 0deg at 50% 50%,
             transparent 0deg,
-            rgba(74, 144, 226, 0.002) 1deg,
+            rgba(66, 66, 69, 0.002) 1deg,
             transparent 2deg
           );
   opacity: 0.8;
@@ -2030,12 +2040,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           background-image:
           radial-gradient(
             circle at 25% 25%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           ),
           radial-gradient(
             circle at 75% 75%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           );
   opacity: 0.6;
@@ -2084,7 +2094,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarHamburger:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: scale(1.05);
   }
   
@@ -2096,7 +2106,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarMenuLink:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
 }
@@ -2122,7 +2132,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem .link:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
   
@@ -2132,7 +2142,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem.is-active > .item > .link {
-    background: rgba(74, 144, 226, 0.15);
+    background: rgba(66, 66, 69, 0.15);
     border-left: 3px solid var(--moony-accent);
     font-weight: 600;
   }
@@ -2190,12 +2200,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin: 1rem 0;
     padding: 1rem 1.25rem;
     border-left: 4px solid var(--moony-accent);
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-radius: var(--mobile-border-radius);
   }
   
   .dark .vp-doc blockquote {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -2247,12 +2257,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc code {
     font-size: 14px;
     padding: 0.25rem 0.5rem;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     border-radius: 4px;
   }
   
   .dark .vp-doc code {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .vp-doc pre code {
@@ -2274,17 +2284,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-left: 4px solid var(--moony-accent);
   }
   
   .dark .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .vp-doc .custom-block.warning {
     background: rgba(255, 193, 7, 0.05);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #d2d2d7;
   }
   
   .dark .vp-doc .custom-block.warning {
@@ -2508,11 +2518,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-section a:hover {
     color: var(--moony-accent);
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .dark .footer-section a:hover {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .footer-bottom {
@@ -2550,7 +2560,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transition: all 0.2s ease;
   }
   
@@ -2759,7 +2769,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPLocalSearch .input:focus {
     outline: none;
     border-color: var(--moony-accent);
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    box-shadow: 0 0 0 3px rgba(66, 66, 69, 0.1);
   }
   
   .VPLocalSearch .result {
@@ -2790,7 +2800,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPLocalSearch .result-item:hover,
   .VPLocalSearch .result-item:focus {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -2869,7 +2879,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPDocAside .back-to-top:hover {
     background: var(--vp-c-brand-2);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+    box-shadow: 0 4px 12px rgba(66, 66, 69, 0.3);
   }
   
   .VPDocAside .back-to-top:active {
@@ -3491,7 +3501,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -3500,7 +3510,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
+    drop-shadow(0 12px 32px rgba(66, 66, 69, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -3513,7 +3523,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -3681,13 +3691,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  border-top: 1px solid rgba(66, 66, 69, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(0, 122, 255, 0.2) !important;
+  border-top-color: rgba(66, 66, 69, 0.2) !important;
 }
 
 
@@ -3768,7 +3778,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(0, 122, 255, 0.1);
+  background: rgba(66, 66, 69, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -3779,11 +3789,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(66, 66, 69, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 122, 255, 0.1);
+  border-top: 1px solid rgba(66, 66, 69, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -3896,7 +3906,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center,
-    rgba(0, 122, 255, 0.04) 0%,
+    rgba(66, 66, 69, 0.04) 0%,
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -3914,7 +3924,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
               repeating-conic-gradient(
             from 0deg at 50% 50%,
             transparent 0deg,
-            rgba(74, 144, 226, 0.002) 1deg,
+            rgba(66, 66, 69, 0.002) 1deg,
             transparent 2deg
           );
   opacity: 0.8;
@@ -3933,12 +3943,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           background-image:
           radial-gradient(
             circle at 25% 25%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           ),
           radial-gradient(
             circle at 75% 75%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           );
   opacity: 0.6;
@@ -3987,7 +3997,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarHamburger:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: scale(1.05);
   }
   
@@ -3999,7 +4009,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarMenuLink:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
 }
@@ -4025,7 +4035,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem .link:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
   
@@ -4035,7 +4045,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem.is-active > .item > .link {
-    background: rgba(74, 144, 226, 0.15);
+    background: rgba(66, 66, 69, 0.15);
     border-left: 3px solid var(--moony-accent);
     font-weight: 600;
   }
@@ -4093,12 +4103,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin: 1rem 0;
     padding: 1rem 1.25rem;
     border-left: 4px solid var(--moony-accent);
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-radius: var(--mobile-border-radius);
   }
   
   .dark .vp-doc blockquote {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -4150,12 +4160,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc code {
     font-size: 14px;
     padding: 0.25rem 0.5rem;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     border-radius: 4px;
   }
   
   .dark .vp-doc code {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .vp-doc pre code {
@@ -4177,17 +4187,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-left: 4px solid var(--moony-accent);
   }
   
   .dark .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .vp-doc .custom-block.warning {
     background: rgba(255, 193, 7, 0.05);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #d2d2d7;
   }
   
   .dark .vp-doc .custom-block.warning {
@@ -4397,11 +4407,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-section a:hover {
     color: var(--moony-accent);
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .dark .footer-section a:hover {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .footer-bottom {
@@ -4439,7 +4449,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transition: all 0.2s ease;
   }
   
@@ -4648,7 +4658,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPLocalSearch .input:focus {
     outline: none;
     border-color: var(--moony-accent);
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    box-shadow: 0 0 0 3px rgba(66, 66, 69, 0.1);
   }
   
   .VPLocalSearch .result {
@@ -4679,7 +4689,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPLocalSearch .result-item:hover,
   .VPLocalSearch .result-item:focus {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -5319,7 +5329,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -5328,7 +5338,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
+    drop-shadow(0 12px 32px rgba(66, 66, 69, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -5341,7 +5351,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -5509,13 +5519,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  border-top: 1px solid rgba(66, 66, 69, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(0, 122, 255, 0.2) !important;
+  border-top-color: rgba(66, 66, 69, 0.2) !important;
 }
 
 
@@ -5596,7 +5606,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(0, 122, 255, 0.1);
+  background: rgba(66, 66, 69, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -5607,11 +5617,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(66, 66, 69, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 122, 255, 0.1);
+  border-top: 1px solid rgba(66, 66, 69, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -5724,7 +5734,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center,
-    rgba(0, 122, 255, 0.04) 0%,
+    rgba(66, 66, 69, 0.04) 0%,
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -5742,7 +5752,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
               repeating-conic-gradient(
             from 0deg at 50% 50%,
             transparent 0deg,
-            rgba(74, 144, 226, 0.002) 1deg,
+            rgba(66, 66, 69, 0.002) 1deg,
             transparent 2deg
           );
   opacity: 0.8;
@@ -5761,12 +5771,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           background-image:
           radial-gradient(
             circle at 25% 25%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           ),
           radial-gradient(
             circle at 75% 75%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           );
   opacity: 0.6;
@@ -5815,7 +5825,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarHamburger:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: scale(1.05);
   }
   
@@ -5827,7 +5837,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarMenuLink:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
 }
@@ -5853,7 +5863,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem .link:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
   
@@ -5863,7 +5873,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem.is-active > .item > .link {
-    background: rgba(74, 144, 226, 0.15);
+    background: rgba(66, 66, 69, 0.15);
     border-left: 3px solid var(--moony-accent);
     font-weight: 600;
   }
@@ -5921,12 +5931,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin: 1rem 0;
     padding: 1rem 1.25rem;
     border-left: 4px solid var(--moony-accent);
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-radius: var(--mobile-border-radius);
   }
   
   .dark .vp-doc blockquote {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -5978,12 +5988,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc code {
     font-size: 14px;
     padding: 0.25rem 0.5rem;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     border-radius: 4px;
   }
   
   .dark .vp-doc code {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .vp-doc pre code {
@@ -6005,17 +6015,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-left: 4px solid var(--moony-accent);
   }
   
   .dark .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .vp-doc .custom-block.warning {
     background: rgba(255, 193, 7, 0.05);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #d2d2d7;
   }
   
   .dark .vp-doc .custom-block.warning {
@@ -6239,11 +6249,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-section a:hover {
     color: var(--moony-accent);
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .dark .footer-section a:hover {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .footer-bottom {
@@ -6281,7 +6291,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transition: all 0.2s ease;
   }
   
@@ -6490,7 +6500,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPLocalSearch .input:focus {
     outline: none;
     border-color: var(--moony-accent);
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    box-shadow: 0 0 0 3px rgba(66, 66, 69, 0.1);
   }
   
   .VPLocalSearch .result {
@@ -6521,7 +6531,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPLocalSearch .result-item:hover,
   .VPLocalSearch .result-item:focus {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -7161,7 +7171,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -7170,7 +7180,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
+    drop-shadow(0 12px 32px rgba(66, 66, 69, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -7183,7 +7193,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -7351,13 +7361,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  border-top: 1px solid rgba(66, 66, 69, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(0, 122, 255, 0.2) !important;
+  border-top-color: rgba(66, 66, 69, 0.2) !important;
 }
 
 
@@ -7438,7 +7448,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(0, 122, 255, 0.1);
+  background: rgba(66, 66, 69, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -7449,11 +7459,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(66, 66, 69, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 122, 255, 0.1);
+  border-top: 1px solid rgba(66, 66, 69, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -7566,7 +7576,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center,
-    rgba(0, 122, 255, 0.04) 0%,
+    rgba(66, 66, 69, 0.04) 0%,
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -7584,7 +7594,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
               repeating-conic-gradient(
             from 0deg at 50% 50%,
             transparent 0deg,
-            rgba(74, 144, 226, 0.002) 1deg,
+            rgba(66, 66, 69, 0.002) 1deg,
             transparent 2deg
           );
   opacity: 0.8;
@@ -7603,12 +7613,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           background-image:
           radial-gradient(
             circle at 25% 25%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           ),
           radial-gradient(
             circle at 75% 75%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           );
   opacity: 0.6;
@@ -7657,7 +7667,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarHamburger:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: scale(1.05);
   }
   
@@ -7669,7 +7679,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarMenuLink:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
 }
@@ -7695,7 +7705,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem .link:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
   
@@ -7705,7 +7715,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem.is-active > .item > .link {
-    background: rgba(74, 144, 226, 0.15);
+    background: rgba(66, 66, 69, 0.15);
     border-left: 3px solid var(--moony-accent);
     font-weight: 600;
   }
@@ -7763,12 +7773,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin: 1rem 0;
     padding: 1rem 1.25rem;
     border-left: 4px solid var(--moony-accent);
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-radius: var(--mobile-border-radius);
   }
   
   .dark .vp-doc blockquote {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -7820,12 +7830,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc code {
     font-size: 14px;
     padding: 0.25rem 0.5rem;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     border-radius: 4px;
   }
   
   .dark .vp-doc code {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .vp-doc pre code {
@@ -7847,17 +7857,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-left: 4px solid var(--moony-accent);
   }
   
   .dark .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .vp-doc .custom-block.warning {
     background: rgba(255, 193, 7, 0.05);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #d2d2d7;
   }
   
   .dark .vp-doc .custom-block.warning {
@@ -8067,11 +8077,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-section a:hover {
     color: var(--moony-accent);
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .dark .footer-section a:hover {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .footer-bottom {
@@ -8109,7 +8119,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transition: all 0.2s ease;
   }
   
@@ -8318,7 +8328,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPLocalSearch .input:focus {
     outline: none;
     border-color: var(--moony-accent);
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    box-shadow: 0 0 0 3px rgba(66, 66, 69, 0.1);
   }
   
   .VPLocalSearch .result {
@@ -8349,7 +8359,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPLocalSearch .result-item:hover,
   .VPLocalSearch .result-item:focus {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -8989,7 +8999,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.2))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.2))
     sepia(1)
     hue-rotate(300deg)
     saturate(2)
@@ -8998,7 +9008,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 
 .VPHero .image img:hover {
   filter: 
-    drop-shadow(0 12px 32px rgba(0, 122, 255, 0.3))
+    drop-shadow(0 12px 32px rgba(66, 66, 69, 0.3))
     sepia(1)
     hue-rotate(300deg)
     saturate(2.2)
@@ -9011,7 +9021,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 /*
 .VPHero .image img {
   filter: 
-    drop-shadow(0 8px 24px rgba(0, 122, 255, 0.15))
+    drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
     grayscale(0.3)
     sepia(0.4)
     hue-rotate(300deg)
@@ -9179,13 +9189,13 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 .VPFooter {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-top: 1px solid rgba(0, 122, 255, 0.1) !important;
+  border-top: 1px solid rgba(66, 66, 69, 0.1) !important;
   padding: 60px 40px 40px !important;
 }
 
 .dark .VPFooter {
   background: rgba(24, 24, 27, 0.95) !important;
-  border-top-color: rgba(0, 122, 255, 0.2) !important;
+  border-top-color: rgba(66, 66, 69, 0.2) !important;
 }
 
 
@@ -9266,7 +9276,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(0, 122, 255, 0.1);
+  background: rgba(66, 66, 69, 0.1);
   border-radius: 8px;
   color: var(--moony-accent);
   transition: all 0.3s ease;
@@ -9277,11 +9287,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   background: var(--moony-accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(66, 66, 69, 0.3);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0, 122, 255, 0.1);
+  border-top: 1px solid rgba(66, 66, 69, 0.1);
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
@@ -9394,7 +9404,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   right: 0;
   bottom: 0;
   background: radial-gradient(ellipse at top center,
-    rgba(0, 122, 255, 0.04) 0%,
+    rgba(66, 66, 69, 0.04) 0%,
     transparent 60%);
   pointer-events: none;
   z-index: 0;
@@ -9412,7 +9422,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
               repeating-conic-gradient(
             from 0deg at 50% 50%,
             transparent 0deg,
-            rgba(74, 144, 226, 0.002) 1deg,
+            rgba(66, 66, 69, 0.002) 1deg,
             transparent 2deg
           );
   opacity: 0.8;
@@ -9431,12 +9441,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
           background-image:
           radial-gradient(
             circle at 25% 25%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           ),
           radial-gradient(
             circle at 75% 75%,
-            rgba(74, 144, 226, 0.001) 0%,
+            rgba(66, 66, 69, 0.001) 0%,
             transparent 50%
           );
   opacity: 0.6;
@@ -9485,7 +9495,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarHamburger:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: scale(1.05);
   }
   
@@ -9497,7 +9507,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPNavBarMenuLink:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
 }
@@ -9523,7 +9533,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem .link:hover {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transform: translateX(4px);
   }
   
@@ -9533,7 +9543,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .VPSidebarItem.is-active > .item > .link {
-    background: rgba(74, 144, 226, 0.15);
+    background: rgba(66, 66, 69, 0.15);
     border-left: 3px solid var(--moony-accent);
     font-weight: 600;
   }
@@ -9591,12 +9601,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     margin: 1rem 0;
     padding: 1rem 1.25rem;
     border-left: 4px solid var(--moony-accent);
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-radius: var(--mobile-border-radius);
   }
   
   .dark .vp-doc blockquote {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
@@ -9648,12 +9658,12 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .vp-doc code {
     font-size: 14px;
     padding: 0.25rem 0.5rem;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     border-radius: 4px;
   }
   
   .dark .vp-doc code {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .vp-doc pre code {
@@ -9675,17 +9685,17 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   }
   
   .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.05);
+    background: rgba(66, 66, 69, 0.05);
     border-left: 4px solid var(--moony-accent);
   }
   
   .dark .vp-doc .custom-block.tip {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .vp-doc .custom-block.warning {
     background: rgba(255, 193, 7, 0.05);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #d2d2d7;
   }
   
   .dark .vp-doc .custom-block.warning {
@@ -9903,11 +9913,11 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .footer-section a:hover {
     color: var(--moony-accent);
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
   
   .dark .footer-section a:hover {
-    background: rgba(74, 144, 226, 0.2);
+    background: rgba(66, 66, 69, 0.2);
   }
   
   .footer-bottom {
@@ -9945,7 +9955,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
     transition: all 0.2s ease;
   }
   
@@ -10154,7 +10164,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .VPLocalSearch .input:focus {
     outline: none;
     border-color: var(--moony-accent);
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    box-shadow: 0 0 0 3px rgba(66, 66, 69, 0.1);
   }
   
   .VPLocalSearch .result {
@@ -10185,7 +10195,7 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .VPLocalSearch .result-item:hover,
   .VPLocalSearch .result-item:focus {
-    background: rgba(74, 144, 226, 0.1);
+    background: rgba(66, 66, 69, 0.1);
   }
 }
 
