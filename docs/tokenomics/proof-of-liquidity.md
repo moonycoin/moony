@@ -8,7 +8,15 @@ title: Proof of Liquidity
 
 Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented entirely through its immutable on-chain reserve contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
 
-The PoL model guarantees that all circulating supply emerges from public, on-chain activity—never from premines, insider allocations, or venture funding. Each Moony token is issued in exchange for USDC, a widely used, dollar-pegged stablecoin issued by Circle Internet Group, Inc. This stable pairing offers clear pricing, lowers entry barriers, and strengthens trust among new participants. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. Every issuance and redemption is executed by immutable onchain logic, ensuring transparency, market‑driven pricing, and freedom from discretionary control.
+The PoL model guarantees that all circulating supply emerges from public, on-chain activity. Each Moony token is issued in exchange for USDC, a widely used, dollar-pegged stablecoin issued by Circle Internet Group, Inc. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. Every issuance and redemption is executed by immutable onchain logic, ensuring transparency, market‑driven pricing, and freedom from discretionary control.
+
+The Moony reserve contract holds all user USDC deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+
+### Key Properties:
+
+- **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
+- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
+- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.
 
 ## Capital-Based Mining
 
@@ -16,13 +24,13 @@ Moony’s Proof of Liquidity (PoL) mechanism offers a capital‑driven alternati
 
 This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only mints new Moony but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
 
+By combining PoL with Solana’s carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
+
 This process is:
 
-- **Public and market-driven**: Anyone can participate as demand arises, without permission or centralized control.
-- **Deterministic and transparent**: The bonding curve fully governs issuance and pricing, removing subjective decision-making.
-- **Economically constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
-
-By combining PoL with Solana’s carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
+- **Permissionless**: Anyone can participate as demand arises, without permission or centralized control.
+- **Economically Constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
+- **Energy Efficient**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
 
 ## Fee Model
 
