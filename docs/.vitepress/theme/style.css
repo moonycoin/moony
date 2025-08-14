@@ -175,6 +175,14 @@ footer *,
   display: block;
   margin: 0 auto;
   /* Shadow removed */
+  background: transparent !important;
+  mix-blend-mode: multiply;
+}
+
+/* Ensure SVG logo renders properly without background */
+.hero-image[src*="logo-light.svg"] {
+  background: transparent !important;
+  mix-blend-mode: multiply;
 }
 
 .hero-title {
@@ -10618,6 +10626,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   
   .hero-image {
     height: 100px;
+    background: transparent;
+    mix-blend-mode: multiply;
   }
   
   .hero-actions {
@@ -10694,6 +10704,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .hero-image {
     height: 80px;
     margin-bottom: 20px;
+    background: transparent;
+    mix-blend-mode: multiply;
   }
   
   .hero-logo {
@@ -10788,6 +10800,8 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .hero-image {
     height: 70px;
     margin-bottom: 18px;
+    background: transparent;
+    mix-blend-mode: multiply;
   }
   
   .hero-logo {
