@@ -300,51 +300,7 @@ footer *,
   font-size: 1.1rem;
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 60px 20px;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-description {
-    font-size: 1.1rem;
-    margin: 0 0 125px 0;
-  }
-  
-  .hero-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .hero-button {
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 60px 20px;
-  }
-  
-  .feature-card {
-    padding: 30px 20px;
-  }
-  
-  .content-section {
-    padding: 40px 20px;
-    margin: 20px;
-  }
-  
-  .content-section h2 {
-    font-size: 2rem;
-  }
-}
+
 
 /* ================
    FULL PAGE GRADIENT BACKGROUND
