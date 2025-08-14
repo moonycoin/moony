@@ -1388,6 +1388,16 @@ body {
   margin-right: 4px !important;
 }
 
+/* Fix sidebar link bracket positioning */
+.VPSidebarItem .link {
+  position: relative !important;
+}
+
+.VPSidebarItem .link:hover::after {
+  right: -2px !important;
+  position: absolute !important;
+}
+
 /* ================
    CLEAN LIST STYLING
    ================ */
