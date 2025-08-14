@@ -115,6 +115,8 @@ footer *,
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hero-section::before {
@@ -127,6 +129,11 @@ footer *,
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d2d2d7' fill-opacity='0.08'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   opacity: 0.3;
   pointer-events: none;
+}
+
+/* Prevent any content from appearing below hero on home page */
+.Layout.is-home .VPContent > *:not(.hero-section) {
+  display: none !important;
 }
 
 .hero-content {
