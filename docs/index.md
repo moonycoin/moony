@@ -28,23 +28,5 @@ layout: home
   </div>
 </div>
 
-<div class="features-grid">
-  <div class="feature-card">
-    <div class="feature-icon">🔒</div>
-    <h3>Permissionless</h3>
-    <p>Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-icon">⚖️</div>
-    <h3>Fair Distribution</h3>
-    <p>The entire supply is deposited into the reserve at launch. No allocation to team, treasury, investors, or insiders.</p>
-  </div>
-  
-  <div class="feature-card">
-    <div class="feature-icon">💧</div>
-    <h3>Proof of Liquidity</h3>
-    <p>Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market.</p>
-  </div>
-</div>
+
 
