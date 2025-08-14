@@ -17,10 +17,10 @@ hero:
       A decentralized digital asset designed to facilitate seamless, permissionless transactions without intermediaries. 
       Built on Solana with immutable smart contracts for complete transparency and open participation.
     </p>
-    <div class="hero-actions">
-      <a href="/tokenomics/reserve-contract" class="hero-button primary">Learn About Tokenomics</a>
-      <a href="/use-cases/ecosystem" class="hero-button secondary">Explore Use Cases</a>
-    </div>
+            <div class="hero-actions">
+          <a href="/docs" class="hero-button primary">View Docs</a>
+          <a href="https://github.com/moonycoin" class="hero-button secondary">View Github</a>
+        </div>
   </div>
 </div>
 

@@ -158,25 +158,25 @@
 }
 
 .hero-button.primary {
-  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  background: black;
   color: white;
-  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .hero-button.primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.6);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
 .hero-button.secondary {
-  background: transparent;
+  background: black;
   color: white;
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: black;
 }
 
 .hero-button.secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: #333;
+  border-color: #333;
   transform: translateY(-2px);
 }
 
