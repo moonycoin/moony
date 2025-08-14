@@ -81,7 +81,6 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border: 2px solid red !important; /* Debug border */
 }
 
 .VPHero .container {
@@ -98,8 +97,6 @@
   align-items: center !important;
   justify-content: center !important;
   margin-bottom: 40px !important;
-  border: 2px solid blue !important; /* Debug border */
-  min-height: 200px !important; /* Force height */
 }
 
 .VPHero .image img {
@@ -107,10 +104,6 @@
   width: auto !important;
   filter: drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15)) !important;
   transition: all 0.3s ease !important;
-  display: block !important; /* Force display */
-  visibility: visible !important; /* Force visibility */
-  opacity: 1 !important; /* Force opacity */
-  border: 2px solid green !important; /* Debug border */
 }
 
 .VPHero .image img:hover {
