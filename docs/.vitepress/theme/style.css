@@ -108,9 +108,13 @@ footer *,
   padding: 80px 20px;
   text-align: center;
   color: #1d1d1f;
-  position: relative;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
