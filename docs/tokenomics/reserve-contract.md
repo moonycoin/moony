@@ -1,8 +1,8 @@
 # Reserve Contract
 
-Moony has a permanently capped supply of 21 million tokens. At genesis, the entire supply is deposited into the Moony reserve, an immutable smart contract deployed on the Solana blockchain. It serves as the foundation of Moony's distribution system, enabling anyone to acquire or redeem tokens directly onchain without intermediaries. 
+Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a smart contract reserve deployed on the Solana blockchain, enabling users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Internet Group, Inc.
 
- No tokens were allocated to any team, treasury, investors, or insiders. Instead, the supply remains unissued until users interact with the contract. This design ensures a fair start, eliminates insider advantages, and aligns issuance with real demand through onchain interaction.
+No tokens were allocated to any team, treasury, investors, or insiders. Instead, the supply remains unissued until users interact with the reserve contract. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
 
 ### Core Mechanisms
 
