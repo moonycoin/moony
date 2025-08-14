@@ -1,22 +1,20 @@
 # Reserve Contract
 
-The Moony reserve is an immutable smart contract deployed on the Solana blockchain. It serves as the foundation of Moony's distribution system, enabling anyone to acquire or redeem tokens directly onchain without intermediaries. 
+Moony has a permanently capped supply of 21 million tokens. At genesis, the entire supply is deposited into the Moony reserve, an immutable smart contract deployed on the Solana blockchain. It serves as the foundation of Moony's distribution system, enabling anyone to acquire or redeem tokens directly onchain without intermediaries. 
 
-Moony has a permanently capped supply of 21 million tokens. At genesis, the entire supply is deposited into the reserve contract. No tokens were allocated to any team, treasury, investors, or insiders. Instead, the supply remains unissued until users interact with the contract.
+ No tokens were allocated to any team, treasury, investors, or insiders. Instead, the supply remains unissued until users interact with the contract. This design ensures a fair start, eliminates insider advantages, and aligns issuance with real demand through onchain interaction.
 
-The design ensures a fair start, eliminates insider advantages, and aligns issuance with real demand through onchain interaction. This design enshrines Moony's commitment to fairness, transparency, and decentralization.
+### Core Mechanisms
 
-## Core Mechanisms
+The Reserve Contract governs all token issuance and redemption. Users interact with the Reserve directly by exchanging USDC for Moony or vice versa, with pricing determined by an onchain bonding curve. This system ensures continuous liquidity and transparent, market‑driven distribution.
 
-The Reserve Contract governs all token issuance and redemption. Users interact directly by exchanging USDC for Moony or vice versa, with pricing determined by an onchain bonding curve. This system ensures continuous liquidity and transparent, market‑driven distribution.
-
-- **Proof of Liquidity:** All circulating Moony is backed 1:1 by USDC held in the contract, ensuring full redeemability and reinforcing user confidence in the protocol. 
+- **Proof of Liquidity:** All circulating Moony is backed by USDC held in the contract, ensuring redeemability and reinforcing user confidence in the protocol. 
 
 - **Bonding Curve:** Moony’s pricing follows a mathematical curve that adjusts dynamically based on circulating supply, creating a transparent and predictable pricing model.
 
 Together, these mechanisms make the Reserve Contract the core of Moony’s architecture. Fully onchain, autonomous, and immutable, it operates without control from any foundation, team, or privileged actor. The rules that define issuance, pricing, and redemption are permanently encoded in its smart contract, ensuring openness and finality from inception.
 
-## Design Principles
+### Design Principles
 
 - **Immutable:** The Reserve Contract is unchangeable once deployed. It has no upgrade path, admin keys, or privileged access. The rules governing issuance, pricing, and redemption are fixed and permanently encoded. Users are protected from governance risk, policy changes, or centralized interference.
 
