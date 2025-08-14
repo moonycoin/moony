@@ -8,9 +8,9 @@ title: Proof of Liquidity
 
 Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented entirely through its immutable on-chain reserve contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
 
-The PoL model guarantees that all circulating supply emerges from public, on-chain activity. Each Moony token is issued in exchange for USDC, a widely used, dollar-pegged stablecoin issued by Circle Internet Group, Inc. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. Every issuance and redemption is executed by immutable onchain logic, ensuring transparency, market‑driven pricing, and freedom from discretionary control.
+Each Moony token is issued in exchange for USDC, a widely used, dollar-pegged stablecoin issued by Circle Internet Group, Inc. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. 
 
-The Moony reserve contract holds all user USDC deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+The Moony reserve contract holds all USDC deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
 ### Key Properties:
 
