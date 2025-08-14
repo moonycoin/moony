@@ -150,29 +150,28 @@
 
 .hero-button {
   display: inline-block;
-  padding: 18px 36px;
-  border-radius: 8px;
+  padding: 16px 32px;
+  border-radius: 0;
   text-decoration: none !important;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 1px solid black;
   position: relative;
-  overflow: hidden;
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  background: transparent;
 }
 
 .hero-button.primary {
   background: black;
   color: white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: black;
 }
 
 
 
 .hero-button.secondary {
-  background: black;
-  color: white;
+  background: transparent;
+  color: black;
   border-color: black;
 }
 
