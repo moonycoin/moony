@@ -73,7 +73,7 @@ export default {
       { text: 'Resources', link: '/resources/community' }
     ],
     sidebar: [
-      { text: 'Getting Started', link: '/' },
+      { text: 'Getting Started', link: '/getting-started' },
       {
         text: 'Tokenomics',
         items: [
