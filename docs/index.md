@@ -12,7 +12,7 @@ layout: home
           Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed by an immutable smart contract. This design removes all forms of discretionary control and enables open participation in internet capital markets.
         </p>
         <div class="hero-actions">
-          <a href="/docs" class="hero-button primary">
+          <a href="/getting-started" class="hero-button primary">
             <svg class="docs-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
               <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
             </svg>
