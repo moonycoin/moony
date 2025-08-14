@@ -94,7 +94,7 @@
   padding: 0 !important;
   width: 100% !important;
   text-align: center !important;
-  height: 50vh !important;
+  height: 100vh !important;
 }
 
 .VPHero .image img {
@@ -149,11 +149,15 @@
   .VPHero .image {
     grid-column: 1 !important;
     grid-row: 1 !important;
-    padding: 60px 20px 40px 20px !important;
+    padding: 0 !important;
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   
   .VPHero .image img {
-    height: 50vh !important;
+    height: 60vh !important;
   }
   
   .VPHero .tagline {
