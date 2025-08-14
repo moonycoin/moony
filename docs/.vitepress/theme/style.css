@@ -71,6 +71,64 @@
 }
 
 /* ================
+   SIMPLE HERO SECTION
+   ================ */
+.VPHero {
+  text-align: center !important;
+  padding: 80px 20px 60px !important;
+  background: transparent !important;
+  min-height: 60vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.VPHero .container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.VPHero .image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 40px !important;
+}
+
+.VPHero .image img {
+  height: 200px !important;
+  width: auto !important;
+  filter: drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15)) !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPHero .image img:hover {
+  transform: scale(1.05) !important;
+  filter: drop-shadow(0 12px 32px rgba(74, 144, 226, 0.25)) !important;
+}
+
+/* Mobile responsive hero */
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 60px 20px 40px !important;
+    min-height: 50vh !important;
+  }
+  
+  .VPHero .image img {
+    height: 150px !important;
+  }
+  
+  .vp-doc {
+    margin: 40px auto 0px !important;
+    padding: 30px 20px 40px !important;
+  }
+}
+
+/* ================
    FULL PAGE GRADIENT BACKGROUND
    ================ */
 .Layout,
@@ -451,7 +509,7 @@ body {
   backdrop-filter: blur(20px) !important;
   border-radius: 24px !important;
   padding: 40px 40px 60px !important;
-  margin: 0px auto 20px !important;
+  margin: 60px auto 20px !important;
   max-width: 1000px !important;
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.08),
@@ -10680,3 +10738,4 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
    SIMPLE MOBILE FOOTER - NO COMPLEX TRANSFORMS
    ================ */
 /* Mobile footer appears normally without complex positioning */
+  
