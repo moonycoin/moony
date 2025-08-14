@@ -23,143 +23,7 @@
   color-scheme: light;
 }
 
-/* ================
-   COMPLETELY DIFFERENT LAYOUT - LOGO DOMINATES SCREEN
-   ================ */
-.VPHero {
-  text-align: left !important;
-  padding: 0 !important;
-  background: #000000 !important;
-  min-height: 100vh !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
 
-/* Animated background with moving particles */
-.VPHero::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  background-image: 
-    radial-gradient(2px 2px at 40px 60px, #ffffff, transparent),
-    radial-gradient(2px 2px at 20px 50px, #ffffff, transparent),
-    radial-gradient(2px 2px at 30px 100px, #ffffff, transparent),
-    radial-gradient(2px 2px at 40px 60px, #ffffff, transparent),
-    radial-gradient(2px 2px at 110px 90px, #ffffff, transparent),
-    radial-gradient(2px 2px at 90px 40px, #ffffff, transparent) !important;
-  background-repeat: repeat !important;
-  background-size: 200px 200px !important;
-  animation: particleMove 20s linear infinite !important;
-  opacity: 0.3 !important;
-  pointer-events: none !important;
-}
-
-@keyframes particleMove {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-200px); }
-}
-
-.VPHero .container {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: relative !important;
-  z-index: 2 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: auto !important;
-  min-height: 100vh !important;
-}
-
-.VPHero .main {
-  display: contents !important;
-}
-
-/* Centered logo that dominates */
-.VPHero .image {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  position: relative !important;
-  padding: 0 !important;
-  width: 100% !important;
-  text-align: center !important;
-  height: auto !important;
-  margin-bottom: 40px !important;
-  order: 1 !important;
-}
-
-.VPHero .image img {
-  height: 250px !important;
-  width: auto !important;
-  filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.3)) !important;
-  transition: all 0.3s ease !important;
-  position: relative !important;
-  z-index: 3 !important;
-}
-
-/* Content underneath logo - vertical flow */
-.VPHero .tagline {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-  align-items: center !important;
-  padding: 0 !important;
-  font-size: 3.5rem !important;
-  color: #ffffff !important;
-  font-weight: 300 !important;
-  line-height: 1.2 !important;
-  max-width: 800px !important;
-  margin: 0 auto !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif !important;
-  letter-spacing: -0.03em !important;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
-  text-align: center !important;
-  text-transform: lowercase !important;
-  width: 100% !important;
-  order: 2 !important;
-}
-
-
-
-/* Mobile - Stack vertically */
-@media (max-width: 768px) {
-  .VPHero {
-    text-align: center !important;
-    padding: 20px 0 !important;
-  }
-  
-  .VPHero .container {
-    height: auto !important;
-    min-height: auto !important;
-    padding: 0 20px !important;
-  }
-  
-  .VPHero .image {
-    padding: 0 !important;
-    margin-bottom: 30px !important;
-  }
-  
-  .VPHero .image img {
-    height: 50vh !important;
-  }
-  
-  .VPHero .tagline {
-    padding: 0 20px !important;
-    font-size: 2.5rem !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-}
 
 /* ================
    APPLE-STYLE VARIABLES
@@ -275,46 +139,12 @@ body {
 /* Ensure content is above the overlay */
 .VPNav,
 .VPContent,
-.VPHero,
 .vp-doc {
   position: relative;
   z-index: 1;
 }
 
-/* ================
-   PREMIUM HERO SECTION STYLING
-   ================ */
-.VPHero {
-  padding: 100px 40px 80px !important;
-  background: transparent !important;
-  position: relative;
-  overflow: hidden;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 85vh !important;
-}
 
-.VPHero .container {
-  max-width: 1300px !important;
-  margin: 0 auto !important;
-  position: relative;
-  z-index: 1;
-  width: 100% !important;
-  display: grid !important;
-  grid-template-columns: 1fr 350px !important;
-  gap: 100px !important;
-  align-items: center !important;
-  padding: 0 40px !important;
-}
-
-.VPHero .main {
-  text-align: left !important;
-  margin: 0 !important;
-  max-width: 700px !important;
-  padding: 0 20px 0 0 !important;
-  order: 1;
-}
 
 .VPHero .text {
   font-size: 5rem !important;

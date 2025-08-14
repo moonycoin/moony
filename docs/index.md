@@ -7,7 +7,9 @@ hero:
   alt: Moony Logo
 ---
 
-# Getting Started
+# Moony
+
+**Permissionless transactions with Proof of Liquidity**
 
 Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed entirely by an immutable smart contract. This design ensures full transparency, removes all forms of discretionary control, and enables open participation in emerging internet capital markets.
 
@@ -53,19 +55,17 @@ Moony combines global accessibility with negligible fees and onchain transparenc
 
 # Decentralized Community
 
-Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony’s evolution is driven by the individuals and communities who participate in its ecosystem. As adoption grows, the protocol’s utility and reach expand organically through collective engagement and voluntary contribution.
+Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony's evolution is driven by the individuals and communities who participate in its ecosystem. As adoption grows, the protocol's utility and reach expand organically through collective engagement and voluntary contribution.
 
-Participation is open to all. Whether you’re a developer, creator, organizer, or enthusiast, there are many ways to contribute. Moony grows through grassroots energy and shared values, not central control. By offering time, talent, or ideas, participants help expand the network and strengthen its foundation.
+Participation is open to all. Whether you're a developer, creator, organizer, or enthusiast, there are many ways to contribute. Moony grows through grassroots energy and shared values, not central control. By offering time, talent, or ideas, participants help expand the network and strengthen its foundation.
 
-- **Develop & Integrate:** Builders can extend Moony’s utility by integrating it into apps, platforms, and tools, enabling new use cases across the digital economy.
+- **Develop & Integrate:** Builders can extend Moony's utility by integrating it into apps, platforms, and tools, enabling new use cases across the digital economy.
 - **Create & Transact:** Creators can accept Moony for goods, services, or content, unlocking direct community support and alternative monetization models.
 - **Organize & Connect:** Community leaders can launch regional or thematic groups around shared languages, interests, or goals to drive local adoption.
 - **Educate & Onboard:** Contributors can host events or produce educational resources that help others understand and use Moony.
-- **Share & Express:** Artists, storytellers, and memers can craft content that spreads awareness, shapes culture, and amplifies Moony’s narrative.
+- **Share & Express:** Artists, storytellers, and memers can craft content that spreads awareness, shapes culture, and amplifies Moony's narrative.
 
 As adoption increases, a diverse ecosystem of independent contributors is expected to form, including startups, nonprofits, open-source projects, and grassroots collectives. While none control the protocol, each plays a role in expanding its reach and strengthening its resilience. 
-
-
 
 ::: tip click-here-tip
 [Learn more about Moony's community →](/resources/community)
@@ -73,7 +73,7 @@ As adoption increases, a diverse ecosystem of independent contributors is expect
 
 # Flipcash Infrastructure
 
-Moony was launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol’s issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony’s immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+Moony was launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
 
 At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
 
