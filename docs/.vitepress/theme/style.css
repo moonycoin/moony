@@ -109,6 +109,9 @@
 
 .hero-logo {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image {
@@ -116,6 +119,8 @@
   width: auto;
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
   transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-image:hover {
