@@ -48,17 +48,21 @@ As a composable SPL token, Moony can be embedded directly into smart contracts, 
 
 ## Decentralized Community
 
-Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony's evolution is driven by the individuals and communities who participate in its ecosystem. As adoption grows, the protocol's utility and reach expand organically through collective engagement and voluntary contribution.
+Moony is not controlled by any organization or governing body. It operates as a decentralized blockchain protocol designed to serve as a public good. Open, permissionless, and governed by immutable code, Moony’s growth is shaped by the individuals and communities who use and support it. As adoption increases, the protocol’s utility and reach expand organically through collective participation and voluntary contribution.
 
-Participation is open to all. Whether you're a developer, creator, organizer, or enthusiast, there are many ways to contribute. Moony grows through grassroots energy and shared values, not central control. By offering time, talent, or ideas, participants help expand the network and strengthen its foundation.
+Moony’s economic architecture is designed to reward that participation. Its Proof of Liquidity (PoL) model issues new tokens only when users deposit USDC into the reserve contract, expanding liquidity and distributing supply in direct response to demand. As usage grows—through integrations, transactions, or broader adoption—the price of newly minted tokens increases via the bonding curve, aligning incentives across the network. Those who help expand Moony’s reach also stand to benefit from the value they help create.
 
-- **Develop & Integrate:** Builders can extend Moony's utility by integrating it into apps, platforms, and tools, enabling new use cases across the digital economy.
-- **Create & Transact:** Creators can accept Moony for goods, services, or content, unlocking direct community support and alternative monetization models.
-- **Organize & Connect:** Community leaders can launch regional or thematic groups around shared languages, interests, or goals to drive local adoption.
-- **Educate & Onboard:** Contributors can host events or produce educational resources that help others understand and use Moony.
-- **Share & Express:** Artists, storytellers, and memers can craft content that spreads awareness, shapes culture, and amplifies Moony's narrative.
+Because there is no central treasury or administrative gatekeeper, value accrues to the network itself and to those who build, integrate, educate, and transact. Growing the network is not only a shared mission but also a self-reinforcing strategy. Every new integration, creator, or community that joins strengthens the ecosystem and amplifies the potential impact of every contribution.
 
-As adoption increases, a diverse ecosystem of independent contributors is expected to form, including startups, nonprofits, open-source projects, and grassroots collectives. While none control the protocol, each plays a role in expanding its reach and strengthening its resilience.
+Participation is open to all. Whether you’re a developer, creator, organizer, or enthusiast, there are many ways to contribute. Moony grows through grassroots energy and shared values, not central control. By offering time, talent, or ideas, participants help expand the network and strengthen its foundation. A diverse ecosystem of independent contributors is expected to emerge, including startups, nonprofits, open-source projects, and grassroots collectives. While none control the protocol, each plays a role in expanding its reach and reinforcing its resilience.
+
+Ways to contribute:
+
+- **Build:** Integrate Moony into apps, platforms, and tools to unlock new use cases across the digital economy.
+- **Transact:** Accept Moony for goods, services, or content to enable direct community support and alternative monetization.
+- **Organize:** Launch regional or thematic groups around shared languages, interests, or goals to drive local adoption.
+- **Educate:** Produce resources or host events that help others understand, use, and build with Moony.
+- **Express:** Use storytelling, memes, and art to spread awareness and shape Moony’s cultural narrative.
 
 ::: tip click-here-tip
 [Learn more about Moony's community](/resources/community)
