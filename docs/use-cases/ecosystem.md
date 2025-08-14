@@ -8,27 +8,24 @@ Moony’s design supports a self‑reinforcing growth cycle. Independent wallets
 
 As utility expands, the ecosystem compounds in value: users gain broader transaction options, developers encounter increased demand for their integrations, and all stakeholders benefit from the network effects of a widely adopted digital asset. 
 
-## Potential Use Cases
+### Potential Use Cases
 
 Moony’s design naturally supports a broad range of use cases as adoption grows:
 
-- **Peer-to-Peer Payments:**  
-  Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive Moony anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.
+- **Peer-to-Peer Payments:** Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive Moony anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.
 
 ::: tip 
 Learn more about how Moony can be used for P2P Payments. 
 :::
 
-- **Micropayments:**  
-  Moony’s divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can’t handle. From pay‑per‑use digital content to streaming payments, Moony unlocks new economic models that previously required centralized platforms with high fees.
+- **Micropayments:** Moony’s divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can’t handle. From pay‑per‑use digital content to streaming payments, Moony unlocks new economic models that previously required centralized platforms with high fees.
 
 ::: tip 
 Learn more about how Moony can be used for Micropayments. 
 :::
 
 
-- **Decentralized Finance (DeFi):**  
-  Moony can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use Moony in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.
+- **Decentralized Finance (DeFi):** Moony can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use Moony in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.
 
 ::: tip 
 Learn more about how Moony can be used in (DeFi).
