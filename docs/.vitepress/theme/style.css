@@ -312,6 +312,7 @@ footer *,
   
   .hero-description {
     font-size: 1.1rem;
+    margin: 0 0 125px 0;
   }
   
   .hero-actions {
