@@ -10661,6 +10661,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     padding: 0 30px;
     top: 50px;
     height: calc(100vh - 50px);
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.6);
+  }
+  
+  .hero-section::before {
+    opacity: 0.2;
+  }
+  
+  .hero-section::after {
+    opacity: 0.05;
   }
   
   .hero-content {
@@ -10743,6 +10753,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     padding: 0 20px;
     top: 45px;
     height: calc(100vh - 45px);
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  
+  .hero-section::before {
+    opacity: 0.15;
+  }
+  
+  .hero-section::after {
+    opacity: 0.03;
   }
   
   .hero-content {
@@ -10845,6 +10865,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
   .hero-section {
     top: 40px;
     height: calc(100vh - 40px);
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
+  }
+  
+  .hero-section::before {
+    opacity: 0.15;
+  }
+  
+  .hero-section::after {
+    opacity: 0.03;
   }
   
   .hero-title {
@@ -11076,6 +11106,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 @media (max-width: 360px) {
   .hero-section {
     padding: 0 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.4);
+  }
+  
+  .hero-section::before {
+    opacity: 0.1;
+  }
+  
+  .hero-section::after {
+    opacity: 0.02;
   }
   
   .hero-content {
@@ -11142,6 +11182,16 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
 @media (min-width: 280px) and (max-width: 320px) {
   .hero-section {
     padding: 0 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .hero-section::before {
+    opacity: 0.08;
+  }
+  
+  .hero-section::after {
+    opacity: 0.01;
   }
   
   .hero-content {
