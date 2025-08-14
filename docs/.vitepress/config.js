@@ -6,6 +6,11 @@ export default {
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' }],
     ['meta', { name: 'theme-color', content: '#007AFF' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon-light.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icon-light.png' }],
+    ['link', { rel: 'shortcut icon', href: '/icon-light.png' }],
+    ['link', { rel: 'icon', href: '/icon-light.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/icon-light.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
     ['meta', { property: 'og:title', content: 'Moony Documents' }],
