@@ -226,6 +226,21 @@ footer *,
   border-color: #424245;
 }
 
+/* Prevent text color changes on hover for hero buttons */
+.hero-button:hover,
+.hero-button.primary:hover,
+.hero-button.secondary:hover {
+  color: inherit !important;
+}
+
+.hero-button.primary:hover {
+  color: white !important;
+}
+
+.hero-button.secondary:hover {
+  color: #1d1d1f !important;
+}
+
 
 
 /* ================
