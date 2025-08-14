@@ -1331,14 +1331,42 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 1px;
 }
 
 .vp-doc .custom-block.tip a:hover {
   color: var(--vp-c-brand-2);
-  border-bottom-color: var(--moony-accent);
   transform: translateY(-1px);
+}
+
+/* Add bracket hover effect for all links */
+.vp-doc a,
+.VPNavBarMenuLink,
+.VPSidebarItem .link,
+.VPDocFooter .pager-link {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.vp-doc a:hover::before,
+.VPNavBarMenuLink:hover::before,
+.VPSidebarItem .link:hover::before,
+.VPDocFooter .pager-link:hover::before {
+  content: '[';
+  position: absolute;
+  left: -8px;
+  color: var(--moony-accent);
+  font-weight: bold;
+}
+
+.vp-doc a:hover::after,
+.VPNavBarMenuLink:hover::after,
+.VPSidebarItem .link:hover::after,
+.VPDocFooter .pager-link:hover::after {
+  content: ']';
+  position: absolute;
+  right: -8px;
+  color: var(--moony-accent);
+  font-weight: bold;
 }
 
 /* ================
