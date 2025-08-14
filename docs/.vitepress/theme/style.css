@@ -118,7 +118,6 @@
 .hero-image {
   height: 120px;
   width: auto;
-  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
   display: block;
   margin: 0 auto;
 }
@@ -128,7 +127,6 @@
   font-weight: 700;
   margin: 0 0 20px 0;
   line-height: 1.2;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description {
