@@ -111,10 +111,14 @@ footer *,
   position: relative;
   overflow: hidden;
   margin-top: 120px;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .hero-section::before {
