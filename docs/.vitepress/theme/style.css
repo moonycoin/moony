@@ -153,7 +153,7 @@ footer *,
 .hero-description {
   font-size: 1.25rem;
   line-height: 1.6;
-  margin: 0 0 125px 0;
+  margin: 0 0 150px 0;
   opacity: 0.95;
   max-width: 700px;
   margin-left: auto;
@@ -165,6 +165,7 @@ footer *,
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 30px;
 }
 
 .hero-button {
