@@ -234,16 +234,7 @@ body[class*="dark"] * {
   content: none !important;
 }
 
-/* Override conflicting navigation link styles to ensure bracket effect works */
-.VPNavBarMenuLink::after,
-.VPNavBarMenuLink:hover::after {
-  display: none !important;
-  content: none !important;
-  width: auto !important;
-  height: auto !important;
-  background: none !important;
-  transform: none !important;
-}
+/* Clean navigation links with no hover effects */
 
 /* ================
    APPLE-STYLE VARIABLES
@@ -1349,69 +1340,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* Add bracket hover effect for all links */
-.vp-doc a,
-.VPNavBarMenuLink,
-.VPSidebarItem .link,
-.VPDocFooter .pager-link {
-  position: relative;
-  transition: all 0.2s ease;
-}
-
-.vp-doc a:hover::before,
-.VPNavBarMenuLink:hover::before,
-.VPSidebarItem .link:hover::before,
-.VPDocFooter .pager-link:hover::before {
-  content: '[';
-  position: absolute;
-  left: -8px;
-  color: var(--moony-accent);
-  font-weight: bold;
-}
-
-.vp-doc a:hover::after,
-.VPNavBarMenuLink:hover::after,
-.VPSidebarItem .link:hover::after,
-.VPDocFooter .pager-link:hover::after {
-  content: ']';
-  position: absolute;
-  right: -2px;
-  color: var(--moony-accent);
-  font-weight: bold;
-}
-
-/* Ensure navigation links have enough space for brackets */
-.VPNavBarMenuLink {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
-  margin-left: 4px !important;
-  margin-right: 4px !important;
-}
-
-/* Fix sidebar link bracket positioning */
-.VPSidebarItem .link {
-  position: relative !important;
-}
-
-.VPSidebarItem .link .text {
-  position: relative !important;
-}
-
-.VPSidebarItem .link:hover .text::before {
-  content: '[' !important;
-  position: absolute !important;
-  left: -8px !important;
-  color: var(--moony-accent) !important;
-  font-weight: bold !important;
-}
-
-.VPSidebarItem .link:hover .text::after {
-  content: ']' !important;
-  position: absolute !important;
-  right: -2px !important;
-  color: var(--moony-accent) !important;
-  font-weight: bold !important;
-}
+/* Clean links with no hover effects */
 
 /* ================
    CLEAN LIST STYLING
