@@ -23,16 +23,17 @@ This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive m
 - **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.
 
 ::: tip click-here-tip
-[Learn more about Moony's tokenomics →](/tokenomics/reserve-contract)
+[Learn more about Moony's tokenomics](/tokenomics/reserve-contract)
 :::
 
 ## Composable Ecosystem
 
-Moony is the foundational asset for a programmable, internet-native economy. It enables seamless and decentralized value exchange across applications, wallets, and protocols without relying on centralized infrastructure or gatekeepers.
+Moony is the foundational asset for a programmable, internet-native economy. It enables seamless, decentralized value exchange across a diverse range of applications without reliance on centralized infrastructure or intermediaries.
 
-As a composable SPL token on Solana, Moony can be natively integrated into smart contracts, payment flows, and financial primitives. Its low-cost and programmable design opens new ways to coordinate, transact, and build. This creates the foundation for an open ecosystem of apps and services powered by a shared digital asset.
+With global accessibility and negligible fees, Moony forms the basis of an open, interoperable economic layer for the internet. Its architecture supports permissionless integration across wallets, apps, and protocols—allowing anyone to build, exchange, and interact with value on their own terms.
 
-Moony combines global accessibility with negligible fees and onchain transparency to support an open economic layer for the internet. Its architecture enables permissionless integration and frictionless value exchange, empowering developers, creators, and users to participate directly in a shared financial future.
+As a composable SPL token, Moony can be embedded directly into smart contracts, payment flows, and onchain systems. Its programmable design and native compatibility unlock new forms of coordination and monetization, expanding what’s possible in digital commerce and laying the foundation for a user-owned, innovation-driven economy.
+
 
 ### Potential use-cases:
 
@@ -42,7 +43,7 @@ Moony combines global accessibility with negligible fees and onchain transparenc
 
 
 ::: tip click-here-tip
-[Learn more about Moony's use cases →](/use-cases/ecosystem)
+[Learn more about Moony's use cases](/use-cases/ecosystem)
 :::
 
 ## Decentralized Community
@@ -60,7 +61,7 @@ Participation is open to all. Whether you're a developer, creator, organizer, or
 As adoption increases, a diverse ecosystem of independent contributors is expected to form, including startups, nonprofits, open-source projects, and grassroots collectives. While none control the protocol, each plays a role in expanding its reach and strengthening its resilience.
 
 ::: tip click-here-tip
-[Learn more about Moony's community →](/resources/community)
+[Learn more about Moony's community](/resources/community)
 :::
 
 ## Flipcash Infrastructure
