@@ -57,10 +57,4 @@ This model guarantees deterministic, transparent price progression. The first 1%
 
 ## Market Dynamics
 
-While the Reserve Contract governs Moony’s primary issuance and redemption pricing, price discovery may also occur on secondary markets, including centralized exchanges or peer‑to‑peer platforms. These market prices may temporarily diverge from the bonding curve price. However, the Reserve’s transparent pricing mechanism creates an arbitrage anchor: 
-
-If Moony trades above the Reserve price, users can mint from the Reserve at a lower cost.
-
-If Moony trades below the Reserve price, arbitrageurs can buy on the market and redeem to the Reserve.
-
-This dynamic keeps market prices tethered to the curve, reinforcing liquidity and price stability across platforms.
+While the Reserve Contract governs Moony’s primary issuance and redemption pricing, price discovery may also occur on secondary markets, including centralized exchanges or peer‑to‑peer platforms. These market prices may temporarily diverge from the bonding curve price. However, the Reserve’s transparent pricing mechanism creates an arbitrage anchor. If Moony trades above the Reserve price, users can mint from the Reserve at a lower cost. If Moony trades below the Reserve price, arbitrageurs can buy on the market and redeem to the Reserve. This dynamic keeps market prices tethered to the curve, reinforcing liquidity and price stability across platforms.
