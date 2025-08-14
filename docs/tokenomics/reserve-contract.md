@@ -13,7 +13,7 @@ The Reserve Contract governs all token issuance and redemption. Users interact w
 - **Proof of Liquidity:** All circulating Moony is backed by USDC held in the contract, ensuring redeemability and reinforcing user confidence in the protocol. 
 
 ::: tip click-here-tip
-[Learn more about the Proof of Liquidity model](/resources/community)
+[Learn more about the Proof of Liquidity model](/tokenomics/proof-of-liquidity)
 :::
 
 - **Bonding Curve:** Moony’s pricing follows a mathematical curve that adjusts dynamically based on circulating supply, creating a transparent and predictable pricing model.
