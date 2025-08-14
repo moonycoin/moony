@@ -496,7 +496,7 @@ body {
   backdrop-filter: blur(20px) !important;
   border-radius: 24px !important;
   padding: 40px 40px 60px !important;
-  margin: 40px auto 20px !important;
+  margin: 120px auto 20px !important;
   max-width: 1000px !important;
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.08),
@@ -504,10 +504,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
-/* Remove bottom margin on mobile to eliminate empty space */
+/* Mobile responsive spacing */
 @media (max-width: 768px) {
   .vp-doc {
-    margin: 0px auto 0px !important;
+    margin: 60px auto 0px !important;
   }
   
   /* Essential layout properties without debug colors */
