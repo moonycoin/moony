@@ -78,6 +78,13 @@
 }
 
 /* ================
+   HIDE FOOTER ON HOME PAGE
+   ================ */
+.Layout.is-home .VPFooter {
+  display: none !important;
+}
+
+/* ================
    AMAZING HERO SECTION
    ================ */
 .hero-section {
