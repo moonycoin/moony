@@ -163,6 +163,7 @@
   background: transparent;
 }
 
+.docs-icon,
 .github-icon {
   flex-shrink: 0;
 }
