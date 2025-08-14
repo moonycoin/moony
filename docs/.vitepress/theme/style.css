@@ -1375,7 +1375,7 @@ body {
 .VPDocFooter .pager-link:hover::after {
   content: ']';
   position: absolute;
-  right: -8px;
+  right: -2px;
   color: var(--moony-accent);
   font-weight: bold;
 }
