@@ -39,21 +39,21 @@ body[class*="dark"] {
   --vp-c-bg-alt: #f6f6f7 !important;
   --vp-c-bg-elv: #ffffff !important;
   --vp-c-bg-soft: #f6f6f7 !important;
-  --vp-c-text-1: #213547 !important;
-  --vp-c-text-2: #476582 !important;
-  --vp-c-text-3: #8b9eb0 !important;
-  --vp-c-brand: #007AFF !important;
-  --vp-c-brand-light: #007AFF !important;
-  --vp-c-brand-dark: #007AFF !important;
-  --vp-c-accent: #007AFF !important;
-  --vp-c-accent-light: #007AFF !important;
-  --vp-c-accent-dark: #007AFF !important;
-  --vp-c-divider: #e2e8f0 !important;
-  --vp-c-divider-light: #f1f5f9 !important;
-  --vp-c-divider-dark: #cbd5e1 !important;
-  --vp-c-border: #e2e8f0 !important;
-  --vp-c-border-light: #f1f5f9 !important;
-  --vp-c-border-dark: #cbd5e1 !important;
+  --vp-c-text-1: #1d1d1f !important;
+  --vp-c-text-2: #424245 !important;
+  --vp-c-text-3: #6e6e73 !important;
+  --vp-c-brand: #1d1d1f !important;
+  --vp-c-brand-light: #424245 !important;
+  --vp-c-brand-dark: #1d1d1f !important;
+  --vp-c-accent: #424245 !important;
+  --vp-c-accent-light: #6e6e73 !important;
+  --vp-c-accent-dark: #424245 !important;
+  --vp-c-divider: #d2d2d7 !important;
+  --vp-c-divider-light: #e5e5e7 !important;
+  --vp-c-divider-dark: #c7c7cc !important;
+  --vp-c-border: #d2d2d7 !important;
+  --vp-c-border-light: #e5e5e7 !important;
+  --vp-c-border-dark: #c7c7cc !important;
   --vp-c-shadow: rgba(0, 0, 0, 0.1) !important;
   --vp-c-shadow-light: rgba(0, 0, 0, 0.05) !important;
   --vp-c-shadow-dark: rgba(0, 0, 0, 0.2) !important;
@@ -65,8 +65,8 @@ body[class*="dark"] {
 html[class*="dark"] *,
 body[class*="dark"] * {
   background-color: #ffffff !important;
-  color: #213547 !important;
-  border-color: #e2e8f0 !important;
+  color: #1d1d1f !important;
+  border-color: #d2d2d7 !important;
 }
 
 /* Force light mode for all VitePress components */
@@ -79,8 +79,8 @@ body[class*="dark"] * {
 .dark .VPNavBar,
 [class*="dark"] .VPNavBar {
   background-color: #ffffff !important;
-  color: #213547 !important;
-  border-color: #e2e8f0 !important;
+  color: #1d1d1f !important;
+  border-color: #d2d2d7 !important;
 }
 
 /* Force light mode for tip boxes specifically */
@@ -106,8 +106,8 @@ body[class*="dark"] * {
 .dark .vp-doc .custom-block,
 [class*="dark"] .vp-doc .custom-block {
   background-color: #f6f6f7 !important;
-  color: #213547 !important;
-  border-color: #e2e8f0 !important;
+  color: #1d1d1f !important;
+  border-color: #d2d2d7 !important;
 }
 
 /* Force light mode for navigation */
@@ -117,7 +117,7 @@ body[class*="dark"] * {
 [class*="dark"] .VPNavBar {
   background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-bottom-color: #e2e8f0 !important;
+  border-bottom-color: #d2d2d7 !important;
 }
 
 /* Force light mode for sidebar */
@@ -125,7 +125,7 @@ body[class*="dark"] * {
 [class*="dark"] .VPSidebar {
   background-color: rgba(245, 245, 247, 0.95) !important;
   backdrop-filter: blur(20px) !important;
-  border-right-color: #e2e8f0 !important;
+  border-right-color: #d2d2d7 !important;
 }
 
 /* Force light mode for all text elements */
@@ -153,7 +153,7 @@ body[class*="dark"] * {
 [class*="dark"] .vp-doc em,
 [class*="dark"] .vp-doc code,
 [class*="dark"] .vp-doc pre {
-  color: #213547 !important;
+  color: #1d1d1f !important;
 }
 
 /* Force light mode for links */
@@ -161,14 +161,14 @@ body[class*="dark"] * {
 [class*="dark"] .vp-doc a,
 .dark .VPNavBarMenuLink,
 [class*="dark"] .VPNavBarMenuLink {
-  color: #007AFF !important;
+  color: #1d1d1f !important;
 }
 
 .dark .vp-doc a:hover,
 [class*="dark"] .vp-doc a:hover,
 .dark .VPNavBarMenuLink:hover,
 [class*="dark"] .VPNavBarMenuLink:hover {
-  color: #0056b3 !important;
+  color: #424245 !important;
 }
 
 /* Force light mode for any remaining blue colors or accent elements */
@@ -180,7 +180,7 @@ body[class*="dark"] * {
 [class*="dark"] .vp-doc .custom-block.danger a,
 .dark .vp-doc .custom-block.info a,
 [class*="dark"] .vp-doc .custom-block.info a {
-  color: #515154 !important;
+  color: #424245 !important;
 }
 
 .dark .vp-doc .custom-block.tip a:hover,
@@ -191,18 +191,18 @@ body[class*="dark"] * {
 [class*="dark"] .vp-doc .custom-block.danger a:hover,
 .dark .vp-doc .custom-block.info a:hover,
 [class*="dark"] .vp-doc .custom-block.info a:hover {
-  color: #424245 !important;
+  color: #1d1d1f !important;
 }
 
 /* Override any VitePress default blue colors */
 .dark .vp-doc .custom-block,
 [class*="dark"] .vp-doc .custom-block {
-  --vp-c-brand: #515154 !important;
-  --vp-c-brand-light: #515154 !important;
-  --vp-c-brand-dark: #424245 !important;
-  --vp-c-accent: #515154 !important;
-  --vp-c-accent-light: #515154 !important;
-  --vp-c-accent-dark: #424245 !important;
+  --vp-c-brand: #424245 !important;
+  --vp-c-brand-light: #6e6e73 !important;
+  --vp-c-brand-dark: #1d1d1f !important;
+  --vp-c-accent: #424245 !important;
+  --vp-c-accent-light: #6e6e73 !important;
+  --vp-c-accent-dark: #1d1d1f !important;
 }
 
 /* Force light mode for any remaining component overrides */
@@ -210,14 +210,14 @@ body[class*="dark"] * {
 [class*="dark"] .VPNavBarTitle,
 .dark .VPNavBarHamburger,
 [class*="dark"] .VPNavBarHamburger {
-  color: #213547 !important;
+  color: #1d1d1f !important;
 }
 
 .dark .VPNavBarTitle:hover,
 [class*="dark"] .VPNavBarTitle:hover,
 .dark .VPNavBarHamburger:hover,
 [class*="dark"] .VPNavBarHamburger:hover {
-  color: #007AFF !important;
+  color: #424245 !important;
 }
 
 /* ================
@@ -232,11 +232,11 @@ body[class*="dark"] * {
   
   /* Enhanced neutral palette */
   --moony-primary: #1d1d1f;
-  --moony-secondary: #515154;
-  --moony-accent: #424245; /* Dark grey accent */
-  --moony-light-gray: #f8f9fa;
-  --moony-medium-gray: #6c757d;
-  --moony-border: #dee2e6;
+  --moony-secondary: #424245;
+  --moony-accent: #6e6e73; /* Medium grey accent */
+  --moony-light-gray: #f5f5f7;
+  --moony-medium-gray: #86868b;
+  --moony-border: #d2d2d7;
   --moony-subtle: #f5f5f7;
   --moony-muted: #86868b;
   
@@ -260,7 +260,7 @@ body[class*="dark"] * {
   --moony-secondary: #a1a1a6;
   --moony-accent: #a1a1a6; /* Light grey accent */
   --moony-light-gray: #1d1d1f;
-  --moony-medium-gray: #6c757d;
+  --moony-medium-gray: #86868b;
   --moony-border: #424245;
   --moony-subtle: #2a2a2a;
   --moony-muted: #6e6e73;
