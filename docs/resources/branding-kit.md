@@ -45,5 +45,5 @@ This notation strengthens Moony’s position as a functional unit of account, su
 These resources are provided to make it simple for developers, designers, and community members to integrate Moony’s identity into wallets, applications, media, and promotional materials without friction.
 
 ::: tip click-here-tip
-[Download Moony Logo Files – Black & White (ZIP)](/Logos/)
+[Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
