@@ -19,7 +19,7 @@ The Reserve Contract governs all token issuance and redemption. Users interact w
 - **Bonding Curve:** Moony’s pricing follows a mathematical curve that adjusts dynamically based on circulating supply, creating a transparent and predictable pricing model.
 
 ::: tip click-here-tip
-[Learn more about the reserve's bonding curve](/resources/community)
+[Learn more about the reserve's bonding curve](/tokenomics/bonding-curve)
 :::
 
 
