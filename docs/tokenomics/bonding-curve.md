@@ -53,7 +53,7 @@ Supply %    Price per Token    Total Cost for 1%
 
 **Note**: This chart shows the exponential growth using the precise 20.45% rate. The final tokens approach $1,000,000 each as the curve becomes nearly vertical at 100% supply.
 
-This model guarantees **deterministic, transparent price progression**. The first 1% of Moony supply is priced at $0.01 per token, while the final tokens will approach $1,000,000 each. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
+This model guarantees deterministic, transparent price progression. The first 1% of Moony supply is priced at $0.01 per token, while the final tokens cost $1,000,000 each. The non‑linear curve is central to Moony's economic design: early activity is rewarded with lower acquisition costs, while later entrants add more capital to the Reserve, deepening liquidity and ensuring the system scales in proportion to demand.
 
 ## Market Dynamics
 
