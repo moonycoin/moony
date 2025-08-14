@@ -165,10 +165,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-.hero-button.primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-}
+
 
 .hero-button.secondary {
   background: black;
@@ -176,11 +173,7 @@
   border-color: black;
 }
 
-.hero-button.secondary:hover {
-  background: #333;
-  border-color: #333;
-  transform: translateY(-2px);
-}
+
 
 /* ================
    FEATURES GRID
