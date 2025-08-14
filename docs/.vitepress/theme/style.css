@@ -83,7 +83,19 @@
 .Layout.is-home .VPFooter,
 .Layout.is-home .VPFooter *,
 .Layout.is-home footer,
-.Layout.is-home footer * {
+.Layout.is-home footer *,
+.Layout.is-home [class*="footer"],
+.Layout.is-home [class*="Footer"],
+.Layout.is-home [id*="footer"],
+.Layout.is-home [id*="Footer"],
+.Layout.is-home .footer,
+.Layout.is-home .Footer,
+.Layout.is-home .footer-container,
+.Layout.is-home .footer-section,
+.Layout.is-home .footer-brand,
+.Layout.is-home .footer-social,
+.Layout.is-home .footer-bottom,
+.Layout.is-home .footer-legal {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
@@ -93,6 +105,12 @@
   position: absolute !important;
   left: -9999px !important;
   top: -9999px !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 /* ================
