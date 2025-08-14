@@ -201,7 +201,6 @@ footer *,
   text-decoration: none !important;
   font-weight: 500;
   font-size: 1.1rem;
-  transition: all 0.3s ease;
   border: 1px solid black;
   position: relative;
   background: transparent;
@@ -225,7 +224,6 @@ footer *,
   background: transparent;
   color: #1d1d1f;
   border-color: #424245;
-  transition: all 0.2s ease;
 }
 
 
