@@ -149,7 +149,9 @@
 }
 
 .hero-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 16px 32px;
   border-radius: 0;
   text-decoration: none !important;
@@ -159,6 +161,10 @@
   border: 1px solid black;
   position: relative;
   background: transparent;
+}
+
+.github-icon {
+  flex-shrink: 0;
 }
 
 .hero-button.primary {
