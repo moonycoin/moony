@@ -75,12 +75,13 @@
    ================ */
 .VPHero {
   text-align: center !important;
-  padding: 80px 20px 60px !important;
+  padding: 20px 20px 40px !important;
   background: transparent !important;
-  min-height: 60vh !important;
+  min-height: auto !important;
   display: flex !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   justify-content: center !important;
+  margin-top: 0 !important;
 }
 
 .VPHero .container {
@@ -89,21 +90,27 @@
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
+  padding-top: 0 !important;
 }
 
 .VPHero .image {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin-bottom: 40px !important;
+  margin-bottom: 20px !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .VPHero .image img {
-  height: 200px !important;
+  height: 250px !important;
   width: auto !important;
   filter: drop-shadow(0 8px 24px rgba(74, 144, 226, 0.15)) !important;
   transition: all 0.3s ease !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .VPHero .image img:hover {
@@ -525,7 +532,7 @@ body {
   backdrop-filter: blur(20px) !important;
   border-radius: 24px !important;
   padding: 40px 40px 60px !important;
-  margin: 60px auto 20px !important;
+  margin: 40px auto 20px !important;
   max-width: 1000px !important;
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.08),
