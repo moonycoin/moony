@@ -24,7 +24,7 @@ To make P2P viable at scale, both cost and throughput must support everyday usag
 
 Together, these properties make Moony credible for daily payments, not just occasional high‑value transactions.
 
-## Global Financial Inclusion
+## Financial Inclusion
 
 Billions of people remain underserved, or entirely excluded, by traditional payment systems. In many regions, the absence of reliable banking infrastructure leaves individuals unable to store value securely, send money across borders, or participate in even the most basic forms of commerce. 
 
