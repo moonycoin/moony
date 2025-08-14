@@ -80,5 +80,5 @@ While Flipcash provides the first front end to access the Moony reserve contract
 - **Send P2P Payments:** Use QR code based digital cash and URL links to send and receive payments.
 
 ::: tip click-here-tip
-[Download Flipcash Mobile Application](/resources/community)
+[Download Flipcash Mobile Application](https://www.flipcash.com)
 :::
