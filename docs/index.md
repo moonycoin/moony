@@ -9,8 +9,7 @@ layout: home
     </div>
                             <h1 class="hero-title">permissionless transactions with proof of liquidity</h1>
         <p class="hero-description">
-          A decentralized digital asset designed to facilitate seamless, permissionless transactions without intermediaries.
-          Built on Solana with immutable smart contracts for complete transparency and open participation.
+          Moony is a decentralized digital asset designed to facilitate permissionless transactions without intermediaries. It is deployed as a fixed-supply token on the Solana blockchain, with all issuance governed entirely by an immutable smart contract. This design ensures full transparency, removes all forms of discretionary control, and enables open participation in emerging internet capital markets.
         </p>
         <div class="hero-actions">
           <a href="/docs" class="hero-button primary">View Docs</a>
