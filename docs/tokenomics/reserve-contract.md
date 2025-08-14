@@ -26,8 +26,20 @@ Together, these mechanisms make the Reserve Contract the core of Moony’s archi
 
 - **Transparent:** All contract activity is recorded on‑chain and is publicly verifiable. Participants can monitor supply, reserves, and pricing in real time, with no hidden mechanics or opaque governance processes.
 
-## Open Participation
 
-Moony’s reserve contract was deployed using infrastructure developed by Flipcash Inc., an independent third‑party company. Flipcash holds no control over Moony or its reserve contract and cannot alter the protocol’s issuance, pricing, or supply mechanisms. These parameters are fixed in Moony’s immutable smart contract, ensuring the system remains open, autonomous, and free from centralized oversight.
+## Flipcash Infrastructure
 
-At launch, Flipcash will be the first platform to integrate directly with the reserve contract, offering early adopters an accessible interface to mint and redeem Moony. While Flipcash provides this initial point of access, the reserve contract is fully open and permissionless. Any application, wallet, or platform can integrate without approvals or coordination, enabling a diverse ecosystem of independent front ends. This interoperability reinforces Moony’s role as a public good, accessible to anyone, anywhere, and extendable by a broad range of participants.
+Moony and it's reserve contract were launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+
+At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
+
+While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a digital public good, Moony can be integrated into any third party platform, protocol,wallet, or app, ensuring broad utility, composability, and adoption.
+
+### Flipcash Enables Users To:
+
+- **Interact With Reserve:** Seamlessly convert between Moony and USDC through an intuitive interface.
+- **Send P2P Payments:** Use QR code based digital cash and URL links to send and receive payments.
+
+::: tip click-here-tip
+[Download Flipcash Mobile Application](/resources/community)
+:::

@@ -68,7 +68,7 @@ Participation is open to all. Whether you’re a developer, creator, organizer, 
 
 ## Flipcash Infrastructure
 
-Moony was launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+Moony and it's reserve contract were launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
 
 At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
 
@@ -82,4 +82,3 @@ While Flipcash provides the first front end to access the Moony reserve contract
 ::: tip click-here-tip
 [Download Flipcash Mobile Application](/resources/community)
 :::
-
