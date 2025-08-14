@@ -1380,6 +1380,14 @@ body {
   font-weight: bold;
 }
 
+/* Ensure navigation links have enough space for brackets */
+.VPNavBarMenuLink {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
 /* ================
    CLEAN LIST STYLING
    ================ */
