@@ -28,9 +28,11 @@ This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive m
 
 ## Composable Ecosystem
 
-Moony is designed as a foundational asset for a programmable, internet-native economy. As a permissionless digital asset, it facilitates seamless value exchange across applications, platforms, and protocols without permission or centralized infrastructure.
+Moony is the foundational asset for a programmable, internet-native economy. It enables seamless and decentralized value exchange across applications, wallets, and protocols without relying on centralized infrastructure or gatekeepers.
 
-Built as an SPL-standard token, Moony can be embedded directly into apps, wallets, and financial primitives. Its low-cost, programmable design unlocks new ways to coordinate, transact, and build across a growing ecosystem of use cases.
+As a composable SPL token on Solana, Moony can be natively integrated into smart contracts, payment flows, and financial primitives. Its low-cost and programmable design opens new ways to coordinate, transact, and build. This creates the foundation for an open ecosystem of apps and services powered by a shared digital asset.
+
+Moony combines global accessibility with negligible fees and onchain transparency to support an open economic layer for the internet. Its architecture enables permissionless integration and frictionless value exchange, empowering developers, creators, and users to participate directly in a shared financial future.
 
 ### Potential use-cases:
 
@@ -38,7 +40,6 @@ Built as an SPL-standard token, Moony can be embedded directly into apps, wallet
 - **Micropayments:** Power sub-cent transactions and unlock new monetization models, from one-time purchases to continuous streaming payments between users, apps, or autonomous agents.
 - **DeFi Integration:** Use Moony as a composable asset in lending markets, AMMs, staking protocols, and other decentralized financial infrastructure.
 
-Moony combines global accessibility with negligible fees and onchain transparency to support an open economic layer for the internet. Its architecture enables permissionless integration and frictionless value exchange, empowering developers, creators, and users to participate directly in a shared financial future.
 
 ::: tip click-here-tip
 [Learn more about Moony's use cases →](/use-cases/ecosystem)
