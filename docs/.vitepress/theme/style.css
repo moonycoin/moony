@@ -262,6 +262,49 @@ body[class*="dark"] * {
   opacity: 0 !important;
 }
 
+/* Remove all toolbar hover effects */
+.VPNav,
+.VPNav:hover,
+.VPNavBar,
+.VPNavBar:hover,
+.VPNavBarTitle,
+.VPNavBarTitle:hover,
+.VPNavBarHamburger,
+.VPNavBarHamburger:hover,
+.VPNavBarAppearance,
+.VPNavBarAppearance:hover,
+.VPNavBarAppearance .VPSwitch,
+.VPNavBarAppearance .VPSwitch:hover {
+  transition: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  background-color: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Remove all toolbar pseudo-element hover effects */
+.VPNav::before,
+.VPNav::after,
+.VPNav:hover::before,
+.VPNav:hover::after,
+.VPNavBar::before,
+.VPNavBar::after,
+.VPNavBar:hover::before,
+.VPNavBar:hover::after,
+.VPNavBarTitle::before,
+.VPNavBarTitle::after,
+.VPNavBarTitle:hover::before,
+.VPNavBarTitle:hover::after,
+.VPNavBarHamburger::before,
+.VPNavBarHamburger::after,
+.VPNavBarHamburger:hover::before,
+.VPNavBarHamburger:hover::after {
+  display: none !important;
+  content: none !important;
+}
+
 /* ================
    APPLE-STYLE VARIABLES
    ================ */
