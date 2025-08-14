@@ -305,6 +305,40 @@ body[class*="dark"] * {
   content: none !important;
 }
 
+/* Remove all tip box hover effects */
+.vp-doc .custom-block.tip,
+.vp-doc .custom-block.tip:hover,
+.vp-doc .custom-block.tip.click-here-tip,
+.vp-doc .custom-block.tip.click-here-tip:hover,
+.vp-doc .custom-block.tip a,
+.vp-doc .custom-block.tip a:hover,
+.vp-doc .custom-block.tip.click-here-tip a,
+.vp-doc .custom-block.tip.click-here-tip a:hover {
+  transition: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  background-color: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Remove all tip box pseudo-element hover effects */
+.vp-doc .custom-block.tip::before,
+.vp-doc .custom-block.tip::after,
+.vp-doc .custom-block.tip:hover::before,
+.vp-doc .custom-block.tip:hover::after,
+.vp-doc .custom-block.tip.click-here-tip::before,
+.vp-doc .custom-block.tip.click-here-tip::after,
+.vp-doc .custom-block.tip.click-here-tip:hover::before,
+.vp-doc .custom-block.tip.click-here-tip:hover::after {
+  display: none !important;
+  content: none !important;
+  transition: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
 /* ================
    APPLE-STYLE VARIABLES
    ================ */
