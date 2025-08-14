@@ -31,9 +31,10 @@
   padding: 0 !important;
   background: #000000 !important;
   min-height: 100vh !important;
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  grid-template-rows: auto auto auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -71,12 +72,12 @@
   padding: 0 !important;
   position: relative !important;
   z-index: 2 !important;
-  grid-column: 1 / -1 !important;
-  grid-row: 1 !important;
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  grid-template-rows: auto auto auto !important;
-  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto !important;
+  min-height: 100vh !important;
 }
 
 .VPHero .main {
@@ -85,8 +86,6 @@
 
 /* Centered logo that dominates */
 .VPHero .image {
-  grid-column: 1 !important;
-  grid-row: 1 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -94,7 +93,8 @@
   padding: 0 !important;
   width: 100% !important;
   text-align: center !important;
-  height: 100vh !important;
+  height: auto !important;
+  margin-bottom: 40px !important;
 }
 
 .VPHero .image img {
@@ -108,13 +108,11 @@
 
 /* Content underneath logo - vertical flow */
 .VPHero .tagline {
-  grid-column: 1 / -1 !important;
-  grid-row: 2 !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
   align-items: center !important;
-  padding: 10px 0 0 0 !important;
+  padding: 0 !important;
   font-size: 3.5rem !important;
   color: #ffffff !important;
   font-weight: 300 !important;
@@ -134,42 +132,31 @@
 /* Mobile - Stack vertically */
 @media (max-width: 768px) {
   .VPHero {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto 1fr auto !important;
     text-align: center !important;
+    padding: 20px 0 !important;
   }
   
   .VPHero .container {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto 1fr auto !important;
     height: auto !important;
-    min-height: 100vh !important;
+    min-height: auto !important;
+    padding: 0 20px !important;
   }
   
   .VPHero .image {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
     padding: 0 !important;
-    height: 100vh !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    margin-bottom: 30px !important;
   }
   
   .VPHero .image img {
-    height: 60vh !important;
+    height: 50vh !important;
   }
   
   .VPHero .tagline {
-    grid-column: 1 !important;
-    grid-row: 2 !important;
-    padding: 0 20px 40px 20px !important;
+    padding: 0 20px !important;
     font-size: 2.5rem !important;
     align-items: center !important;
     text-align: center !important;
   }
-  
-
 }
 
 /* ================
