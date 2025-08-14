@@ -12,11 +12,7 @@ hero:
     <div class="hero-logo">
       <img src="/logo-light.svg" alt="Moony Logo" class="hero-image">
     </div>
-            <h1 class="hero-title">permissionless transactions with proof of liquidity</h1>
-    <p class="hero-description">
-      A decentralized digital asset designed to facilitate seamless, permissionless transactions without intermediaries. 
-      Built on Solana with immutable smart contracts for complete transparency and open participation.
-    </p>
+                    <h1 class="hero-title">permissionless transactions with proof of liquidity</h1>
             <div class="hero-actions">
           <a href="/docs" class="hero-button primary">View Docs</a>
           <a href="https://github.com/moonycoin" class="hero-button secondary">View Github</a>
