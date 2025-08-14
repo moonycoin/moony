@@ -305,21 +305,7 @@ body[class*="dark"] * {
   content: none !important;
 }
 
-/* Remove only hover effects from tip boxes - keep them visible */
-.vp-doc .custom-block.tip:hover,
-.vp-doc .custom-block.tip.click-here-tip:hover {
-  transition: none !important;
-  transform: none !important;
-  box-shadow: none !important;
-}
 
-/* Remove hover effects from tip box links only */
-.vp-doc .custom-block.tip a:hover,
-.vp-doc .custom-block.tip.click-here-tip a:hover {
-  transition: none !important;
-  transform: none !important;
-  text-decoration: none !important;
-}
 
 /* ================
    APPLE-STYLE VARIABLES
