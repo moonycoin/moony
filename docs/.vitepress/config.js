@@ -23,46 +23,78 @@ export default {
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://moonycoin.github.io/moony/og-image.svg' }],
     ['script', {}, `
-      // Force light mode and prevent theme switching
-      document.documentElement.classList.remove('dark');
-      document.documentElement.classList.add('light');
-      
-      // Remove any existing theme toggle elements
-      const themeToggles = document.querySelectorAll('.VPNavBarAppearance, .VPSwitch, [data-vp-theme]');
-      themeToggles.forEach(toggle => toggle.remove());
-      
-      // Force portrait mode on mobile
-      if (window.innerWidth <= 768 && window.innerHeight < window.innerWidth) {
-        const warning = document.createElement('div');
-        warning.className = 'portrait-warning';
-        warning.innerHTML = \`
-          <div class="icon">📱</div>
-          <div>Please rotate your device to portrait mode</div>
-          <div style="font-size: 0.9rem; opacity: 0.8;">This site is optimized for portrait viewing</div>
-        \`;
-        document.body.appendChild(warning);
-      }
-      
-      // Listen for orientation changes
-      window.addEventListener('orientationchange', function() {
+      // Force light mode and prevent theme switching - Enhanced version
+      (function() {
+        // Immediately force light mode before any rendering
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        
+        // Set CSS custom properties to force light theme
+        document.documentElement.style.setProperty('--vp-c-bg', '#ffffff');
+        document.documentElement.style.setProperty('--vp-c-bg-alt', '#f6f6f7');
+        document.documentElement.style.setProperty('--vp-c-bg-elv', '#ffffff');
+        document.documentElement.style.setProperty('--vp-c-bg-soft', '#f6f6f7');
+        document.documentElement.style.setProperty('--vp-c-text-1', '#213547');
+        document.documentElement.style.setProperty('--vp-c-text-2', '#476582');
+        document.documentElement.style.setProperty('--vp-c-text-3', '#8b9eb0');
+        document.documentElement.style.setProperty('--vp-c-brand', '#007AFF');
+        document.documentElement.style.setProperty('--vp-c-brand-light', '#007AFF');
+        document.documentElement.style.setProperty('--vp-c-brand-dark', '#007AFF');
+        
+        // Prevent dark mode from being applied
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+              if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                document.documentElement.classList.add('light');
+              }
+            }
+          });
+        });
+        
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['class']
+        });
+        
+        // Remove any existing theme toggle elements
+        const themeToggles = document.querySelectorAll('.VPNavBarAppearance, .VPSwitch, [data-vp-theme]');
+        themeToggles.forEach(toggle => toggle.remove());
+        
+        // Force portrait mode on mobile
         if (window.innerWidth <= 768 && window.innerHeight < window.innerWidth) {
-          if (!document.querySelector('.portrait-warning')) {
-            const warning = document.createElement('div');
-            warning.className = 'portrait-warning';
-            warning.innerHTML = \`
-              <div class="icon">📱</div>
-              <div>Please rotate your device to portrait mode</div>
-              <div style="font-size: 0.9rem; opacity: 0.8;">This site is optimized for portrait viewing</div>
-            \`;
-            document.body.appendChild(warning);
-          }
-        } else {
-          const warning = document.querySelector('.portrait-warning');
-          if (warning) {
-            warning.remove();
-          }
+          const warning = document.createElement('div');
+          warning.className = 'portrait-warning';
+          warning.innerHTML = \`
+            <div class="icon">📱</div>
+            <div>Please rotate your device to portrait mode</div>
+            <div style="font-size: 0.9rem; opacity: 0.8;">This site is optimized for portrait viewing</div>
+          \`;
+          document.body.appendChild(warning);
         }
-      });
+        
+        // Listen for orientation changes
+        window.addEventListener('orientationchange', function() {
+          if (window.innerWidth <= 768 && window.innerHeight < window.innerWidth) {
+            if (!document.querySelector('.portrait-warning')) {
+              const warning = document.createElement('div');
+              warning.className = 'portrait-warning';
+              warning.innerHTML = \`
+                <div class="icon">📱</div>
+                <div>Please rotate your device to portrait mode</div>
+                <div style="font-size: 0.9rem; opacity: 0.8;">This site is optimized for portrait viewing</div>
+              \`;
+              document.body.appendChild(warning);
+            }
+          } else {
+            const warning = document.querySelector('.portrait-warning');
+            if (warning) {
+              warning.remove();
+            }
+          }
+        });
+      })();
     `]
   ],
   themeConfig: {
@@ -71,6 +103,21 @@ export default {
       dark: '/icon-light.png'
     },
     siteTitle: false,
+    // Force light theme CSS variables
+    css: {
+      vars: {
+        '--vp-c-bg': '#ffffff',
+        '--vp-c-bg-alt': '#f6f6f7',
+        '--vp-c-bg-elv': '#ffffff',
+        '--vp-c-bg-soft': '#f6f6f7',
+        '--vp-c-text-1': '#213547',
+        '--vp-c-text-2': '#476582',
+        '--vp-c-text-3': '#8b9eb0',
+        '--vp-c-brand': '#007AFF',
+        '--vp-c-brand-light': '#007AFF',
+        '--vp-c-brand-dark': '#007AFF'
+      }
+    },
     nav: [
       { text: 'Start', link: '/getting-started' },
       { text: 'Tokenomics', link: '/tokenomics/reserve-contract' },
