@@ -1393,9 +1393,24 @@ body {
   position: relative !important;
 }
 
-.VPSidebarItem .link:hover::after {
-  right: -2px !important;
+.VPSidebarItem .link .text {
+  position: relative !important;
+}
+
+.VPSidebarItem .link:hover .text::before {
+  content: '[' !important;
   position: absolute !important;
+  left: -8px !important;
+  color: var(--moony-accent) !important;
+  font-weight: bold !important;
+}
+
+.VPSidebarItem .link:hover .text::after {
+  content: ']' !important;
+  position: absolute !important;
+  right: -2px !important;
+  color: var(--moony-accent) !important;
+  font-weight: bold !important;
 }
 
 /* ================
