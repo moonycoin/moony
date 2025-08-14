@@ -25,7 +25,7 @@ The Reserve Contract governs all token issuance and redemption. Users interact w
 
 Together, these mechanisms make the Reserve Contract the core of Moony’s architecture. Fully onchain, autonomous, and immutable, it operates without control from any centralized party. The rules that define issuance, pricing, and redemption are permanently encoded in its smart contract, ensuring openness and finality from inception. 
 
-### Design Principles
+## Design Principles
 
 - **Immutable:** The Reserve Contract is unchangeable once deployed. It has no upgrade path, admin keys, or privileged access. The rules governing issuance, pricing, and redemption are fixed and permanently encoded. Users are protected from governance risk, policy changes, or centralized interference.
 

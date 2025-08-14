@@ -22,7 +22,7 @@ The bonding curve follows a non‑linear exponential function:
 Price = base\_price × (1 + rate)^{supply\_percent - 1}
 ```
 
-### **Key Variables**
+## **Key Variables**
 
 *The price for the first 1% of supply*
 

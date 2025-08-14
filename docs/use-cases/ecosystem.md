@@ -8,7 +8,7 @@ Moony’s design supports a self‑reinforcing growth cycle. Independent wallets
 
 As utility expands, the ecosystem compounds in value: users gain broader transaction options, developers encounter increased demand for their integrations, and all stakeholders benefit from the network effects of a widely adopted digital asset. 
 
-### Potential Use Cases
+## Potential Use Cases
 
 Moony’s design naturally supports a broad range of use cases as adoption grows:
 

@@ -4,7 +4,7 @@ Micropayments, transactions valued in cents or fractions of a cent, have histori
 
 These limitations have forced creators, developers, and small businesses into centralized platforms that aggregate payments, take substantial fees, and control audience relationships. Moony removes these barriers. Built for high‑volume, low‑value transactions, it combines extreme divisibility with near‑zero fees to make micropayments viable at a global scale. By doing so, it unlocks entirely new economic behaviors that were previously impossible or uneconomical.
 
-### Why It Matters
+## Why It Matters
 
 Micropayments are not simply smaller versions of ordinary transactions, they are a missing building block of the modern internet economy. The inability to move tiny amounts of value efficiently has shaped the digital landscape in ways that limit innovation and inclusion:
 

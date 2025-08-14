@@ -12,7 +12,7 @@ Each Moony token is issued in exchange for USDC, a widely used, dollar-pegged st
 
 The Moony reserve contract holds all USDC deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
-### Key Properties:
+## Key Properties:
 
 - **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
 - **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.

@@ -11,7 +11,7 @@ The name Moony blends two ideas: moon and money. It draws from the playful, aspi
 
 The name is intentionally simple, memorable, and shareable. Its memetic resonance makes it easy to adopt in conversation, while its grounding in principled, open value infrastructure signals credibility and long‑term vision. Moony is as much a cultural asset as it is a technical one.
 
-# Icon Design
+## Icon Design
 
 Moony's icon symbol is simple yet multilayered in meaning. 
 
