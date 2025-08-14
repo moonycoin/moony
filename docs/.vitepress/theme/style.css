@@ -71,6 +71,13 @@
 }
 
 /* ================
+   HIDE OLD VITEPRESS HERO
+   ================ */
+.VPHero {
+  display: none !important;
+}
+
+/* ================
    AMAZING HERO SECTION
    ================ */
 .hero-section {
