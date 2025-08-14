@@ -30,7 +30,7 @@ This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive m
 
 Moony is the foundational asset for a programmable, internet-native economy. It enables seamless, decentralized value exchange across a diverse range of applications without reliance on centralized infrastructure or intermediaries.
 
-With global accessibility and negligible fees, Moony forms the basis of an open, interoperable economic layer for the internet. Its architecture supports permissionless integration across wallets, apps, and protocols—allowing anyone to build, exchange, and interact with value on their own terms.
+With global accessibility and negligible fees, Moony forms the basis of an open, interoperable economic layer for the internet. Its architecture supports permissionless integration across wallets, apps, and protocols, allowing anyone to build, exchange, and interact with value on their own terms.
 
 As a composable SPL token, Moony can be embedded directly into smart contracts, payment flows, and onchain systems. Its programmable design and native compatibility unlock new forms of coordination and monetization, expanding what’s possible in digital commerce and laying the foundation for a user-owned, innovation-driven economy.
 
