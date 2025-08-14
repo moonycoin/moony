@@ -7,8 +7,6 @@ hero:
   alt: Moony Logo
 ---
 
-# Moony
-
 <div class="hero-section">
   <div class="hero-content">
     <div class="hero-logo">
