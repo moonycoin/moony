@@ -95,6 +95,7 @@
   text-align: center !important;
   height: auto !important;
   margin-bottom: 40px !important;
+  order: 1 !important;
 }
 
 .VPHero .image img {
@@ -125,6 +126,7 @@
   text-align: center !important;
   text-transform: lowercase !important;
   width: 100% !important;
+  order: 2 !important;
 }
 
 
