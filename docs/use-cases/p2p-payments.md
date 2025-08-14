@@ -50,18 +50,19 @@ Several key properties enable this interoperability:
 
 Because Moony is permissionless and composable by design, its peer‑to‑peer utility is not constrained to a single application. The token can flow seamlessly between wallets, payment interfaces, and future onchain services, creating a foundation for global accessibility and financial inclusion as the network of integrations grows.
 
-## Flipcash Launch Integration
+## Flipcash Infrastructure
 
-At launch, Flipcash provides the first independent public interface to the Moony Reserve Contract. Through its mobile app, users can mint and redeem Moony instantly, bypassing banks and card networks.
+Moony and it's reserve contract were launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
 
-Through its intuitive mobile interface, users can seamlessly mint and redeem Moony directly from the reserve contract and begin transacting within seconds, without relying on banks, card networks, or any centralized intermediary. This immediate usability allows Moony to function like cash for the digital era: fast, final, and user‑controlled.
+At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
 
-Flipcash makes the on‑chain experience accessible through familiar payment patterns:
+While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a digital public good, Moony can be integrated into any third party platform, protocol,wallet, or app, ensuring broad utility, composability, and adoption.
 
-- **QR codes:** Scan to pay in person. This simple interaction makes Moony feel like handing someone cash, but with global reach and on‑chain settlement.
-- **Payment links:** Generate a link to share over chat, email, or social media, allowing recipients to claim Moony instantly and securely.
-- **Instant Settlement:** Users can see their Moony balance update immediately, pay friends and settle transactions without waiting days for bank processing.
+### Flipcash Enables Users To:
 
-::: tip 
-While Flipcash is the first independent interface to access the Moony reserve contract, the token remains fully permissionless and interoperable as an SPL asset. Any compatible Solana wallet can store, send, or receive Moony, and future apps can integrate it seamlessly without requiring approval.
+- **Interact With Reserve:** Seamlessly convert between Moony and USDC through an intuitive interface.
+- **Send P2P Payments:** Use QR code based digital cash and URL links to send and receive payments.
+
+::: tip click-here-tip
+[Download Flipcash Mobile Application](/resources/community)
 :::
