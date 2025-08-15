@@ -5,7 +5,7 @@ description: Visual identity, logo usage, and brand guidelines for Moony
 
 # Brand Design
 
-<img src="/Logos/High%20res%20File-02.jpg" alt="Moony Logo - High Resolution" style="max-width: 400px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin: 20px 0;">
+![Moony Logo - High Resolution](/Logos/High%20res%20File-02.jpg)
 
 Moony’s visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces. 
 
@@ -15,7 +15,7 @@ The name is intentionally simple, memorable, and shareable. Its memetic resonanc
 
 ## Icon Design
 
-<img src="/Logos/High%20res%20File-04.jpg" alt="Moony Icon Design - High Resolution" style="max-width: 300px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin: 20px 0;">
+![Moony Icon Design - High Resolution](/Logos/High%20res%20File-04.jpg)
 
 Moony’s icon is deliberately minimal, yet layered with symbolic meaning—crafted to express both functional clarity and conceptual depth across any medium.
 
