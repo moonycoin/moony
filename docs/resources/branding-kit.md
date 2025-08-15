@@ -13,6 +13,11 @@ The name Moony blends two ideas: moon and money. It draws from the playful, aspi
 
 The name is intentionally simple, memorable, and shareable. Its memetic resonance makes it easy to adopt in conversation, while its grounding in principled, open value infrastructure signals credibility and long‑term vision. Moony is as much a cultural asset as it is a technical one.
 
+## Typography
+
+The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, high legibility, and modern character. Its lowercase styling conveys approachability and simplicity, aligning with Moony’s open and memetic ethos while preserving institutional clarity. This typeface should be used when reproducing the Moony logotype or developing visual assets that reference the brand name in stylized form.
+
+
 ## Icon Design
 
 Moony’s icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
@@ -26,11 +31,6 @@ Moony’s icon is deliberately minimal, yet layered with symbolic meaning, craft
 - **Market Semantics:** In trading contexts, the icon can be interpreted as denoting “over,” “above,” or directional movement, suggesting upward price momentum along Moony’s bonding curve. This reflects its dynamic economic model, where adoption, integration, and transaction flow drive emergent market value.
 
 The symbol is optimized for clarity at small sizes, performing reliably in both light and dark themes. Its simplicity ensures broad adaptability, while its layered references reinforce Moony’s identity as both a technical primitive and an enduring digital brand.
-
-
-## Typography
-
-The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, high legibility, and modern character. Its lowercase styling conveys approachability and simplicity, aligning with Moony’s open and memetic ethos while preserving institutional clarity. This typeface should be used when reproducing the Moony logotype or developing visual assets that reference the brand name in stylized form.
 
 
 ## Usage Guidelines
