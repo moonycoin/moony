@@ -30,7 +30,7 @@ This process is:
 
 - **Permissionless**: Anyone can participate as demand arises, without permission or centralized control.
 - **Economically Constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
-- **Energy Efficient**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony’s economy.
+- **Energy Efficient**: By replacing energy-intensive computation with on-chain capital deposits, PoL reduces environmental impact and complements Solana’s low-carbon infrastructure.
 
 ## Fee Model
 
