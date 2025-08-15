@@ -35,7 +35,7 @@ With global accessibility and negligible fees, Moony forms the basis of an open,
 As a composable SPL token, Moony can be embedded directly into smart contracts, payment flows, and onchain systems. Its programmable design and native compatibility unlock new forms of coordination and monetization, expanding what’s possible in digital commerce and laying the foundation for a user-owned, innovation-driven economy.
 
 
-## Potential Applications
+### Potential Applications
 
 - **P2P Payments:** Enable global, permissionless transfers with near-zero fees and minimal latency. Moony empowers direct value exchange without intermediaries, expanding access to digital economies worldwide.
 - **Micropayments:** Power sub-cent transactions and unlock new monetization models, from one-time purchases to continuous streaming payments between users, apps, or autonomous agents.
