@@ -1,6 +1,7 @@
 ---
 title: Supply
 description: Understanding Moony's fixed supply mechanism and token economics
+# Updated: 2024-08-14
 ---
 
 # Supply
