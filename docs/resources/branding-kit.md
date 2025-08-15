@@ -17,7 +17,7 @@ The name is intentionally simple, memorable, and shareable. Its memetic resonanc
 
 Moony’s icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
 
-<img src="/Logos/Web%20File-03.svg" alt="Moony Icon Design - Web Version" style="max-width: 150px; height: auto;">
+<img src="/Logos/Web%20File-03.svg" alt="Moony Icon Design - Web Version" style="max-width: 300px; height: auto; display: block; margin: 40px auto;">
 
 - **Moon Over Horizon:** The central form evokes a moon rising above a horizon, an allusion to Moony’s namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.
 
