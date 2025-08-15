@@ -27,6 +27,12 @@ Moony’s icon is deliberately minimal, yet layered with symbolic meaning, craft
 
 The symbol is optimized for clarity at small sizes, performing reliably in both light and dark themes. Its simplicity ensures broad adaptability, while its layered references reinforce Moony’s identity as both a technical primitive and an enduring digital brand.
 
+
+## Typography
+
+The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, high legibility, and modern character. Its lowercase styling conveys approachability and simplicity, aligning with Moony’s open and memetic ethos while preserving institutional clarity. This typeface should be used when reproducing the Moony logotype or developing visual assets that reference the brand name in stylized form.
+
+
 ## Usage Guidelines
 
 Moony can be represented using the Unicode character ⍜ (U+235C “APL Functional Symbol Circle Underbar”) to indicate quantities, similar to how the $ symbol denotes U.S. dollars.
@@ -38,13 +44,6 @@ Moony can be represented using the Unicode character ⍜ (U+235C “APL Function
 * "Tip them ⍜2 for the post"
 * "The pool contains ⍜8,250"
 
-**Guidelines:**
-
-* Do not insert a space between the symbol and the number (write ⍜100, not ⍜ 100)
-* Do not pluralize the unit (write ⍜100, not "100 moonies")
-* Use the symbol in UI and communications where concise value representation is helpful
-
-This notation strengthens Moony’s position as a functional unit of account, supporting both usability and brand recognition.
 
 # Download Logo Files:
 
