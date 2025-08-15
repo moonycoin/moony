@@ -1,14 +1,13 @@
 ---
 title: Supply
 description: Redirecting to Fixed Supply page
+head:
+  - - meta
+    - http-equiv: refresh
+      content: 0;url=/tokenomics/fixed-supply
 ---
 
-<script>
-  // Redirect to the new fixed-supply page
-  window.location.href = '/tokenomics/fixed-supply';
-</script>
-
-# Redirecting...
+# Redirecting to Fixed Supply
 
 You are being redirected to the [Fixed Supply](/tokenomics/fixed-supply) page.
 
