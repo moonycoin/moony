@@ -13,13 +13,15 @@ The name is intentionally simple, memorable, and shareable. Its memetic resonanc
 
 ## Icon Design
 
-Moony's icon symbol is simple yet multilayered in meaning. 
+Moony’s icon is deliberately minimal, yet layered with symbolic meaning—crafted to express both functional clarity and conceptual depth across any medium.
 
-* **Moon over a horizon**: Represents Moony’s namesake and evokes cyclical, organic growth. The horizon suggests stability and grounding; the rising moon conveys potential and movement.
-* **Binary code**: The arrangement subtly recalls the 1’s and 0’s of binary code, referencing Moony’s digital nature and inherent programmability.
-* **Trading notation**: The symbol can be interpreted in some contexts as “over” or “above,” echoing Moony’s upward price trajectory along its bonding curve and its participation in open, emergent markets.
+- **Moon Over Horizon:** The central form evokes a moon rising above a horizon, an allusion to Moony’s namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.
 
-The icon is deliberately designed for clarity at small sizes, working equally well in light or dark themes. Its simplicity ensures adaptability across a wide variety of mediums, from digital UIs to printed materials.
+- **Binary Reference:** When rotated, the icon resembles a “1” and “0,” subtly invoking binary code. This visual echo underscores Moony’s digital origin and inherent programmability, positioning it as a native asset of internet capital markets. 
+
+- **Market Semantics:** In trading contexts, the icon can be interpreted as denoting “over,” “above,” or directional movement, suggesting upward price momentum along Moony’s bonding curve. This reflects its dynamic economic model, where adoption, integration, and transaction flow drive emergent market value.
+
+The symbol is optimized for clarity at small sizes, performing reliably in both light and dark themes. Its simplicity ensures broad adaptability, while its layered references reinforce Moony’s identity as both a technical primitive and an enduring digital brand.
 
 ## Usage Guidelines
 
