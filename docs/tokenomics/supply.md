@@ -3,7 +3,7 @@ title: Fixed Supply
 description: Understanding Moony's fixed supply mechanism and token economics
 ---
 
-## Fixed Supply 
+# Fixed Supply 
 
 Moony has a fixed, immutable total supply of 21 million tokens, enforced entirely by smart contract logic on the Solana blockchain. This hard cap cannot be changed — not by the project initiator, not by the Moony Foundation, and not by any future form of governance. It is permanently encoded, forming the backbone of Moony’s monetary architecture.
 
