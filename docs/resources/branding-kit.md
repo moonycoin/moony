@@ -5,9 +5,9 @@ description: Visual identity, logo usage, and brand guidelines for Moony
 
 # Brand Design
 
-![Moony Logo - High Resolution](/Logos/High%20res%20File-02.jpg)
-
 Moony’s visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces. 
+
+![Moony Logo - High Resolution](/Logos/High%20res%20File-02.jpg)
 
 The name Moony blends two ideas: moon and money. It draws from the playful, aspirational language of internet culture, where assets are said to “go to the moon”, while also pointing directly to Moony’s function as a new form of digital value. 
 
@@ -15,9 +15,9 @@ The name is intentionally simple, memorable, and shareable. Its memetic resonanc
 
 ## Icon Design
 
-![Moony Icon Design - High Resolution](/Logos/High%20res%20File-04.jpg)
+Moony’s icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
 
-Moony’s icon is deliberately minimal, yet layered with symbolic meaning—crafted to express both functional clarity and conceptual depth across any medium.
+![Moony Icon Design - High Resolution](/Logos/High%20res%20File-04.jpg)
 
 - **Moon Over Horizon:** The central form evokes a moon rising above a horizon, an allusion to Moony’s namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.
 
