@@ -38,6 +38,6 @@ Moony’s long-term growth depends not on central coordination, but on the initi
 
 This permissionless model invites diverse forms of participation. Communities can form around shared values, cultural identities, or local needs, building micro-economies that thrive on open infrastructure and collective ownership. The Moony ecosystem is not governed from the top down; it is grown from the ground up.
 
-::: tip
-Explore ways to get involved in the Moony community.
+::: tip click-here-tip
+[Explore ways to get involved in the Moony community](/resources/community)
 :::
