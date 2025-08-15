@@ -147,7 +147,7 @@ export default {
         text: 'Resources',
         items: [
           { text: 'Community', link: '/resources/community' },
-          { text: 'Branding Kit', link: '/resources/branding-kit' }
+          { text: 'Brand Kit', link: '/resources/brand-kit' }
         ]
       }
     ],
