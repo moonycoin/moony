@@ -129,7 +129,6 @@ export default {
       {
         text: 'Tokenomics',
         items: [
-          { text: 'Fixed Supply', link: '/tokenomics/supply' },
           { text: 'Reserve Contract', link: '/tokenomics/reserve-contract' },
           { text: 'Proof of Liquidity', link: '/tokenomics/proof-of-liquidity' },
           { text: 'Bonding Curve', link: '/tokenomics/bonding-curve' }
