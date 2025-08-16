@@ -255,6 +255,20 @@
     padding-top: 0 !important;
   }
   
+  /* SUPER AGGRESSIVE override for any remaining spacing issues */
+  .VPContent,
+  .VPContent > *,
+  .VPContent > * > *,
+  .VPContent .vp-doc,
+  .VPContent .vp-doc > *,
+  .VPContent .vp-doc > *:first-child,
+  .VPContent .vp-doc > *:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
   /* Target specific VitePress containers that might have default spacing */
   .VPContent .container,
   .VPContent .content,
