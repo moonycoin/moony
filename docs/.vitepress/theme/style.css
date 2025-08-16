@@ -290,7 +290,7 @@
     /* Override any VitePress default mobile spacing */
     .VPContent {
       margin-top: 0 !important;
-      padding-top: 0 !important;
+      /* DON'T override padding-top - we need it for navigation compensation */
     }
     
     /* Ensure the main content area has no top spacing */
@@ -776,7 +776,7 @@ body[class*="dark"] * {
    ================ */
 /* Add padding-top to main content to prevent it from being hidden behind fixed navigation */
 .VPContent {
-  padding-top: 64px; /* Compensate for fixed navigation bar height */
+  padding-top: 64px !important; /* Compensate for fixed navigation bar height - MUST override mobile CSS */
 }
 
 /* Ensure content is properly positioned below navigation */
