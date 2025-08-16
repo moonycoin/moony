@@ -5,6 +5,234 @@
  */
 
 /* ================
+   MOBILE OPTIMIZATION - 1:1 DESKTOP EXPERIENCE
+   ================ */
+/* Ensure mobile devices show the exact same layout as desktop */
+@media (max-width: 768px) {
+  /* Force consistent scaling */
+  html {
+    font-size: 16px !important;
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+  }
+  
+  /* Maintain exact desktop proportions */
+  body {
+    min-width: 320px !important;
+    overflow-x: auto !important;
+  }
+  
+  /* Ensure navigation maintains desktop layout */
+  .VPNav {
+    min-width: 320px !important;
+  }
+  
+  .VPNavBar {
+    min-width: 320px !important;
+    padding: 0 16px !important;
+  }
+  
+  /* Keep sidebar functionality */
+  .VPSidebar {
+    min-width: 280px !important;
+    max-width: 280px !important;
+  }
+  
+  /* Maintain content width consistency */
+  .vp-doc {
+    min-width: 320px !important;
+    max-width: 100% !important;
+  }
+  
+  /* Ensure tip boxes maintain desktop appearance */
+  .vp-doc .custom-block.tip,
+  .vp-doc .custom-block.warning,
+  .vp-doc .custom-block.danger,
+  .vp-doc .custom-block.info {
+    margin: 24px 0 !important;
+    padding: 16px 20px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Maintain image sizing consistency */
+  .vp-doc img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Keep table layouts intact */
+  .vp-doc table {
+    font-size: 14px !important;
+    min-width: 100% !important;
+    overflow-x: auto !important;
+  }
+  
+  /* Maintain code block readability */
+  .vp-doc div[class*='language-'] {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Ensure proper spacing on mobile */
+  .vp-doc h1 { margin: 32px 0 24px 0 !important; font-size: 28px !important; }
+  .vp-doc h2 { margin: 28px 0 20px 0 !important; font-size: 24px !important; }
+  .vp-doc h3 { margin: 24px 0 16px 0 !important; font-size: 20px !important; }
+  .vp-doc h4 { margin: 20px 0 14px 0 !important; font-size: 18px !important; }
+  .vp-doc p { margin: 16px 0 !important; line-height: 1.6 !important; }
+  
+  /* Maintain button and link consistency */
+  .vp-doc a {
+    font-size: inherit !important;
+    text-decoration: none !important;
+  }
+  
+  /* Keep navigation menu accessible */
+  .VPNavBarMenu {
+    min-width: 200px !important;
+  }
+  
+  .VPNavBarMenuLink {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Extra small devices - maintain proportions */
+@media (max-width: 480px) {
+  html {
+    font-size: 15px !important;
+  }
+  
+  .VPNavBar {
+    padding: 0 12px !important;
+  }
+  
+  .vp-doc {
+    padding: 0 16px !important;
+  }
+  
+  .vp-doc h1 { font-size: 26px !important; }
+  .vp-doc h2 { font-size: 22px !important; }
+  .vp-doc h3 { font-size: 18px !important; }
+  .vp-doc h4 { font-size: 16px !important; }
+}
+
+/* Landscape orientation - maintain desktop experience */
+@media (max-width: 768px) and (orientation: landscape) {
+  .VPNavBar {
+    height: 64px !important;
+  }
+  
+  .VPSidebar {
+    top: 64px !important;
+  }
+}
+
+/* Ensure mobile menu maintains desktop appearance */
+@media (max-width: 768px) {
+  .VPNavBarMenu {
+    background: #ffffff !important;
+    border: 1px solid #d2d2d7 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .VPNavBarMenuLink {
+    color: #1d1d1f !important;
+    border-bottom: 1px solid #e5e5e7 !important;
+  }
+  
+  .VPNavBarMenuLink:hover {
+    background: #f6f6f7 !important;
+  }
+  
+  /* Ensure mobile sidebar toggle works properly */
+  .VPNavBarMenuButton {
+    color: #1d1d1f !important;
+    border: 1px solid #d2d2d7 !important;
+    border-radius: 6px !important;
+    background: #ffffff !important;
+  }
+  
+  .VPNavBarMenuButton:hover {
+    background: #f6f6f7 !important;
+    border-color: #c7c7cc !important;
+  }
+  
+  /* Maintain footer consistency */
+  .VPDocFooter {
+    margin-top: 48px !important;
+    padding: 24px 0 !important;
+    border-top: 1px solid #e5e5e7 !important;
+  }
+  
+  .VPDocFooter .pager-link {
+    padding: 12px 16px !important;
+    border: 1px solid #d2d2d7 !important;
+    border-radius: 6px !important;
+    background: #ffffff !important;
+    color: #1d1d1f !important;
+  }
+  
+  .VPDocFooter .pager-link:hover {
+    background: #f6f6f7 !important;
+    border-color: #c7c7cc !important;
+  }
+  
+  /* Ensure overall layout maintains desktop proportions */
+  .VPNav {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+  }
+  
+  .VPSidebar {
+    position: fixed !important;
+    top: 64px !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    z-index: 999 !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease !important;
+  }
+  
+  .VPSidebar.open {
+    transform: translateX(0) !important;
+  }
+  
+  /* Main content area */
+  .VPContent {
+    margin-left: 0 !important;
+    padding-top: 64px !important;
+    min-height: calc(100vh - 64px) !important;
+  }
+  
+  /* Ensure content is properly centered and readable */
+  .vp-doc {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 24px 16px !important;
+  }
+  
+  /* Maintain consistent spacing for all content blocks */
+  .vp-doc > * + * {
+    margin-top: 16px !important;
+  }
+  
+  .vp-doc > * + h1,
+  .vp-doc > * + h2,
+  .vp-doc > * + h3,
+  .vp-doc > * + h4 {
+    margin-top: 32px !important;
+  }
+}
+
+/* ================
    FORCE LIGHT MODE - HIDE THEME TOGGLE
    ================ */
 /* Hide theme toggle completely */

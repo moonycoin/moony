@@ -4,7 +4,7 @@ export default {
   base: '/moony/',
   appearance: 'light',
   head: [
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no' }],
     ['meta', { name: 'theme-color', content: '#007AFF' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon-light.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icon-light.png' }],
@@ -62,38 +62,14 @@ export default {
         const themeToggles = document.querySelectorAll('.VPNavBarAppearance, .VPSwitch, [data-vp-theme]');
         themeToggles.forEach(toggle => toggle.remove());
         
-        // Force portrait mode on mobile
-        if (window.innerWidth <= 768 && window.innerHeight < window.innerWidth) {
-          const warning = document.createElement('div');
-          warning.className = 'portrait-warning';
-          warning.innerHTML = \`
-            <div class="icon">📱</div>
-            <div>Please rotate your device to portrait mode</div>
-            <div style="font-size: 0.9rem; opacity: 0.8;">This site is optimized for portrait viewing</div>
-          \`;
-          document.body.appendChild(warning);
+                // Mobile optimization - ensure consistent experience across all devices
+        if (window.innerWidth <= 768) {
+          // Force consistent mobile layout
+          document.documentElement.style.setProperty('--vp-c-bg', '#ffffff');
+          document.documentElement.style.setProperty('--vp-c-bg-alt', '#f6f6f7');
+          document.documentElement.style.setProperty('--vp-c-bg-elv', '#ffffff');
+          document.documentElement.style.setProperty('--vp-c-bg-soft', '#f6f6f7');
         }
-        
-        // Listen for orientation changes
-        window.addEventListener('orientationchange', function() {
-          if (window.innerWidth <= 768 && window.innerHeight < window.innerWidth) {
-            if (!document.querySelector('.portrait-warning')) {
-              const warning = document.createElement('div');
-              warning.className = 'portrait-warning';
-              warning.innerHTML = \`
-                <div class="icon">📱</div>
-                <div>Please rotate your device to portrait mode</div>
-                <div style="font-size: 0.9rem; opacity: 0.8;">This site is optimized for portrait viewing</div>
-              \`;
-              document.body.appendChild(warning);
-            }
-          } else {
-            const warning = document.querySelector('.portrait-warning');
-            if (warning) {
-              warning.remove();
-            }
-          }
-        });
       })();
     `]
   ],
