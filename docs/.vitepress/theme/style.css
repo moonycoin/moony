@@ -113,6 +113,83 @@ body[class*="dark"] * {
   border-color: rgba(66, 66, 69, 0.2) !important;
 }
 
+/* ================
+   APPLE-STYLE VARIABLES
+   ================ */
+:root {
+  /* Clean black, white, and grey palette */
+  --vp-c-brand-1: #1d1d1f;
+  --vp-c-brand-2: #424245;
+  --vp-c-brand-3: #6e6e73;
+  --vp-c-sponsor: var(--vp-c-text-2);
+  
+  /* Enhanced neutral palette */
+  --moony-primary: #1d1d1f;
+  --moony-secondary: #424245;
+  --moony-accent: #6e6e73; /* Medium grey accent */
+  --moony-light-gray: #f5f5f7;
+  --moony-medium-gray: #86868b;
+  --moony-border: #d2d2d7;
+  --moony-subtle: #f5f5f7;
+  --moony-muted: #86868b;
+  
+  /* Enhanced spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Elegant gradient */
+  --elegant-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95)), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  --elegant-gradient-alt: linear-gradient(135deg, rgba(248, 250, 252, 0.95), rgba(241, 245, 249, 0.98));
+}
+
+.dark {
+  --vp-c-brand-1: #f5f5f7;
+  --vp-c-brand-2: #a1a1a6;
+  --vp-c-brand-3: #86868b;
+  
+  --moony-primary: #f5f5f7;
+  --moony-secondary: #a1a1a6;
+  --moony-accent: #a1a1a6; /* Light grey accent */
+  --moony-light-gray: #1d1d1f;
+  --moony-medium-gray: #86868b;
+  --moony-border: #424245;
+  --moony-subtle: #2a2a2a;
+  --moony-muted: #6e6e73;
+  
+  /* Elegant gradient */
+  --elegant-gradient: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.95)), url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.12'/%3E%3C/svg%3E");
+  --elegant-gradient-alt: linear-gradient(135deg, rgba(40, 40, 40, 0.85), rgba(35, 35, 35, 0.95));
+}
+
+/* ================
+   FULL PAGE GRADIENT BACKGROUND
+   ================ */
+.Layout,
+.VPApp,
+.VPContent,
+body {
+  background: var(--elegant-gradient) !important;
+  min-height: 100vh;
+}
+
+.dark .Layout,
+.dark .VPApp,
+.dark .VPContent,
+.dark body {
+  background: var(--elegant-gradient) !important;
+}
+
+/* Ensure content is above the overlay */
+.VPNav,
+.VPContent,
+.vp-doc {
+  position: relative;
+  z-index: 1;
+}
+
 /* Force light mode for all text elements */
 .dark .vp-doc h1,
 .dark .vp-doc h2,
