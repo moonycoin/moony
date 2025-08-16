@@ -1392,9 +1392,7 @@ body {
 
 /* Mobile responsive spacing */
 @media (max-width: 768px) {
-  .vp-doc {
-    margin: 60px auto 0px !important;
-  }
+  /* Removed problematic margin that was causing spacing issues */
   
   /* Essential layout properties without debug colors */
   .VPContent {
