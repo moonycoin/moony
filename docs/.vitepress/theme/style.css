@@ -255,6 +255,33 @@
     padding-top: 0 !important;
   }
   
+  /* Target specific VitePress containers that might have default spacing */
+  .VPContent .container,
+  .VPContent .content,
+  .VPContent .main,
+  .VPContent .page,
+  .VPContent .doc,
+  .VPContent .content-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Override any VitePress default page spacing */
+  .VPContent .page-content,
+  .VPContent .doc-content,
+  .VPContent .main-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the main page wrapper */
+  .VPContent .page,
+  .VPContent .doc,
+  .VPContent .main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
   /* But preserve spacing between content elements */
   .vp-doc h1 + *,
   .vp-doc h2 + *,
@@ -267,6 +294,53 @@
   
   /* Ensure first element has no top spacing */
   .vp-doc > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Nuclear option - remove ALL top spacing from everything */
+  .VPContent,
+  .VPContent *,
+  .vp-doc,
+  .vp-doc *,
+  .container,
+  .container *,
+  .content,
+  .content *,
+  .main,
+  .main *,
+  .page,
+  .page *,
+  .doc,
+  .doc *,
+  .content-container,
+  .content-container *,
+  .page-content,
+  .page-content *,
+  .doc-content,
+  .doc-content *,
+  .main-content,
+  .main-content * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* But preserve spacing between content elements for readability */
+  .vp-doc h1 + *,
+  .vp-doc h2 + *,
+  .vp-doc h3 + *,
+  .vp-doc h4 + *,
+  .vp-doc p + *,
+  .vp-doc div + *,
+  .vp-doc section + *,
+  .vp-doc article + * {
+    margin-top: 16px !important;
+  }
+  
+  /* Ensure the page title has no top spacing */
+  .vp-doc h1:first-child,
+  .vp-doc h1:first-of-type,
+  .vp-doc h1:first-of-type + * {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
