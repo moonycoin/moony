@@ -204,7 +204,32 @@
   .vp-doc {
     max-width: 100% !important;
     margin: 0 auto !important;
-    padding: 24px 16px !important;
+    padding: 0 16px !important;
+  }
+  
+  /* Remove all top margins and padding that cause empty space */
+  .vp-doc h1:first-child,
+  .vp-doc h1:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the main content wrapper */
+  .VPContent .vp-doc {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Remove any default VitePress mobile spacing */
+  .VPContent {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the main container */
+  .VPContent .container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
   
   /* Maintain consistent spacing for all content blocks */
@@ -217,6 +242,33 @@
   .vp-doc > * + h3,
   .vp-doc > * + h4 {
     margin-top: 32px !important;
+  }
+  
+  /* Aggressively remove all top spacing on mobile */
+  .VPContent,
+  .VPContent *,
+  .vp-doc,
+  .vp-doc *,
+  .container,
+  .container * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* But preserve spacing between content elements */
+  .vp-doc h1 + *,
+  .vp-doc h2 + *,
+  .vp-doc h3 + *,
+  .vp-doc h4 + *,
+  .vp-doc p + *,
+  .vp-doc div + * {
+    margin-top: 16px !important;
+  }
+  
+  /* Ensure first element has no top spacing */
+  .vp-doc > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 }
 
