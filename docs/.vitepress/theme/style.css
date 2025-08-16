@@ -772,6 +772,19 @@ body[class*="dark"] * {
 }
 
 /* ================
+   FIXED NAVIGATION COMPENSATION
+   ================ */
+/* Add padding-top to main content to prevent it from being hidden behind fixed navigation */
+.VPContent {
+  padding-top: 64px; /* Compensate for fixed navigation bar height */
+}
+
+/* Ensure content is properly positioned below navigation */
+.vp-doc {
+  padding-top: 0; /* Remove any additional padding from content itself */
+}
+
+/* ================
    COMPLETELY HIDE ALL FOOTERS EVERYWHERE
    ================ */
 .VPFooter,
