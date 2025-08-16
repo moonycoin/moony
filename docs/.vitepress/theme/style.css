@@ -506,6 +506,7 @@ footer *,
   width: auto;
   display: block;
   margin: 0 auto;
+  /* Shadow removed */
   background: transparent !important;
   mix-blend-mode: multiply;
 }
@@ -579,6 +580,7 @@ footer *,
   color: white;
   border-color: #1d1d1f;
   box-shadow: 0 4px 12px rgba(29, 29, 31, 0.15), 0 0 20px rgba(29, 29, 31, 0.1);
+  /* Transition removed - no hover animations */
 }
 
 .hero-button.secondary {
@@ -586,6 +588,7 @@ footer *,
   color: #1d1d1f;
   border-color: #424245;
   box-shadow: 0 0 20px rgba(66, 66, 69, 0.1);
+  /* Transition removed - no hover animations */
 }
 
 /* Prevent text color changes on hover for hero buttons */
@@ -597,10 +600,12 @@ footer *,
 
 .hero-button.primary:hover {
   color: white !important;
+  /* Hover animations removed */
 }
 
 .hero-button.secondary:hover {
   color: #1d1d1f !important;
+  /* Hover animations removed */
 }
 
 /* ================
@@ -697,4 +702,196 @@ footer *,
   color: var(--moony-secondary);
   line-height: 1.6;
   margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* ================
+   FULL PAGE GRADIENT BACKGROUND
+   ================ */
+.Layout,
+.VPApp,
+.VPContent,
+body {
+  background: var(--elegant-gradient) !important;
+  min-height: 100vh;
+}
+
+/* ================
+   RESPONSIVE CONTENT WIDTH FIX
+   ================ */
+/* Ensure content doesn't stretch too wide on large screens */
+@media (min-width: 1200px) {
+  .vp-doc {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3,
+  .vp-doc p {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .vp-doc {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 2000px) {
+  .vp-doc {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.dark .Layout,
+.dark .VPApp,
+.dark .VPContent,
+.dark body {
+  background: var(--elegant-gradient) !important;
+}
+
+/* Subtle grey glow overlay for entire page - REMOVED TO FIX GRADIENT ARTIFACT */
+/* .Layout::before,
+.VPApp::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top center, 
+    rgba(66, 66, 69, 0.04) 0%, 
+    transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+} */
+
+/* Ensure content is above the overlay */
+.VPNav,
+.VPContent,
+.vp-doc {
+  position: relative;
+  z-index: 1;
+}
+
+.VPHero .text {
+  font-size: 5rem !important;
+  line-height: 1.1 !important;
+  color: var(--moony-primary) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 32px !important;
+  background: linear-gradient(135deg, var(--moony-primary), var(--moony-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 8px 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+}
+
+.VPHero .tagline {
+  font-size: 1.125rem !important;
+  line-height: 1.3 !important;
+  color: var(--moony-secondary) !important;
+  font-weight: 400 !important;
+  margin-bottom: 56px !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  opacity: 0.9;
+  white-space: nowrap !important;
+}
+
+.VPHero .image {
+  margin-bottom: 0 !important;
+  position: relative;
+  background: transparent !important;
+  background-color: transparent !important;
+  order: 2;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.VPHero .image img {
+  max-width: 280px !important;
+  height: auto !important;
+  opacity: 1 !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  filter: 
+      drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
+      drop-shadow(0 4px 12px rgba(66, 66, 69, 0.1))
+      drop-shadow(0 0 20px rgba(66, 66, 69, 0.08))
+      brightness(1.6)
+      contrast(0.6)
+      saturate(0.3) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Removed hover effects on icon image */
+
+/* Enhanced gradient overlay to match hero text - Light Mode */
+.VPHero .image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, 
+    rgba(29, 29, 31, 0.15) 0%, 
+    rgba(81, 81, 84, 0.08) 50%,
+    rgba(66, 66, 69, 0.12) 100%);
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  opacity: 0.25;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  box-shadow: 
+    inset 0 0 60px rgba(66, 66, 69, 0.1),
+    0 0 40px rgba(66, 66, 69, 0.08) !important;
+}
+
+/* Additional glow effect for light mode only */
+.VPHero .image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, 
+    rgba(66, 66, 69, 0.08) 0%, 
+    rgba(66, 66, 69, 0.04) 40%,
+    transparent 70%);
+  pointer-events: none;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Enhanced filters for light mode only */
+.VPHero .image img {
+  filter: 
+      drop-shadow(0 8px 24px rgba(66, 66, 69, 0.15))
+      drop-shadow(0 4px 12px rgba(66, 66, 69, 0.1))
+      drop-shadow(0 0 20px rgba(66, 66, 69, 0.08))
+      brightness(1.8)
+      contrast(0.5)
+      saturate(0.4)
+      sepia(0.1)
+      hue-rotate(5deg) !important;
 }
