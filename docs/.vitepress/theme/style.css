@@ -269,6 +269,37 @@
     padding-bottom: 0 !important;
   }
   
+  /* MOBILE-SPECIFIC OVERRIDES - These only apply on mobile devices */
+  @media (max-width: 768px) {
+    /* Force remove all top spacing on mobile only */
+    .VPContent,
+    .VPContent > *,
+    .VPContent > * > *,
+    .VPContent .vp-doc,
+    .VPContent .vp-doc > *,
+    .VPContent .vp-doc > *:first-child,
+    .VPContent .vp-doc > *:first-of-type,
+    .vp-doc,
+    .vp-doc > *,
+    .vp-doc > *:first-child,
+    .vp-doc > *:first-of-type {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+    
+    /* Override any VitePress default mobile spacing */
+    .VPContent {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+    
+    /* Ensure the main content area has no top spacing */
+    .vp-doc {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+  
   /* Target specific VitePress containers that might have default spacing */
   .VPContent .container,
   .VPContent .content,
