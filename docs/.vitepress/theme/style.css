@@ -298,6 +298,14 @@
       margin-top: 0 !important;
       padding-top: 0 !important;
     }
+    
+    /* FIX THE REAL CULPRIT: Remove scroll-margin-top that's causing white space */
+    .vp-doc > *:first-child,
+    .vp-doc h1,
+    .vp-doc h2,
+    .vp-doc h3 {
+      scroll-margin-top: 0 !important;
+    }
   }
   
   /* Target specific VitePress containers that might have default spacing */
