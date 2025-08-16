@@ -306,6 +306,19 @@
     .vp-doc h3 {
       scroll-margin-top: 0 !important;
     }
+    
+    /* NUCLEAR OPTION: Override ALL mobile padding and margins that cause white space */
+    .vp-doc {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+    
+    /* Override any other mobile CSS that might be adding spacing */
+    .vp-doc,
+    .vp-doc * {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
   }
   
   /* Target specific VitePress containers that might have default spacing */
