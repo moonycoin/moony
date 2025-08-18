@@ -360,7 +360,8 @@ a:visited {
 .VPSidebar .text:hover,
 .VPSidebar .title:hover {
   color: #333333 !important;
-  text-decoration: underline !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
 }
 
 .VPSidebar .active a,
