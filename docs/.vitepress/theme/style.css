@@ -582,6 +582,52 @@ a:visited {
 }
 
 /* ================
+   BOLD TEXT COLOR ENFORCEMENT
+   ================ */
+
+/* Ensure all bold text is always black */
+strong,
+b,
+.font-bold,
+.text-bold,
+.bold,
+[style*="font-weight: bold"],
+[style*="font-weight:bold"],
+*[style*="font-weight: bold"],
+*[style*="font-weight:bold"] {
+  color: #000000 !important;
+}
+
+/* Target elements with font-weight: bold */
+*[style*="font-weight: bold"],
+*[style*="font-weight:bold"] {
+  color: #000000 !important;
+}
+
+/* Target elements with font-weight: 700 (bold) */
+*[style*="font-weight: 700"],
+*[style*="font-weight:700"] {
+  color: #000000 !important;
+}
+
+/* Target elements with font-weight: 600 (semi-bold) */
+*[style*="font-weight: 600"],
+*[style*="font-weight:600"] {
+  color: #000000 !important;
+}
+
+/* Ensure hover states for bold text remain black */
+strong:hover,
+b:hover,
+.font-bold:hover,
+.text-bold:hover,
+.bold:hover,
+*[style*="font-weight: bold"]:hover,
+*[style*="font-weight:bold"]:hover {
+  color: #000000 !important;
+}
+
+/* ================
    LIGHT MODE ENFORCEMENT
    ================ */
 
