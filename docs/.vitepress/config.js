@@ -5,7 +5,7 @@ export default {
   appearance: false,
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no' }],
-    ['meta', { name: 'theme-color', content: '#007AFF' }],
+    ['meta', { name: 'theme-color', content: '#333333' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon-light.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icon-light.png' }],
     ['link', { rel: 'shortcut icon', href: '/icon-light.png' }],
@@ -37,9 +37,9 @@ export default {
         document.documentElement.style.setProperty('--vp-c-text-1', '#213547');
         document.documentElement.style.setProperty('--vp-c-text-2', '#476582');
         document.documentElement.style.setProperty('--vp-c-text-3', '#8b9eb0');
-        document.documentElement.style.setProperty('--vp-c-brand', '#007AFF');
-        document.documentElement.style.setProperty('--vp-c-brand-light', '#007AFF');
-        document.documentElement.style.setProperty('--vp-c-brand-dark', '#007AFF');
+        document.documentElement.style.setProperty('--vp-c-brand', '#333333');
+        document.documentElement.style.setProperty('--vp-c-brand-light', '#333333');
+        document.documentElement.style.setProperty('--vp-c-brand-dark', '#333333');
         
         // Prevent dark mode from being applied
         const observer = new MutationObserver(function(mutations) {
@@ -82,9 +82,9 @@ export default {
         '--vp-c-text-1': '#213547',
         '--vp-c-text-2': '#476582',
         '--vp-c-text-3': '#8b9eb0',
-        '--vp-c-brand': '#007AFF',
-        '--vp-c-brand-light': '#007AFF',
-        '--vp-c-brand-dark': '#007AFF'
+        '--vp-c-brand': '#333333',
+        '--vp-c-brand-light': '#333333',
+        '--vp-c-brand-dark': '#333333'
       }
     },
     nav: [
