@@ -237,7 +237,7 @@
 }
 
 .hero-title {
-  font-size: 1.875rem;
+  font-size: 23px;
   font-weight: 700;
   color: var(--vp-c-brand);
   margin-bottom: 1rem;
@@ -322,7 +322,7 @@
 /* Mobile optimizations for screens ≤640px */
 @media (max-width: 640px) {
   .hero-title {
-    font-size: 17px !important;
+    font-size: 13px !important;
     font-weight: bold !important;
   }
   
