@@ -684,3 +684,34 @@ html.dark {
 * {
   color-scheme: light !important;
 }
+
+/* ================
+   GLOBAL BLACK TEXT ENFORCEMENT
+   ================ */
+
+/* Make all text black except homepage buttons */
+* {
+  color: #000000 !important;
+}
+
+/* Preserve homepage button colors */
+.hero-button,
+.hero-button *,
+.hero-button a,
+.hero-button a * {
+  color: inherit !important;
+}
+
+.hero-button.primary,
+.hero-button.primary *,
+.hero-button.primary a,
+.hero-button.primary a * {
+  color: white !important;
+}
+
+.hero-button.secondary,
+.hero-button.secondary *,
+.hero-button.secondary a,
+.hero-button.secondary a * {
+  color: #000000 !important;
+}
