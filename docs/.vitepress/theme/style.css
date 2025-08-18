@@ -323,4 +323,8 @@
   .hero-title {
     font-size: 17px !important;
   }
+  
+  .hero-image {
+    height: 80px !important;
+  }
 }
