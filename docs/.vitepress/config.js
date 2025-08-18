@@ -123,16 +123,8 @@ export default {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/moonycoin/moony' }
     ],
-    editLink: {
-      pattern: 'https://github.com/moonycoin/moony/edit/main/docs/:path'
-    },
-    lastUpdated: {
-      text: 'Updated at',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
-    },
+    editLink: false,
+    lastUpdated: false,
     appearance: false,
     // Completely disable theme switching
     darkMode: false
