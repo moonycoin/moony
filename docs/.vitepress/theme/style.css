@@ -152,6 +152,11 @@ a:visited {
   background: var(--vp-c-bg-soft);
 }
 
+/* Hide tip and disclaimer labels, show only body text */
+.vp-doc .custom-block .custom-block-title {
+  display: none !important;
+}
+
 .vp-doc .custom-block.tip {
   border-left-color: var(--vp-c-brand);
 }
