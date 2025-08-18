@@ -237,7 +237,7 @@
 }
 
 .hero-title {
-  font-size: 23px;
+  font-size: 23px !important;
   font-weight: 700;
   color: var(--vp-c-brand);
   margin-bottom: 1rem;
