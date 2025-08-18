@@ -270,6 +270,10 @@ a:visited {
 .VPPage .pager,
 .VPFooter .pager {
   color: #555555 !important;
+  border: 2px solid var(--vp-c-brand);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background: var(--vp-c-bg);
 }
 
 .VPPage .next a,
@@ -288,8 +292,8 @@ a:visited {
 .VPFooter .prev a:hover,
 .VPPage .pager a:hover,
 .VPFooter .pager a:hover {
-  color: #333333 !important;
-  text-decoration: underline !important;
+  color: #555555 !important;
+  text-decoration: none !important;
 }
 
 /* Override any remaining blue colors in footer/pagination */
