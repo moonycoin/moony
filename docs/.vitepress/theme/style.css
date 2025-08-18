@@ -491,6 +491,19 @@ a:visited {
   border: 2px solid #d2d2d7;
 }
 
+/* Remove all hover effects from button links */
+.hero-button:hover,
+.hero-button:hover *,
+.hero-button a:hover,
+.hero-button a:hover * {
+  color: inherit !important;
+  text-decoration: none !important;
+  background: inherit !important;
+  border-color: inherit !important;
+  transform: none !important;
+  box-shadow: inherit !important;
+}
+
 .docs-icon,
 .github-icon {
   width: 20px;
