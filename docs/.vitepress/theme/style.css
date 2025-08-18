@@ -362,7 +362,6 @@ a:visited {
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: var(--vp-c-shadow-1);
 }
 
@@ -373,8 +372,6 @@ a:visited {
 
 .hero-button.primary:hover {
   background: var(--vp-c-brand-light);
-  transform: translateY(-2px);
-  box-shadow: var(--vp-c-shadow-3);
 }
 
 .hero-button.secondary {
@@ -386,8 +383,6 @@ a:visited {
 .hero-button.secondary:hover {
   background: var(--vp-c-bg-elv);
   border-color: var(--vp-c-brand);
-  transform: translateY(-2px);
-  box-shadow: var(--vp-c-shadow-3);
 }
 
 .docs-icon,
