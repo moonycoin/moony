@@ -341,6 +341,20 @@
   
   .hero-actions {
     margin-top: 1rem !important;
+    gap: 0.5rem !important;
+  }
+  
+  .hero-button {
+    padding: 0.625rem 1rem !important;
+    font-size: 0.875rem !important;
+    min-width: auto !important;
+    flex: 0 1 auto !important;
+  }
+  
+  .hero-button .docs-icon,
+  .hero-button .github-icon {
+    width: 16px !important;
+    height: 16px !important;
   }
 }
 
