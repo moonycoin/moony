@@ -12121,3 +12121,109 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     z-index: 1000 !important;
   }
 }
+
+/* ================
+   MOBILE MENU COLLAPSE FIX - AGGRESSIVE
+   ================ */
+/* Force the mobile menu to properly collapse and not reserve space */
+
+@media (max-width: 768px) {
+  /* Force menu to be absolutely positioned and not affect layout */
+  .VPNavBarMenu,
+  .VPNavBarMenuContainer,
+  .VPNavBarMenuContent {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: #ffffff !important;
+    z-index: 9999 !important;
+    transform: translateY(-100%) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  /* When menu is open, show it properly */
+  .VPNavBarMenu[data-vp-menu-open="true"],
+  .VPNavBarMenu.open,
+  .VPNavBarMenu:not([style*="display: none"]) {
+    max-height: 400px !important;
+    overflow: visible !important;
+    transform: translateY(0) !important;
+    border: 1px solid #e5e7eb !important;
+    border-top: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Ensure the navigation bar doesn't reserve extra height */
+  .VPNavBar {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+  
+  /* Force content to start immediately after nav */
+  .VPContent {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+  }
+  
+  /* Override any VitePress default menu behavior */
+  .VPNavBarMenu[style*="height"],
+  .VPNavBarMenu[style*="display"],
+  .VPNavBarMenu[style*="visibility"] {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translateY(-100%) !important;
+  }
+  
+  /* Ensure menu items don't create layout issues */
+  .VPNavBarMenuLink,
+  .VPNavBarMenuLinkContainer {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    background: #ffffff !important;
+  }
+  
+  /* Force remove any remaining space reservation */
+  .VPNavBarMenuContainer,
+  .VPNavBarMenuContent,
+  .VPNavBarMenuWrapper {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* When open, allow proper height */
+  .VPNavBarMenuContainer[data-vp-menu-open="true"],
+  .VPNavBarMenuContent[data-vp-menu-open="true"],
+  .VPNavBarMenuWrapper[data-vp-menu-open="true"] {
+    max-height: 400px !important;
+    overflow: visible !important;
+  }
+}
