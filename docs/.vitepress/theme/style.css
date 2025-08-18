@@ -322,6 +322,7 @@
 @media (max-width: 640px) {
   .hero-title {
     font-size: 17px !important;
+    font-weight: bold !important;
   }
   
   .hero-image {
