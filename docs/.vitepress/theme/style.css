@@ -243,7 +243,7 @@
   color: var(--vp-c-text-2);
   margin-bottom: 2rem;
   line-height: 1.6;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .hero-actions {
@@ -310,7 +310,7 @@
   
   .hero-description {
     font-size: 13px !important;
-    margin-top: 1rem !important;
+    margin-top: 1.5rem !important;
   }
   
   .hero-actions {
