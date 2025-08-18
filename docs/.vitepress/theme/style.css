@@ -226,3 +226,88 @@
 .VPHero .action:hover {
   background: var(--vp-c-brand-light);
 }
+
+/* ================
+   CUSTOM HERO SECTION
+   ================ */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  height: 80px;
+  width: auto;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--vp-c-brand);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.hero-button.primary {
+  background: var(--vp-c-brand);
+  color: white;
+}
+
+.hero-button.primary:hover {
+  background: var(--vp-c-brand-light);
+  transform: translateY(-2px);
+}
+
+.hero-button.secondary {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  border: 1px solid var(--vp-c-bg-soft);
+}
+
+.hero-button.secondary:hover {
+  background: var(--vp-c-bg-elv);
+  border-color: var(--vp-c-brand);
+  transform: translateY(-2px);
+}
+
+.docs-icon,
+.github-icon {
+  width: 20px;
+  height: 20px;
+}
+}
