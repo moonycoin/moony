@@ -208,7 +208,7 @@
 }
 
 .hero-logo {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: center;
 }
@@ -305,7 +305,7 @@
   }
   
   .hero-logo {
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
   }
   
   .hero-description {
