@@ -262,6 +262,18 @@
   color: var(--vp-c-brand);
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  position: relative;
+}
+
+.hero-title::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--vp-c-brand);
+  border-radius: 1px;
 }
 
 .hero-description {
