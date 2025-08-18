@@ -424,22 +424,22 @@ a:visited {
 }
 
 /* ================
-   FULL PAGE GRADIENT BACKGROUND
+   FULL PAGE BACKGROUND
    ================ */
 
-/* Apply gradient to entire page */
+/* Apply solid white background to entire page */
 html,
 body {
-  background: linear-gradient(180deg, #ffffff 0%, #e5e5e7 100%) !important;
+  background: #ffffff !important;
   min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-/* Ensure main content area also has the gradient */
+/* Ensure main content area also has solid background */
 #app,
 .VPApp {
-  background: linear-gradient(180deg, #ffffff 0%, #e5e5e7 100%) !important;
+  background: #ffffff !important;
   min-height: 100vh;
 }
 
