@@ -458,7 +458,6 @@ body {
   border-radius: 16px;
   background: var(--vp-c-bg);
   box-shadow: var(--vp-c-shadow-2);
-  border: 1px solid var(--vp-c-border);
 }
 
 .hero-logo {
