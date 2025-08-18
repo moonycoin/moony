@@ -385,6 +385,32 @@ a:visited {
   color: #333333 !important;
 }
 
+/* Remove the first divider line above Getting Started */
+.VPSidebar .group:first-child,
+.VPSidebar .section:first-child,
+.VPSidebar .item:first-child,
+.VPSidebarItem:first-child,
+.VPSidebar .nav-item:first-child {
+  border-top: none !important;
+  border-top-width: 0 !important;
+  border-top-style: none !important;
+  border-top-color: transparent !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove any divider before the first sidebar item */
+.VPSidebar > .content > .nav > .items > .item:first-child,
+.VPSidebar > .content > .nav > .items > .group:first-child,
+.VPSidebar > .content > .nav > .items > .section:first-child {
+  border-top: none !important;
+  border-top-width: 0 !important;
+  border-top-style: none !important;
+  border-top-color: transparent !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* ================
    BASIC CONTENT AREA
    ================ */
