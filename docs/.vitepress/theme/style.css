@@ -208,6 +208,86 @@ a:visited {
 }
 
 /* ================
+   FOOTER & PAGINATION STYLING
+   ================ */
+.VPFooter,
+.VPPage,
+.VPNavBar {
+  background: var(--vp-c-bg);
+}
+
+/* Footer navigation links */
+.VPFooter a,
+.VPPage a,
+.VPFooter .link,
+.VPPage .link,
+.VPFooter .text,
+.VPPage .text,
+.VPFooter .title,
+.VPPage .title {
+  color: #555555 !important;
+  text-decoration: none !important;
+}
+
+.VPFooter a:hover,
+.VPPage a:hover,
+.VPFooter .link:hover,
+.VPPage .link:hover,
+.VPFooter .text:hover,
+.VPPage .text:hover,
+.VPFooter .title:hover,
+.VPPage .title:hover {
+  color: #333333 !important;
+  text-decoration: underline !important;
+}
+
+/* Next/Previous page links */
+.VPPage .next,
+.VPPage .prev,
+.VPFooter .next,
+.VPFooter .prev,
+.VPPage .pager,
+.VPFooter .pager {
+  color: #555555 !important;
+}
+
+.VPPage .next a,
+.VPPage .prev a,
+.VPFooter .next a,
+.VPFooter .prev a,
+.VPPage .pager a,
+.VPFooter .pager a {
+  color: #555555 !important;
+  text-decoration: none !important;
+}
+
+.VPPage .next a:hover,
+.VPPage .prev a:hover,
+.VPFooter .next a:hover,
+.VPFooter .prev a:hover,
+.VPPage .pager a:hover,
+.VPFooter .pager a:hover {
+  color: #333333 !important;
+  text-decoration: underline !important;
+}
+
+/* Override any remaining blue colors in footer/pagination */
+.VPFooter *,
+.VPPage * {
+  color: #555555 !important;
+}
+
+.VPFooter a,
+.VPPage a {
+  color: #555555 !important;
+}
+
+.VPFooter a:hover,
+.VPPage a:hover {
+  color: #333333 !important;
+}
+
+/* ================
    BASIC NAVIGATION
    ================ */
 .VPNav {
