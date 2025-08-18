@@ -2,7 +2,7 @@ export default {
   title: 'Moony Documents',
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/moony/',
-  appearance: 'light',
+  appearance: false,
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no' }],
     ['meta', { name: 'theme-color', content: '#007AFF' }],
@@ -133,6 +133,8 @@ export default {
         timeStyle: 'medium'
       }
     },
-    appearance: false
+    appearance: false,
+    // Completely disable theme switching
+    darkMode: false
   }
 }

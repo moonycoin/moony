@@ -343,3 +343,45 @@
     margin-top: 1rem !important;
   }
 }
+
+/* ================
+   LIGHT MODE ENFORCEMENT
+   ================ */
+
+/* Completely hide all theme toggle elements */
+.VPNavBarAppearance,
+.VPSwitch,
+[data-vp-theme],
+.theme-toggle,
+.appearance-toggle,
+.vp-theme-toggle,
+.vp-appearance-toggle {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Force light mode on all elements */
+html {
+  color-scheme: light !important;
+}
+
+html.dark {
+  color-scheme: light !important;
+}
+
+/* Ensure light mode is always active */
+:root {
+  color-scheme: light !important;
+}
+
+* {
+  color-scheme: light !important;
+}
