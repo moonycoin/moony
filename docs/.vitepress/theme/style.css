@@ -327,4 +327,8 @@
   .hero-image {
     height: 80px !important;
   }
+  
+  .hero-logo {
+    margin-bottom: 1.5rem !important;
+  }
 }
