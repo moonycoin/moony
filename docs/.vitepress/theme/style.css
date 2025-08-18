@@ -400,6 +400,67 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
+/* ================
+   VITEPRESS PAGE SPACING FIX
+   ================ */
+/* Remove any default VitePress spacing above content */
+
+/* Target the main page content area */
+.VPContent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the page wrapper */
+.VPContent .VPPage,
+.VPContent .VPDoc {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the page content */
+.VPContent .VPPageContent,
+.VPContent .VPDocContent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the main content container */
+.VPContent .main,
+.VPContent .content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the first content element */
+.VPContent .vp-doc > :first-child,
+.VPContent .vp-doc > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Override any VitePress default page margins */
+.VPContent .page,
+.VPContent .doc {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure no spacing from navigation to content */
+.VPNav + .VPContent,
+.VPNavBar + .VPContent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target any remaining VitePress containers */
+.VPContent .container,
+.VPContent .wrapper,
+.VPContent .page-container {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 .dark .vp-doc {
   background: rgba(24, 24, 27, 0.9) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
