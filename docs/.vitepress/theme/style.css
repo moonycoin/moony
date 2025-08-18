@@ -107,6 +107,21 @@ a:visited {
   text-align: justify;
 }
 
+.vp-doc ul,
+.vp-doc ol {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.vp-doc li {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
 .vp-doc a {
   color: #555555 !important;
   text-decoration: none;
