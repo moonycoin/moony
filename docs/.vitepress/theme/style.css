@@ -18,7 +18,7 @@
   --vp-c-bg-elv: #ffffff;
   --vp-c-bg-soft: #f5f5f7;
   --vp-c-border: #2c2c2c;
-  --vp-c-divider: #2c2c2c;
+  --vp-c-divider: #e5e5e7;
   --vp-c-shadow-1: rgba(0, 0, 0, 0.08);
   --vp-c-shadow-2: rgba(0, 0, 0, 0.12);
   --vp-c-shadow-3: rgba(0, 0, 0, 0.16);
@@ -37,7 +37,7 @@
   --vp-c-bg-elv: #000000;
   --vp-c-bg-soft: #1d1d1f;
   --vp-c-border: #2c2c2c;
-  --vp-c-divider: #2c2c2c;
+  --vp-c-divider: #e5e5e7;
   --vp-c-shadow-1: rgba(255, 255, 255, 0.08);
   --vp-c-shadow-2: rgba(255, 255, 255, 0.12);
   --vp-c-shadow-3: rgba(255, 255, 255, 0.16);
@@ -328,7 +328,7 @@ a:visited {
    ================ */
 .VPSidebar {
   background: var(--vp-c-bg);
-  border-right: 1px solid var(--vp-c-bg-soft);
+  border-right: 1px solid #f0f0f2;
 }
 
 .VPSidebarItem {
