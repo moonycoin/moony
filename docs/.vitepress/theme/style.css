@@ -317,4 +317,10 @@
   width: 20px;
   height: 20px;
 }
+
+/* Mobile tagline font size */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 20px;
+  }
 }
