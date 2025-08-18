@@ -217,12 +217,56 @@ a:visited {
 }
 
 .VPSidebarItem {
-  color: var(--vp-c-text-2);
+  color: #555555 !important;
 }
 
 .VPSidebarItem.active {
-  color: var(--vp-c-brand);
+  color: #333333 !important;
   background: var(--vp-c-bg-soft);
+}
+
+/* Comprehensive sidebar link styling */
+.VPSidebar a,
+.VPSidebarItem a,
+.VPSidebar .nav-link,
+.VPSidebar .item,
+.VPSidebar .link,
+.VPSidebar .text,
+.VPSidebar .title {
+  color: #555555 !important;
+  text-decoration: none !important;
+}
+
+.VPSidebar a:hover,
+.VPSidebarItem a:hover,
+.VPSidebar .nav-link:hover,
+.VPSidebar .item:hover,
+.VPSidebar .link:hover,
+.VPSidebar .text:hover,
+.VPSidebar .title:hover {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+
+.VPSidebar .active a,
+.VPSidebarItem.active a,
+.VPSidebar .nav-link.active,
+.VPSidebar .item.active,
+.VPSidebar .link.active,
+.VPSidebar .text.active,
+.VPSidebar .title.active {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+
+/* Override any remaining blue colors in sidebar */
+.VPSidebar * {
+  color: #555555 !important;
+}
+
+.VPSidebar .active *,
+.VPSidebarItem.active * {
+  color: #333333 !important;
 }
 
 /* ================
