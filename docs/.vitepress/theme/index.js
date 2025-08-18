@@ -8,15 +8,15 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'layout-bottom': () => {
-        // Only show footer on home page
+        // Don't show footer on home page
         if (typeof window !== 'undefined') {
           const currentPath = window.location.pathname
           const basePath = '/moony/'
           if (currentPath === basePath || currentPath === basePath + 'index.html' || currentPath === '/') {
-            return h(Footer)
+            return null
           }
         }
-        return null
+        return h(Footer)
       }
     })
   },
