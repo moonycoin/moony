@@ -331,4 +331,8 @@
   .hero-logo {
     margin-bottom: 1.5rem !important;
   }
+  
+  .hero-description {
+    font-size: 13px !important;
+  }
 }
