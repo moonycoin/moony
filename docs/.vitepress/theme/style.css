@@ -318,9 +318,9 @@
   height: 20px;
 }
 
-/* Mobile tagline font size - 20px for screens ≤640px */
+/* Mobile tagline font size - 15px for screens ≤640px */
 @media (max-width: 640px) {
   .hero-title {
-    font-size: 20px !important;
+    font-size: 15px !important;
   }
 }
