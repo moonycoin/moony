@@ -62,14 +62,7 @@ export default {
         const themeToggles = document.querySelectorAll('.VPNavBarAppearance, .VPSwitch, [data-vp-theme]');
         themeToggles.forEach(toggle => toggle.remove());
         
-                // Mobile optimization - ensure consistent experience across all devices
-        if (window.innerWidth <= 768) {
-          // Force consistent mobile layout
-          document.documentElement.style.setProperty('--vp-c-bg', '#ffffff');
-          document.documentElement.style.setProperty('--vp-c-bg-alt', '#f6f6f7');
-          document.documentElement.style.setProperty('--vp-c-bg-elv', '#ffffff');
-          document.documentElement.style.setProperty('--vp-c-bg-soft', '#f6f6f7');
-        }
+        
       })();
     `]
   ],
@@ -140,8 +133,6 @@ export default {
         timeStyle: 'medium'
       }
     },
-    mobileMenu: true,
-    mobileMenuGroup: true,
     appearance: false
   }
 }
