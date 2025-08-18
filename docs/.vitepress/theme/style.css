@@ -74,6 +74,8 @@ a:visited {
 .VPNavBarTitle a:hover,
 .VPSidebarItem a:hover {
   color: #333333 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
 }
 
 /* ================
