@@ -45,6 +45,38 @@
 }
 
 /* ================
+   LINK STYLING - DARK GREY THEME
+   ================ */
+a {
+  color: #555555 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333333 !important;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #555555 !important;
+}
+
+/* Navigation links */
+.VPNavBarMenuLink,
+.VPNavBarMenuText,
+.VPNavBarTitle a,
+.VPSidebarItem a {
+  color: #555555 !important;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuText:hover,
+.VPNavBarTitle a:hover,
+.VPSidebarItem a:hover {
+  color: #333333 !important;
+}
+
+/* ================
    BASIC TYPOGRAPHY
    ================ */
 .vp-doc h1 {
@@ -76,11 +108,12 @@
 }
 
 .vp-doc a {
-  color: var(--vp-c-brand);
+  color: #555555 !important;
   text-decoration: none;
 }
 
 .vp-doc a:hover {
+  color: #333333 !important;
   text-decoration: underline;
 }
 
