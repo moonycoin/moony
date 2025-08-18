@@ -11944,3 +11944,180 @@ html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
     text-shadow: none;
   }
 }
+
+/* ================
+   MOBILE BLANK SECTION FIX - FINAL ATTEMPT
+   ================ */
+/* Target the specific issue causing blank space above content on mobile */
+
+@media (max-width: 768px) {
+  /* Force remove all top spacing from VitePress containers */
+  .VPContent,
+  .VPContent > *,
+  .VPContent > * > *,
+  .VPContent > * > * > * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the main page content specifically */
+  .VPContent .vp-doc,
+  .VPContent .vp-doc > *:first-child,
+  .VPContent .vp-doc > *:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Override any VitePress default page margins */
+  .VPContent .page,
+  .VPContent .doc,
+  .VPContent .main,
+  .VPContent .content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the specific VitePress page wrapper */
+  .VPContent .VPPage,
+  .VPContent .VPDoc,
+  .VPContent .VPPageContent,
+  .VPContent .VPDocContent {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Ensure the first content element has no top spacing */
+  .VPContent .vp-doc > :first-child,
+  .VPContent .vp-doc > :first-of-type,
+  .VPContent .vp-doc > *:first-child,
+  .VPContent .vp-doc > *:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Override any remaining VitePress default spacing */
+  .VPContent .vp-doc h1:first-child,
+  .VPContent .vp-doc h1:first-of-type,
+  .VPContent .vp-doc h2:first-child,
+  .VPContent .vp-doc h2:first-of-type,
+  .VPContent .vp-doc p:first-child,
+  .VPContent .vp-doc p:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target any VitePress specific classes that might have default margins */
+  .VPContent .VPPageContent,
+  .VPContent .VPDocContent,
+  .VPContent .VPPageContent > *,
+  .VPContent .VPDocContent > * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Ensure the main content area has no top spacing */
+  .VPContent .main,
+  .VPContent .main > *,
+  .VPContent .content,
+  .VPContent .content > * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* But preserve spacing between content elements for readability */
+  .VPContent .vp-doc > * + * {
+    margin-top: 16px !important;
+  }
+  
+  .VPContent .vp-doc h1 + *,
+  .VPContent .vp-doc h2 + *,
+  .VPContent .vp-doc h3 + *,
+  .VPContent .vp-doc h4 + * {
+    margin-top: 24px !important;
+  }
+  
+  .VPContent .vp-doc p + * {
+    margin-top: 16px !important;
+  }
+}
+
+/* ================
+   MOBILE MENU EXPANSION FIX
+   ================ */
+/* Fix the mobile menu that's expanding into the blank area above content */
+
+@media (max-width: 768px) {
+  /* Ensure mobile menu doesn't expand into content area */
+  .VPNavBarMenu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-top: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.3s ease !important;
+  }
+  
+  /* When menu is open, give it proper height */
+  .VPNavBarMenu.open,
+  .VPNavBarMenu[data-vp-menu-open="true"] {
+    max-height: 300px !important;
+    overflow: visible !important;
+  }
+  
+  /* Ensure menu items don't create extra spacing */
+  .VPNavBarMenuLink {
+    padding: 12px 16px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  /* Remove any default margins from menu container */
+  .VPNavBarMenuContainer {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Ensure the menu button doesn't create extra space */
+  .VPNavBarMenuButton {
+    margin: 0 !important;
+    padding: 8px !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+  
+  /* Fix any mobile navigation spacing issues */
+  .VPNavBar {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Ensure content starts immediately after navigation */
+  .VPContent {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Target the specific mobile menu expansion issue */
+  .VPNavBarMenu[style*="display: block"],
+  .VPNavBarMenu[style*="display:block"],
+  .VPNavBarMenu:not([style*="display: none"]) {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    border-top: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    z-index: 1000 !important;
+  }
+}
