@@ -376,13 +376,14 @@ a:visited {
 
 .hero-button.secondary {
   background: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
+  color: #666666;
   border: 1px solid var(--vp-c-bg-soft);
 }
 
 .hero-button.secondary:hover {
   background: var(--vp-c-bg-elv);
   border-color: var(--vp-c-brand);
+  color: #333333;
 }
 
 .docs-icon,
