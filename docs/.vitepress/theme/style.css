@@ -322,7 +322,7 @@
 /* Mobile optimizations for screens ≤640px */
 @media (max-width: 640px) {
   .hero-title {
-    font-size: 13px !important;
+    font-size: 14px !important;
     font-weight: bold !important;
   }
   
