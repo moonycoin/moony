@@ -461,6 +461,95 @@ body {
   padding-top: 0 !important;
 }
 
+/* ================
+   NAVIGATION TO CONTENT SPACING FIX
+   ================ */
+/* Specifically target the space between navigation and content container */
+
+/* Remove spacing from the main layout */
+.Layout {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the main app container */
+.VPApp {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the main content wrapper */
+.VPContent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the page layout specifically */
+.VPContent .VPPage {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the page content wrapper */
+.VPContent .VPPageContent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the main content area */
+.VPContent .main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target the content container */
+.VPContent .content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Target any VitePress default spacing */
+.VPContent .VPPage > *:first-child,
+.VPContent .VPPageContent > *:first-child,
+.VPContent .main > *:first-child,
+.VPContent .content > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Override any remaining VitePress page spacing */
+.VPContent .VPPage,
+.VPContent .VPPageContent,
+.VPContent .main,
+.VPContent .content,
+.VPContent .page,
+.VPContent .doc {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Nuclear option - remove ALL top spacing from everything in VPContent */
+.VPContent * {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* But preserve spacing between content elements for readability */
+.VPContent .vp-doc > * + * {
+  margin-top: 16px !important;
+}
+
+.VPContent .vp-doc h1 + *,
+.VPContent .vp-doc h2 + *,
+.VPContent .vp-doc h3 + *,
+.VPContent .vp-doc h4 + * {
+  margin-top: 24px !important;
+}
+
+.VPContent .vp-doc p + * {
+  margin-top: 16px !important;
+}
+
 .dark .vp-doc {
   background: rgba(24, 24, 27, 0.9) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
