@@ -336,4 +336,8 @@
   .hero-description {
     font-size: 13px !important;
   }
+  
+  .hero-actions {
+    margin-top: 1rem !important;
+  }
 }
