@@ -7,7 +7,7 @@ description: Visual identity, logo usage, and brand guidelines for Moony
 
 Moony’s visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces. 
 
-<img src="/Logos/text%20logo%20(light).svg" alt="Moony Text Logo - Light Version" style="max-width: 600px; height: auto; display: block; margin: 40px auto;">
+<img src="/Logos/text logo (light).svg" alt="Moony Text Logo - Light Version" style="max-width: 600px; height: auto; display: block; margin: 40px auto;">
 
 The name Moony blends two ideas: moon and money. It draws from the playful, aspirational language of internet culture, where assets are said to “go to the moon”, while also pointing directly to Moony’s function as a new form of digital value. 
 
@@ -22,7 +22,7 @@ The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, 
 
 Moony’s icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
 
-<img src="/Logos/Web%20File-03.svg" alt="Moony Icon Design - Web Version" style="max-width: 200px; height: auto; display: block; margin: 40px auto;">
+<img src="/Logos/Web File-03.svg" alt="Moony Icon Design - Web Version" style="max-width: 200px; height: auto; display: block; margin: 40px auto;">
 
 - **Moon Over Horizon:** The central form evokes a moon rising above a horizon, an allusion to Moony’s namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.
 
