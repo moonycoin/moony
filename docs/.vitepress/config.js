@@ -62,6 +62,29 @@ export default {
         const themeToggles = document.querySelectorAll('.VPNavBarAppearance, .VPSwitch, [data-vp-theme]');
         themeToggles.forEach(toggle => toggle.remove());
         
+        // Add current-page class to active sidebar link
+        function markCurrentPage() {
+          const currentPath = window.location.pathname;
+          const sidebarLinks = document.querySelectorAll('.VPSidebar .VPSidebarItem a');
+          
+          sidebarLinks.forEach(link => {
+            link.classList.remove('current-page');
+            if (link.getAttribute('href') === currentPath || 
+                link.getAttribute('href') === currentPath + '.html') {
+              link.classList.add('current-page');
+            }
+          });
+        }
+        
+        // Run on page load
+        markCurrentPage();
+        
+        // Run when navigation changes
+        document.addEventListener('click', function(e) {
+          if (e.target.closest('.VPSidebar a')) {
+            setTimeout(markCurrentPage, 100);
+          }
+        });
         
       })();
     `]

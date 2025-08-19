@@ -376,10 +376,23 @@ a:visited {
 .VPSidebar .item.active,
 .VPSidebar .link.active,
 .VPSidebar .text.active,
-.VPSidebar .title.active,
-.VPSidebar .has-active .VPSidebarItem a,
-.VPSidebar .has-active .item a,
-.VPSidebar .has-active .link {
+.VPSidebar .title.active {
+  color: #333333 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+/* Target only the current page link within active sections */
+.VPSidebar .has-active .VPSidebarItem.is-active a,
+.VPSidebar .has-active .VPSidebarItem.is-active .link,
+.VPSidebar .has-active .VPSidebarItem.is-active .text {
+  color: #333333 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+/* Target current page link */
+.VPSidebar .VPSidebarItem a.current-page {
   color: #333333 !important;
   font-weight: bold !important;
   text-decoration: underline !important;
