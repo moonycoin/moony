@@ -376,7 +376,10 @@ a:visited {
 .VPSidebar .item.active,
 .VPSidebar .link.active,
 .VPSidebar .text.active,
-.VPSidebar .title.active {
+.VPSidebar .title.active,
+.VPSidebar .has-active .VPSidebarItem a,
+.VPSidebar .has-active .item a,
+.VPSidebar .has-active .link {
   color: #333333 !important;
   font-weight: bold !important;
   text-decoration: underline !important;
