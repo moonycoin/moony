@@ -342,6 +342,7 @@ a:visited {
 
 .VPSidebarItem.active {
   color: #333333 !important;
+  font-weight: bold !important;
   background: var(--vp-c-bg-soft);
 }
 
@@ -377,6 +378,7 @@ a:visited {
 .VPSidebar .text.active,
 .VPSidebar .title.active {
   color: #333333 !important;
+  font-weight: bold !important;
   text-decoration: none !important;
 }
 
@@ -388,6 +390,7 @@ a:visited {
 .VPSidebar .active *,
 .VPSidebarItem.active * {
   color: #333333 !important;
+  font-weight: bold !important;
 }
 
 /* Remove the first divider line above Getting Started */
