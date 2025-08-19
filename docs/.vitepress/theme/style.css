@@ -379,7 +379,7 @@ a:visited {
 .VPSidebar .title.active {
   color: #333333 !important;
   font-weight: bold !important;
-  text-decoration: none !important;
+  text-decoration: underline !important;
 }
 
 /* Override any remaining blue colors in sidebar */
