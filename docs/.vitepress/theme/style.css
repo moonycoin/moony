@@ -395,7 +395,7 @@ a:visited {
 .VPSidebar .VPSidebarItem a.current-page {
   color: #333333 !important;
   font-weight: bold !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 /* Override any remaining blue colors in sidebar */
