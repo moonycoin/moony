@@ -570,23 +570,8 @@ body {
   box-shadow: inherit !important;
 }
 
-/* Ensure icons remain visible on hover */
-.hero-button:hover .docs-icon,
-.hero-button:hover .github-icon {
-  color: inherit !important;
-  fill: currentColor !important;
-}
-
-/* Fix icon visibility on hover for primary button */
-.hero-button.primary:hover .docs-icon,
-.hero-button.primary:hover .github-icon {
-  color: white !important;
-  fill: white !important;
-}
-
-/* Fix icon visibility on hover for secondary button */
-.hero-button.secondary:hover .docs-icon,
-.hero-button.secondary:hover .github-icon {
+/* Make docs icon black on hover */
+.hero-button:hover .docs-icon {
   color: #000000 !important;
   fill: #000000 !important;
 }
