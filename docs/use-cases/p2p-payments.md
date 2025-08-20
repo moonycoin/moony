@@ -54,12 +54,12 @@ Because Moony is permissionless and composable by design, its peer‑to‑peer u
 
 Moony and it's reserve contract were launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
 
-At launch, Flipcash provides the first public interface for interacting directly with the Moony reserve contract. Through its mobile app, users can seamlessly acquire Moony or redeem tokens for USDC. The app also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
+At launch, Flipcash provides the first public interface for interacting directly with the Moony Reserve Contract. Through its mobile app, users can seamlessly buy Moony or sell Moony for USDC. Flipcash also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
 
 ### Flipcash Enables Users To:
 
 - **Interact With Reserve:** Seamlessly convert between Moony and USDC through an intuitive interface.
-- **Send P2P Payments:** Use QR code based digital cash and URL links to send and receive payments.
+- **Send P2P Payments:** Instantly use Moony as digital cash where you can hand it to someone or send it as a link.
 
 ::: tip click-here-tip
 [Download Flipcash Mobile Application](https://www.flipcash.com)
