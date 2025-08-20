@@ -7,9 +7,9 @@ layout: home
     <div class="hero-logo">
       <img src="/logo-light.svg" alt="Moony Logo" class="hero-image">
     </div>
-                            <h1 class="hero-title">permissionless transactions with proof of liquidity</h1>
+                            <h1 class="hero-title">permissionless payments with proof of liquidity</h1>
         <p class="hero-description">
-          Moony is a decentralized digital asset deployed as a fixed-supply token on the Solana blockchain, designed to facilitate permissionless transactions without intermediaries, with all issuance governed by an immutable smart contract that eliminates discretionary control and enables open participation in internet capital markets.
+          Moony is a decentralized digital asset deployed as a fixed-supply token on the Solana blockchain. Moony is designed to facilitate permissionless payments without intermediaries, with all issuance governed by an immutable smart contract that eliminates discretionary control and enables open participation in internet capital markets.
         </p>
         <div class="hero-actions">
           <a href="/moony/getting-started" class="hero-button primary">
