@@ -577,6 +577,20 @@ body {
   fill: currentColor !important;
 }
 
+/* Fix icon visibility on hover for primary button */
+.hero-button.primary:hover .docs-icon,
+.hero-button.primary:hover .github-icon {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Fix icon visibility on hover for secondary button */
+.hero-button.secondary:hover .docs-icon,
+.hero-button.secondary:hover .github-icon {
+  color: #000000 !important;
+  fill: #000000 !important;
+}
+
 .docs-icon,
 .github-icon {
   width: 20px;
