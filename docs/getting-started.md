@@ -6,21 +6,21 @@ This documentation is for informational purposes only and does not constitute in
 
 ## Tokenomics
 
-Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDC, a US dollar stablecoin issued by Circle Internet Group, Inc. 
+Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. All 21 million tokens are minted exclusively through a Reserve Contract deployed on the Solana blockchain. Users can buy Moony by depositing USDC, a US dollar stablecoin issued by Circle Internet Group, Inc., into the Reserve Contract.  
 
-No tokens were allocated to any team, treasury, investors, or insiders. Instead, the supply remains unissued until users interact with the contract. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
+No tokens were allocated to any team, treasury, investors, or insiders. All tokens are bought from the reserve contract. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
 
-The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+The Moony Reserve Contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are purchased, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
 This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity. This model aligns issuance with demand, reduces inefficiencies, and ensures that all circulating Moony remains transparently and verifiably supported.
 
 ### Key Properties:
 
-- **Fixed Supply:** Moony has a hard cap of 21 million tokens, enforced by immutable onchain logic. No additional tokens can ever be created.
+- **Fixed Supply:** Moony has a hard cap of 21 million tokens, enforced by an immutable onchain smart contract. No additional tokens can ever be created.
 - **Fair Distribution:** The entire supply is deposited into the reserve at launch. No allocation is given to any team, treasury, investors, or insiders.
-- **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
+- **Permissionless:** Anyone can buy and sell Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
 - **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
-- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.
+- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are bought from the Reserve Contract, and tokens can be sold back to the Reserve Contract on the same bonding curve. This ensures that supply issuance is aligned with real demand.
 
 ::: tip click-here-tip
 [Learn more about Moony's tokenomics](/tokenomics/reserve-contract)
@@ -37,7 +37,7 @@ As a composable SPL token, Moony can be embedded directly into smart contracts, 
 
 ### Potential Applications
 
-- **P2P Payments:** Enable global, permissionless transfers with near-zero fees and minimal latency. Moony empowers direct value exchange without intermediaries, expanding access to digital economies worldwide.
+- **P2P Payments:** Enable global, permissionless transfers with near-zero fees and no latency. Moony empowers direct value exchange without intermediaries, expanding access to digital economies worldwide.
 - **Micropayments:** Power sub-cent transactions and unlock new monetization models, from one-time purchases to continuous streaming payments between users, apps, or autonomous agents.
 - **DeFi Integration:** Use Moony as a composable asset in lending markets, AMMs, staking protocols, and other decentralized financial infrastructure.
 
