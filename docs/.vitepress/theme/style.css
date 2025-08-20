@@ -561,15 +561,20 @@ body {
 
 /* Remove all hover effects from button links */
 .hero-button:hover,
-.hero-button:hover *,
-.hero-button a:hover,
-.hero-button a:hover * {
+.hero-button a:hover {
   color: inherit !important;
   text-decoration: none !important;
   background: inherit !important;
   border-color: inherit !important;
   transform: none !important;
   box-shadow: inherit !important;
+}
+
+/* Ensure icons remain visible on hover */
+.hero-button:hover .docs-icon,
+.hero-button:hover .github-icon {
+  color: inherit !important;
+  fill: currentColor !important;
 }
 
 .docs-icon,
