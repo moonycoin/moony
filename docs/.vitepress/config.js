@@ -158,7 +158,7 @@ export default {
         
         // Add CSS to hide only the outline label text, not the functionality
         const hideLabelStyle = document.createElement('style');
-        hideLabelStyle.textContent = '.VPDocAside .outline-title { display: none !important; } .VPDocAside .outline-marker { display: none !important; } .VPDocAside .outline { margin-top: 0 !important; } /* Keep scroll spy highlighting working */ .VPDocAside .outline-link.active { background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important; color: #ffffff !important; } .VPDocAside .outline-link.current-section { background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important; color: #ffffff !important; } .VPDocAside .outline-link.current-subsection { background: linear-gradient(135deg, #10b981, #059669) !important; color: #ffffff !important; }';
+        hideLabelStyle.textContent = '.VPDocAside .outline-title { display: none !important; } .VPDocAside .outline-marker { display: none !important; } .VPDocAside .outline { margin-top: 0 !important; } /* Light grey highlight for active states */ .VPDocAside .outline-link.active { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .outline-link.current-section { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .outline-link.current-subsection { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; }';
         document.head.appendChild(hideLabelStyle);
         
         // Enhanced aside navigation with advanced scroll spy
@@ -221,7 +221,7 @@ export default {
                 }
               });
               
-              // Enhanced scroll spy for aside navigation
+              // Enhanced scroll spy for aside navigation with continuous updates
               function updateAsideActiveState() {
                 const scrollPosition = window.scrollY + 150; // Offset for better detection
                 const sections = document.querySelectorAll('h1, h2, h3');
@@ -229,12 +229,22 @@ export default {
                 let activeSection = null;
                 let activeSubSection = null;
                 
-                // Find the current active section
+                // Find the current active section based on scroll position
                 sections.forEach(section => {
                   const sectionTop = section.offsetTop;
-                  const sectionHeight = section.offsetHeight;
+                  let sectionBottom;
                   
-                  if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                  // Find the next section to determine the bottom boundary
+                  const nextSection = section.nextElementSibling;
+                  if (nextSection && (nextSection.tagName === 'H1' || nextSection.tagName === 'H2' || nextSection.tagName === 'H3')) {
+                    sectionBottom = nextSection.offsetTop;
+                  } else {
+                    // If no next section, use the end of the document
+                    sectionBottom = document.documentElement.scrollHeight;
+                  }
+                  
+                  // Check if scroll position is within this section's content area
+                  if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                     if (section.tagName === 'H2') {
                       activeSection = section;
                     } else if (section.tagName === 'H3') {
@@ -243,29 +253,61 @@ export default {
                   }
                 });
                 
-                // Update aside navigation highlighting
+                // Update aside navigation highlighting with persistent states
                 asideLinks.forEach(link => {
-                  link.classList.remove('active');
                   const href = link.getAttribute('href');
                   
                   if (href && href.startsWith('#')) {
                     const targetId = href.substring(1);
+                    let shouldBeActive = false;
+                    let activeType = null;
                     
                     // Check if this link matches the active section or subsection
                     if (activeSubSection && activeSubSection.id === targetId) {
-                      link.classList.add('active');
+                      shouldBeActive = true;
+                      activeType = 'subsection';
                     } else if (activeSection && activeSection.id === targetId) {
+                      shouldBeActive = true;
+                      activeType = 'section';
+                    }
+                    
+                    // Apply active state with light grey highlighting
+                    if (shouldBeActive) {
                       link.classList.add('active');
+                      link.classList.add(activeType === 'subsection' ? 'current-subsection' : 'current-section');
+                      // Apply inline styles for immediate visual feedback
+                      link.style.backgroundColor = '#f1f5f9';
+                      link.style.color = '#1e293b';
+                      link.style.borderLeft = '3px solid #64748b';
+                      link.style.paddingLeft = '16px';
+                      link.style.fontWeight = '600';
+                    } else {
+                      link.classList.remove('active', 'current-section', 'current-subsection');
+                      // Remove inline styles
+                      link.style.backgroundColor = '';
+                      link.style.color = '';
+                      link.style.borderLeft = '';
+                      link.style.paddingLeft = '';
+                      link.style.fontWeight = '';
                     }
                   }
                 });
               }
               
-              // Add scroll event listener for aside navigation
-              window.addEventListener('scroll', () => {
-                requestAnimationFrame(updateAsideActiveState);
-              });
+              // Use requestAnimationFrame for smooth, continuous scroll updates
+              let ticking = false;
+              function onScroll() {
+                if (!ticking) {
+                  requestAnimationFrame(() => {
+                    updateAsideActiveState();
+                    ticking = false;
+                  });
+                  ticking = true;
+                }
+              }
               
+              // Add scroll event listener with continuous updates
+              window.addEventListener('scroll', onScroll, { passive: true });
               // Initial call
               updateAsideActiveState();
             }
