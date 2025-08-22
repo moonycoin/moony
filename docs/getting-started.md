@@ -6,21 +6,19 @@
 
 ## Tokenomics
 
-Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. All 21 million tokens are minted exclusively through a Reserve Contract deployed on the Solana blockchain. Users can buy Moony by depositing USDC, a US dollar stablecoin issued by Circle Internet Group, Inc., into the Reserve Contract.  
+The total supply is capped at 21 million tokens, enforced by a smart contract that cannot be altered or upgraded. There are no team allocations, no treasury reserves, and no private premines. Every token in circulation is minted under the same public rules, directly from a decentralized Reserve Contract deployed on Solana.
 
-No tokens were allocated to any team, treasury, investors, or insiders. All tokens are bought from the reserve contract. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
+The Reserve Contract governs all token issuance and redemption. Users can mint Moony by depositing USDC, a U.S. dollar–backed stablecoin issued by Circle, into the Reserve Contract. Pricing is determined by a deterministic bonding curve that increases as circulating supply grows, ensuring that Moony’s distribution is entirely market-driven, demand-responsive, and algorithmically defined.
 
-The Moony Reserve Contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are purchased, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
-
-This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity. This model aligns issuance with demand, reduces inefficiencies, and ensures that all circulating Moony remains transparently and verifiably supported.
+Moony’s approach replaces discretionary allocation with transparent rules. It eliminates intermediaries, gatekeepers, and the need for governance over monetary supply. Instead, it adopts a capital-based issuance model known as Proof of Liquidity (PoL), a mechanism that anchors every Moony token to value held onchain.
 
 ### Key Properties:
 
-- **Fixed Supply:** Moony has a hard cap of 21 million tokens, enforced by an immutable onchain smart contract. No additional tokens can ever be created.
-- **Fair Distribution:** The entire supply is deposited into the reserve at launch. No allocation is given to any team, treasury, investors, or insiders.
-- **Permissionless:** Anyone can buy and sell Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
-- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
-- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are bought from the Reserve Contract, and tokens can be sold back to the Reserve Contract on the same bonding curve. This ensures that supply issuance is aligned with real demand.
+- **Fixed Supply:** The supply of Moony is capped at 21 million tokens. This cap is hard-coded into the Reserve Contract and cannot be changed.
+- **Fair Distribution:** No tokens are premined or reserved for any team, treasury, founder, or investor. All tokens enter circulation via the same permissionless mechanism.
+- **Permissionless:** Anyone can mint or redeem Moony through the Reserve Contract, without intermediaries, approvals, whitelisting, or KYC.
+- **Proof of Liquidity:** All USDC deposited to mint Moony remains locked in the Reserve Contract as liquidity. This provides a source of redemption and public proof that supply is backed.
+- **Bonding Curve:** Moony’s price is determined by an onchain bonding curve. The more tokens minted, the higher the price. When tokens are redeemed, price adjusts accordingly, ensuring alignment between supply and market demand.
 
 ::: tip click-here-tip
 [Learn more about Moony's tokenomics](/tokenomics/reserve-contract)
