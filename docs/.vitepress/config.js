@@ -209,7 +209,7 @@ export default {
     siteTitle: false,
     outline: {
       level: [2, 3],
-      label: 'Page Navigation',
+      label: 'Complete Documentation',
       outlineBadges: false
     },
     // Force light theme CSS variables
