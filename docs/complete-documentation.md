@@ -1,3 +1,8 @@
+---
+title: Complete Documentation
+description: Comprehensive guide to Moony's tokenomics, use cases, and resources
+---
+
 # Complete Documentation
 
 ::: tip click-here-tip
