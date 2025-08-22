@@ -181,36 +181,67 @@ export default {
       }
     ],
 
-    sidebar: [
-      { text: 'Complete Documentation', link: '/complete-documentation' },
-      { text: 'Getting Started', link: '/getting-started' },
-      {
-        text: 'Tokenomics',
-        items: [
-          { text: 'Reserve Contract', link: '/complete-documentation#reserve-contract' },
-          { text: 'Proof of Liquidity', link: '/complete-documentation#proof-of-liquidity' },
-          { text: 'Supply', link: '/complete-documentation#supply' },
-          { text: 'Bonding Curve', link: '/complete-documentation#bonding-curve' }
-        ]
-      },
-      {
-        text: 'Use Cases',
-        items: [
-          { text: 'Ecosystem', link: '/complete-documentation#ecosystem' },
-          { text: 'P2P Payments', link: '/complete-documentation#p2p-payments' },
-          { text: 'Micropayments', link: '/complete-documentation#micropayments' },
-          { text: 'DeFi', link: '/complete-documentation#defi' }
-        ]
-      },
-      {
-        text: 'Resources',
-        items: [
-          { text: 'Community', link: '/complete-documentation#community' },
-          { text: 'Brand Kit', link: '/complete-documentation#brand-kit' },
-          { text: 'Disclaimer', link: '/complete-documentation#disclaimer' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/complete-documentation': [
+        { text: 'Complete Documentation', link: '/complete-documentation' },
+        { text: 'Getting Started', link: '/getting-started' },
+        {
+          text: 'Tokenomics',
+          items: [
+            { text: 'Reserve Contract', link: '/complete-documentation#reserve-contract' },
+            { text: 'Proof of Liquidity', link: '/complete-documentation#proof-of-liquidity' },
+            { text: 'Supply', link: '/complete-documentation#supply' },
+            { text: 'Bonding Curve', link: '/complete-documentation#bonding-curve' }
+          ]
+        },
+        {
+          text: 'Use Cases',
+          items: [
+            { text: 'Ecosystem', link: '/complete-documentation#ecosystem' },
+            { text: 'P2P Payments', link: '/complete-documentation#p2p-payments' },
+            { text: 'Micropayments', link: '/complete-documentation#micropayments' },
+            { text: 'DeFi', link: '/complete-documentation#defi' }
+          ]
+        },
+        {
+          text: 'Resources',
+          items: [
+            { text: 'Community', link: '/complete-documentation#community' },
+            { text: 'Brand Kit', link: '/complete-documentation#brand-kit' },
+            { text: 'Disclaimer', link: '/complete-documentation#disclaimer' }
+          ]
+        }
+      ],
+      '/': [
+        { text: 'Complete Documentation', link: '/complete-documentation' },
+        { text: 'Getting Started', link: '/getting-started' },
+        {
+          text: 'Tokenomics',
+          items: [
+            { text: 'Reserve Contract', link: '/tokenomics/reserve-contract' },
+            { text: 'Proof of Liquidity', link: '/tokenomics/proof-of-liquidity' },
+            { text: 'Bonding Curve', link: '/tokenomics/bonding-curve' }
+          ]
+        },
+        {
+          text: 'Use Cases',
+          items: [
+            { text: 'Ecosystem', link: '/use-cases/ecosystem' },
+            { text: 'P2P Payments', link: '/use-cases/p2p-payments' },
+            { text: 'Micropayments', link: '/use-cases/micropayments' },
+            { text: 'DeFi', link: '/use-cases/defi' }
+          ]
+        },
+        {
+          text: 'Resources',
+          items: [
+            { text: 'Community', link: '/resources/community' },
+            { text: 'Brand Kit', link: '/resources/brand-kit' },
+            { text: 'Disclaimer', link: '/resources/disclaimer' }
+          ]
+        }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/moonycoin/moony' }
     ],
