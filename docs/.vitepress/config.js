@@ -112,7 +112,7 @@ export default {
     },
     nav: [
       { 
-        text: '📄 Download PDF', 
+        text: '⬇️ Download PDF', 
         link: '/moony-documentation.pdf'
       }
     ],
