@@ -9,23 +9,7 @@ description: Comprehensive guide to Moony's tokenomics, use cases, and resources
 [View Important Disclaimer](/resources/disclaimer)
 :::
 
-## Table of Contents
 
-1. [Tokenomics](#tokenomics)
-   - [Reserve Contract](#reserve-contract)
-   - [Proof of Liquidity](#proof-of-liquidity)
-   - [Supply](#supply)
-   - [Bonding Curve](#bonding-curve)
-2. [Use Cases](#use-cases)
-   - [Ecosystem](#ecosystem)
-   - [P2P Payments](#p2p-payments)
-   - [Micropayments](#micropayments)
-   - [DeFi](#defi)
-3. [Resources](#resources)
-   - [Community](#community)
-   - [Brand Kit](#brand-kit)
-
----
 
 ## Tokenomics
 
