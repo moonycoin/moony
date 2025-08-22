@@ -109,17 +109,6 @@ This mechanism serves two purposes:
 
 The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
 
-#### Fee Model
-
-Acquiring Moony directly from the Reserve Contract carries no fee, enabling cost‑efficient entry into the ecosystem. Redemptions, selling Moony back to the Reserve Contract for USDC, incur a 1% fee.
-
-This mechanism serves two purposes:
-
-- **Security**: The fee mitigates the risk of sandwich attacks, a form of front‑running in which automated bots attempt to profit from predictable price movements by inserting transactions around a user's trade.
-- **Revenue**: Fee proceeds are directed to Flipcash Inc., the developer of the Reserve Contract's architecture. While Moony was launched as an independent protocol, it leverages this infrastructure to facilitate permissionless access.
-
-The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
-
 
 
 ### Bonding Curve
