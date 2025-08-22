@@ -159,8 +159,13 @@ export default {
         // Enhanced aside navigation with advanced scroll spy
         function enhanceAsideNavigation() {
           setTimeout(() => {
+            console.log('=== ENHANCE ASIDE NAVIGATION STARTED ===');
             const aside = document.querySelector('.VPDocAside');
+            console.log('Found aside element:', aside);
+            
             if (aside) {
+              console.log('Aside HTML structure:', aside.innerHTML.substring(0, 500));
+              console.log('Aside classes:', aside.className);
               // Remove the "On This Page" header - multiple approaches
               const onThisPageHeaders = aside.querySelectorAll('h2');
               onThisPageHeaders.forEach((header, index) => {
@@ -193,14 +198,20 @@ export default {
                 const parentUl = parentLi ? parentLi.closest('ul') : null;
                 const isMainSection = parentUl && parentUl.parentElement && parentUl.parentElement.classList.contains('content-container');
                 
+                console.log('Link:', link.textContent.trim());
+                console.log('  - Parent LI:', parentLi);
+                console.log('  - Parent UL:', parentUl);
+                console.log('  - Parent UL parent:', parentUl ? parentUl.parentElement : 'none');
+                console.log('  - Is main section:', isMainSection);
+                
                 if (isMainSection) {
-                  console.log('Making main section link bold:', link.textContent.trim());
+                  console.log('✅ Making main section link bold:', link.textContent.trim());
                   link.style.fontWeight = '700';
                   link.style.fontSize = '16px';
                   link.style.color = '#1e293b';
                   link.style.fontWeight = 'bold';
                 } else {
-                  console.log('Subsection link (normal weight):', link.textContent.trim());
+                  console.log('📝 Subsection link (normal weight):', link.textContent.trim());
                   link.style.fontWeight = 'normal';
                 }
               });
@@ -262,6 +273,12 @@ export default {
         } else {
           enhanceAsideNavigation();
         }
+        
+        // Also try to run after a longer delay to ensure VitePress is fully loaded
+        setTimeout(() => {
+          console.log('Delayed initialization attempt...');
+          enhanceAsideNavigation();
+        }, 2000);
         
       })();
     `]
