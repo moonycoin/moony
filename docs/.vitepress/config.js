@@ -247,16 +247,14 @@ export default {
                   if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                     // Only track H3 subsections, ignore H2 main section headers
                     if (section.tagName === 'H3') {
-                      // Special handling for short sections like Disclaimer
-                      const sectionHeight = sectionBottom - sectionTop;
-                      const scrollPositionInSection = scrollPosition - sectionTop;
-                      
-                      // If section is short (less than 400px) and we're in the middle of it,
-                      // give it priority to prevent jumping to previous section
-                      if (sectionHeight < 400 && scrollPositionInSection > sectionHeight * 0.3) {
-                        activeSubSection = section;
-                      } else if (sectionHeight >= 400) {
-                        // Normal behavior for longer sections
+                      // For the last section (Disclaimer), give it priority when near the bottom
+                      if (section.id === 'disclaimer') {
+                        const distanceFromBottom = document.documentElement.scrollHeight - scrollPosition;
+                        if (distanceFromBottom < 200 || scrollPosition >= sectionTop + 50) {
+                          activeSubSection = section;
+                        }
+                      } else {
+                        // Normal behavior for other sections
                         activeSubSection = section;
                       }
                     }
