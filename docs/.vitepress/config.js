@@ -69,13 +69,13 @@ export default {
           // Only run scroll spy on the Complete Documentation page
           if (currentPath.includes('/complete-documentation')) {
             const sections = document.querySelectorAll('h1, h2, h3');
-            const sidebarLinks = document.querySelectorAll('.VPSidebar .VPSidebarItem a');
+            const sidebarLinks = document.querySelectorAll('.VPSidebar a');
             
             function updateActiveSection() {
               const scrollPosition = window.scrollY + 100; // Offset for better detection
               
               let currentSection = '';
-              let currentMainSection = '';
+              let currentSubSection = '';
               
               sections.forEach(section => {
                 const sectionTop = section.offsetTop;
@@ -83,27 +83,20 @@ export default {
                 
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                   currentSection = section.textContent.trim();
-                  
-                  // Map section headers to main sidebar items
-                  if (currentSection.includes('Tokenomics') || currentSection.includes('Reserve Contract') || currentSection.includes('Proof of Liquidity') || currentSection.includes('Supply') || currentSection.includes('Bonding Curve')) {
-                    currentMainSection = 'Tokenomics';
-                  } else if (currentSection.includes('Use Cases') || currentSection.includes('Ecosystem') || currentSection.includes('P2P Payments') || currentSection.includes('Micropayments') || currentSection.includes('DeFi')) {
-                    currentMainSection = 'Use Cases';
-                  } else if (currentSection.includes('Resources') || currentSection.includes('Community') || currentSection.includes('Brand Kit')) {
-                    currentMainSection = 'Resources';
-                  } else if (currentSection.includes('Complete Documentation')) {
-                    currentMainSection = 'Complete Documentation';
-                  }
+                  currentSubSection = section.id || section.textContent.trim().toLowerCase().replace(/\s+/g, '-');
                 }
               });
               
-              // Update main sidebar highlighting
+              // Update sidebar highlighting for both main sections and subsections
               sidebarLinks.forEach(link => {
                 link.classList.remove('current-page');
+                const linkHref = link.getAttribute('href');
                 const linkText = link.textContent.trim();
                 
-                // Match main sidebar items with current section
-                if (currentMainSection && linkText === currentMainSection) {
+                // Check if this link matches the current section
+                if (currentSubSection && linkHref && linkHref.includes('#' + currentSubSection)) {
+                  link.classList.add('current-page');
+                } else if (currentSection && linkText === currentSection) {
                   link.classList.add('current-page');
                 }
               });
@@ -154,7 +147,7 @@ export default {
         
         // Add CSS for current page highlighting
         const style = document.createElement('style');
-        style.textContent = '.VPSidebar .VPSidebarItem a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; }';
+        style.textContent = '.VPSidebar a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; } .VPSidebar .VPSidebarItem .VPSidebarItem a.current-page { padding-left: 24px !important; }';
         document.head.appendChild(style);
         
       })();
@@ -194,26 +187,27 @@ export default {
       {
         text: 'Tokenomics',
         items: [
-          { text: 'Reserve Contract', link: '/tokenomics/reserve-contract' },
-          { text: 'Proof of Liquidity', link: '/tokenomics/proof-of-liquidity' },
-          { text: 'Bonding Curve', link: '/tokenomics/bonding-curve' }
+          { text: 'Reserve Contract', link: '/complete-documentation#reserve-contract' },
+          { text: 'Proof of Liquidity', link: '/complete-documentation#proof-of-liquidity' },
+          { text: 'Supply', link: '/complete-documentation#supply' },
+          { text: 'Bonding Curve', link: '/complete-documentation#bonding-curve' }
         ]
       },
       {
         text: 'Use Cases',
         items: [
-          { text: 'Ecosystem', link: '/use-cases/ecosystem' },
-          { text: 'P2P Payments', link: '/use-cases/p2p-payments' },
-          { text: 'Micropayments', link: '/use-cases/micropayments' },
-          { text: 'DeFi', link: '/use-cases/defi' }
+          { text: 'Ecosystem', link: '/complete-documentation#ecosystem' },
+          { text: 'P2P Payments', link: '/complete-documentation#p2p-payments' },
+          { text: 'Micropayments', link: '/complete-documentation#micropayments' },
+          { text: 'DeFi', link: '/complete-documentation#defi' }
         ]
       },
       {
         text: 'Resources',
         items: [
-          { text: 'Community', link: '/resources/community' },
-          { text: 'Brand Kit', link: '/resources/brand-kit' },
-          { text: 'Disclaimer', link: '/resources/disclaimer' }
+          { text: 'Community', link: '/complete-documentation#community' },
+          { text: 'Brand Kit', link: '/complete-documentation#brand-kit' },
+          { text: 'Disclaimer', link: '/complete-documentation#disclaimer' }
         ]
       }
     ],
