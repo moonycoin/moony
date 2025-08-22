@@ -69,7 +69,7 @@ export default {
           // Only run scroll spy on the Complete Documentation page
           if (currentPath.includes('/complete-documentation')) {
             const sections = document.querySelectorAll('h1, h2, h3');
-            const sidebarLinks = document.querySelectorAll('.VPSidebar a');
+            const sidebarLinks = document.querySelectorAll('.VPSidebar .VPSidebarItem a, .VPSidebar .VPSidebarItem .VPSidebarItem a');
             
             function updateActiveSection() {
               const scrollPosition = window.scrollY + 100; // Offset for better detection
@@ -84,12 +84,12 @@ export default {
                 }
               });
               
-              // Update sidebar highlighting
+              // Update main sidebar highlighting
               sidebarLinks.forEach(link => {
                 link.classList.remove('current-page');
                 const linkText = link.textContent.trim();
                 
-                // Match section headers with sidebar items
+                // Match section headers with main sidebar items
                 if (currentSection && linkText.includes(currentSection)) {
                   link.classList.add('current-page');
                 }
@@ -141,7 +141,7 @@ export default {
         
         // Add CSS for current page highlighting
         const style = document.createElement('style');
-        style.textContent = '.VPSidebar a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; }';
+        style.textContent = '.VPSidebar .VPSidebarItem a.current-page, .VPSidebar .VPSidebarItem .VPSidebarItem a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; }';
         document.head.appendChild(style);
         
       })();
