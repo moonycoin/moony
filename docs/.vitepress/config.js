@@ -245,9 +245,8 @@ export default {
                   
                   // Check if scroll position is within this section's content area
                   if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                    if (section.tagName === 'H2') {
-                      activeSection = section;
-                    } else if (section.tagName === 'H3') {
+                    // Only track H3 subsections, ignore H2 main section headers
+                    if (section.tagName === 'H3') {
                       activeSubSection = section;
                     }
                   }
@@ -260,21 +259,16 @@ export default {
                   if (href && href.startsWith('#')) {
                     const targetId = href.substring(1);
                     let shouldBeActive = false;
-                    let activeType = null;
                     
-                    // Check if this link matches the active section or subsection
+                    // Only highlight subsections (H3), not main section headers (H2)
                     if (activeSubSection && activeSubSection.id === targetId) {
                       shouldBeActive = true;
-                      activeType = 'subsection';
-                    } else if (activeSection && activeSection.id === targetId) {
-                      shouldBeActive = true;
-                      activeType = 'section';
                     }
                     
-                    // Apply active state with light grey highlighting
+                    // Apply active state with light grey highlighting only to subsections
                     if (shouldBeActive) {
                       link.classList.add('active');
-                      link.classList.add(activeType === 'subsection' ? 'current-subsection' : 'current-section');
+                      link.classList.add('current-subsection');
                       // Apply inline styles for immediate visual feedback
                       link.style.backgroundColor = '#f1f5f9';
                       link.style.color = '#1e293b';
