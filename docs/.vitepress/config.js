@@ -230,36 +230,44 @@ export default {
                 let activeSubSection = null;
                 
                 // Find the current active section based on scroll position
-                sections.forEach(section => {
-                  const sectionTop = section.offsetTop;
-                  let sectionBottom;
-                  
-                  // Find the next section to determine the bottom boundary
-                  const nextSection = section.nextElementSibling;
-                  if (nextSection && (nextSection.tagName === 'H1' || nextSection.tagName === 'H2' || nextSection.tagName === 'H3')) {
-                    sectionBottom = nextSection.offsetTop;
-                  } else {
-                    // If no next section, use the end of the document
-                    sectionBottom = document.documentElement.scrollHeight;
-                  }
-                  
-                  // Check if scroll position is within this section's content area
-                  if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                    // Only track H3 subsections, ignore H2 main section headers
-                    if (section.tagName === 'H3') {
-                      // For the last section (Disclaimer), give it priority when near the bottom
-                      if (section.id === 'disclaimer') {
-                        const distanceFromBottom = document.documentElement.scrollHeight - scrollPosition;
-                        if (distanceFromBottom < 200 || scrollPosition >= sectionTop + 50) {
-                          activeSubSection = section;
-                        }
-                      } else {
-                        // Normal behavior for other sections
+                let foundActiveSection = false;
+                
+                // First, check if we're near the bottom and should prioritize Disclaimer
+                const distanceFromBottom = document.documentElement.scrollHeight - scrollPosition;
+                if (distanceFromBottom < 300) {
+                  // Near bottom - find and prioritize Disclaimer section
+                  sections.forEach(section => {
+                    if (section.tagName === 'H3' && section.id === 'disclaimer') {
+                      activeSubSection = section;
+                      foundActiveSection = true;
+                    }
+                  });
+                }
+                
+                // If we didn't find Disclaimer or we're not near bottom, use normal logic
+                if (!foundActiveSection) {
+                  sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    let sectionBottom;
+                    
+                    // Find the next section to determine the bottom boundary
+                    const nextSection = section.nextElementSibling;
+                    if (nextSection && (nextSection.tagName === 'H1' || nextSection.tagName === 'H2' || nextSection.tagName === 'H3')) {
+                      sectionBottom = nextSection.offsetTop;
+                    } else {
+                      // If no next section, use the end of the document
+                      sectionBottom = document.documentElement.scrollHeight;
+                    }
+                    
+                    // Check if scroll position is within this section's content area
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                      // Only track H3 subsections, ignore H2 main section headers
+                      if (section.tagName === 'H3') {
                         activeSubSection = section;
                       }
                     }
-                  }
-                });
+                  });
+                }
                 
                 // Update aside navigation highlighting with persistent states
                 asideLinks.forEach(link => {
