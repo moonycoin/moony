@@ -1,54 +1,54 @@
 # Reserve Contract
 
-Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. All 21 million tokens are minted exclusively through a Reserve Contract reserve deployed on the Solana blockchain. Users can buy Moony by depositing USDC, a US dollar stablecoin issued by Circle Internet Group, Inc., into the Reserve Contract.
+The Reserve Contract is a fully onchain smart contract deployed on the Solana blockchain that governs the issuance, redemption, and pricing of Moony. It serves as the central liquidity and distribution mechanism for the entire token supply.
 
-No tokens were allocated to any team, treasury, investors, or insiders. All tokens are bought from the Reserve Contract. This design eliminates discretionary allocation and central oversight, replacing them with a transparent, rules-based issuance process.
+When a user deposits USDC (a dollar-backed stablecoin issued by Circle), the Reserve Contract calculates a price using a deterministic bonding curve. It then mints Moony tokens and transfers them to the user while holding the USDC onchain as protocol liquidity. This ensures that Moony’s circulating supply is always backed by verifiable capital.
 
-The Moony Reserve Contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are purchased, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+To sell Moony, users send their tokens back to the Reserve. The contract returns USDC to the user at the bonding curve’s current redemption rate. This two-way interaction allows users to enter and exit the system at transparent, algorithmically defined prices without requiring any centralized market makers or discretionary approvals.
+
+This design architecture removes allocation discretion and centralized control entirely. Instead, the Reserve Contract replaces those dynamics with transparent, rules-based issuance that is immutable, permissionless, and fully auditable onchain.
 
 ## Core Mechanisms
 
-The Reserve Contract governs all token issuance and redemption. Users interact with the Reserve directly by exchanging USDC for Moony or vice versa, with pricing determined by an onchain bonding curve. This system ensures continuous liquidity and transparent, market‑driven distribution.
-
-- **Proof of Liquidity:** All circulating Moony is backed by USDC held in the contract, ensuring redeemability and reinforcing user confidence in the protocol. 
+- **Proof of Liquidity:** Moony adopts a Proof of Liquidity (PoL) model, where all USDC used to mint tokens remains locked in the Reserve Contract as onchain collateral. This capital base enables trustless redemptions and grows organically with demand. The Reserve never loans, moves, or rehypothecates funds, every USDC remains verifiably onchain.
 
 ::: tip click-here-tip
 [Learn more about the Proof of Liquidity model](/tokenomics/proof-of-liquidity)
 :::
 
-- **Bonding Curve:** Moony’s pricing follows a mathematical curve that adjusts dynamically based on circulating supply, creating a transparent and predictable pricing model.
+- **Bonding Curve:** Moony’s price is governed by a deterministic bonding curve embedded in the contract. As more tokens are minted and enter circulation, the marginal price to mint increases. When Moony is redeemed and burned, the curve dynamically adjusts downward. This creates a transparent, non-manipulable pricing mechanism tied directly to supply.
 
 ::: tip click-here-tip
 [Learn more about the reserve's bonding curve](/tokenomics/bonding-curve)
 :::
 
+These mechanisms make the Reserve Contract the core of Moony’s architecture: a fully autonomous, immutable, and composable protocol for capital-efficient distribution and liquidity.
 
-Together, these mechanisms make the Reserve Contract the core of Moony’s architecture. Fully onchain, autonomous, and immutable, operating without control from any centralized party. The rules that define issuance, pricing, and redemption are permanently encoded onchain as a smart contract, ensuring openness and finality from inception. 
 
 ## Design Principles
 
-- **Immutable:** The Reserve Contract is unchangeable once deployed. It has no upgrade path, admin keys, or privileged access. The rules governing issuance, pricing, and redemption are fixed and permanently encoded. Users are protected from governance risk, policy changes, or centralized interference.
+- **Immutable:** The Reserve Contract cannot be altered once deployed. There are no admin keys, upgrade paths, or special permissions. The issuance, pricing, and redemption logic is permanently encoded at the smart contract level, ensuring no future changes or governance actions can override it.
 
-- **Non-custodial:** Users interface directly with the Reserve Contract from their own wallets, with the protocol never taking custody of funds. When purchasing Moony, USDC is transferred onchain to the contract; during redemption, the contract returns USDC directly to the user on the same bonding curve. All buys and sells happen entirely onchain, without intermediaries or reliance on offchain accounts.
+- **Permissionless:** Anyone can interact with the Reserve Contract directly from their own wallet. No intermediaries, KYC, whitelists, or gatekeepers are required. The system is open to individuals, developers, protocols, and platforms alike.
 
-- **Permissionless:** The Reserve Contract is open and accessible to anyone, anywhere, without gatekeepers, whitelists, or KYC requirements. Participation is fully permissionless, enabling both individuals and developers to interact with the protocol on equal terms.
+- **Non-custodial:** The Reserve Contract never takes custody of user assets in the traditional sense. All interactions are contract-to-wallet: users deposit USDC directly and receive Moony, or return Moony to receive USDC. No third party holds or manages user funds.
 
-- **Transparent:** All contract activity is recorded on‑chain and is publicly verifiable. Participants can monitor supply, reserves, and pricing in real time, with no hidden mechanics or opaque governance processes.
+- **Transparent:** All supply, liquidity, pricing, and contract interactions are recorded on the Solana blockchain. This makes the entire system publicly auditable and provable in real time.
 
 
 ## Flipcash Infrastructure
 
-Moony and it's reserve contract were launched using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+Moony launched using infrastructure developed by Flipcash, Inc., an independent third-party company. Flipcash has no control over Moony’s issuance, supply, or pricing; those parameters are governed entirely by the Reserve Contract.
 
-At launch, Flipcash provides the first public interface for interacting directly with the Moony Reserve Contract. Through its mobile app, users can seamlessly buy Moony or sell Moony for USDC. Flipcash also offers an industry-leading, trustless peer-to-peer payments experience, giving users a seamless way to transact with Moony.
+At launch, Flipcash provides the first public front end for interacting with the Reserve. Through its mobile app, users can seamlessly convert between USDC and Moony, and send peer-to-peer payments using Moony as digital cash.
 
 ### Flipcash Enables Users To:
 
-- **Interact With Reserve:** Seamlessly convert between Moony and USDC through an intuitive interface.
-- **Send P2P Payments:** Instantly use Moony as digital cash where you can hand it to someone or send it as a link.
+- **Access Reserve:** Buy and sell Moony through an intuitive mobile interface.
+- **Send Payments:** Transact freely with Moony across devices, using digital cash or links.
 
 ::: tip click-here-tip
 [Download Flipcash Mobile Application](https://www.flipcash.com)
 :::
 
-While Flipcash provides the first front end to access the Moony reserve contract, Moony is not limited to any single platform. Designed as a digital public good, Moony can be integrated into any third party platform, protocol,wallet, or app, ensuring broad utility, composability, and adoption.
+Moony is not limited to any platform. The Reserve Contract is open to all developers and integrators, and Moony can be used across any app, wallet, or protocol that supports Solana. This ensures maximum composability, interoperability, and future-proof adoption.
