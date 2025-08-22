@@ -110,6 +110,12 @@ export default {
         '--vp-c-brand-dark': '#333333'
       }
     },
+    nav: [
+      { 
+        text: '📄 Download PDF', 
+        link: '/moony-documentation.pdf'
+      }
+    ],
 
     sidebar: [
       { text: 'Complete Documentation', link: '/complete-documentation' },
