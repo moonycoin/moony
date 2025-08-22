@@ -145,9 +145,9 @@ export default {
           }
         });
         
-        // Add CSS for current page highlighting
+        // Add CSS for moving right aside to left side and styling
         const style = document.createElement('style');
-        style.textContent = '.VPSidebar a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; } .VPSidebar .VPSidebarItem .VPSidebarItem a.current-page { padding-left: 24px !important; }';
+        style.textContent = '.VPDocAside { position: fixed !important; left: 0 !important; top: 64px !important; width: 280px !important; height: calc(100vh - 64px) !important; overflow-y: auto !important; background: #ffffff !important; border-right: 1px solid #e2e8f0 !important; z-index: 10 !important; padding: 24px 16px !important; } .VPDocAside.right { display: none !important; } .VPDoc .container { margin-left: 280px !important; max-width: calc(100% - 280px) !important; } .VPDocAside .content-container { padding: 0 !important; } .VPDocAside .content-container h2 { font-size: 16px !important; font-weight: 600 !important; margin-bottom: 16px !important; color: #333333 !important; } .VPDocAside .content-container ul { list-style: none !important; padding: 0 !important; margin: 0 !important; } .VPDocAside .content-container li { margin-bottom: 8px !important; } .VPDocAside .content-container a { display: block !important; padding: 8px 12px !important; color: #476582 !important; text-decoration: none !important; border-radius: 6px !important; transition: all 0.2s ease !important; } .VPDocAside .content-container a:hover { background-color: #f6f6f7 !important; color: #333333 !important; } .VPDocAside .content-container a.active { background-color: #f6f6f7 !important; color: #333333 !important; border-left: 3px solid #333333 !important; padding-left: 16px !important; font-weight: 600 !important; }';
         document.head.appendChild(style);
         
       })();
@@ -181,67 +181,7 @@ export default {
       }
     ],
 
-    sidebar: {
-      '/complete-documentation': [
-        { text: 'Complete Documentation', link: '/complete-documentation' },
-        { text: 'Getting Started', link: '/getting-started' },
-        {
-          text: 'Tokenomics',
-          items: [
-            { text: 'Reserve Contract', link: '/complete-documentation#reserve-contract' },
-            { text: 'Proof of Liquidity', link: '/complete-documentation#proof-of-liquidity' },
-            { text: 'Supply', link: '/complete-documentation#supply' },
-            { text: 'Bonding Curve', link: '/complete-documentation#bonding-curve' }
-          ]
-        },
-        {
-          text: 'Use Cases',
-          items: [
-            { text: 'Ecosystem', link: '/complete-documentation#ecosystem' },
-            { text: 'P2P Payments', link: '/complete-documentation#p2p-payments' },
-            { text: 'Micropayments', link: '/complete-documentation#micropayments' },
-            { text: 'DeFi', link: '/complete-documentation#defi' }
-          ]
-        },
-        {
-          text: 'Resources',
-          items: [
-            { text: 'Community', link: '/complete-documentation#community' },
-            { text: 'Brand Kit', link: '/complete-documentation#brand-kit' },
-            { text: 'Disclaimer', link: '/complete-documentation#disclaimer' }
-          ]
-        }
-      ],
-      '/': [
-        { text: 'Complete Documentation', link: '/complete-documentation' },
-        { text: 'Getting Started', link: '/getting-started' },
-        {
-          text: 'Tokenomics',
-          items: [
-            { text: 'Reserve Contract', link: '/tokenomics/reserve-contract' },
-            { text: 'Proof of Liquidity', link: '/tokenomics/proof-of-liquidity' },
-            { text: 'Bonding Curve', link: '/tokenomics/bonding-curve' }
-          ]
-        },
-        {
-          text: 'Use Cases',
-          items: [
-            { text: 'Ecosystem', link: '/use-cases/ecosystem' },
-            { text: 'P2P Payments', link: '/use-cases/p2p-payments' },
-            { text: 'Micropayments', link: '/use-cases/micropayments' },
-            { text: 'DeFi', link: '/use-cases/defi' }
-          ]
-        },
-        {
-          text: 'Resources',
-          items: [
-            { text: 'Community', link: '/resources/community' },
-            { text: 'Brand Kit', link: '/resources/brand-kit' },
-            { text: 'Disclaimer', link: '/resources/disclaimer' }
-          ]
-        }
-      ]
-    },
+    sidebar: false,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/moonycoin/moony' }
     ],
