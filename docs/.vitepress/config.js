@@ -69,18 +69,31 @@ export default {
           // Only run scroll spy on the Complete Documentation page
           if (currentPath.includes('/complete-documentation')) {
             const sections = document.querySelectorAll('h1, h2, h3');
-            const sidebarLinks = document.querySelectorAll('.VPSidebar .VPSidebarItem a, .VPSidebar .VPSidebarItem .VPSidebarItem a');
+            const sidebarLinks = document.querySelectorAll('.VPSidebar .VPSidebarItem a');
             
             function updateActiveSection() {
               const scrollPosition = window.scrollY + 100; // Offset for better detection
               
               let currentSection = '';
+              let currentMainSection = '';
+              
               sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.offsetHeight;
                 
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                  currentSection = section.id || section.textContent.trim();
+                  currentSection = section.textContent.trim();
+                  
+                  // Map section headers to main sidebar items
+                  if (currentSection.includes('Tokenomics') || currentSection.includes('Reserve Contract') || currentSection.includes('Proof of Liquidity') || currentSection.includes('Supply') || currentSection.includes('Bonding Curve')) {
+                    currentMainSection = 'Tokenomics';
+                  } else if (currentSection.includes('Use Cases') || currentSection.includes('Ecosystem') || currentSection.includes('P2P Payments') || currentSection.includes('Micropayments') || currentSection.includes('DeFi')) {
+                    currentMainSection = 'Use Cases';
+                  } else if (currentSection.includes('Resources') || currentSection.includes('Community') || currentSection.includes('Brand Kit')) {
+                    currentMainSection = 'Resources';
+                  } else if (currentSection.includes('Complete Documentation')) {
+                    currentMainSection = 'Complete Documentation';
+                  }
                 }
               });
               
@@ -89,8 +102,8 @@ export default {
                 link.classList.remove('current-page');
                 const linkText = link.textContent.trim();
                 
-                // Match section headers with main sidebar items
-                if (currentSection && linkText.includes(currentSection)) {
+                // Match main sidebar items with current section
+                if (currentMainSection && linkText === currentMainSection) {
                   link.classList.add('current-page');
                 }
               });
@@ -141,7 +154,7 @@ export default {
         
         // Add CSS for current page highlighting
         const style = document.createElement('style');
-        style.textContent = '.VPSidebar .VPSidebarItem a.current-page, .VPSidebar .VPSidebarItem .VPSidebarItem a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; }';
+        style.textContent = '.VPSidebar .VPSidebarItem a.current-page { color: #333333 !important; background-color: #f6f6f7 !important; border-left: 3px solid #333333 !important; padding-left: 12px !important; font-weight: 600 !important; }';
         document.head.appendChild(style);
         
       })();
