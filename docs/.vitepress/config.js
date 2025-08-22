@@ -6,7 +6,8 @@ export default {
   markdown: {
     toc: {
       level: [1, 2, 3]
-    }
+    },
+    outline: [1, 2, 3]
   },
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no' }],
@@ -208,7 +209,8 @@ export default {
     siteTitle: false,
     outline: {
       level: [1, 2, 3],
-      label: 'Page Navigation'
+      label: 'Page Navigation',
+      outlineBadges: false
     },
     // Force light theme CSS variables
     css: {
@@ -233,6 +235,7 @@ export default {
     ],
 
     sidebar: false,
+    aside: true,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/moonycoin/moony' }
     ],
