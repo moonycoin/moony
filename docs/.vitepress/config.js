@@ -111,14 +111,12 @@ export default {
       }
     },
     nav: [
-      { text: 'Complete Guide', link: '/complete-guide' },
       { text: 'Start', link: '/getting-started' },
       { text: 'Tokenomics', link: '/tokenomics/reserve-contract' },
       { text: 'Use Cases', link: '/use-cases/ecosystem' },
       { text: 'Resources', link: '/resources/community' }
     ],
     sidebar: [
-      { text: 'Complete Guide', link: '/complete-guide' },
       { text: 'Getting Started', link: '/getting-started' },
       {
         text: 'Tokenomics',
