@@ -15,7 +15,7 @@ description: Comprehensive guide to Moony's tokenomics, use cases, and resources
 
 ### Reserve Contract
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 The Reserve Contract is a fully onchain smart contract deployed on the Solana blockchain that governs the issuance, redemption, and pricing of Moony. It serves as the central liquidity and distribution mechanism for the entire token supply.
 
@@ -70,7 +70,7 @@ Moony is not limited to any platform. The Reserve Contract is open to all develo
 
 ### Proof of Liquidity
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented entirely through its immutable on-chain reserve contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
 
@@ -124,7 +124,7 @@ The sell‑side fee applies only to redemptions executed directly against the Re
 
 ### Bonding Curve
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Moony's price discovery is governed by an on‑chain bonding curve, a deterministic mathematical function encoded within the Reserve Contract. The curve dynamically adjusts the token's price based on the proportion of the total fixed supply currently in circulation.
 
@@ -191,7 +191,7 @@ While the Reserve Contract governs Moony's primary issuance and redemption prici
 
 ### Ecosystem
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Moony is designed as a foundational asset for a decentralized, composable financial system. Operating at the protocol layer, it enables seamless integration into applications, platforms, and commerce flows without reliance on centralized intermediaries. Governed by immutable smart contracts, its architecture is fully permissionless, supporting innovation without gatekeeping and allowing diverse actors to coordinate through aligned economic incentives.
 
@@ -235,7 +235,7 @@ This permissionless model invites diverse forms of participation. Communities ca
 
 ### P2P Payments
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Peer-to-peer (P2P) payments represent Moony's most direct utility: enabling value transfer between individuals without intermediaries. By combining a credibly fixed supply with on-chain settlement, Moony delivers global digital cash with finality, transparency, and negligible fees.
 
@@ -305,7 +305,7 @@ While Flipcash provides the first front end to access the Moony reserve contract
 
 ### Micropayments
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Micropayments, transactions valued in cents or fractions of a cent, have historically been impractical under legacy financial rails. Percentage‑based fees, multi‑day settlement cycles, and reliance on centralized intermediaries make low‑value transfers uneconomical, cutting off entire categories of digital commerce. 
 
@@ -343,7 +343,7 @@ By combining scarce, divisible digital cash with low‑cost, high‑throughput s
 
 ### DeFi
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Decentralized Finance (DeFi) represents the foundation of internet capital markets, a global financial system built on open, programmable infrastructure. In this environment, lending, borrowing, trading, and yield generation occur directly through smart contracts without the need for banks or traditional intermediaries. 
 
@@ -395,7 +395,7 @@ Moony's integration into DeFi is a natural expression of its design principles. 
 
 ### Community
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Moony is more than a token. It is a shared movement for open value exchange. Its core infrastructure is open, permissionless, and immutable so it can endure as a public good for anyone, anywhere. With no company, central team, or fixed roadmap, the future is written by the people who build upon it: developers, creators, educators, merchants, and everyday users who believe in a system that belongs to no one and empowers everyone.
 
@@ -435,7 +435,7 @@ The next step belongs to the individual. Through code, conversation, commerce, o
 
 ### Brand Kit
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 Moony's visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces. 
 
@@ -484,7 +484,7 @@ These resources are provided to make it simple for developers, designers, and co
 
 ### Disclaimer
 
-![Placeholder](/moony/Placeholder.png)
+![Placeholder](/placeholder)
 
 This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 
