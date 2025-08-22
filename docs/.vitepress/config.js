@@ -145,10 +145,50 @@ export default {
           }
         });
         
-        // Add CSS for moving right aside to left side and styling
+        // Add CSS for moving right aside to left side and styling with full section hierarchy
         const style = document.createElement('style');
-        style.textContent = '.VPDocAside { position: fixed !important; left: 0 !important; top: 64px !important; width: 280px !important; height: calc(100vh - 64px) !important; overflow-y: auto !important; background: #ffffff !important; border-right: 1px solid #e2e8f0 !important; z-index: 10 !important; padding: 24px 16px !important; } .VPDocAside.right { display: none !important; } .VPDoc .container { margin-left: 280px !important; max-width: calc(100% - 280px) !important; } .VPDocAside .content-container { padding: 0 !important; } .VPDocAside .content-container h2 { font-size: 16px !important; font-weight: 600 !important; margin-bottom: 16px !important; color: #333333 !important; } .VPDocAside .content-container ul { list-style: none !important; padding: 0 !important; margin: 0 !important; } .VPDocAside .content-container li { margin-bottom: 8px !important; } .VPDocAside .content-container a { display: block !important; padding: 8px 12px !important; color: #476582 !important; text-decoration: none !important; border-radius: 6px !important; transition: all 0.2s ease !important; } .VPDocAside .content-container a:hover { background-color: #f6f6f7 !important; color: #333333 !important; } .VPDocAside .content-container a.active { background-color: #f6f6f7 !important; color: #333333 !important; border-left: 3px solid #333333 !important; padding-left: 16px !important; font-weight: 600 !important; }';
+        style.textContent = '.VPDocAside { position: fixed !important; left: 0 !important; top: 64px !important; width: 280px !important; height: calc(100vh - 64px) !important; overflow-y: auto !important; background: #ffffff !important; border-right: 1px solid #e2e8f0 !important; z-index: 10 !important; padding: 24px 16px !important; } .VPDocAside.right { display: none !important; } .VPDoc .container { margin-left: 280px !important; max-width: calc(100% - 280px) !important; } .VPDocAside .content-container { padding: 0 !important; } .VPDocAside .content-container h2 { font-size: 18px !important; font-weight: 700 !important; margin-bottom: 20px !important; color: #333333 !important; border-bottom: 2px solid #e2e8f0 !important; padding-bottom: 8px !important; } .VPDocAside .content-container ul { list-style: none !important; padding: 0 !important; margin: 0 !important; } .VPDocAside .content-container li { margin-bottom: 4px !important; } .VPDocAside .content-container a { display: block !important; padding: 8px 12px !important; color: #476582 !important; text-decoration: none !important; border-radius: 6px !important; transition: all 0.2s ease !important; font-size: 14px !important; } .VPDocAside .content-container a:hover { background-color: #f6f6f7 !important; color: #333333 !important; } .VPDocAside .content-container a.active { background-color: #f6f6f7 !important; color: #333333 !important; border-left: 3px solid #333333 !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .content-container ul ul { margin-left: 16px !important; } .VPDocAside .content-container ul ul a { font-size: 13px !important; padding: 6px 12px !important; color: #64748b !important; } .VPDocAside .content-container ul ul a:hover { color: #333333 !important; } .VPDocAside .content-container ul ul a.active { color: #333333 !important; font-weight: 600 !important; }';
         document.head.appendChild(style);
+        
+        // Add collapsible functionality for aside navigation
+        function initCollapsibleAside() {
+          const aside = document.querySelector('.VPDocAside');
+          if (aside) {
+            // Add collapse/expand functionality to section headers
+            const sectionHeaders = aside.querySelectorAll('h2');
+            sectionHeaders.forEach(header => {
+              const nextUl = header.nextElementSibling;
+              if (nextUl && nextUl.tagName === 'UL') {
+                // Add collapse/expand button
+                const toggleBtn = document.createElement('button');
+                toggleBtn.innerHTML = '▼';
+                toggleBtn.className = 'section-toggle';
+                toggleBtn.style.cssText = 'background: none; border: none; cursor: pointer; font-size: 12px; color: #64748b; margin-left: 8px; padding: 2px 4px; border-radius: 3px; transition: all 0.2s ease;';
+                
+                toggleBtn.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  const isCollapsed = nextUl.style.display === 'none';
+                  nextUl.style.display = isCollapsed ? 'block' : 'none';
+                  toggleBtn.innerHTML = isCollapsed ? '▼' : '▶';
+                  toggleBtn.style.transform = isCollapsed ? 'rotate(0deg)' : 'rotate(-90deg)';
+                });
+                
+                header.appendChild(toggleBtn);
+                
+                // Initially show all sections (expanded)
+                nextUl.style.display = 'block';
+              }
+            });
+          }
+        }
+        
+        // Initialize collapsible aside when page loads
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initCollapsibleAside);
+        } else {
+          initCollapsibleAside();
+        }
         
       })();
     `]
