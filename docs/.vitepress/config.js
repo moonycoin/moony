@@ -158,7 +158,7 @@ export default {
         
         // Add CSS to hide only the outline label text, not the functionality
         const hideLabelStyle = document.createElement('style');
-        hideLabelStyle.textContent = '.VPDocAside .outline-title { display: none !important; } .VPDocAside .outline-marker { display: none !important; } .VPDocAside .outline { margin-top: 0 !important; } /* Light grey highlight for active states */ .VPDocAside .outline-link.active { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .outline-link.current-section { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .outline-link.current-subsection { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } /* Make H2 main section headers bold in aside menu */ .VPDocAside .outline-link[href*="#tokenomics"], .VPDocAside .outline-link[href*="#use-cases"], .VPDocAside .outline-link[href*="#resources"] { font-weight: 700 !important; font-size: 16px !important; color: #1e293b !important; } /* Mobile responsive: hide aside menu on small screens */ @media (max-width: 768px) { .VPDocAside { display: none !important; } .VPDoc .container { margin-left: 0 !important; max-width: 100% !important; } }';
+        hideLabelStyle.textContent = '.VPDocAside .outline-title { display: none !important; } .VPDocAside .outline-marker { display: none !important; } .VPDocAside .outline { margin-top: 0 !important; } /* Light grey highlight for active states */ .VPDocAside .outline-link.active { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .outline-link.current-section { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .outline-link.current-subsection { background-color: #f1f5f9 !important; color: #1e293b !important; border-left: 3px solid #64748b !important; padding-left: 16px !important; font-weight: 600 !important; } /* Make H2 main section headers bold in aside menu */ .VPDocAside .outline-link[href*="#tokenomics"], .VPDocAside .outline-link[href*="#use-cases"], .VPDocAside .outline-link[href*="#resources"] { font-weight: 700 !important; font-size: 16px !important; color: #1e293b !important; } /* Mobile responsive: hide aside menu on small screens */ @media (max-width: 768px) { .VPDocAside { display: none !important; } .VPDoc .container { margin-left: 0 !important; max-width: 100% !important; } } /* Return to top button styling */ .return-to-top-btn { position: fixed !important; bottom: 30px !important; right: 30px !important; width: 60px !important; height: 60px !important; background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important; color: white !important; border: none !important; border-radius: 50% !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 24px !important; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important; transition: all 0.3s ease !important; z-index: 1000 !important; opacity: 0 !important; visibility: hidden !important; } .return-to-top-btn:hover { transform: translateY(-3px) !important; box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4) !important; background: linear-gradient(135deg, #2563eb, #1e40af) !important; } .return-to-top-btn.visible { opacity: 1 !important; visibility: visible !important; } @media (max-width: 768px) { .return-to-top-btn { bottom: 20px !important; right: 20px !important; width: 50px !important; height: 50px !important; font-size: 20px !important; } }';
         document.head.appendChild(hideLabelStyle);
         
         // Enhanced aside navigation with advanced scroll spy
@@ -304,6 +304,43 @@ export default {
               window.addEventListener('scroll', onScroll, { passive: true });
               // Initial call
               updateAsideActiveState();
+              
+              // Create and add return to top button
+              function createReturnToTopButton() {
+                const button = document.createElement('button');
+                button.className = 'return-to-top-btn';
+                button.innerHTML = '↑';
+                button.setAttribute('aria-label', 'Return to top');
+                
+                // Add click event
+                button.addEventListener('click', () => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                  });
+                });
+                
+                // Add to page
+                document.body.appendChild(button);
+                
+                // Show/hide based on scroll position
+                function toggleButton() {
+                  if (window.scrollY > 300) {
+                    button.classList.add('visible');
+                  } else {
+                    button.classList.remove('visible');
+                  }
+                }
+                
+                // Listen for scroll to show/hide button
+                window.addEventListener('scroll', toggleButton, { passive: true });
+                
+                // Initial check
+                toggleButton();
+              }
+              
+              // Initialize return to top button
+              createReturnToTopButton();
             }
           }, 500);
         }
