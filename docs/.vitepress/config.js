@@ -3,6 +3,11 @@ export default {
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/moony/',
   appearance: false,
+  markdown: {
+    toc: {
+      level: [1, 2, 3]
+    }
+  },
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no' }],
     ['meta', { name: 'theme-color', content: '#333333' }],
@@ -150,9 +155,8 @@ export default {
         style.textContent = '.VPDocAside { position: fixed !important; left: 0 !important; top: 64px !important; width: 280px !important; height: calc(100vh - 64px) !important; overflow-y: auto !important; background: #ffffff !important; border-right: 1px solid #e2e8f0 !important; z-index: 10 !important; padding: 24px 16px !important; } .VPDocAside.right { display: none !important; } .VPDoc .container { margin-left: 280px !important; max-width: calc(100% - 280px) !important; } .VPDocAside .content-container { padding: 0 !important; } .VPDocAside .content-container h2:first-child { display: none !important; } .VPDocAside .content-container h2 { font-size: 18px !important; font-weight: 700 !important; margin-bottom: 20px !important; color: #333333 !important; border-bottom: 2px solid #e2e8f0 !important; padding-bottom: 8px !important; } .VPDocAside .content-container ul { list-style: none !important; padding: 0 !important; margin: 0 !important; } .VPDocAside .content-container li { margin-bottom: 4px !important; } .VPDocAside .content-container a { display: block !important; padding: 8px 12px !important; color: #476582 !important; text-decoration: none !important; border-radius: 6px !important; transition: all 0.2s ease !important; font-size: 14px !important; } .VPDocAside .content-container a:hover { background-color: #f6f6f7 !important; color: #333333 !important; } .VPDocAside .content-container a.active { background-color: #f6f6f7 !important; color: #333333 !important; border-left: 3px solid #333333 !important; padding-left: 16px !important; font-weight: 600 !important; } .VPDocAside .content-container ul ul { margin-left: 16px !important; } .VPDocAside .content-container ul ul a { font-size: 13px !important; padding: 6px 12px !important; color: #64748b !important; } .VPDocAside .content-container ul ul a:hover { color: #333333 !important; } .VPDocAside .content-container ul ul a.active { color: #333333 !important; font-weight: 600 !important; } .VPDoc .content .content-container .table-of-contents { display: none !important; }';
         document.head.appendChild(style);
         
-        // Force VitePress to show all headers (h1, h2, h3) in the aside navigation
-        function forceShowAllHeaders() {
-          // Wait for VitePress to generate the aside navigation
+        // Simple enhancement to ensure aside navigation works properly
+        function enhanceAsideNavigation() {
           setTimeout(() => {
             const aside = document.querySelector('.VPDocAside');
             if (aside) {
@@ -162,75 +166,29 @@ export default {
                 onThisPageHeader.style.display = 'none';
               }
               
-              // Ensure all headers are visible in the navigation
-              const allHeaders = document.querySelectorAll('h1, h2, h3');
-              const asideLinks = aside.querySelectorAll('ul li a');
-              
-              // If VitePress isn't showing all headers, manually create the navigation
-              if (asideLinks.length < allHeaders.length) {
-                const contentContainer = aside.querySelector('.content-container');
-                if (contentContainer) {
-                  // Clear existing content
-                  contentContainer.innerHTML = '';
-                  
-                  // Create custom navigation structure
-                  const nav = document.createElement('nav');
-                  nav.className = 'custom-nav';
-                  
-                  // Group headers by main sections
-                  let currentMainSection = null;
-                  let currentMainUl = null;
-                  
-                  allHeaders.forEach((header, index) => {
-                    if (index === 0) return; // Skip the main page title
-                    
-                    const headerText = header.textContent.trim();
-                    const headerId = header.id || headerText.toLowerCase().replace(/\s+/g, '-');
-                    
-                    if (header.tagName === 'H2') {
-                      // Main section
-                      currentMainSection = document.createElement('h2');
-                      currentMainSection.textContent = headerText;
-                      currentMainSection.style.cssText = 'font-size: 18px !important; font-weight: 700 !important; margin-bottom: 20px !important; color: #333333 !important; border-bottom: 2px solid #e2e8f0 !important; padding-bottom: 8px !important;';
-                      
-                      currentMainUl = document.createElement('ul');
-                      currentMainUl.style.cssText = 'list-style: none !important; padding: 0 !important; margin: 0 0 20px 0 !important;';
-                      
-                      nav.appendChild(currentMainSection);
-                      nav.appendChild(currentMainUl);
-                    } else if (header.tagName === 'H3' && currentMainUl) {
-                      // Subsection
-                      const li = document.createElement('li');
-                      const a = document.createElement('a');
-                      a.href = '#' + headerId;
-                      a.textContent = headerText;
-                      a.style.cssText = 'display: block !important; padding: 6px 12px !important; color: #64748b !important; text-decoration: none !important; border-radius: 6px !important; transition: all 0.2s ease !important; font-size: 13px !important; margin-left: 16px !important;';
-                      
-                      a.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const targetSection = document.querySelector('#' + headerId);
-                        if (targetSection) {
-                          targetSection.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      });
-                      
-                      li.appendChild(a);
-                      currentMainUl.appendChild(li);
+              // Add smooth scrolling to all aside links
+              const asideLinks = aside.querySelectorAll('a');
+              asideLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                  const href = link.getAttribute('href');
+                  if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(href);
+                    if (targetSection) {
+                      targetSection.scrollIntoView({ behavior: 'smooth' });
                     }
-                  });
-                  
-                  contentContainer.appendChild(nav);
-                }
-              }
+                  }
+                });
+              });
             }
-          }, 1000); // Wait for VitePress to finish rendering
+          }, 500);
         }
         
-        // Initialize custom navigation when page loads
+        // Initialize enhanced navigation when page loads
         if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', forceShowAllHeaders);
+          document.addEventListener('DOMContentLoaded', enhanceAsideNavigation);
         } else {
-          forceShowAllHeaders();
+          enhanceAsideNavigation();
         }
         
       })();
@@ -242,6 +200,9 @@ export default {
       dark: '/icon-light.png'
     },
     siteTitle: false,
+    outline: {
+      level: [1, 2, 3]
+    },
     // Force light theme CSS variables
     css: {
       vars: {
