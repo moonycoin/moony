@@ -173,9 +173,10 @@ export default {
                 }
               });
               
-              // Add smooth scrolling to all aside links
+              // Add smooth scrolling to all aside links and apply bold styling to main sections
               const asideLinks = aside.querySelectorAll('a');
-              asideLinks.forEach(link => {
+              asideLinks.forEach((link, index) => {
+                // Add click event for smooth scrolling
                 link.addEventListener('click', (e) => {
                   const href = link.getAttribute('href');
                   if (href && href.startsWith('#')) {
@@ -186,6 +187,22 @@ export default {
                     }
                   }
                 });
+                
+                // Apply bold styling to main section links (first level)
+                const parentLi = link.closest('li');
+                const parentUl = parentLi ? parentLi.closest('ul') : null;
+                const isMainSection = parentUl && parentUl.parentElement && parentUl.parentElement.classList.contains('content-container');
+                
+                if (isMainSection) {
+                  console.log('Making main section link bold:', link.textContent.trim());
+                  link.style.fontWeight = '700';
+                  link.style.fontSize = '16px';
+                  link.style.color = '#1e293b';
+                  link.style.fontWeight = 'bold';
+                } else {
+                  console.log('Subsection link (normal weight):', link.textContent.trim());
+                  link.style.fontWeight = 'normal';
+                }
               });
               
               // Enhanced scroll spy for aside navigation
