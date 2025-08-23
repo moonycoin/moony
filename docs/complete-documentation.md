@@ -3,11 +3,11 @@ title: Complete Documentation
 description: Comprehensive guide to Moony's tokenomics, use cases, and resources
 ---
 
-# Complete Documentation
-
-::: tip click-here-tip
-[View Important Disclaimer](#disclaimer)
+::: warning
+**Disclaimer:** This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 :::
+
+# Complete Documentation
 
 
 
@@ -471,11 +471,7 @@ These resources are provided to make it simple for developers, designers, and co
 [Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
 
-### Disclaimer
 
-![Placeholder](/placeholder-color.png)
-
-This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 
 ---
 
