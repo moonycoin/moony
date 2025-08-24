@@ -115,6 +115,8 @@ a:visited {
   line-height: 1.7;
   margin: 1rem 0;
   text-align: justify;
+  max-width: 95%;
+  margin-left: 1rem;
 }
 
 .vp-doc li {
