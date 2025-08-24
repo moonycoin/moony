@@ -4,19 +4,81 @@ description: Comprehensive guide to Moony's tokenomics, use cases, and resources
 ---
 
 ::: warning
-**Disclaimer:** This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
-:::
-
-::: info Contract Addresses
-**Token Contract Address:** `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`  
-**Reserve Contract Address:** `11111111111111111111111111111111`
+[View Important Disclaimer](#disclaimer)
 :::
 
 # Complete Documentation
 
+Moony is a decentralized digital asset, deployed as a fixed-supply token on the Solana blockchain, designed to facilitate permissionless payments without intermediaries. All issuance is governed by an immutable smart contract that eliminates discretionary control and enables open participation in internet capital markets.
+
+::: tip 🚀 Smart Contract Addresses
+
+<div class="contract-card">
+  <div class="contract-header">
+    <h4>Token Address</h4>
+  </div>
+  <div class="contract-address">
+    <code>EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v</code>
+    <button class="copy-btn" onclick="copyToClipboard('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', event)">
+      <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+      <span class="copy-text">Copy</span>
+    </button>
+  </div>
+</div>
+
+<div class="contract-card">
+  <div class="contract-header">
+    <h4>Reserve Contract</h4>
+  </div>
+  <div class="contract-address">
+    <code>9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM</code>
+    <button class="copy-btn" onclick="copyToClipboard('9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM', event)">
+      <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+      <span class="copy-text">Copy</span>
+    </button>
+  </div>
+</div>
+
+:::
+
+<script>
+function copyToClipboard(text, event) {
+  navigator.clipboard.writeText(text).then(function() {
+    // Show success feedback
+    const btn = event.target.closest('.copy-btn');
+    const originalText = btn.querySelector('.copy-text').textContent;
+    btn.querySelector('.copy-text').textContent = 'Copied!';
+    btn.style.background = '#10b981';
+    
+    setTimeout(() => {
+      btn.querySelector('.copy-text').textContent = originalText;
+      btn.style.background = '';
+    }, 2000);
+  }).catch(function(err) {
+    console.error('Could not copy text: ', err);
+  });
+}
+</script>
+
 
 
 ## Tokenomics
+
+### Fixed Supply
+
+![Placeholder](/placeholder-color.png)
+
+Moony has a fixed total supply of 21,000,000 units. This cap is enforced at the protocol level and cannot be increased, ensuring long-term scarcity and transparency. There were no pre-mines, no team allocations, no airdrops, and no investor sales. Every unit of Moony must be acquired through permissionless interaction with the smart contract.
+
+This zero-allocation model reinforces Moony's ethos as a public good: no insider advantage, no preferential treatment, and no hidden supply. The entire token supply is governed by a single set of rules available to all participants from day one.
+
+Moony's distribution is managed exclusively through a smart contract known as the Reserve, which operates on-chain and in real time. The Reserve is responsible for releasing Moony into circulation in exchange for stable assets, ensuring a fair and transparent mechanism for supply distribution.
 
 ### Reserve Contract
 
@@ -102,32 +164,6 @@ This process is:
 - **Permissionless**: Anyone can participate as demand arises, without permission or centralized control.
 - **Economically Constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony's economy.
 - **Energy Efficient**: By replacing energy-intensive computation with on-chain capital deposits, PoL reduces environmental impact and complements Solana's low-carbon infrastructure.
-
-### Fixed Supply
-
-![Placeholder](/placeholder-color.png)
-
-Moony has a fixed, immutable total supply of 21 million tokens, enforced entirely by smart contract logic on the Solana blockchain. This hard cap cannot be changed — not by the project initiator, not by the Moony Foundation, and not by any future form of governance. It is permanently encoded, forming the backbone of Moony's monetary architecture.
-
-This design mirrors Bitcoin's fixed issuance model but adapts it to a permissionless, on-chain environment. By enforcing scarcity through smart contracts, Moony ensures that no central authority can inflate the supply or manipulate issuance schedules. The result is a form of programmable digital money with predictable economic behavior and long-term credibility.
-
-#### Key Principles
-
-- **Total Supply:** Fixed at 21,000,000 Moony tokens
-- **Immutability:** Enforced by immutable smart contracts
-- **Governance-proof:** No mechanism to raise or bypass the cap
-- **Transparency:** All supply data visible and verifiable on-chain
-
-#### Divisibility
-
-While Moony is scarce at the macro level, it is highly divisible at the unit level. Each Moony token can be split into 100 million sub-units, allowing for precise accounting and granular transactions across a wide range of use cases, from peer-to-peer tips to fractionalized commerce and streaming payments.
-
-These smallest units are called Bits.
-
-- **1 Moony = 100,000,000 Bits**
-- **1 Bit = 0.00000001 Moony**
-
-The term "Bit" echoes both the modularity of digital computation and the orbital symbolism embedded in the Moony brand. It provides a memetically expressive and user-friendly way to talk about small-value interactions.
 
 #### Fee Model
 
@@ -502,7 +538,9 @@ These resources are provided to make it simple for developers, designers, and co
 [Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
 
+## Disclaimer
 
+This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 
 ---
 
