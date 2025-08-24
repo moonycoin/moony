@@ -918,22 +918,43 @@ html.dark {
 /* Mobile responsive styles for contract addresses */
 @media (max-width: 768px) {
   .contract-address {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
-    align-items: stretch;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   .contract-address code {
     font-size: 0.75rem;
     padding: 6px 8px;
-    max-width: 100%;
+    flex: 1;
+    min-width: 200px;
     text-overflow: ellipsis;
   }
   
   .copy-btn {
-    align-self: flex-end;
+    flex-shrink: 0;
     font-size: 0.7rem;
     padding: 4px 8px;
     width: fit-content;
+    white-space: nowrap;
+  }
+}
+
+/* Extra small mobile optimization */
+@media (max-width: 480px) {
+  .contract-address {
+    gap: 8px;
+  }
+  
+  .contract-address code {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+    min-width: 150px;
+  }
+  
+  .copy-btn {
+    font-size: 0.65rem;
+    padding: 3px 6px;
   }
 }
