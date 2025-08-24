@@ -380,8 +380,8 @@ export default {
   ],
   themeConfig: {
     logo: {
-      light: '/icon-light.png',
-      dark: '/icon-light.png'
+      light: '/logo-light.svg',
+      dark: '/logo-light.svg'
     },
     siteTitle: false,
     outline: {
