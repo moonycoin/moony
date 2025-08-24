@@ -49,7 +49,7 @@ Deployed on the Solana blockchain, it enables peer-to-peer value exchange withou
 
 :::
 
-## Protocol Fundementals
+**Protocol Fundementals**
 
 Moony is a monetary protocol designed as a digital public good, a neutral foundation for open participation, economic expression, and permissionless value exchange. Its architecture draws from the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that requires no permission, no intermediaries, and no governance levers. With a fixed supply, immutable rules, and fully open distribution, Moony reflects a structural commitment to economic freedom and equal access. Every unit enters circulation through the same transparent, deterministic mechanism. As adoption grows, Moony can serve as the monetary backbone for a decentralized economy: from peer-to-peer payments and microtransactions to global remittances and composable financial tools.
 
