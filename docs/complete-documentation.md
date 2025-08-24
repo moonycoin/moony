@@ -103,7 +103,7 @@ In an ecosystem often defined by uneven allocations, unlock schedules, and backr
 
 
 
-### Core Mechanisms
+### Reserve Contract
 
 Moony’s protocol operates through a self-executing architecture defined by code, not discretion. Its distribution, pricing, and liquidity systems are fully automated and onchain, enabling transparent access without intermediaries, governance, or privileged control.
 
