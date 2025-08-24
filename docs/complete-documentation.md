@@ -7,6 +7,11 @@ description: Comprehensive guide to Moony's tokenomics, use cases, and resources
 **Disclaimer:** This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain. The protocol operates autonomously and cannot be altered or controlled by any party. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 :::
 
+::: info Contract Addresses
+**Token Contract Address:** `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`  
+**Reserve Contract Address:** `11111111111111111111111111111111`
+:::
+
 # Complete Documentation
 
 
@@ -97,6 +102,32 @@ This process is:
 - **Permissionless**: Anyone can participate as demand arises, without permission or centralized control.
 - **Economically Constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony's economy.
 - **Energy Efficient**: By replacing energy-intensive computation with on-chain capital deposits, PoL reduces environmental impact and complements Solana's low-carbon infrastructure.
+
+### Fixed Supply
+
+![Placeholder](/placeholder-color.png)
+
+Moony has a fixed, immutable total supply of 21 million tokens, enforced entirely by smart contract logic on the Solana blockchain. This hard cap cannot be changed — not by the project initiator, not by the Moony Foundation, and not by any future form of governance. It is permanently encoded, forming the backbone of Moony's monetary architecture.
+
+This design mirrors Bitcoin's fixed issuance model but adapts it to a permissionless, on-chain environment. By enforcing scarcity through smart contracts, Moony ensures that no central authority can inflate the supply or manipulate issuance schedules. The result is a form of programmable digital money with predictable economic behavior and long-term credibility.
+
+#### Key Principles
+
+- **Total Supply:** Fixed at 21,000,000 Moony tokens
+- **Immutability:** Enforced by immutable smart contracts
+- **Governance-proof:** No mechanism to raise or bypass the cap
+- **Transparency:** All supply data visible and verifiable on-chain
+
+#### Divisibility
+
+While Moony is scarce at the macro level, it is highly divisible at the unit level. Each Moony token can be split into 100 million sub-units, allowing for precise accounting and granular transactions across a wide range of use cases, from peer-to-peer tips to fractionalized commerce and streaming payments.
+
+These smallest units are called Bits.
+
+- **1 Moony = 100,000,000 Bits**
+- **1 Bit = 0.00000001 Moony**
+
+The term "Bit" echoes both the modularity of digital computation and the orbital symbolism embedded in the Moony brand. It provides a memetically expressive and user-friendly way to talk about small-value interactions.
 
 #### Fee Model
 
