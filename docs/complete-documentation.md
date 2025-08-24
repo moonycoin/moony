@@ -1,15 +1,16 @@
----
-title: Moony Documentation
-description: Comprehensive guide to Moony's tokenomics, use cases, and resources
----
+
 
 ::: warning
 [View Important Disclaimer](#disclaimer)
 :::
 
-# Moony Documentation
+# Moony (MNY): A Digital Public Good
 
-Moony is a decentralized digital asset deployed as a fixed-supply token on the Solana blockchain. It is designed to facilitate permissionless payments without intermediaries. All issuance is governed by an immutable smart contract that eliminates discretionary control and enables open participation in internet capital markets.
+
+
+
+
+Moony is a decentralized digital asset deployed as a fixed-supply token on the Solana blockchain. It enables permissionless payments without intermediaries. All distribution is enforced by an immutable smart contract, ensuring fair distribution, eliminating discretionary control, and supporting open participation in internet capital markets.
 
 ::: tip 🚀 Smart Contract Addresses
 
