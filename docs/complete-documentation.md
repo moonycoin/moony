@@ -68,9 +68,6 @@ Built on top of this base layer are the protocol’s architectural mechanisms: a
 ### Monetary Principles
 Moony’s architecture is built upon a foundational monetary layer, one that draws directly from the enduring tenets of sound money: scarcity, fungibility, and fairness of distribution. These are practical design constraints that enable open participation, rule-based coordination, and resistance to manipulation. Each is embedded directly into the protocol, forming a base monetary structure that requires no trust, no permission, and no discretion.
 
-
-![Placeholder](/placeholder-color.png)
-
 In a digital age defined by monetary experimentation, governance toggles, and engineered incentives, Moony reaffirms something simpler: a fixed, transparent, and neutral monetary core that anyone can access and no one can control. What follows are the three monetary principles that anchor this foundation.
 
 #### 1. Digital Scarcity
@@ -132,9 +129,9 @@ The contract is immutable. There are no upgrade keys or administrative controls.
 
 #### Flipcash Infrastructure
 
-Moony launched using infrastructure developed by Flipcash, Inc., an independent third-party company. Flipcash has no control over Moony's issuance, supply, or pricing; those parameters are governed entirely by the Reserve Contract.
-
 ![Placeholder](/placeholder-color.png)
+
+Moony launched using infrastructure developed by Flipcash, Inc., an independent third-party company. Flipcash has no control over Moony's issuance, supply, or pricing; those parameters are governed entirely by the Reserve Contract.
 
 At launch, Flipcash provides the first public front end for interacting with the Reserve. Through its mobile app, users can seamlessly convert between USDC and Moony, and send peer-to-peer payments using Moony as digital cash.
 
