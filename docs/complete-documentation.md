@@ -1,4 +1,10 @@
 
+::: warning Page Under Construction
+**Page Under Construction - Final Copy Not Complete - Confidential**
+
+This documentation is currently being developed and reviewed. The content may contain incomplete information, placeholder text, or sections that are still being finalized. Please treat this as confidential material until the final version is released.
+:::
+
 ## Moony Protocol
 
 Built as a digital public good, Moony is a monetary protocol that provides a neutral foundation for open participation, economic expression, and decentralized value exchange. Its architecture reflects the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that operates without permissions, intermediaries, or governance levers.

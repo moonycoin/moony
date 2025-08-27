@@ -179,12 +179,11 @@ a:visited {
   border-left-color: var(--vp-c-brand);
 }
 
+/* Make the warning disclaimer box have a light red background */
 .vp-doc .custom-block.warning {
-  border-left-color: #f59e0b;
-}
-
-.vp-doc .custom-block.danger {
-  border-left-color: #ef4444;
+  background-color: #fef2f2 !important;
+  border-left-color: #dc2626 !important;
+  border-color: #fecaca !important;
 }
 
 /* ================
@@ -1003,33 +1002,4 @@ html.dark {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #64748b !important;
-}
-
-/* ================
-   DISCLAIMER TIP BOX STYLING - REDUCE FONT SIZE
-   ================ */
-/* Reduce font size in the disclaimer warning tip box */
-.vp-doc .custom-block.warning {
-  font-size: 0.7rem !important;
-  line-height: 0.9 !important;
-  background-color: #f3f4f6 !important;
-  border-left-color: #8b5cf6 !important;
-}
-
-/* More specific selector to override VitePress defaults */
-.vp-doc .custom-block.warning,
-.vp-doc div[class*="warning"] {
-  background-color: #f3f4f6 !important;
-  border-left-color: #8b5cf6 !important;
-}
-
-/* Maximum specificity to override VitePress theme */
-.vp-doc .custom-block.warning,
-.vp-doc .custom-block.warning *,
-.vp-doc div[class*="warning"],
-.vp-doc div[class*="warning"] *,
-html body .vp-doc .custom-block.warning {
-  background-color: #f3f4f6 !important;
-  border-left-color: #8b5cf6 !important;
-  background: #f3f4f6 !important;
 }
