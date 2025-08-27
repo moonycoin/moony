@@ -959,6 +959,31 @@ html.dark {
   }
 }
 
+/* ================
+   ASIDE MENU STYLING - MAKE H2 HEADERS BOLD
+   ================ */
+/* Make H2 headers in the aside menu bold */
+.VPDocAside .content-container > ul > li > a {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  color: #1e293b !important;
+}
+
+/* Target first-level links specifically (main sections) */
+.VPDocAside > div > ul > li > a {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  color: #1e293b !important;
+}
+
+/* Ensure subsections (H3) are normal weight */
+.VPDocAside .content-container > ul > li > ul > li > a,
+.VPDocAside > div > ul > li > ul > li > a {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  color: #64748b !important;
+}
+
 /* Target by href to ensure "Moony Protocol" gets bold */
 .VPDocAside a[href*="#moony-protocol"] {
   font-weight: bold !important;
@@ -978,4 +1003,33 @@ html.dark {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #64748b !important;
+}
+
+/* ================
+   DISCLAIMER TIP BOX STYLING - REDUCE FONT SIZE
+   ================ */
+/* Reduce font size in the disclaimer warning tip box */
+.vp-doc .custom-block.warning {
+  font-size: 0.7rem !important;
+  line-height: 0.9 !important;
+  background-color: #f3f4f6 !important;
+  border-left-color: #8b5cf6 !important;
+}
+
+/* More specific selector to override VitePress defaults */
+.vp-doc .custom-block.warning,
+.vp-doc div[class*="warning"] {
+  background-color: #f3f4f6 !important;
+  border-left-color: #8b5cf6 !important;
+}
+
+/* Maximum specificity to override VitePress theme */
+.vp-doc .custom-block.warning,
+.vp-doc .custom-block.warning *,
+.vp-doc div[class*="warning"],
+.vp-doc div[class*="warning"] *,
+html body .vp-doc .custom-block.warning {
+  background-color: #f3f4f6 !important;
+  border-left-color: #8b5cf6 !important;
+  background: #f3f4f6 !important;
 }
