@@ -2,16 +2,18 @@
 [View Important Disclaimer](#disclaimer)
 :::
 
-# Introducing Moony 
+## Moony Protocol
+
+Built as a digital public good, Moony is a monetary protocol that provides a neutral foundation for open participation, economic expression, and decentralized value exchange. Its architecture reflects the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that operates without permissions, intermediaries, or governance levers.
+
+With immutable rules and fully open distribution, Moony embodies a structural commitment to economic freedom and equal access. Each unit enters circulation through the same transparent, deterministic mechanism. As adoption grows, Moony is positioned to serve as the monetary backbone for a decentralized economy, powering global peer-to-peer payments, micropayments, and composable financial tools.
+
+Moony is a monetary protocol designed as a digital public good, a neutral foundation for open participation, economic expression, and permissionless value exchange. Its architecture draws from the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that requires no permission, no intermediaries, and no governance levers. With a fixed supply, immutable rules, and fully open distribution, Moony reflects a structural commitment to economic freedom and equal access. Every unit enters circulation through the same transparent, deterministic mechanism. As adoption grows, Moony can serve as the monetary backbone for a decentralized economy: from peer-to-peer payments and microtransactions to global remittances and composable financial tools.
 
 
-Moony is a decentralized digital asset designed to serve as the monetary foundation for an open, permissionless payments ecosystem.
-Deployed on the Solana blockchain, it enables peer-to-peer value exchange without intermediaries. All supply is governed by an immutable smart contract, ensuring fair, transparent distribution with no discretionary control, insider allocations, or privileged access.
+### Moony (MNY)
 
-&nbsp;
-
-
-
+Moony is a decentralized digital asset designed to serve as the monetary foundation for an open, permissionless payments ecosystem. Deployed on the Solana blockchain, it enables peer-to-peer value exchange without intermediaries. All supply is governed by an immutable smart contract, ensuring fair, transparent distribution with no discretionary control, insider allocations, or privileged access.
 
 ::: tip 🚀 Smart Contract Addresses
 
@@ -31,6 +33,65 @@ Deployed on the Solana blockchain, it enables peer-to-peer value exchange withou
   </div>
 </div>
 
+
+:::
+
+Moony’s total supply is permanently capped at 21 million units. This constraint is hardcoded at the protocol level and cannot be increased, adjusted, or bypassed. There are no emission schedules, no inflation mechanics, no levers to expand supply.
+
+Scarcity is the root of monetary integrity. Fixed supply creates a predictable economic substrate, allowing participants to coordinate, price, and transact with confidence over time. It transforms Moony from a token into a trustless accounting system, a neutral measure of value that cannot be manipulated by design.
+
+Where legacy systems rely on policy decisions to manage monetary expansion, Moony requires none. Its scarcity is not enforced by governance but by architecture. That difference is essential: it eliminates uncertainty, removes human discretion, and aligns long-term value with immutable code, not mutable promises.
+
+Every unit of Moony is fully fungible and divisible to 10 decimal places. Whether a user transacts with ⍜100 or ⍜0.01, each unit behaves identically and holds the same value within the system. No history, no identity, no hierarchy, just uniform economic expression.
+
+Fungibility is critical to monetary neutrality. It ensures that Moony can serve as a general-purpose medium of exchange across any context, whether peer-to-peer payments, protocol integrations, commerce, or digital ecosystems. In Moony’s design, no unit is special, and no actor holds privileged value.
+
+This uniformity is a structural safeguard against fragmentation, discrimination, and value distortion. It aligns with the protocol’s broader ethos of fairness: just as Moony’s distribution model avoids insider advantages, its monetary logic avoids coin-level bias. The network treats all units, and all participants, the same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Reserve Contract
+
+Moony’s tokenomics architecture is grounded in foundational monetary principles and implemented through a transparent, immutable protocol design. It establishes a system where value is issued without discretion, access is open to all, and incentives align with the long-term integrity of the asset.
+
+The protocol’s design rests on four core monetary principles: fixed supply, fungibility, cryptographic scarcity, and a zero allocation model. These properties form the monetary substrate, defining how value enters circulation, how it behaves, and how trust is established without intermediaries.
+
+Built on top of this base layer are the protocol’s architectural mechanisms: an immutable reserve contract, a transparent bonding curve, and a proof-of-liquidity model that links capital inflows to token distribution. Together, these interlocking components ensure fairness, verifiability, and composability, creating a system that is resilient, accessible, and aligned with the ethos of digital public goods.
+
+Moony’s architecture is built upon a foundational monetary layer, one that draws directly from the enduring tenets of sound money: scarcity, fungibility, and fairness of distribution. These are practical design constraints that enable open participation, rule-based coordination, and resistance to manipulation. Each is embedded directly into the protocol, forming a base monetary structure that requires no trust, no permission, and no discretion.
+
+In a digital age defined by monetary experimentation, governance toggles, and engineered incentives, Moony reaffirms something simpler: a fixed, transparent, and neutral monetary core that anyone can access and no one can control. What follows are the three monetary principles that anchor this foundation.
+
+::: tip 🚀 Smart Contract Addresses
+
 <div class="contract-card">
   <div class="contract-header">
     <h4>Reserve Contract</h4>
@@ -49,47 +110,9 @@ Deployed on the Solana blockchain, it enables peer-to-peer value exchange withou
 
 :::
 
-**Protocol Fundementals**
+Moony’s economic architecture is governed entirely by code. Its protocol operates without intermediaries, central administrators, or external governance. Distribution, pricing, and liquidity are enforced by an immutable onchain contract that executes transparently and without discretion.
 
-Moony is a monetary protocol designed as a digital public good, a neutral foundation for open participation, economic expression, and permissionless value exchange. Its architecture draws from the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that requires no permission, no intermediaries, and no governance levers. With a fixed supply, immutable rules, and fully open distribution, Moony reflects a structural commitment to economic freedom and equal access. Every unit enters circulation through the same transparent, deterministic mechanism. As adoption grows, Moony can serve as the monetary backbone for a decentralized economy: from peer-to-peer payments and microtransactions to global remittances and composable financial tools.
-
-## Tokenomics
-Moony’s tokenomics architecture is grounded in foundational monetary principles and implemented through a transparent, immutable protocol design. It establishes a system where value is issued without discretion, access is open to all, and incentives align with the long-term integrity of the asset.
-
-The protocol’s design rests on four core monetary principles: fixed supply, fungibility, cryptographic scarcity, and a zero allocation model. These properties form the monetary substrate, defining how value enters circulation, how it behaves, and how trust is established without intermediaries.
-
-Built on top of this base layer are the protocol’s architectural mechanisms: an immutable reserve contract, a transparent bonding curve, and a proof-of-liquidity model that links capital inflows to token distribution. Together, these interlocking components ensure fairness, verifiability, and composability, creating a system that is resilient, accessible, and aligned with the ethos of digital public goods.
-
-
-
-
-
-
-### Monetary Principles
-Moony’s architecture is built upon a foundational monetary layer, one that draws directly from the enduring tenets of sound money: scarcity, fungibility, and fairness of distribution. These are practical design constraints that enable open participation, rule-based coordination, and resistance to manipulation. Each is embedded directly into the protocol, forming a base monetary structure that requires no trust, no permission, and no discretion.
-
-In a digital age defined by monetary experimentation, governance toggles, and engineered incentives, Moony reaffirms something simpler: a fixed, transparent, and neutral monetary core that anyone can access and no one can control. What follows are the three monetary principles that anchor this foundation.
-
-#### 1. Digital Scarcity
-Moony’s total supply is permanently capped at 21 million units. This constraint is hardcoded at the protocol level and cannot be increased, adjusted, or bypassed. There are no emission schedules, no inflation mechanics, no levers to expand supply.
-
-Scarcity is the root of monetary integrity. Fixed supply creates a predictable economic substrate, allowing participants to coordinate, price, and transact with confidence over time. It transforms Moony from a token into a trustless accounting system, a neutral measure of value that cannot be manipulated by design.
-
-Where legacy systems rely on policy decisions to manage monetary expansion, Moony requires none. Its scarcity is not enforced by governance but by architecture. That difference is essential: it eliminates uncertainty, removes human discretion, and aligns long-term value with immutable code, not mutable promises.
-
-#### 2. Fungibility 
-Every unit of Moony is fully fungible and divisible to 10 decimal places. Whether a user transacts with ⍜100 or ⍜0.01, each unit behaves identically and holds the same value within the system. No history, no identity, no hierarchy, just uniform economic expression.
-
-Fungibility is critical to monetary neutrality. It ensures that Moony can serve as a general-purpose medium of exchange across any context, whether peer-to-peer payments, protocol integrations, commerce, or digital ecosystems. In Moony’s design, no unit is special, and no actor holds privileged value.
-
-This uniformity is a structural safeguard against fragmentation, discrimination, and value distortion. It aligns with the protocol’s broader ethos of fairness: just as Moony’s distribution model avoids insider advantages, its monetary logic avoids coin-level bias. The network treats all units, and all participants, the same.
-
-
-
-
-
-
-#### 3. Fair Distribution 
+At the core of this system is the Reserve Contract, a smart contract deployed on the Solana blockchain that deterministically issues Moony in response to user deposits. Every unit of Moony that enters circulation is acquired directly through the Reserve, using capital supplied by users. This structure eliminates discretionary allocation and ensures fair access. There are no insiders, no fundraising rounds, no privileged entries. The protocol treats all participants equally, and all interactions occur transparently onchain.
 
 Monetary soundness is not defined by supply alone, it is also defined by how that supply is introduced. Moony launched with no pre-mines, no team reserves, no investor discounts, and no airdrops. No supply was withheld, and no insiders received privileged access.
 
@@ -97,14 +120,6 @@ Every unit of Moony must be acquired through transparent, permissionless interac
 
 In an ecosystem often defined by uneven allocations, unlock schedules, and backroom deals, Moony takes the opposite path: full neutrality at launch, enforced by immutable code. Its issuance is not managed, it is available. Not distributed, but discoverable. Everyone enters on the same terms, and the protocol enforces the rules for all.
 
-
-
-
-### Reserve Contract
-
-Moony’s economic architecture is governed entirely by code. Its protocol operates without intermediaries, central administrators, or external governance. Distribution, pricing, and liquidity are enforced by an immutable onchain contract that executes transparently and without discretion.
-
-At the core of this system is the Reserve Contract, a smart contract deployed on the Solana blockchain that deterministically issues Moony in response to user deposits. Every unit of Moony that enters circulation is acquired directly through the Reserve, using capital supplied by users. This structure eliminates discretionary allocation and ensures fair access. There are no insiders, no fundraising rounds, no privileged entries. The protocol treats all participants equally, and all interactions occur transparently onchain.
 
 #### How It Works
 
@@ -255,9 +270,9 @@ While the Reserve Contract governs Moony's primary issuance and redemption prici
 
 ---
 
-## Use Cases
+## Moony Economy
 
-### Ecosystem
+
 
 ![Placeholder](/placeholder-color.png)
 
@@ -409,7 +424,7 @@ Micropayments with Moony open the door to innovative digital and physical intera
 
 By combining scarce, divisible digital cash with low‑cost, high‑throughput settlement, Moony turns micropayments from an abstract ideal into a practical, composable building block for a decentralized, internet‑native economy.
 
-### DeFi
+### Capital Markets
 
 ![Placeholder](/placeholder-color.png)
 
@@ -461,45 +476,7 @@ Moony's integration into DeFi is a natural expression of its design principles. 
 
 ## Resources
 
-### Community
 
-![Placeholder](/placeholder-color.png)
-
-Moony is more than a token. It is a shared movement for open value exchange. Its core infrastructure is open, permissionless, and immutable so it can endure as a public good for anyone, anywhere. With no company, central team, or fixed roadmap, the future is written by the people who build upon it: developers, creators, educators, merchants, and everyday users who believe in a system that belongs to no one and empowers everyone.
-
-From inception, Moony's governance is encoded in a transparent, immutable smart contract backed by a public onchain Reserve Contract. No entity can alter its supply, pricing, or rules of operation. Moony's trajectory depends not on central oversight, but on participants who build, use, and advocate for the asset in ways that reflect open access and permissionless participation.
-
-#### Stakeholders
-
-Moony is permissionless infrastructure. Anyone can participate without approvals or gatekeeping. The network thrives when individuals and organizations apply skills, resources, and creativity to expand reach and utility. Independent action compounds into ecosystem growth.
-
-- **Build:** Integrate Moony into apps, platforms, and tools to unlock new use cases across the digital economy.
-- **Transact:** Accept Moony for goods, services, or content to enable direct support and alternative monetization.
-- **Organize:** Launch regional or thematic groups around shared languages, interests, or goals to drive local adoption.
-- **Educate:** Produce resources or host events that help others understand, use, and build with Moony.
-- **Express:** Use storytelling, memes, and art to spread awareness and shape Moony's cultural narrative.
-
-Participation is open and merit based. Contributions that improve utility, security, documentation, or accessibility are encouraged to be shared publicly so others can reuse and extend them.
-
-#### Incentive Structure
-
-Moony's economic architecture aligns individual incentives with collective growth. The Proof of Liquidity model mints new tokens only when participants deposit USDC into the Reserve Contract, which expands liquidity and distributes supply in direct response to demand. Deposits remain onchain as verifiable liquidity that supports redemptions and deepens market depth over time.
-
-Pricing follows a bonding curve, a deterministic onchain function that increases the cost of newly minted tokens as adoption grows through integrations, transaction volume, or broader use. This creates direct alignment: contributors who expand utility or strengthen infrastructure improve network resilience and may benefit from the appreciation of assets acquired earlier at lower marginal cost.
-
-There is no central treasury, corporate owner, or administrative control. Value accrues organically to those who act by building, integrating, educating, or transacting. In this model, network growth is self-reinforcing: individual contribution and collective value creation move together.
-
-- **Integration:** Each new integration that supports Moony increases accessibility, deepens liquidity, and drives organic demand.
-- **Utility:** Adoption by merchants and platforms expands real world use and strengthens transactional velocity.
-- **Participation:** Community-led efforts introduce new users, reinforce shared values, and broaden the ecosystem's reach.
-
-#### Public Good
-
-Moony is a public good, sustained and advanced by communities that choose to engage with it. Its evolution is shaped not by central mandates, but by collective action on a shared foundation.
-
-Developers may integrate Moony into applications and infrastructure. Creators may produce educational or cultural content. Merchants may adopt it as a medium of exchange. New organizations may form to expand awareness and accessibility. Every contribution, whether technical, educational, economic, or cultural, extends Moony's reach and resilience.
-
-The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
 
 ### Brand Kit
 
