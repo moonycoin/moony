@@ -1,17 +1,18 @@
 
-::: warning Page Under Construction
-**Page Under Construction - Final Copy Not Complete - Confidential**
-
-This documentation is currently being developed and reviewed. The content may contain incomplete information, placeholder text, or sections that are still being finalized. Please treat this as confidential material until the final version is released.
-:::
-
 ## Moony Protocol
 
-Built as a digital public good, Moony is a monetary protocol that provides a neutral foundation for open participation, economic expression, and decentralized value exchange. Its architecture reflects the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that operates without permissions, intermediaries, or governance levers.
+![Placeholder](/placeholder-color.png)
 
-With immutable rules and fully open distribution, Moony embodies a structural commitment to economic freedom and equal access. Each unit enters circulation through the same transparent, deterministic mechanism. As adoption grows, Moony is positioned to serve as the monetary backbone for a decentralized economy, powering global peer-to-peer payments, micropayments, and composable financial tools.
+Moony is a decentralized monetary protocol designed as a digital public good. It provides open access to financial participation, enables trustless peer-to-peer value exchange, and establishes a composable foundation for a decentralized global economy.
 
-Moony is a monetary protocol designed as a digital public good, a neutral foundation for open participation, economic expression, and permissionless value exchange. Its architecture draws from the foundational principles of sound money and open networks: scarcity, immutability, neutrality, and resistance to arbitrary control. These qualities are embedded at the protocol level, forming a trustless base layer that requires no permission, no intermediaries, and no governance levers. With a fixed supply, immutable rules, and fully open distribution, Moony reflects a structural commitment to economic freedom and equal access. Every unit enters circulation through the same transparent, deterministic mechanism. As adoption grows, Moony can serve as the monetary backbone for a decentralized economy: from peer-to-peer payments and microtransactions to global remittances and composable financial tools.
+At the core of the protocol is an immutable onchain smart contract, deployed on the Solana blockchain, that deterministically governs the distribution of a fixed-supply digital asset, Moony, using a Proof of Liquidity (PoL) mechanism. Moony operates without discretionary control or centralized coordination.  
+
+
+
+
+
+
+
 
 
 ### Moony (MNY)
