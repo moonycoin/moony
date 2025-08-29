@@ -5,8 +5,7 @@
 
 Moony is a decentralized monetary protocol designed as a digital public good. It provides open access to financial participation, enables trustless peer-to-peer value exchange, and establishes a composable foundation for a decentralized global economy.
 
-At the core of the protocol is an immutable onchain smart contract, deployed on the Solana blockchain, that deterministically governs the distribution of a fixed-supply digital asset, Moony, using a Proof of Liquidity (PoL) mechanism. Moony operates without discretionary control or centralized coordination.  
-
+At the core of the protocol is an immutable onchain smart contract deployed on the Solana blockchain that deterministically governs the distribution of a fixed-supply digital asset through a proof-of-liquidity mechanism, without discretionary control or centralized coordination.
 
 
 
