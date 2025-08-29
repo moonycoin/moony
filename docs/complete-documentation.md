@@ -1,4 +1,10 @@
 
+::: warning ⚠️ Confidential & Under Construction
+**This site contains confidential information and is currently under construction.**
+
+The content may include placeholder text, incomplete sections, and information that is subject to change. Please treat this documentation as confidential material until the final version is released.
+:::
+
 ## Moony Protocol
 
 ![Placeholder](/placeholder-color.png)
@@ -12,11 +18,11 @@ At the core of the protocol is an immutable onchain smart contract deployed on t
 
 
 
-
+---
 
 ### Moony (MNY)
 
-Moony is a decentralized digital asset designed to serve as the monetary foundation for an open, permissionless payments ecosystem. Deployed on the Solana blockchain, it enables peer-to-peer value exchange without intermediaries. All supply is governed by an immutable smart contract, ensuring fair, transparent distribution with no discretionary control, insider allocations, or privileged access.
+Moony (MNY) is the native digital asset of the Moony protocol. It serves as the protocol’s unit of account and primary mechanism for trustless value exchange. Designed to function as a neutral monetary primitive, Moony provides a stable and non-manipulable substrate for decentralized economic coordination.
 
 ::: tip 🚀 Smart Contract Addresses
 
@@ -39,28 +45,26 @@ Moony is a decentralized digital asset designed to serve as the monetary foundat
 
 :::
 
-Moony’s total supply is permanently capped at 21 million units. This constraint is hardcoded at the protocol level and cannot be increased, adjusted, or bypassed. There are no emission schedules, no inflation mechanics, no levers to expand supply.
+#### Digital Scarcity
 
-Scarcity is the root of monetary integrity. Fixed supply creates a predictable economic substrate, allowing participants to coordinate, price, and transact with confidence over time. It transforms Moony from a token into a trustless accounting system, a neutral measure of value that cannot be manipulated by design.
+Moony’s total supply is permanently capped at 21 million units. This limit is enforced at the token level, with all authority to mint new tokens permanently revoked. There are no emissions, inflation schedules, or mechanisms to increase supply. Scarcity is absolute and guaranteed by design.
 
-Where legacy systems rely on policy decisions to manage monetary expansion, Moony requires none. Its scarcity is not enforced by governance but by architecture. That difference is essential: it eliminates uncertainty, removes human discretion, and aligns long-term value with immutable code, not mutable promises.
+This constraint serves as the foundation for monetary integrity. A fixed supply establishes a predictable economic substrate, allowing participants to coordinate, price, and transact with confidence over time. It transforms Moony into a trustless accounting system: a neutral measure of value that cannot be manipulated.
 
-Every unit of Moony is fully fungible and divisible to 10 decimal places. Whether a user transacts with ⍜100 or ⍜0.01, each unit behaves identically and holds the same value within the system. No history, no identity, no hierarchy, just uniform economic expression.
-
-Fungibility is critical to monetary neutrality. It ensures that Moony can serve as a general-purpose medium of exchange across any context, whether peer-to-peer payments, protocol integrations, commerce, or digital ecosystems. In Moony’s design, no unit is special, and no actor holds privileged value.
-
-This uniformity is a structural safeguard against fragmentation, discrimination, and value distortion. It aligns with the protocol’s broader ethos of fairness: just as Moony’s distribution model avoids insider advantages, its monetary logic avoids coin-level bias. The network treats all units, and all participants, the same.
+Legacy monetary systems rely on policy decisions to manage supply. Moony does not. Its scarcity is secured by architecture rather than governance. This structural certainty eliminates discretionary control, removes uncertainty, and aligns long-term value with immutable code instead of mutable promises.
 
 
 
 
+#### Immutablity 
 
+Moony’s immutability extends beyond its supply. The token’s metadata, including its name, symbol, decimals, and configuration, cannot be changed or overwritten. There is no upgradable logic, no centralized control, and no capacity to alter the asset after deployment. It exists as a finalized onchain object, not as a flexible contract subject to future revision. This permanence ensures reliability across time and integrations.
 
+#### Fungibility 
 
+Each unit of Moony is fungible and divisible to ten decimal places. All units are equal in value and identical in behavior, with no unique history or distinguishing attributes. This uniformity allows Moony to operate as a general-purpose digital asset across payments, contracts, platforms, and peer-to-peer interactions.
 
-
-
-
+Scarcity, immutability, and fungibility form the foundation of Moony’s role in the broader protocol. These structural properties enable it to function as a credible, neutral medium for decentralized exchange, value storage, and programmable utility—without reliance on discretionary governance or trusted intermediaries.
 
 
 
@@ -79,6 +83,19 @@ This uniformity is a structural safeguard against fragmentation, discrimination,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 
 ### Reserve Contract
@@ -272,7 +289,7 @@ This model guarantees deterministic, transparent price progression. The first 1%
 
 While the Reserve Contract governs Moony's primary issuance and redemption pricing, price discovery may also occur on secondary markets, including centralized exchanges or peer‑to‑peer platforms. These market prices may temporarily diverge from the bonding curve price. However, the Reserve's transparent pricing mechanism creates an arbitrage anchor. If Moony trades above the Reserve price, users can mint from the Reserve at a lower cost. If Moony trades below the Reserve price, arbitrageurs can buy on the market and redeem to the Reserve. This dynamic keeps market prices tethered to the curve, reinforcing liquidity and price stability across platforms.
 
----
+
 
 ## Moony Economy
 
