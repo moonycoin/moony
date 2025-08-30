@@ -48,19 +48,13 @@ Moony (MNY) is the native digital asset of the Moony protocol, designed to enabl
 
 Transactions with Moony do not require approval from any centralized authority and cannot be stopped, reversed, or filtered by third parties. This trustless design ensures that participants retain full custody and control over their funds at all times. As a result, Moony enables censorship-resistant exchange of value and remains accessible to anyone, anywhere in the world, without discrimination or geographic restriction.
 
-#### Fixed Supply
+![Placeholder](/placeholder-color.png)
+
 Moony has a fixed maximum supply of 21 million units, an immutable constraint that cryptographically ensures the protocol’s long-term economic integrity. There is no mechanism by which new units can ever be created, guaranteeing that the total supply remains permanently capped.
 
 This fixed supply protects Moony from monetary debasement, distinguishing it from traditional fiat currencies, whose issuance can be arbitrarily expanded by central banks or governments, leading to the long-term erosion of purchasing power through inflation.
 
 By removing the risk of discretionary supply expansion, the Moony protocol establishes a stable foundation for a decentralized economic system to flourish. Its fixed supply enforces scarcity without trust and enables economic coordination without permission.
-
-
-#### Fungibility 
-
-Each unit of Moony is fungible and divisible to ten decimal places. All units are equal in value and identical in behavior, with no unique history or distinguishing attributes. This uniformity allows Moony to operate as a general-purpose digital asset across payments, contracts, platforms, and peer-to-peer interactions.
-
-Scarcity, immutability, and fungibility form the foundation of Moony’s role in the broader protocol. These structural properties enable it to function as a credible, neutral medium for decentralized exchange, value storage, and programmable utility, without reliance on discretionary governance or trusted intermediaries.
 
 
 
