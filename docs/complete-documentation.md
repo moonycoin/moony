@@ -42,7 +42,6 @@ Moony (MNY) is the native digital asset of the Moony protocol, designed to enabl
   </div>
 </div>
 
-
 :::
 
 
@@ -96,11 +95,27 @@ Moony’s tokenomics architecture is grounded in foundational monetary principle
 
 <div class="contract-card">
   <div class="contract-header">
-    <h4>Reserve Contract</h4>
+    <h4>MOONY Vault</h4>
   </div>
   <div class="contract-address">
     <code>9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM</code>
     <button class="copy-btn" onclick="copyToClipboard('9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM', event)">
+      <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+      <span class="copy-text">Copy</span>
+    </button>
+  </div>
+</div>
+
+<div class="contract-card">
+  <div class="contract-header">
+    <h4>USDC Reserve</h4>
+  </div>
+  <div class="contract-address">
+    <code>9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM</code>
+    <button class="copy-btn" onclick="copyToClipboard('SECOND_RESERVE_ADDRESS_PLACEHOLDER', event)">
       <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
         <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
