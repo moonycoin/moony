@@ -89,7 +89,8 @@ By removing the risk of discretionary supply expansion, the Moony protocol estab
 
 ### Reserve Contract
 
-Moony’s tokenomics architecture is grounded in foundational monetary principles and implemented through a transparent, immutable protocol design. It establishes a system where value is issued without discretion, access is open to all, and incentives align with the long-term integrity of the asset.
+The Moony Reserve Contract is the trustless mechanism through which all Moony (MNY) enters circulation. Rather than relying on discretionary allocation, private sales, or centralized distribution, the entire Moony supply is placed into a smart contract that governs issuance according to transparent, immutable rules.
+
 
 ::: tip 🚀 Smart Contract Addresses
 
@@ -127,24 +128,16 @@ Moony’s tokenomics architecture is grounded in foundational monetary principle
 
 :::
 
-The protocol’s design rests on four core monetary principles: fixed supply, fungibility, cryptographic scarcity, and a zero allocation model. These properties form the monetary substrate, defining how value enters circulation, how it behaves, and how trust is established without intermediaries.
 
-Built on top of this base layer are the protocol’s architectural mechanisms: an immutable reserve contract, a transparent bonding curve, and a proof-of-liquidity model that links capital inflows to token distribution. Together, these interlocking components ensure fairness, verifiability, and composability, creating a system that is resilient, accessible, and aligned with the ethos of digital public goods.
+The Reserve Contract ensures that every unit of Moony (MNY) is acquired on equal terms. Participants interact directly with the contract by sending USDC to its onchain address, triggering a deterministic pricing algorithm that calculates the amount of Moony (MNY) to be received. This process is executed automatically through the protocol’s internal logic, without reliance on any custodians, administrators, or approvals.
 
-Moony’s architecture is built upon a foundational monetary layer, one that draws directly from the enduring tenets of sound money: scarcity, fungibility, and fairness of distribution. These are practical design constraints that enable open participation, rule-based coordination, and resistance to manipulation. Each is embedded directly into the protocol, forming a base monetary structure that requires no trust, no permission, and no discretion.
-
-In a digital age defined by monetary experimentation, governance toggles, and engineered incentives, Moony reaffirms something simpler: a fixed, transparent, and neutral monetary core that anyone can access and no one can control. What follows are the three monetary principles that anchor this foundation.
+In this way, the Reserve Contract acts as the sole gateway for accessing newly issued Moony (MNY), the token’s distribution in verifiable code rather than discretionary trust. It enforces the economic integrity of the protocol, guaranteeing that Moony (MNY) is exchanged only for capital contributed to the system, and that all such liquidity remains visible and auditable onchain.
 
 
-Moony’s economic architecture is governed entirely by code. Its protocol operates without intermediaries, central administrators, or external governance. Distribution, pricing, and liquidity are enforced by an immutable onchain contract that executes transparently and without discretion.
 
-At the core of this system is the Reserve Contract, a smart contract deployed on the Solana blockchain that deterministically issues Moony in response to user deposits. Every unit of Moony that enters circulation is acquired directly through the Reserve, using capital supplied by users. This structure eliminates discretionary allocation and ensures fair access. There are no insiders, no fundraising rounds, no privileged entries. The protocol treats all participants equally, and all interactions occur transparently onchain.
 
-Monetary soundness is not defined by supply alone, it is also defined by how that supply is introduced. Moony launched with no pre-mines, no team reserves, no investor discounts, and no airdrops. No supply was withheld, and no insiders received privileged access.
 
-Every unit of Moony must be acquired through transparent, permissionless interaction with the protocol. This is not an ideological gesture; it is a structural design choice that eliminates hierarchy, removes reliance on trust, and ensures that the playing field is level from the outset.
 
-In an ecosystem often defined by uneven allocations, unlock schedules, and backroom deals, Moony takes the opposite path: full neutrality at launch, enforced by immutable code. Its issuance is not managed, it is available. Not distributed, but discoverable. Everyone enters on the same terms, and the protocol enforces the rules for all.
 
 
 #### How It Works
