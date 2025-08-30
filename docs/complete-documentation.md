@@ -22,7 +22,7 @@ At the core of the protocol is an immutable onchain smart contract deployed on t
 
 ### Moony (MNY)
 
-Moony (MNY) is the native digital asset of the Moony protocol. It serves as the protocol’s unit of account and primary mechanism for trustless value exchange. Designed to function as a neutral monetary primitive, Moony provides a stable and non-manipulable substrate for decentralized economic coordination.
+Moony (MNY) is the native digital asset of the Moony protocol, designed to enable permissionless payments between participants without intermediaries.
 
 ::: tip 🚀 Smart Contract Addresses
 
@@ -45,26 +45,22 @@ Moony (MNY) is the native digital asset of the Moony protocol. It serves as the 
 
 :::
 
-#### Digital Scarcity
 
-Moony’s total supply is permanently capped at 21 million units. This limit is enforced at the token level, with all authority to mint new tokens permanently revoked. There are no emissions, inflation schedules, or mechanisms to increase supply. Scarcity is absolute and guaranteed by design.
+Transactions with Moony do not require approval from any centralized authority and cannot be stopped, reversed, or filtered by third parties. This trustless design ensures that participants retain full custody and control over their funds at all times. As a result, Moony enables censorship-resistant exchange of value and remains accessible to anyone, anywhere in the world, without discrimination or geographic restriction.
 
-This constraint serves as the foundation for monetary integrity. A fixed supply establishes a predictable economic substrate, allowing participants to coordinate, price, and transact with confidence over time. It transforms Moony into a trustless accounting system: a neutral measure of value that cannot be manipulated.
+#### Fixed Supply
+Moony has a fixed maximum supply of 21 million units, an immutable constraint that cryptographically ensures the protocol’s long-term economic integrity. There is no mechanism by which new units can ever be created, guaranteeing that the total supply remains permanently capped.
 
-Legacy monetary systems rely on policy decisions to manage supply. Moony does not. Its scarcity is secured by architecture rather than governance. This structural certainty eliminates discretionary control, removes uncertainty, and aligns long-term value with immutable code instead of mutable promises.
+This fixed supply protects Moony from monetary debasement, distinguishing it from traditional fiat currencies, whose issuance can be arbitrarily expanded by central banks or governments, leading to the long-term erosion of purchasing power through inflation.
 
+By removing the risk of discretionary supply expansion, the Moony protocol establishes a stable foundation for a decentralized economic system to flourish. Its fixed supply enforces scarcity without trust and enables economic coordination without permission.
 
-
-
-#### Immutablity 
-
-Moony’s immutability extends beyond its supply. The token’s metadata, including its name, symbol, decimals, and configuration, cannot be changed or overwritten. There is no upgradable logic, no centralized control, and no capacity to alter the asset after deployment. It exists as a finalized onchain object, not as a flexible contract subject to future revision. This permanence ensures reliability across time and integrations.
 
 #### Fungibility 
 
 Each unit of Moony is fungible and divisible to ten decimal places. All units are equal in value and identical in behavior, with no unique history or distinguishing attributes. This uniformity allows Moony to operate as a general-purpose digital asset across payments, contracts, platforms, and peer-to-peer interactions.
 
-Scarcity, immutability, and fungibility form the foundation of Moony’s role in the broader protocol. These structural properties enable it to function as a credible, neutral medium for decentralized exchange, value storage, and programmable utility—without reliance on discretionary governance or trusted intermediaries.
+Scarcity, immutability, and fungibility form the foundation of Moony’s role in the broader protocol. These structural properties enable it to function as a credible, neutral medium for decentralized exchange, value storage, and programmable utility, without reliance on discretionary governance or trusted intermediaries.
 
 
 
