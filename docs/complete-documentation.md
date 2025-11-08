@@ -20,9 +20,9 @@ At the core of the protocol is an immutable onchain smart contract deployed on t
 
 ---
 
-### Moony (MNY)
+### Moony (MOONY)
 
-Moony (MNY) is the native digital asset of the Moony protocol, designed to enable permissionless payments between participants without intermediaries.
+Moony (MOONY) is the native digital asset of the Moony protocol, designed to enable permissionless payments between participants without intermediaries.
 
 ::: tip 🚀 Smart Contract Addresses
 
